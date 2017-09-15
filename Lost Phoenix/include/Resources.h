@@ -17,7 +17,7 @@
 #define SPEED_PLAYER_PLANE					7
 #define HEALTH_PLAYER_PLANE					100
 #define SPEED_PLAYER_BULLET					-10
-#define ATTACK_PLAYER_BULLET					12
+#define ATTACK_PLAYER_BULLET				12
 #define COOLDOWN_PLAYER_BULLET				200
 
 // Enemy_Junior Settings

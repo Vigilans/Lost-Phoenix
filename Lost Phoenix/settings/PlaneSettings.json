@@ -1,0 +1,61 @@
+{
+  "Player": {
+    "Texture": {
+      "ID": 1002,
+      "Path": "assets/player_plane.png",
+      "HitBox": [60, 56]
+    },
+    "Health": 100,
+    "Speed": 7,
+    "Bullet": {
+      "Texture": {
+        "ID": 1003,
+        "Path": "assets/player_bullet.png",
+        "HitBox": [30, 51]
+      },
+      "Attack": 12,
+      "Speed": -10,
+      "CoolDown": 200
+    }
+  },
+  "Enemy_Junior": {
+    "Texture": {
+      "ID": 1004,
+      "Path": "assets/enemy_plane_junior.png",
+      "HitBox": [60, 61]
+    },
+    "Health": 12,
+    "Speed": 1,
+    "Bullet": {
+      "Texture": {
+        "ID": 1005,
+        "Path": "assets/enemy_bullet_junior.png",
+        "HitBox": [15, 31]
+      },
+      "Attack": 12,
+      "Speed": 10,
+      "CoolDown": 1100
+    },
+    "Score": 30
+  },
+  "Enemy_AutoTarget": {
+    "Texture": {
+      "ID": 1006,
+      "Path": "assets/enemy_plane_autoTarget.png",
+      "HitBox": [80, 52]
+    },
+    "Health": 30,
+    "Speed": 1,
+    "Bullet": {
+      "Texture": {
+        "ID": 1007,
+        "Path": "assets/enemy_bullet_autoTarget.png",
+        "HitBox": [15, 15]
+      },
+      "Attack": 20,
+      "Speed": -10,
+      "CoolDown": 1900
+    },
+    "Score": 50
+  }
+}
