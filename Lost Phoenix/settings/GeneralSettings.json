@@ -1,32 +1,20 @@
 {
-  "FPS": 60,
-  "Resolution": [800, 600],
-  "FontHeight": 20,
-  "EnemyInfoDuration": 1500,
-  "EnemyWaveCoolDown": 6000,
-  "BgShiftSpeed": 2,
-  "BackgroundTextures": {
-    "Menu": {
-      "ID": 1000,
-      "Path": "assets/menu.png",
-      "HitBox": [1024, 576]
-    },
-    "Gaming": {
-      "ID": 1001,
-      "Path": "assets/bg.png",
-      "HitBox": [1280, 960]
-    },
-    "GameOver": {
-      "ID": 1009,
-      "Path": "assets/gameover.jpg",
-      "HitBox": [800, 600]
-    }
+  "UI": {
+    "FPS": 60,
+    "Resolution": [ 800, 600 ],
+    "FontHeight": 20
   },
-  "AnimeTextures": {
-    "Explosion": {
-      "ID": 1008,
-      "Path": "assets/plane_explosion.png",
-      "HitBox": [256, 256]
-    }
+  "Times": {
+    "EnemyInfoDuration": 1500,
+    "EnemyWaveCoolDown": 6000,
+    "BgShiftSpeed": 2
+  },
+  "BgTextureIDs": {
+    "Menu": 1000,
+    "Gaming": 1001,
+    "GameOver": 1002
+  },
+  "AnimeTextureIDs": {
+    "Explosion": 2000
   }
 }

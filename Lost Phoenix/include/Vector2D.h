@@ -4,6 +4,9 @@
 template <typename _Ty>
 struct basic_vector2D
 {
+	using value_type_t = _Ty;
+	using reference_t = _Ty&;
+
 	_Ty x;
 	_Ty y;
 

@@ -21,8 +21,10 @@ bool World::initialize(const char* Title, int fps, int w, int h)
 	HWND hWnd = getHWnd( ); // 获得窗口句柄
 	SetWindowText(hWnd, Title);// 使用 API 函数修改窗口名称
 
+	Settings::initialize();
+
 	player_plane = new Plane_Player;
-	focused_enemy = NULL;
+	focused_enemy = nullptr;
 	Action_Plane_Explode::initializeModels( );
 
 	return true;
@@ -254,6 +256,7 @@ void World::clearWorld( )
 
 void World::renderOverInterface( )
 {
+	setbkmode(TRANSPARENT);
 	putimage(0, 0, getTexture(GAMEOVER_ID).image);
 
 	const char* grade;
@@ -328,6 +331,7 @@ void World::renderBackground( )
 void World::renderUI( )
 {
 	setfont(UI_FONT_HEIGHT, 0, "黑体");
+	setbkmode(TRANSPARENT);
 
 	// render player health
 	xyprintf(0, windowHeight - 2*UI_FONT_HEIGHT, "HP: %d / %d", player_plane->curHealth, player_plane->maxHealth);

@@ -11,8 +11,8 @@ ostream& getCurrentTime(ostream&);
 
 int main(int argc, const char* argv[ ])
 {
-	try
-	{
+	//try
+	//{
 		mainProcess:
 		if (world.initialize("All Hail Finxin!", GAME_FPS, WINDOW_WIDTH, WINDOW_HEIGHT))
 		{
@@ -29,14 +29,14 @@ int main(int argc, const char* argv[ ])
 		}
 		if(world.get_running( ))
 			goto mainProcess;
-	}
-	catch (exception& e)
-	{
-		ofstream ferr("error log.txt");
-		ferr << "Exception occured: " << e.what( ) << '\t' << getCurrentTime << '\n';
-		ferr.close( );
-		return 1;
-	}
+	//}
+	//catch (exception& e)
+	//{
+	//	ofstream ferr("error log.txt");
+	//	ferr << "Exception occured: " << e.what( ) << '\t' << getCurrentTime << '\n';
+	//	ferr.close( );
+	//	return 1;
+	//}
 
 	return 0;
 }

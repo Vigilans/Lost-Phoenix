@@ -12,6 +12,7 @@
     <ClCompile Include="src\Player.cpp" />
     <ClCompile Include="src\Resources.cpp" />
     <ClCompile Include="src\World.cpp" />
+    <ClCompile Include="src\ResourcesLoader.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Actions.h" />
@@ -25,5 +26,6 @@
     <ClInclude Include="include\Resources.h" />
     <ClInclude Include="include\Vector2D.h" />
     <ClInclude Include="include\World.h" />
+    <ClInclude Include="src\ResourcesLoader.h" />
   </ItemGroup>
 </Project>

@@ -11,10 +11,10 @@ Texture Action_Plane_Explode::models[4] = { };
 
 void Action_Plane_Explode::initializeModels( )
 {
-	models[0] = cutOutTexture(PLANE_EXPLOSION_ID, 0, 0, 128, 128);
-	models[1] = cutOutTexture(PLANE_EXPLOSION_ID, 128, 0, 128, 128);
-	models[2] = cutOutTexture(PLANE_EXPLOSION_ID, 0, 128, 128, 128);
-	models[3] = cutOutTexture(PLANE_EXPLOSION_ID, 128, 128, 128, 128);
+	models[0] = splitTexture(PLANE_EXPLOSION_ID, 0, 0, 128, 128);
+	models[1] = splitTexture(PLANE_EXPLOSION_ID, 128, 0, 128, 128);
+	models[2] = splitTexture(PLANE_EXPLOSION_ID, 0, 128, 128, 128);
+	models[3] = splitTexture(PLANE_EXPLOSION_ID, 128, 128, 128, 128);
 }
 
 Action_Plane_Explode::Action_Plane_Explode(Plane* src, bool destroy, int time, void(*endCallbackFunc)())

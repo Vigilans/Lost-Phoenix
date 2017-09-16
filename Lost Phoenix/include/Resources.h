@@ -52,9 +52,69 @@ struct Texture
 	Vector2D hitBox;
 };
 
-const Texture getTexture(int id);
+Texture getTexture(int id);
 
-Texture cutOutTexture(int id, int x, int y, int w, int h);
+Texture splitTexture(int id, int x, int y, int w, int h);
+
+class Settings
+{
+public:
+	struct General
+	{
+		struct
+		{
+			int fps;
+			Vector2D resolution;
+			int fontHeight;
+		} UI;
+
+		struct
+		{
+			int enemyInfoDuration;
+			int enemyWaveCoolDown;
+			int bgShiftSpeed;
+		} times;
+
+		struct
+		{
+			Texture menu;
+			Texture gaming;
+			Texture gameOver;
+		} bgTextures;
+
+		struct
+		{
+			Texture explosion;
+		} animeTextures;
+	};
+
+	struct Bullet
+	{
+		Texture texture;
+		int attack;
+		int speed;
+		int coolDown;
+	};
+
+	struct Plane
+	{
+		Texture texture;
+		int health;
+		int speed;
+		Bullet bulletSetting;
+		int score;
+	};
+
+
+	Settings( ) = delete;
+
+	static void initialize();
+
+	static Settings::General general( );
+	static Settings::Plane player( );
+	static Settings::Plane enemy_junior( );
+	static Settings::Plane enemy_autoTarget( );
+};
 
 #define MENU_ID								1000
 #define MENU_PATH							L"assets/menu.jpg"
@@ -66,42 +126,42 @@ Texture cutOutTexture(int id, int x, int y, int w, int h);
 #define BACKGROUND_WIDTH_RAW 				1280
 #define BACKGROUND_HEIGHT_RAW				960
 
-#define PLAYER_PLANE_ID						1002
+#define PLAYER_PLANE_ID						3000
 #define PLAYER_PLANE_PATH					L"assets/player_plane.png"
 #define PLAYER_PLANE_WIDTH_RAW				60
 #define PLAYER_PLANE_HEIGHT_RAW				56
 
-#define PLAYER_BULLET_ID						1003
+#define PLAYER_BULLET_ID						4000
 #define PLAYER_BULLET_PATH					L"assets/player_bullet.png"
 #define PLAYER_BULLET_WIDTH_RAW				30
 #define PLAYER_BULLET_HEIGHT_RAW 			51
 
-#define ENEMY_PLANE_JUNIOR_ID				1004
+#define ENEMY_PLANE_JUNIOR_ID				3001
 #define ENEMY_PLANE_JUNIOR_PATH				L"assets/enemy_plane_junior.png"
 #define ENEMY_PLANE_JUNIOR_WIDTH_RAW			60
 #define ENEMY_PLANE_JUNIOR_HEIGHT_RAW		61
 
-#define ENEMY_BULLET_JUNIOR_ID				1005
+#define ENEMY_BULLET_JUNIOR_ID				4001
 #define ENEMY_BULLET_JUNIOR_PATH				L"assets/enemy_bullet_junior.png"
 #define ENEMY_BULLET_JUNIOR_WIDTH_RAW		15
 #define ENEMY_BULLET_JUNIOR_HEIGHT_RAW 		31
 
-#define ENEMY_PLANE_AUTOTARGET_ID		 	1006
+#define ENEMY_PLANE_AUTOTARGET_ID		 	3002
 #define ENEMY_PLANE_AUTOTARGET_PATH		 	L"assets/enemy_plane_autoTarget.png"
 #define ENEMY_PLANE_AUTOTARGET_WIDTH_RAW	 	80
 #define ENEMY_PLANE_AUTOTARGET_HEIGHT_RAW	52
 
-#define ENEMY_BULLET_AUTOTARGET_ID		  	1007
+#define ENEMY_BULLET_AUTOTARGET_ID		  	4002
 #define ENEMY_BULLET_AUTOTARGET_PATH		  	L"assets/enemy_bullet_autoTarget.png"
 #define ENEMY_BULLET_AUTOTARGET_WIDTH_RAW 	15
 #define ENEMY_BULLET_AUTOTARGET_HEIGHT_RAW	15
 
-#define PLANE_EXPLOSION_ID		  			1008
+#define PLANE_EXPLOSION_ID		  			2000
 #define PLANE_EXPLOSION_PATH		  			L"assets/plane_explosion.png"
 #define PLANE_EXPLOSION_WIDTH_RAW 			256
 #define PLANE_EXPLOSION_HEIGHT_RAW			256
 
-#define GAMEOVER_ID		  					1009
+#define GAMEOVER_ID		  					1002
 #define GAMEOVER_PATH		  				L"assets/gameover.jpg"
 #define GAMEOVER_WIDTH_RAW 					800
 #define GAMEOVER_HEIGHT_RAW					600
