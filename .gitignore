@@ -3,6 +3,7 @@
 
 # Lost Phoenix
 EGE/ 
+nlohmann_json/
 
 # User-specific files
 *.suo
