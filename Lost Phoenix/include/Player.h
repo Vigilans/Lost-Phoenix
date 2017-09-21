@@ -4,7 +4,7 @@
 class Plane_Player : public Plane
 {
 public:
-	Plane_Player();
+	Plane_Player(Settings::Plane setting);
 
 	virtual void update( );
 	//virtual void draw( );
@@ -13,12 +13,10 @@ public:
 
 private:
 	void handleInput( );
-
 };
 
 class Bullet_Player : public Bullet
 {
 public:
-	Bullet_Player(Entity* src, Vector2D velocity) : Bullet(PLAYER_BULLET_ID, src, ATTACK_PLAYER_BULLET, velocity) {  }
-
+	Bullet_Player(Entity* src, Settings::Bullet setting, Vector2D velocity = Vector2D());
 };

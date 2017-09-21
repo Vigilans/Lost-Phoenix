@@ -13,7 +13,7 @@ enum class PlaneState
 class Plane : public Entity
 {
 public:
-	Plane(int textureID, Ally camp, Vector2D position, Vector2D velocity, int maxHP, int shootCD);
+	Plane(Settings::Plane setting, Vector2D position, Vector2D velocity);
 	~Plane( );
 
 	virtual void update( );
@@ -27,13 +27,13 @@ public:
 	int getHealth( ) { return curHealth; }
 	void setHealth(int hp) { curHealth = hp; }
 
+	int speed;
 	int maxHealth;
 	int curHealth;
 	int shootCoolDown;
 
 protected:
 	bool checkShootCoolDown( );
-
 
 	int shootCheckPoint;
 	PlaneState state;
@@ -44,16 +44,16 @@ protected:
 class Bullet : public Entity
 {
 public:
-	Bullet(int textureID, Entity* src, int atk, Vector2D velocity = Vector2D( ));
+	Bullet(Entity* src, Settings::Bullet setting, Vector2D velocity = Vector2D( ));
 
 	virtual void update( );
-
+	
+	int speed;
 	int attack;
 	bool end;
 
 private:
 	Vector2D initPosBySource(Entity* p);
-
 };
 
 class Plane_Player;

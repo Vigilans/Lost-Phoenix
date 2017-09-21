@@ -1,3 +1,4 @@
+/*
 #include "Enemy_Cruiser.h"
 #include <graphics.h>
 
@@ -23,3 +24,4 @@ void Bullet_Enemy_Cruiser_Bomb::update( )
 		delete this;
 	}
 }
+*/

@@ -10,7 +10,7 @@ class Action;
 class World
 {
 public:
-	bool initialize(const char* Title, int fps, int w, int h);
+	bool initialize();
 	bool is_running( );
 	void renderMenu( );
 	void update( );
@@ -21,10 +21,13 @@ public:
 	void renderOverInterface( );
 
 	/* ------------- get & set --------------*/
-	int get_fps( ) { return game_fps; }
-	bool get_running( ) { return running; }
-
-	/* ------------- public data members --------------*/
+	int fps();
+	int windowWidth();
+	int windowHeight();
+	int fontHeight();
+	bool get_running();
+	
+	/* ------------- public fields --------------*/
 	int score;
 	size_t difficultyLevel;
 	InputController inputCtrl;
@@ -40,12 +43,9 @@ private:
 	void renderUI( );
 	bool checkBackgroundCollision(Entity* e, bool leftRight = true, bool upDown = true, bool isOuter = false); // collide if return true
 	void newEnemyWave( );
-	void gameOver( );
+	void gameOver( );	
 
 private:
-	int windowWidth;
-	int windowHeight;
-	int game_fps;
 	bool running;
 };
 

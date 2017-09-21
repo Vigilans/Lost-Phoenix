@@ -1,5 +1,6 @@
 {
   "Player": {
+    "Camp": 0,
     "TextureID": 3000,
     "Health": 100,
     "Speed": 7,
@@ -11,6 +12,7 @@
     }
   },
   "Enemy_Junior": {
+    "Camp": 1,
     "TextureID": 3001,
     "Health": 12,
     "Speed": 1,
@@ -23,13 +25,14 @@
     "Score": 30
   },
   "Enemy_AutoTarget": {
+    "Camp": 1,
     "TextureID": 3002,
     "Health": 30,
     "Speed": 1,
     "Bullet": {
       "TextureID": 4002,
       "Attack": 20,
-      "Speed": -10,
+      "Speed": 6,
       "CoolDown": 1900
     },
     "Score": 50

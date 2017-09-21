@@ -3,16 +3,11 @@
 #include "Actions.h"
 #include <graphics.h>
 
-Plane_Player::Plane_Player( ) 
-	: Plane(PLAYER_PLANE_ID, 
-		Ally::Friend, 
-		getTexture(BACKGROUND_ID).hitBox - getTexture(PLAYER_PLANE_ID).hitBox, 
-		Vector2D( ), 
-		HEALTH_PLAYER_PLANE, 
-		COOLDOWN_PLAYER_BULLET)
+Plane_Player::Plane_Player(Settings::Plane setting)
+	: Plane(setting, Settings::general().UI.resolution - setting.texture.hitBox, Vector2D())
 {
-	this->setXPos(this->getXPos( ) / 2);
-};
+	this->setXPos(this->getXPos() / 2);
+}
 
 void Plane_Player::update( )
 {
@@ -25,7 +20,7 @@ void Plane_Player::update( )
 void Plane_Player::shoot( )
 {
 	if(checkShootCoolDown( ))
-		new Bullet_Player(this, Vector2D(0, SPEED_PLAYER_BULLET));
+		new Bullet_Player(this, Settings::player().bulletSetting);
 }
 
 void Plane_Player::takeDamage(int damage)
@@ -40,11 +35,11 @@ void Plane_Player::handleInput( )
 	// -------- HANDLE X AXIS MOVE
 	if (world.inputCtrl.isKeyDown(Key::A) && !world.inputCtrl.isKeyDown(Key::D))
 	{
-		velocity.x = -SPEED_PLAYER_PLANE;
+		velocity.x = -speed;
 	}
 	else if (world.inputCtrl.isKeyDown(Key::D) && !world.inputCtrl.isKeyDown(Key::A))
 	{
-		velocity.x = SPEED_PLAYER_PLANE;
+		velocity.x = speed;
 	}
 	else
 	{
@@ -54,11 +49,11 @@ void Plane_Player::handleInput( )
 	// -------- HANDLE Y AXIS MOVE
 	if (world.inputCtrl.isKeyDown(Key::W) && !world.inputCtrl.isKeyDown(Key::S))
 	{
-		velocity.y = -SPEED_PLAYER_PLANE;
+		velocity.y = -speed;
 	}
 	else if (world.inputCtrl.isKeyDown(Key::S) && !world.inputCtrl.isKeyDown(Key::W))
 	{
-		velocity.y = SPEED_PLAYER_PLANE;
+		velocity.y = speed;
 	}
 	else
 	{
@@ -70,3 +65,6 @@ void Plane_Player::handleInput( )
 		shoot( );
 	}
 }
+
+Bullet_Player::Bullet_Player(Entity * src, Settings::Bullet setting, Vector2D velocity)
+	: Bullet(src, setting, velocity) { }

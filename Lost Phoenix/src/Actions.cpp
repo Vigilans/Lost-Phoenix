@@ -11,14 +11,21 @@ Texture Action_Plane_Explode::models[4] = { };
 
 void Action_Plane_Explode::initializeModels( )
 {
-	models[0] = splitTexture(PLANE_EXPLOSION_ID, 0, 0, 128, 128);
-	models[1] = splitTexture(PLANE_EXPLOSION_ID, 128, 0, 128, 128);
-	models[2] = splitTexture(PLANE_EXPLOSION_ID, 0, 128, 128, 128);
-	models[3] = splitTexture(PLANE_EXPLOSION_ID, 128, 128, 128, 128);
+	auto texture = Settings::animeTextures().explosion;
+	models[0] = splitTexture(texture, 0, 0, 128, 128);
+	models[1] = splitTexture(texture, 128, 0, 128, 128);
+	models[2] = splitTexture(texture, 0, 128, 128, 128);
+	models[3] = splitTexture(texture, 128, 128, 128, 128);
 }
 
 Action_Plane_Explode::Action_Plane_Explode(Plane* src, bool destroy, int time, void(*endCallbackFunc)())
-	:Action(endCallbackFunc), curIndex(0), srcPlane(src), boomTime(time), toDestroy(destroy) { }
+	:Action(endCallbackFunc), curIndex(0), srcPlane(src), boomTime(time), toDestroy(destroy) 
+{
+	if (models[0].image == nullptr)
+	{
+		initializeModels();
+	}
+}
 
 Action_Plane_Explode::~Action_Plane_Explode( ) 
 {

@@ -1,30 +1,25 @@
 #include "Enemy_Junior.h"
 
-Plane_Enemy_Junior::Plane_Enemy_Junior(Vector2D position, Vector2D velocity)
-	: Plane(ENEMY_PLANE_JUNIOR_ID, 
-		Ally::Enemy,
-		position, 
-		velocity, 
-		HEALTH_ENEMY_JUNIOR_PLANE,
-		COOLDOWN_ENEMY_JUNIOR_BULLET) 
+Plane_Enemy_Junior::Plane_Enemy_Junior(Settings::Plane setting, Vector2D position, Vector2D velocity)
+	: Plane(setting, position, velocity)
 {
 
 };
 
-void Plane_Enemy_Junior::update( )
+void Plane_Enemy_Junior::update()
 {
-	shoot( );
-	Plane::update( );
+	shoot();
+	Plane::update();
 }
 
-void Plane_Enemy_Junior::shoot( )
+void Plane_Enemy_Junior::shoot()
 {
-	if (checkShootCoolDown( ))
-		new Bullet_Enemy_Junior(this, Vector2D(0, SPEED_ENEMY_JUNIOR_BULLET));
+	if (checkShootCoolDown())
+		new Bullet_Enemy_Junior(this, Settings::enemy_junior().bulletSetting);
 }
 
-Bullet_Enemy_Junior::Bullet_Enemy_Junior(Entity * src, Vector2D velocity) 
-	: Bullet(ENEMY_BULLET_JUNIOR_ID, src, ATTACK_ENEMY_JUNIOR_BULLET, velocity) 
-{ 
+Bullet_Enemy_Junior::Bullet_Enemy_Junior(Entity * src, Settings::Bullet setting, Vector2D velocity)
+	: Bullet(src, setting, velocity)
+{
 
 }

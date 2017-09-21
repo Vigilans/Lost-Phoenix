@@ -10,10 +10,8 @@ struct basic_vector2D
 	_Ty x;
 	_Ty y;
 
-	basic_vector2D() : x(0), y(0) {}
-
 	// 根据分量构造向量
-	basic_vector2D(_Ty _x, _Ty _y) : x(_x), y(_y) {}
+	basic_vector2D(_Ty _x = _Ty(), _Ty _y = _Ty()) : x(_x), y(_y) {}
 	
 	// 根据两个向量a,b构建一个从a指向b的单位方向向量
 	basic_vector2D(const basic_vector2D& a, const basic_vector2D& b) { *this = (b - a).unit( ); }
@@ -57,6 +55,7 @@ struct basic_vector2D
 
 		return v1;
 	}
+	
 	basic_vector2D& operator*=(_Ty scalar)
 	{
 		x *= scalar;
@@ -71,13 +70,13 @@ struct basic_vector2D
 
 		return *this;
 	}
+
+	static basic_vector2D<double> unitByDegree(double degree)
+	{
+		constexpr double PI = 3.1415926535897932384626;
+		double radian = degree * 180 / PI;
+		return { cos(radian), sin(radian) };
+	}
 };
 
-typedef basic_vector2D<double> Vector2D;
-
-inline Vector2D unitVec2DByDeg(double degree)
-{
-	static const double PI = 3.1415926535897932384626;
-	double radian = degree * 180 / PI;
-	return Vector2D(cos(radian), sin(radian));
-}
+using Vector2D = basic_vector2D<double>;

@@ -14,10 +14,10 @@ int main(int argc, const char* argv[ ])
 	//try
 	//{
 		mainProcess:
-		if (world.initialize("All Hail Finxin!", GAME_FPS, WINDOW_WIDTH, WINDOW_HEIGHT))
+		if (world.initialize())
 		{
 			world.renderMenu( );
-			for (fps ui_fps; world.is_running( ); delay_fps(world.get_fps( )))
+			for (fps ui_fps; world.is_running( ); delay_fps(world.fps( )))
 			{
 				world.update( );
 				world.updateCollision( );

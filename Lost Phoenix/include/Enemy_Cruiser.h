@@ -1,12 +1,14 @@
+// file:	include\Enemy_Cruiser.h
+//
+// summary:	BOSS, 暂时未实现.
+/*
 #pragma once
 #include "Plane - Bullet.h"
-
-// BOSS, 暂时未实现
 
 class Plane_Enemy_Cruiser : public Plane
 {
 public:
-	Plane_Enemy_Cruiser(Vector2D position, Vector2D velocity = Vector2D( )) : Plane(ENEMY_PLANE_AUTOTARGET_ID, Ally::Enemy, position, velocity, 0, 1100) { };
+	Plane_Enemy_Cruiser(Vector2D position, Vector2D velocity = Vector2D( )) : Plane(ENEMY_PLANE_AUTOTARGET_ID, Camp::Enemy, position, velocity, 0, 1100) { };
 
 	virtual void update( );
 	virtual void shoot( );
@@ -41,3 +43,4 @@ private:
 	int splitDistance;
 };
 
+*/

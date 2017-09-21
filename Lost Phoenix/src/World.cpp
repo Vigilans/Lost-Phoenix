@@ -5,39 +5,31 @@
 #include <ege/fps.h>
 #include "Actions.h"
 
-bool World::initialize(const char* Title, int fps, int w, int h)
+bool World::initialize()
 {
-	game_fps = fps;
-	windowWidth = w;
-	windowHeight = h;
 	running = true;
 	score = 0;
 	difficultyLevel = 1;
 
-	initgraph(windowWidth, windowHeight);
+	initgraph(windowWidth(), windowHeight());
 	setbkmode(TRANSPARENT);
 	setrendermode(RENDER_MANUAL);
-	srand(time(NULL));
-	HWND hWnd = getHWnd( ); // 获得窗口句柄
-	SetWindowText(hWnd, Title);// 使用 API 函数修改窗口名称
+	srand(time(nullptr));
+	HWND hWnd = getHWnd(); // 获得窗口句柄
+	SetWindowText(hWnd, Settings::general().UI.title);// 使用 API 函数修改窗口名称
 
-	Settings::initialize();
-
-	player_plane = new Plane_Player;
-	focused_enemy = nullptr;
-	Action_Plane_Explode::initializeModels( );
-
+	player_plane = new Plane_Player(Settings::player());
 	return true;
 }
 
-bool World::is_running( )
+bool World::is_running()
 {
-	return running && is_run( );
+	return running && is_run();
 }
 
-void World::renderMenu( )
+void World::renderMenu()
 {
-	putimage(0, 0, getTexture(MENU_ID).image);
+	putimage(0, 0, Settings::bgTextures().menu.image);
 	setbkmode(TRANSPARENT);
 	setcolor(LIGHTGRAY);
 	settextjustify(LEFT_TEXT, TOP_TEXT);
@@ -47,33 +39,33 @@ void World::renderMenu( )
 	outtextxy(300, 250, "W S A D —— move");
 	outtextxy(300, 300, "SPACE —— shoot");
 	outtextxy(280, 400, "press any key to continue");
-	getch( );
+	getch();
 }
 
-void World::update( )
+void World::update()
 {
 	if (!running)
 		return;
 
 	/*------------HANDLE KEYBOARD INPUT------------*/
-	this->inputCtrl.updateInput( );
+	this->inputCtrl.updateInput();
 	/*------------HANDLE KEYBOARD INPUT------------*/
-	
+
 	/*------------HANDLE ENEMY PLANE SPAWN------------*/
-	this->newEnemyWave( );
+	this->newEnemyWave();
 	/*------------HANDLE ENEMY PLANE SPAWN------------*/
 
 	/*------------HANDLE MOVEMENT------------*/
-	player_plane->update( );
+	player_plane->update();
 	for (auto& elem : enemy_planes)
-		elem->update( );
+		elem->update();
 	for (auto& elem : bullets)
-		elem->update( );
+		elem->update();
 	/*------------HANDLE MOVEMENT------------*/
 
 }
 
-void World::updateCollision( )
+void World::updateCollision()
 {
 	if (!running)
 		return;
@@ -81,17 +73,17 @@ void World::updateCollision( )
 	// ----- PLAYER COLLISION WITH BACKGROUND
 	if (checkBackgroundCollision(player_plane, true, false))
 	{
-		player_plane->setXPos(player_plane->getXPos( ) > 0 ? windowWidth - player_plane->getXHitBox( ) : 0);
+		player_plane->setXPos(player_plane->getXPos() > 0 ? windowWidth() - player_plane->getXHitBox() : 0);
 		player_plane->setXVel(0);
 	}
 	if (checkBackgroundCollision(player_plane, false, true))
 	{
-		player_plane->setYPos(player_plane->getYPos( ) > 0 ? windowHeight - player_plane->getYHitBox( ) : 0);
+		player_plane->setYPos(player_plane->getYPos() > 0 ? windowHeight() - player_plane->getYHitBox() : 0);
 		player_plane->setYVel(0);
 	}
 
 	// ----- ENEMY COLLISION WITH BACKGROUND
-	for (auto plane: enemy_planes)
+	for (auto plane : enemy_planes)
 	{
 		if (typeid(*plane) == typeid(Plane_Enemy_Junior))
 		{
@@ -106,13 +98,13 @@ void World::updateCollision( )
 		{
 			if (checkBackgroundCollision(plane, true, false))
 			{
-				plane->setXPos(plane->getXPos( ) - plane->getXVel( ));
-				plane->setXVel(-plane->getXVel( ));
+				plane->setXPos(plane->getXPos() - plane->getXVel());
+				plane->setXVel(-plane->getXVel());
 			}
 			if (checkBackgroundCollision(plane, false, true))
 			{
-				plane->setYPos(plane->getYPos( ) - plane->getYVel( ));
-				plane->setYVel(-plane->getYVel( ));
+				plane->setYPos(plane->getYPos() - plane->getYVel());
+				plane->setYVel(-plane->getYVel());
 			}
 			continue;
 		}
@@ -128,11 +120,11 @@ void World::updateCollision( )
 	}
 
 	// ----- ENEMY COLLISION WITH BULLET
-	for (auto plane :enemy_planes)
+	for (auto plane : enemy_planes)
 	{
-		for (auto bullet :bullets)
+		for (auto bullet : bullets)
 		{
-			if (plane->getAlly( ) != bullet->getAlly( ) && plane->getState( ) == PlaneState::Alive && judgeCollision(plane, bullet))
+			if (plane->getCamp() != bullet->getCamp() && plane->getState() == PlaneState::Alive && judgeCollision(plane, bullet))
 			{
 				focused_enemy = plane;
 				dealDamage(plane, bullet);
@@ -141,9 +133,9 @@ void World::updateCollision( )
 	}
 
 	// ----- PLAYER COLLISION WITH BULLET
-	for (auto bullet: bullets)
+	for (auto bullet : bullets)
 	{
-		if (judgeCollision(player_plane, bullet) && player_plane->getState( ) == PlaneState::Alive && bullet->getAlly( ) == Ally::Enemy)
+		if (judgeCollision(player_plane, bullet) && player_plane->getState() == PlaneState::Alive && bullet->getCamp() == Camp::Enemy)
 		{
 			dealDamage(player_plane, bullet);
 			new Action_Plane_Explode(player_plane, false);
@@ -153,33 +145,33 @@ void World::updateCollision( )
 	// ----- PLAYER COLLISION WITH ENMEY
 	for (auto enemy : enemy_planes)
 	{
-		if (judgeCollision(player_plane, enemy) && player_plane->getState( ) == PlaneState::Alive)
+		if (judgeCollision(player_plane, enemy) && player_plane->getState() == PlaneState::Alive)
 		{
 			dealDamage(player_plane, enemy);
 		}
 	}
 }
 
-void World::updateState( )
+void World::updateState()
 {
 	if (!running)
 		return;
 
 	/*------------HANDLE ENEMIES------------*/
-	for (auto iter = enemy_planes.begin( ); iter != enemy_planes.end( ); iter == enemy_planes.end( ) ? iter : ++iter)
+	for (auto iter = enemy_planes.begin(); iter != enemy_planes.end(); iter == enemy_planes.end() ? iter : ++iter)
 	{
 		auto plane = *iter;
-		switch (plane->getState( ))
+		switch (plane->getState())
 		{
-		case PlaneState::Dead: 
+		case PlaneState::Dead:
 			if (typeid(*plane) == typeid(Plane_Enemy_Junior))
-				score += SCORE_ENEMY_JUNIOR;
+				score += Settings::enemy_junior().score;
 			else if (typeid(*plane) == typeid(Plane_Enemy_AutoTarget))
-				score += SCORE_ENEMY_AUTOTARGET;
+				score += Settings::enemy_autoTarget().score;
 			new Action_Plane_Explode(plane);  // explode结束后自动delete plane 
 			iter = enemy_planes.erase(iter);
 			break;
-		case PlaneState::Vanished: 
+		case PlaneState::Vanished:
 			delete plane;
 			iter = enemy_planes.erase(iter);
 			break;
@@ -188,7 +180,7 @@ void World::updateState( )
 	/*------------HANDLE ENEMIES------------*/
 
 	/*------------HANDLE BULLETS------------*/
-	for (auto iter = bullets.begin( ); iter != bullets.end( ); iter == bullets.end( ) ? iter : ++iter)
+	for (auto iter = bullets.begin(); iter != bullets.end(); iter == bullets.end() ? iter : ++iter)
 	{
 		auto bullet = *iter;
 		if (bullet->end)
@@ -200,15 +192,15 @@ void World::updateState( )
 	/*------------HANDLE BULLETS------------*/
 
 	/*------------HANDLE PLAYER------------*/
-	if (player_plane->getState( ) == PlaneState::Dead)
+	if (player_plane->getState() == PlaneState::Dead)
 	{
-		new Action_Plane_Explode(player_plane, false, 15, []( ) { world.gameOver( ); });
+		new Action_Plane_Explode(player_plane, false, 15, []() { world.gameOver(); });
 		player_plane->setState(PlaneState::Vanished); // 防止重复进入这个条件
 	}
 	/*------------HANDLE PLAYER------------*/
 
 	/*------------HANDLE ACTION END------------*/
-	for (auto iter = actions.begin( ); iter != actions.end( ); iter == actions.end( ) ? iter : ++iter)
+	for (auto iter = actions.begin(); iter != actions.end(); iter == actions.end() ? iter : ++iter)
 	{
 		auto action = *iter;
 		if (action->end)
@@ -220,27 +212,27 @@ void World::updateState( )
 	/*------------HANDLE ACTION END------------*/
 }
 
-void World::render( )
+void World::render()
 {
 	if (!running)
 		return;
 
-	cleardevice( );
+	cleardevice();
 	// render background
-	this->renderBackground( );
+	this->renderBackground();
 	// render player plane
-	player_plane->draw( );
+	player_plane->draw();
 	// render enemy planes
 	for (auto& elem : enemy_planes)
-		elem->draw( );
+		elem->draw();
 	// render bullets
 	for (auto& elem : bullets)
-		elem->draw( );
+		elem->draw();
 	// render UI
-	this->renderUI( );
+	this->renderUI();
 }
 
-void World::clearWorld( )
+void World::clearWorld()
 {
 	delete player_plane;
 	for (auto& elem : enemy_planes)
@@ -249,15 +241,15 @@ void World::clearWorld( )
 		delete elem;
 	for (auto& elem : actions)
 		delete elem;
-	enemy_planes.clear( );
-	bullets.clear( );
-	actions.clear( );
+	enemy_planes.clear();
+	bullets.clear();
+	actions.clear();
 }
 
-void World::renderOverInterface( )
+void World::renderOverInterface()
 {
 	setbkmode(TRANSPARENT);
-	putimage(0, 0, getTexture(GAMEOVER_ID).image);
+	putimage(0, 0, Settings::bgTextures().gameOver.image);
 
 	const char* grade;
 	switch (difficultyLevel)
@@ -269,13 +261,13 @@ void World::renderOverInterface( )
 	}
 
 	settextjustify(CENTER_TEXT, CENTER_TEXT);
-	xyprintf(windowWidth / 2, windowHeight * 0.75, "得分: %d", score);
-	xyprintf(windowWidth / 2, windowHeight * 0.75 + UI_FONT_HEIGHT, "称号: %s", grade);
-	outtextxy(windowWidth / 2, windowHeight * 0.75 + 3*UI_FONT_HEIGHT, "Q - 退出  R - 重新开始游戏");
+	xyprintf(windowWidth() / 2, windowHeight() * 0.75, "得分: %d", score);
+	xyprintf(windowWidth() / 2, windowHeight() * 0.75 + fontHeight(), "称号: %s", grade);
+	outtextxy(windowWidth() / 2, windowHeight() * 0.75 + 3 * fontHeight(), "Q - 退出  R - 重新开始游戏");
 
-	for ( ; ; ) 
+	for (; ; )
 	{
-		switch (getch( ))
+		switch (getch())
 		{
 		case 'r':
 		case 'R': running = true; return;
@@ -285,79 +277,92 @@ void World::renderOverInterface( )
 	}
 }
 
-void World::newEnemyWave( )
+void World::newEnemyWave()
 {
-	static time_t startPoint = clock( );
-	static time_t cooldown = COOLDOWN_ENEMYWAVE_BASE;
-	static Vector2D juniorHitBox = getTexture(ENEMY_PLANE_JUNIOR_ID).hitBox;
-	static Vector2D autoTargetHitBox = getTexture(ENEMY_PLANE_AUTOTARGET_ID).hitBox;
+	static time_t startPoint = clock();
+	static time_t cooldown = Settings::general().times.enemyWaveCoolDown;
 
 	if (sqrt(difficultyLevel) <= 1.0*world.score / (1000 * (1 + difficultyLevel*0.2) * difficultyLevel)) // n^1.5刷新速度
 	{
 		++difficultyLevel;
 	}
 
-	if (clock( ) - startPoint >= cooldown - 200 *difficultyLevel) // 2n + (n + 1)/2的涨分速度
+	if (clock() - startPoint >= cooldown - 200 * difficultyLevel) // 2n + (n + 1)/2的涨分速度
 	{
 		int xPos;
 		for (size_t i = 0; i < difficultyLevel + 2; ++i)
 		{
-			xPos = rand( ) % (windowWidth - (int)juniorHitBox.x);
-			new Plane_Enemy_Junior(Vector2D(xPos, -juniorHitBox.y), Vector2D(0, SPEED_ENEMY_JUNIOR_PLANE)); // 自动放入敌机vector中
+			xPos = rand() % (windowWidth() - (int)Settings::enemy_junior().texture.hitBox.x);
+			new Plane_Enemy_Junior(Settings::enemy_junior(), Vector2D(xPos, -Settings::enemy_junior().texture.hitBox.y), Vector2D(0, Settings::enemy_junior().speed));
 		}
 		for (size_t i = 0; i < (difficultyLevel + 1) / 2; ++i)
 		{
-			xPos = rand( ) % (windowWidth - (int)autoTargetHitBox.x);
-			new Plane_Enemy_AutoTarget(Vector2D(xPos, -1), Vector2D(SPEED_ENEMY_AUTOTARGET_PLANE, 0));
+			xPos = rand() % (windowWidth() - (int)Settings::enemy_autoTarget().texture.hitBox.x);
+			new Plane_Enemy_AutoTarget(Settings::enemy_autoTarget(), Vector2D(xPos, -1), Vector2D(Settings::enemy_autoTarget().speed, 0));
 		}
-		startPoint = clock( );
+		startPoint = clock();
 	}
 }
 
-void World::gameOver( )
+inline void World::gameOver() { running = false; }
+
+int World::fps() { return Settings::general().UI.fps; }
+
+bool World::get_running() { return running; }
+
+inline int World::windowWidth()
 {
-	running = false;
+	return Settings::general().UI.resolution.x;
 }
 
-void World::renderBackground( )
+inline int World::windowHeight()
 {
-	static PIMAGE tmp = getTexture(BACKGROUND_ID).image;
+	return Settings::general().UI.resolution.y;
+}
+
+int World::fontHeight()
+{
+	return Settings::general().UI.fontHeight;
+}
+
+void World::renderBackground()
+{
 	static int levelYPos = 0;
-	putimage(0, levelYPos - windowHeight, tmp);
-	putimage(0, levelYPos, tmp);
-	levelYPos >= windowHeight ? levelYPos = 0 : levelYPos += SPEED_BACKGROUND_UPDATE;
+	putimage(0, levelYPos - windowHeight(), Settings::bgTextures().gaming.image);
+	putimage(0, levelYPos, Settings::bgTextures().gaming.image);
+	levelYPos >= windowHeight() ? levelYPos = 0 : levelYPos += Settings::general().times.bgShiftSpeed;
 }
 
-void World::renderUI( )
+void World::renderUI()
 {
-	setfont(UI_FONT_HEIGHT, 0, "黑体");
+	setfont(fontHeight(), 0, "黑体");
 	setbkmode(TRANSPARENT);
 
 	// render player health
-	xyprintf(0, windowHeight - 2*UI_FONT_HEIGHT, "HP: %d / %d", player_plane->curHealth, player_plane->maxHealth);
+	xyprintf(0, windowHeight() - 2 * fontHeight(), "HP: %d / %d", player_plane->curHealth, player_plane->maxHealth);
 
 	// render score
-	xyprintf(0, windowHeight - UI_FONT_HEIGHT, "Score: %d", score);
+	xyprintf(0, windowHeight() - fontHeight(), "Score: %d", score);
 
 	// render focused enemy health
 	static const char* enemy_name;
 	static int enemy_curHP;
 	static int enemy_maxHP;
-	static time_t showTimeStart = clock( );
+	static time_t showTimeStart = clock();
 	static bool begin = false;
 	if (focused_enemy)
 	{
 		enemy_curHP = focused_enemy->curHealth;
 		enemy_maxHP = focused_enemy->maxHealth;
-		enemy_name = typeid(*focused_enemy).name( ) + 12; /* +12是为了去掉typeid生成的类名字前的"class Plane_" */
+		enemy_name = typeid(*focused_enemy).name() + 12; /* +12是为了去掉typeid生成的类名字前的"class Plane_" */
 		begin = true;
-		focused_enemy = NULL;
-		showTimeStart = clock( );
+		focused_enemy = nullptr;
+		showTimeStart = clock();
 	}
-	if (begin && clock( ) - showTimeStart < UI_ENEMY_INFORMATION_SHOWTIME)
+	if (begin && clock() - showTimeStart < Settings::general().times.enemyInfoDuration)
 	{
 		settextjustify(CENTER_TEXT, CENTER_TEXT);
-		xyprintf(windowWidth / 2, windowHeight / 18, "%s: %d / %d", enemy_name, enemy_curHP, enemy_maxHP);
+		xyprintf(windowWidth() / 2, windowHeight() / 18, "%s: %d / %d", enemy_name, enemy_curHP, enemy_maxHP);
 		settextjustify(LEFT_TEXT, TOP_TEXT);
 	}
 }
@@ -365,9 +370,9 @@ void World::renderUI( )
 bool World::checkBackgroundCollision(Entity * e, bool leftRight, bool upDown, bool isOuter)
 { // leftRight表示检测左右碰撞, upDown表示检测上下碰撞，当都为false时，表示不检测，返回false（没有碰撞到墙壁）
 	if (isOuter)
-		return leftRight && (e->getXPos( ) + e->getXHitBox( ) < 0 || e->getXPos( ) > windowWidth) ||
-			   upDown && (e->getYPos( ) + e->getYHitBox( ) < 0 || e->getYPos( ) > windowHeight);
+		return leftRight && (e->getXPos( ) + e->getXHitBox( ) < 0 || e->getXPos( ) > windowWidth()) ||
+			   upDown && (e->getYPos( ) + e->getYHitBox( ) < 0 || e->getYPos( ) > windowHeight());
 	else
-		return leftRight && (e->getXPos( ) < 0 || e->getXPos( ) + e->getXHitBox( ) > windowWidth) ||
-			   upDown && (e->getYPos( ) < 0 || e->getYPos( ) + e->getYHitBox( ) > windowHeight);
+		return leftRight && (e->getXPos( ) < 0 || e->getXPos( ) + e->getXHitBox( ) > windowWidth()) ||
+			   upDown && (e->getYPos( ) < 0 || e->getYPos( ) + e->getYHitBox( ) > windowHeight());
 }

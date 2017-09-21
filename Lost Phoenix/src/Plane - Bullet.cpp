@@ -3,11 +3,14 @@
 #include "World.h"
 #include "Actions.h"
 
-Plane::Plane(int textureID, Ally camp, Vector2D position, Vector2D velocity, int maxHP, int shootCD) :
-	Entity(textureID, camp, position, velocity), 
-	maxHealth(maxHP), curHealth(maxHP), shootCoolDown(shootCD), shootCheckPoint(clock( )), state(PlaneState::Alive)
+Plane::Plane(Settings::Plane setting, Vector2D position, Vector2D velocity) :
+	Entity(setting.texture, Camp(setting.camp), position, velocity),
+	speed(setting.speed),
+	maxHealth(setting.health), curHealth(setting.health), 
+	shootCoolDown(setting.bulletSetting.coolDown), shootCheckPoint(clock()), 
+	state(PlaneState::Alive)
 {
-	if (this->getAlly( ) == Ally::Enemy)
+	if (this->getCamp() == Camp::Enemy)
 		world.enemy_planes.push_back(this);
 }
 
@@ -35,7 +38,7 @@ void Plane::takeDamage(int damage)
 		setState(PlaneState::Dead);
 	}
 	curHealth -= damage;
-	if (getAlly( ) == Ally::Enemy)
+	if (getCamp( ) == Camp::Enemy)
 		world.score += damage;
 	else
 		world.score -= damage;
@@ -49,10 +52,11 @@ bool Plane::checkShootCoolDown( )
 	return true;
 }
 
-Bullet::Bullet(int textureID, Entity * src, int atk, Vector2D velocity)
-	: Entity(textureID, src->getAlly( ), Vector2D( ), velocity), attack(atk), end(false)
+Bullet::Bullet(Entity * src, Settings::Bullet setting, Vector2D velocity)
+	: Entity(setting.texture, src->getCamp( ), Vector2D( ), velocity), speed(setting.speed), attack(setting.attack), end(false)
 { 
 	setPosition(initPosBySource(src));
+	setVelocity(velocity != Vector2D() ? velocity : Vector2D(0, speed));
 	world.bullets.push_back(this);
 }
 
@@ -64,7 +68,7 @@ void Bullet::update( )
 Vector2D Bullet::initPosBySource(Entity * p)
 {
 	int offset_x = (p->getXHitBox( ) - this->getXHitBox( )) / 2;
-	int offset_y = p->getAlly( ) == Ally::Friend ? -this->getYHitBox( ) : p->getYHitBox( );
+	int offset_y = p->getCamp( ) == Camp::Friend ? -this->getYHitBox( ) : p->getYHitBox( );
 	return Vector2D(p->getXPos( ) + offset_x, p->getYPos( ) + offset_y);
 }
 

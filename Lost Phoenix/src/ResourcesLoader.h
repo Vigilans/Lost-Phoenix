@@ -3,42 +3,46 @@
 #include <map>
 #include <memory>
 
+namespace Settings
+{
+	struct TextureInfo
+	{
+		std::wstring path;
+		Vector2D hitbox;
+		Vector2D expectHitBox = Vector2D();
+	};
+}
+
 class ResourcesLoader
 {
-private:
-	struct Settings_Texture
-	{
-		const wchar_t* path;
-		Vector2D hitbox;
-	};
-
 public:
+	// Used to load texture at the beginning of program
+	ResourcesLoader();
 	~ResourcesLoader();
 
-	void initialize();
-
 	Texture loadTexture(const wchar_t* imagePath, int w_raw, int h_raw, int w_to = 0, int h_to = 0);
-	Texture loadTexture(Settings_Texture setting, Vector2D expect_hitbox = Vector2D())
+	Texture loadTexture(Settings::TextureInfo setting)
 	{ // TODO: use forwarding for this overload
-		return loadTexture(setting.path, setting.hitbox.x, setting.hitbox.y, expect_hitbox.x, expect_hitbox.y);
+		return loadTexture(setting.path.c_str(), setting.hitbox.x, setting.hitbox.y, setting.expectHitBox.x, setting.expectHitBox.y);
 	}
 
-	const std::map<int, Texture>& loadAllTextures();
-
-private:
 	void loadTextureSettings();
 	void loadGeneralSettings();
+	void loadBgTextures();
+	void loadAnimeTextures();
 	void loadPlaneSettings();
+	const std::map<int, Texture>& loadAllTextures();
 
-public:
 	// settings loaded
 	struct
 	{
 		std::unique_ptr<Settings::General> pGeneral;
+		std::unique_ptr<Settings::BgTextures> pBgTextures;
+		std::unique_ptr<Settings::AnimeTextures> pAnimeTextures;
 		std::unique_ptr<Settings::Plane> pPlayer;
 		std::unique_ptr<Settings::Plane> pEnemyJunior;
 		std::unique_ptr<Settings::Plane> pEnemyAutoTarget;
-		std::map<int, Settings_Texture> mTextures;
+		std::map<int, Settings::TextureInfo> mTextureInfos;
 	} settings;
 
 	// textures loaded

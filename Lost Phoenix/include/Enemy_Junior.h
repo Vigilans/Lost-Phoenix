@@ -4,16 +4,16 @@
 class Plane_Enemy_Junior : public Plane
 {
 public:
-	Plane_Enemy_Junior(Vector2D position, Vector2D velocity = Vector2D( ));
+	Plane_Enemy_Junior(Settings::Plane setting, Vector2D position, Vector2D velocity = Vector2D());
 
-	virtual void update( );
-	virtual void shoot( );
+	virtual void update();
+	virtual void shoot();
 
 };
 
 class Bullet_Enemy_Junior : public Bullet
 {
 public:
-	Bullet_Enemy_Junior(Entity* src, Vector2D velocity);
+	Bullet_Enemy_Junior(Entity* src, Settings::Bullet setting, Vector2D velocity = Vector2D());
 
 };

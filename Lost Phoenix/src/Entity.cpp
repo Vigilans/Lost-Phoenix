@@ -15,5 +15,5 @@ void Entity::update( )
 
 void Entity::draw( )
 {
-	putimage_withalpha(NULL, model.image, getXPos( ), getYPos( ));
+	putimage_withalpha(nullptr, model.image, getXPos( ), getYPos( ));
 }
