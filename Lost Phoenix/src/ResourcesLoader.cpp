@@ -46,7 +46,7 @@ ResourcesLoader::~ResourcesLoader()
 {
 	for (auto& elem : textures)
 		delimage(elem.second.image);
-	delete settings.pGeneral->UI.title;
+	delete[] (settings.pGeneral->UI.title);
 }
 
 Texture ResourcesLoader::loadTexture(const wchar_t * imagePath, int w_raw, int h_raw, int w_to, int h_to)
@@ -117,7 +117,7 @@ void ResourcesLoader::loadGeneralSettings()
 	});
 
 	string title = ui["Title"];
-	strcpy(settings.pGeneral->UI.title = new char[title.size()], title.c_str());
+	strcpy(settings.pGeneral->UI.title = new char[title.size() + 1], title.c_str());
 
 	// zoom the backgrounds to fit the resolution
 	settings.mTextureInfos[bgIDs["Menu"]].expectHitBox = settings.pGeneral->UI.resolution;

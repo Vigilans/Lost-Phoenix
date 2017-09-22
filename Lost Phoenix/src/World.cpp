@@ -289,16 +289,36 @@ void World::newEnemyWave()
 
 	if (clock() - startPoint >= cooldown - 200 * difficultyLevel) // 2n + (n + 1)/2的涨分速度
 	{
-		int xPos;
+		int xPos, yPos;
 		for (size_t i = 0; i < difficultyLevel + 2; ++i)
 		{
 			xPos = rand() % (windowWidth() - (int)Settings::enemy_junior().texture.hitBox.x);
-			new Plane_Enemy_Junior(Settings::enemy_junior(), Vector2D(xPos, -Settings::enemy_junior().texture.hitBox.y), Vector2D(0, Settings::enemy_junior().speed));
+			yPos = -Settings::enemy_junior().texture.hitBox.y;
+			new Plane_Enemy_Junior(Settings::enemy_junior(), Vector2D(xPos, yPos), Vector2D(0, Settings::enemy_junior().speed));
 		}
 		for (size_t i = 0; i < (difficultyLevel + 1) / 2; ++i)
 		{
-			xPos = rand() % (windowWidth() - (int)Settings::enemy_autoTarget().texture.hitBox.x);
-			new Plane_Enemy_AutoTarget(Settings::enemy_autoTarget(), Vector2D(xPos, -1), Vector2D(Settings::enemy_autoTarget().speed, 0));
+			int seed = rand() % 3;
+			int speedSgn;
+			switch (seed)
+			{
+			case 0:
+				xPos = rand() % (windowWidth() - (int)Settings::enemy_autoTarget().texture.hitBox.x);
+				yPos = 0;
+				speedSgn = 2 * (rand() % 2) - 1;
+				break;
+			case 1: 
+				xPos = 0; 
+				yPos = rand() % (windowHeight() / 3);
+				speedSgn = 1;
+				break;
+			case 2: 
+				xPos = windowWidth() - (int)Settings::enemy_autoTarget().texture.hitBox.x;
+				yPos = rand() % (windowHeight() / 3);
+				speedSgn = -1;
+				break;
+			}
+			new Plane_Enemy_AutoTarget(Settings::enemy_autoTarget(), Vector2D(xPos, yPos), Vector2D(speedSgn * Settings::enemy_autoTarget().speed, 0));
 		}
 		startPoint = clock();
 	}
