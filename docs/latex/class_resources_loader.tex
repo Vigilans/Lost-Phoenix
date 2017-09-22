@@ -1,0 +1,176 @@
+\hypertarget{class_resources_loader}{}\section{Resources\+Loader类 参考}
+\label{class_resources_loader}\index{Resources\+Loader@{Resources\+Loader}}
+
+
+{\ttfamily \#include $<$Resources\+Loader.\+h$>$}
+
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_resources_loader_a571b6232d8f1dc1cf94ec752c984a834}{Resources\+Loader} ()
+\item 
+\hyperlink{class_resources_loader_ab4f7fa273471e91107896131bce915da}{$\sim$\+Resources\+Loader} ()
+\item 
+\hyperlink{struct_texture}{Texture} \hyperlink{class_resources_loader_a38cbe5a4029c4a6fe999a8405703fc30}{load\+Texture} (const wchar\+\_\+t $\ast$image\+Path, int w\+\_\+raw, int h\+\_\+raw, int w\+\_\+to=0, int h\+\_\+to=0)
+\item 
+\hyperlink{struct_texture}{Texture} \hyperlink{class_resources_loader_a29b4b9fedb76dc01abcfacc2b31cf25c}{load\+Texture} (\hyperlink{struct_settings_1_1_texture_info}{Settings\+::\+Texture\+Info} setting)
+\item 
+void \hyperlink{class_resources_loader_a80e1d1bb8339e48b0becf401f205436e}{load\+Texture\+Settings} ()
+\item 
+void \hyperlink{class_resources_loader_aae8a0b49efa4191ba01cc832c32dbd95}{load\+General\+Settings} ()
+\item 
+void \hyperlink{class_resources_loader_a5099528fcfd109b389965e5ebfbdb661}{load\+Bg\+Textures} ()
+\item 
+void \hyperlink{class_resources_loader_afd356d180bfc92e6135996b3d290d3ae}{load\+Anime\+Textures} ()
+\item 
+void \hyperlink{class_resources_loader_a56b70b8ad03c9fde2736d425adfd97e7}{load\+Plane\+Settings} ()
+\item 
+const std\+::map$<$ int, \hyperlink{struct_texture}{Texture} $>$ \& \hyperlink{class_resources_loader_afe684ff2f1419210e4bbd608c67ffeb3}{load\+All\+Textures} ()
+\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>std::unique\_ptr$<$ \hyperlink{struct_settings_1_1_general}{Settings::General} $>$ \hyperlink{class_resources_loader_a65888b4ea57a744c09dc0c9e22f9f186}{pGeneral}\\
+\>std::unique\_ptr$<$ \hyperlink{struct_settings_1_1_bg_textures}{Settings::BgTextures} $>$ \hyperlink{class_resources_loader_aada194614a803df2a3680e5c5992a18a}{pBgTextures}\\
+\>std::unique\_ptr$<$ \hyperlink{struct_settings_1_1_anime_textures}{Settings::AnimeTextures} $>$ \hyperlink{class_resources_loader_a72df15c8b925035fda4edfeb52830d82}{pAnimeTextures}\\
+\>std::unique\_ptr$<$ \hyperlink{struct_settings_1_1_plane}{Settings::Plane} $>$ \hyperlink{class_resources_loader_ae874a55d363c3cb651f36e47570d30a9}{pPlayer}\\
+\>std::unique\_ptr$<$ \hyperlink{struct_settings_1_1_plane}{Settings::Plane} $>$ \hyperlink{class_resources_loader_a150dacb6180f32ab8fafadcefdc65f96}{pEnemyJunior}\\
+\>std::unique\_ptr$<$ \hyperlink{struct_settings_1_1_plane}{Settings::Plane} $>$ \hyperlink{class_resources_loader_a99ac5605a8b7fedb9c79b3f6b6d310cb}{pEnemyAutoTarget}\\
+\>std::map$<$ int, \hyperlink{struct_settings_1_1_texture_info}{Settings::TextureInfo} $>$ \hyperlink{class_resources_loader_ae364e855ac860a1404ddf324b0ef0300}{mTextureInfos}\\
+\} \hyperlink{class_resources_loader_a2310f32324c20d8294cfbfd893f1c2d9}{settings}\\
+
+\end{tabbing}\item 
+std\+::map$<$ int, \hyperlink{struct_texture}{Texture} $>$ \hyperlink{class_resources_loader_a5b18435b040ae9562a84570712be922c}{textures}
+\end{DoxyCompactItemize}
+
+
+\subsection{构造及析构函数说明}
+\mbox{\Hypertarget{class_resources_loader_a571b6232d8f1dc1cf94ec752c984a834}\label{class_resources_loader_a571b6232d8f1dc1cf94ec752c984a834}} 
+\index{Resources\+Loader@{Resources\+Loader}!Resources\+Loader@{Resources\+Loader}}
+\index{Resources\+Loader@{Resources\+Loader}!Resources\+Loader@{Resources\+Loader}}
+\subsubsection{\texorpdfstring{Resources\+Loader()}{ResourcesLoader()}}
+{\footnotesize\ttfamily Resources\+Loader\+::\+Resources\+Loader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_resources_loader_ab4f7fa273471e91107896131bce915da}\label{class_resources_loader_ab4f7fa273471e91107896131bce915da}} 
+\index{Resources\+Loader@{Resources\+Loader}!````~Resources\+Loader@{$\sim$\+Resources\+Loader}}
+\index{````~Resources\+Loader@{$\sim$\+Resources\+Loader}!Resources\+Loader@{Resources\+Loader}}
+\subsubsection{\texorpdfstring{$\sim$\+Resources\+Loader()}{~ResourcesLoader()}}
+{\footnotesize\ttfamily Resources\+Loader\+::$\sim$\+Resources\+Loader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{成员函数说明}
+\mbox{\Hypertarget{class_resources_loader_afe684ff2f1419210e4bbd608c67ffeb3}\label{class_resources_loader_afe684ff2f1419210e4bbd608c67ffeb3}} 
+\index{Resources\+Loader@{Resources\+Loader}!load\+All\+Textures@{load\+All\+Textures}}
+\index{load\+All\+Textures@{load\+All\+Textures}!Resources\+Loader@{Resources\+Loader}}
+\subsubsection{\texorpdfstring{load\+All\+Textures()}{loadAllTextures()}}
+{\footnotesize\ttfamily const std\+::map$<$ int, \hyperlink{struct_texture}{Texture} $>$ \& Resources\+Loader\+::load\+All\+Textures (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_resources_loader_afd356d180bfc92e6135996b3d290d3ae}\label{class_resources_loader_afd356d180bfc92e6135996b3d290d3ae}} 
+\index{Resources\+Loader@{Resources\+Loader}!load\+Anime\+Textures@{load\+Anime\+Textures}}
+\index{load\+Anime\+Textures@{load\+Anime\+Textures}!Resources\+Loader@{Resources\+Loader}}
+\subsubsection{\texorpdfstring{load\+Anime\+Textures()}{loadAnimeTextures()}}
+{\footnotesize\ttfamily void Resources\+Loader\+::load\+Anime\+Textures (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_resources_loader_a5099528fcfd109b389965e5ebfbdb661}\label{class_resources_loader_a5099528fcfd109b389965e5ebfbdb661}} 
+\index{Resources\+Loader@{Resources\+Loader}!load\+Bg\+Textures@{load\+Bg\+Textures}}
+\index{load\+Bg\+Textures@{load\+Bg\+Textures}!Resources\+Loader@{Resources\+Loader}}
+\subsubsection{\texorpdfstring{load\+Bg\+Textures()}{loadBgTextures()}}
+{\footnotesize\ttfamily void Resources\+Loader\+::load\+Bg\+Textures (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_resources_loader_aae8a0b49efa4191ba01cc832c32dbd95}\label{class_resources_loader_aae8a0b49efa4191ba01cc832c32dbd95}} 
+\index{Resources\+Loader@{Resources\+Loader}!load\+General\+Settings@{load\+General\+Settings}}
+\index{load\+General\+Settings@{load\+General\+Settings}!Resources\+Loader@{Resources\+Loader}}
+\subsubsection{\texorpdfstring{load\+General\+Settings()}{loadGeneralSettings()}}
+{\footnotesize\ttfamily void Resources\+Loader\+::load\+General\+Settings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_resources_loader_a56b70b8ad03c9fde2736d425adfd97e7}\label{class_resources_loader_a56b70b8ad03c9fde2736d425adfd97e7}} 
+\index{Resources\+Loader@{Resources\+Loader}!load\+Plane\+Settings@{load\+Plane\+Settings}}
+\index{load\+Plane\+Settings@{load\+Plane\+Settings}!Resources\+Loader@{Resources\+Loader}}
+\subsubsection{\texorpdfstring{load\+Plane\+Settings()}{loadPlaneSettings()}}
+{\footnotesize\ttfamily void Resources\+Loader\+::load\+Plane\+Settings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_resources_loader_a38cbe5a4029c4a6fe999a8405703fc30}\label{class_resources_loader_a38cbe5a4029c4a6fe999a8405703fc30}} 
+\index{Resources\+Loader@{Resources\+Loader}!load\+Texture@{load\+Texture}}
+\index{load\+Texture@{load\+Texture}!Resources\+Loader@{Resources\+Loader}}
+\subsubsection{\texorpdfstring{load\+Texture()}{loadTexture()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{struct_texture}{Texture} Resources\+Loader\+::load\+Texture (\begin{DoxyParamCaption}\item[{const wchar\+\_\+t $\ast$}]{image\+Path,  }\item[{int}]{w\+\_\+raw,  }\item[{int}]{h\+\_\+raw,  }\item[{int}]{w\+\_\+to = {\ttfamily 0},  }\item[{int}]{h\+\_\+to = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_resources_loader_a29b4b9fedb76dc01abcfacc2b31cf25c}\label{class_resources_loader_a29b4b9fedb76dc01abcfacc2b31cf25c}} 
+\index{Resources\+Loader@{Resources\+Loader}!load\+Texture@{load\+Texture}}
+\index{load\+Texture@{load\+Texture}!Resources\+Loader@{Resources\+Loader}}
+\subsubsection{\texorpdfstring{load\+Texture()}{loadTexture()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{struct_texture}{Texture} Resources\+Loader\+::load\+Texture (\begin{DoxyParamCaption}\item[{\hyperlink{struct_settings_1_1_texture_info}{Settings\+::\+Texture\+Info}}]{setting }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_resources_loader_a80e1d1bb8339e48b0becf401f205436e}\label{class_resources_loader_a80e1d1bb8339e48b0becf401f205436e}} 
+\index{Resources\+Loader@{Resources\+Loader}!load\+Texture\+Settings@{load\+Texture\+Settings}}
+\index{load\+Texture\+Settings@{load\+Texture\+Settings}!Resources\+Loader@{Resources\+Loader}}
+\subsubsection{\texorpdfstring{load\+Texture\+Settings()}{loadTextureSettings()}}
+{\footnotesize\ttfamily void Resources\+Loader\+::load\+Texture\+Settings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{类成员变量说明}
+\mbox{\Hypertarget{class_resources_loader_ae364e855ac860a1404ddf324b0ef0300}\label{class_resources_loader_ae364e855ac860a1404ddf324b0ef0300}} 
+\index{Resources\+Loader@{Resources\+Loader}!m\+Texture\+Infos@{m\+Texture\+Infos}}
+\index{m\+Texture\+Infos@{m\+Texture\+Infos}!Resources\+Loader@{Resources\+Loader}}
+\subsubsection{\texorpdfstring{m\+Texture\+Infos}{mTextureInfos}}
+{\footnotesize\ttfamily std\+::map$<$int, \hyperlink{struct_settings_1_1_texture_info}{Settings\+::\+Texture\+Info}$>$ Resources\+Loader\+::m\+Texture\+Infos}
+
+\mbox{\Hypertarget{class_resources_loader_a72df15c8b925035fda4edfeb52830d82}\label{class_resources_loader_a72df15c8b925035fda4edfeb52830d82}} 
+\index{Resources\+Loader@{Resources\+Loader}!p\+Anime\+Textures@{p\+Anime\+Textures}}
+\index{p\+Anime\+Textures@{p\+Anime\+Textures}!Resources\+Loader@{Resources\+Loader}}
+\subsubsection{\texorpdfstring{p\+Anime\+Textures}{pAnimeTextures}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$\hyperlink{struct_settings_1_1_anime_textures}{Settings\+::\+Anime\+Textures}$>$ Resources\+Loader\+::p\+Anime\+Textures}
+
+\mbox{\Hypertarget{class_resources_loader_aada194614a803df2a3680e5c5992a18a}\label{class_resources_loader_aada194614a803df2a3680e5c5992a18a}} 
+\index{Resources\+Loader@{Resources\+Loader}!p\+Bg\+Textures@{p\+Bg\+Textures}}
+\index{p\+Bg\+Textures@{p\+Bg\+Textures}!Resources\+Loader@{Resources\+Loader}}
+\subsubsection{\texorpdfstring{p\+Bg\+Textures}{pBgTextures}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$\hyperlink{struct_settings_1_1_bg_textures}{Settings\+::\+Bg\+Textures}$>$ Resources\+Loader\+::p\+Bg\+Textures}
+
+\mbox{\Hypertarget{class_resources_loader_a99ac5605a8b7fedb9c79b3f6b6d310cb}\label{class_resources_loader_a99ac5605a8b7fedb9c79b3f6b6d310cb}} 
+\index{Resources\+Loader@{Resources\+Loader}!p\+Enemy\+Auto\+Target@{p\+Enemy\+Auto\+Target}}
+\index{p\+Enemy\+Auto\+Target@{p\+Enemy\+Auto\+Target}!Resources\+Loader@{Resources\+Loader}}
+\subsubsection{\texorpdfstring{p\+Enemy\+Auto\+Target}{pEnemyAutoTarget}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$\hyperlink{struct_settings_1_1_plane}{Settings\+::\+Plane}$>$ Resources\+Loader\+::p\+Enemy\+Auto\+Target}
+
+\mbox{\Hypertarget{class_resources_loader_a150dacb6180f32ab8fafadcefdc65f96}\label{class_resources_loader_a150dacb6180f32ab8fafadcefdc65f96}} 
+\index{Resources\+Loader@{Resources\+Loader}!p\+Enemy\+Junior@{p\+Enemy\+Junior}}
+\index{p\+Enemy\+Junior@{p\+Enemy\+Junior}!Resources\+Loader@{Resources\+Loader}}
+\subsubsection{\texorpdfstring{p\+Enemy\+Junior}{pEnemyJunior}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$\hyperlink{struct_settings_1_1_plane}{Settings\+::\+Plane}$>$ Resources\+Loader\+::p\+Enemy\+Junior}
+
+\mbox{\Hypertarget{class_resources_loader_a65888b4ea57a744c09dc0c9e22f9f186}\label{class_resources_loader_a65888b4ea57a744c09dc0c9e22f9f186}} 
+\index{Resources\+Loader@{Resources\+Loader}!p\+General@{p\+General}}
+\index{p\+General@{p\+General}!Resources\+Loader@{Resources\+Loader}}
+\subsubsection{\texorpdfstring{p\+General}{pGeneral}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$\hyperlink{struct_settings_1_1_general}{Settings\+::\+General}$>$ Resources\+Loader\+::p\+General}
+
+\mbox{\Hypertarget{class_resources_loader_ae874a55d363c3cb651f36e47570d30a9}\label{class_resources_loader_ae874a55d363c3cb651f36e47570d30a9}} 
+\index{Resources\+Loader@{Resources\+Loader}!p\+Player@{p\+Player}}
+\index{p\+Player@{p\+Player}!Resources\+Loader@{Resources\+Loader}}
+\subsubsection{\texorpdfstring{p\+Player}{pPlayer}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$\hyperlink{struct_settings_1_1_plane}{Settings\+::\+Plane}$>$ Resources\+Loader\+::p\+Player}
+
+\mbox{\Hypertarget{class_resources_loader_a2310f32324c20d8294cfbfd893f1c2d9}\label{class_resources_loader_a2310f32324c20d8294cfbfd893f1c2d9}} 
+\index{Resources\+Loader@{Resources\+Loader}!settings@{settings}}
+\index{settings@{settings}!Resources\+Loader@{Resources\+Loader}}
+\subsubsection{\texorpdfstring{settings}{settings}}
+{\footnotesize\ttfamily struct \{ ... \}   Resources\+Loader\+::settings}
+
+\mbox{\Hypertarget{class_resources_loader_a5b18435b040ae9562a84570712be922c}\label{class_resources_loader_a5b18435b040ae9562a84570712be922c}} 
+\index{Resources\+Loader@{Resources\+Loader}!textures@{textures}}
+\index{textures@{textures}!Resources\+Loader@{Resources\+Loader}}
+\subsubsection{\texorpdfstring{textures}{textures}}
+{\footnotesize\ttfamily std\+::map$<$int, \hyperlink{struct_texture}{Texture}$>$ Resources\+Loader\+::textures}
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/叶志浩文件夹/\+Vigilans的文档/\+Programming/\+Visual Studio/\+Projects/\+Grade 1 Summer Vacation/\+Lost Phoenix/\+Lost Phoenix/src/\hyperlink{_resources_loader_8h}{Resources\+Loader.\+h}\item 
+D\+:/叶志浩文件夹/\+Vigilans的文档/\+Programming/\+Visual Studio/\+Projects/\+Grade 1 Summer Vacation/\+Lost Phoenix/\+Lost Phoenix/src/\hyperlink{_resources_loader_8cpp}{Resources\+Loader.\+cpp}\end{DoxyCompactItemize}

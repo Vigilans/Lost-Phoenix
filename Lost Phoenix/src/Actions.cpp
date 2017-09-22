@@ -45,7 +45,7 @@ void Action_Plane_Explode::onDraw(PIMAGE pimg) const
 {
 	if (curIndex < 4 * boomTime)
 	{
-		Vector2D boomPos = srcPlane->getPosition( ) + (srcPlane->getHitBox( ) - models[0].hitBox) / 2; // 设置爆炸贴图与飞机贴图矩形的重心重合
+		Vector2D boomPos = srcPlane->getPosition( ) + (srcPlane->getHitBox( ) - models[0].hitBox) / 2; // 设置爆炸贴图与飞机贴图的矩形重心重合
 		putimage_withalpha(pimg, models[curIndex / boomTime].image, boomPos.x, boomPos.y);
 	}
 }

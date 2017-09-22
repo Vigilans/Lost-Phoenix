@@ -1,0 +1,529 @@
+\hypertarget{class_world}{}\section{World类 参考}
+\label{class_world}\index{World@{World}}
+
+
+承载整个游戏运行逻辑的总类。有一个extern声明的实例。  
+
+
+
+
+{\ttfamily \#include $<$World.\+h$>$}
+
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_world_ae75511e9504917690bc4ab1421cff6d5}{initialize} ()
+\begin{DoxyCompactList}\small\item\em 初始化游戏世界。 \end{DoxyCompactList}\item 
+bool \hyperlink{class_world_ad15782e0eaf62c5ab4fcd3620e2c866a}{is\+\_\+running} ()
+\begin{DoxyCompactList}\small\item\em 获取程序整体运行状态。 \end{DoxyCompactList}\item 
+void \hyperlink{class_world_af956580b52927299a0bf200740f8ea0d}{render\+Menu} ()
+\begin{DoxyCompactList}\small\item\em 渲染游戏初始菜单。 \end{DoxyCompactList}\item 
+void \hyperlink{class_world_aac8c1fde63c06577ffc648aaefdb37f0}{update} ()
+\begin{DoxyCompactList}\small\item\em 主逻辑更新函数。 \end{DoxyCompactList}\item 
+void \hyperlink{class_world_ab86ffcea335fe909467eb754edc5f1a5}{update\+Collision} ()
+\begin{DoxyCompactList}\small\item\em 碰撞逻辑更新函数。 \end{DoxyCompactList}\item 
+void \hyperlink{class_world_a6a1abe665fc8056caf3dd84663bccfb8}{update\+State} ()
+\begin{DoxyCompactList}\small\item\em 状态逻辑更新函数。 \end{DoxyCompactList}\item 
+void \hyperlink{class_world_a150eab10c21532162bb698d72aecec16}{render} ()
+\begin{DoxyCompactList}\small\item\em 渲染主入口函数。 \end{DoxyCompactList}\item 
+void \hyperlink{class_world_aa6e788d15f389d634ccd1148f47cfb96}{clear\+World} ()
+\begin{DoxyCompactList}\small\item\em 清除\+World的所有状态。 \end{DoxyCompactList}\item 
+void \hyperlink{class_world_ae265f543993824e9cca76eef29e375cb}{render\+Over\+Interface} ()
+\begin{DoxyCompactList}\small\item\em 渲染\+Game Over界面。 \end{DoxyCompactList}\item 
+int \hyperlink{class_world_a19de028e63984484f24d0c01107060d2}{fps} ()
+\begin{DoxyCompactList}\small\item\em 返回游戏预设\+F\+P\+S。 \end{DoxyCompactList}\item 
+int \hyperlink{class_world_abaa042832b0d02dd6d9d01a1d03308ee}{window\+Width} ()
+\begin{DoxyCompactList}\small\item\em 获取窗口宽度。 \end{DoxyCompactList}\item 
+int \hyperlink{class_world_a1be83eac68417720386d6f04406675e2}{window\+Height} ()
+\begin{DoxyCompactList}\small\item\em 获取窗口高度。 \end{DoxyCompactList}\item 
+int \hyperlink{class_world_ac2e956852ab6159780a873c961dad416}{font\+Height} ()
+\begin{DoxyCompactList}\small\item\em 获取游戏中字体高度。目前均设为同一高度。 \end{DoxyCompactList}\item 
+bool \hyperlink{class_world_a485fb0b11ed568979df0b6f782aa3ac8}{get\+\_\+running} ()
+\begin{DoxyCompactList}\small\item\em 返回游戏进行状态 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_world_ae70b4ef5dd9cb9e7336169a25aaee39c}{score}
+\begin{DoxyCompactList}\small\item\em 当前游戏分数。 \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{class_world_a594e81a86f319eea4e8e5a2029cdaa90}{difficulty\+Level}
+\begin{DoxyCompactList}\small\item\em 当前的难度等级。 \end{DoxyCompactList}\item 
+\hyperlink{class_input_controller}{Input\+Controller} \hyperlink{class_world_ae4cc86850d7092edbb7648d4cbd093aa}{input\+Ctrl}
+\begin{DoxyCompactList}\small\item\em 键盘输入控制器。 \end{DoxyCompactList}\item 
+\hyperlink{class_plane___player}{Plane\+\_\+\+Player} $\ast$ \hyperlink{class_world_ada7a87d1778bfc543635656ea8f12d3f}{player\+\_\+plane}
+\begin{DoxyCompactList}\small\item\em 玩家飞机实例的托管指针。 \end{DoxyCompactList}\item 
+\hyperlink{class_plane}{Plane} $\ast$ \hyperlink{class_world_ac8553c1be4fb1e79e94bf9f63f834963}{focused\+\_\+enemy}
+\begin{DoxyCompactList}\small\item\em 指向当前被追踪的敌机的指针。 \end{DoxyCompactList}\item 
+std\+::list$<$ \hyperlink{class_plane}{Plane} $\ast$ $>$ \hyperlink{class_world_a9692ac6798300e7fde98eb3ef1bb7c79}{enemy\+\_\+planes}
+\begin{DoxyCompactList}\small\item\em 存储所有敌机基类指针的链表。 \end{DoxyCompactList}\item 
+std\+::list$<$ \hyperlink{class_bullet}{Bullet} $\ast$ $>$ \hyperlink{class_world_a932c82c701ec6d13e2857943562954f2}{bullets}
+\begin{DoxyCompactList}\small\item\em 存储所有子弹基类指针的链表。 \end{DoxyCompactList}\item 
+std\+::list$<$ \hyperlink{class_action}{Action} $\ast$ $>$ \hyperlink{class_world_aefe8e0e9e418bbf81671314bf8d019f2}{actions}
+\begin{DoxyCompactList}\small\item\em 存储所有\+Action基类指针的链表。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_world_adb9973193b6f45377a3911ed023a9f73}{render\+Background} ()
+\begin{DoxyCompactList}\small\item\em 渲染游戏背景。 \end{DoxyCompactList}\item 
+void \hyperlink{class_world_a96d63470a94d9ab0426db992981b5ce5}{render\+UI} ()
+\begin{DoxyCompactList}\small\item\em 渲染游戏\+U\+I。 \end{DoxyCompactList}\item 
+bool \hyperlink{class_world_a3b447a1788dc0d2e507dce41486ad1b4}{check\+Background\+Collision} (\hyperlink{class_entity}{Entity} $\ast$e, bool left\+Right=true, bool up\+Down=true, bool is\+Outer=false)
+\begin{DoxyCompactList}\small\item\em 检测一个\+Entity是否与边界发生碰撞。 \end{DoxyCompactList}\item 
+void \hyperlink{class_world_a9957df94d0d75429c23c7d70c2db282e}{new\+Enemy\+Wave} ()
+\begin{DoxyCompactList}\small\item\em 产生新一波敌军。 \end{DoxyCompactList}\item 
+void \hyperlink{class_world_a699c52e5991e939402c6c7396c3e931a}{game\+Over} ()
+\begin{DoxyCompactList}\small\item\em 设置游戏状态为“结束”。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_world_ad9027ba6a4913c21191e7321e9bb2f9f}{running}
+\begin{DoxyCompactList}\small\item\em 表征当前游戏状态。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+承载整个游戏运行逻辑的总类。有一个extern声明的实例。 
+
+具体承载内容有：
+\begin{DoxyEnumerate}
+\item 游戏界面；
+\item 所有物体的存储；
+\item 程序输入与输出；
+\item 游戏整体逻辑流程。 
+\end{DoxyEnumerate}
+
+\subsection{成员函数说明}
+\mbox{\Hypertarget{class_world_a3b447a1788dc0d2e507dce41486ad1b4}\label{class_world_a3b447a1788dc0d2e507dce41486ad1b4}} 
+\index{World@{World}!check\+Background\+Collision@{check\+Background\+Collision}}
+\index{check\+Background\+Collision@{check\+Background\+Collision}!World@{World}}
+\subsubsection{\texorpdfstring{check\+Background\+Collision()}{checkBackgroundCollision()}}
+{\footnotesize\ttfamily bool World\+::check\+Background\+Collision (\begin{DoxyParamCaption}\item[{\hyperlink{class_entity}{Entity} $\ast$}]{e,  }\item[{bool}]{left\+Right = {\ttfamily true},  }\item[{bool}]{up\+Down = {\ttfamily true},  }\item[{bool}]{is\+Outer = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+检测一个\+Entity是否与边界发生碰撞。 
+
+可以以内部碰撞和外部碰撞两种方式检测。
+
+当left\+Right与up\+Down都为false时，表示不检测，返回false（没有碰撞到墙壁）。. 
+
+
+\begin{DoxyParams}{参数}
+{\em e} & \mbox{[}in,out\mbox{]} 被检测的\+Entity的指针。. \\
+\hline
+{\em left\+Right} & (可选) 检测是否与左右边界碰撞。默认为真。. \\
+\hline
+{\em up\+Down} & (可选) 检测是否与上下边界碰撞。默认为真。. \\
+\hline
+{\em is\+Outer} & (可选) 为真时，检测\+Entity是否已超出边界外；为假时，检测\+Entity是否在内侧与边界碰撞。. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+返回指定条件下的碰撞检测结果。 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_world_aa6e788d15f389d634ccd1148f47cfb96}\label{class_world_aa6e788d15f389d634ccd1148f47cfb96}} 
+\index{World@{World}!clear\+World@{clear\+World}}
+\index{clear\+World@{clear\+World}!World@{World}}
+\subsubsection{\texorpdfstring{clear\+World()}{clearWorld()}}
+{\footnotesize\ttfamily void World\+::clear\+World (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+清除\+World的所有状态。 
+
+此方法清除\+World所有相关变量的状态，为下一次初始化作准备。
+
+目前的实现是销毁所有相关指针托管的资源，并将容器置空。 \mbox{\Hypertarget{class_world_ac2e956852ab6159780a873c961dad416}\label{class_world_ac2e956852ab6159780a873c961dad416}} 
+\index{World@{World}!font\+Height@{font\+Height}}
+\index{font\+Height@{font\+Height}!World@{World}}
+\subsubsection{\texorpdfstring{font\+Height()}{fontHeight()}}
+{\footnotesize\ttfamily int World\+::font\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+获取游戏中字体高度。目前均设为同一高度。 
+
+\begin{DoxyReturn}{返回}
+返回字体的高度。 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_world_a19de028e63984484f24d0c01107060d2}\label{class_world_a19de028e63984484f24d0c01107060d2}} 
+\index{World@{World}!fps@{fps}}
+\index{fps@{fps}!World@{World}}
+\subsubsection{\texorpdfstring{fps()}{fps()}}
+{\footnotesize\ttfamily int World\+::fps (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+返回游戏预设\+F\+P\+S。 
+
+\begin{DoxyReturn}{返回}
+当前\+F\+P\+S值。 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_world_a699c52e5991e939402c6c7396c3e931a}\label{class_world_a699c52e5991e939402c6c7396c3e931a}} 
+\index{World@{World}!game\+Over@{game\+Over}}
+\index{game\+Over@{game\+Over}!World@{World}}
+\subsubsection{\texorpdfstring{game\+Over()}{gameOver()}}
+{\footnotesize\ttfamily void World\+::game\+Over (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+设置游戏状态为“结束”。 
+
+\mbox{\Hypertarget{class_world_a485fb0b11ed568979df0b6f782aa3ac8}\label{class_world_a485fb0b11ed568979df0b6f782aa3ac8}} 
+\index{World@{World}!get\+\_\+running@{get\+\_\+running}}
+\index{get\+\_\+running@{get\+\_\+running}!World@{World}}
+\subsubsection{\texorpdfstring{get\+\_\+running()}{get\_running()}}
+{\footnotesize\ttfamily bool World\+::get\+\_\+running (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+返回游戏进行状态 
+
+\begin{DoxyReturn}{返回}
+返回游戏是否正在进行中 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_world_ae75511e9504917690bc4ab1421cff6d5}\label{class_world_ae75511e9504917690bc4ab1421cff6d5}} 
+\index{World@{World}!initialize@{initialize}}
+\index{initialize@{initialize}!World@{World}}
+\subsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily bool World\+::initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+初始化游戏世界。 
+
+目前初始化内容有：
+\begin{DoxyEnumerate}
+\item 重置运行状态、分数、难度等级；
+\item 初始化游戏窗口；
+\item 初始化玩家飞机。 
+\end{DoxyEnumerate}
+
+\begin{DoxyReturn}{返回}
+返回是否初始化成功。 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_world_ad15782e0eaf62c5ab4fcd3620e2c866a}\label{class_world_ad15782e0eaf62c5ab4fcd3620e2c866a}} 
+\index{World@{World}!is\+\_\+running@{is\+\_\+running}}
+\index{is\+\_\+running@{is\+\_\+running}!World@{World}}
+\subsubsection{\texorpdfstring{is\+\_\+running()}{is\_running()}}
+{\footnotesize\ttfamily bool World\+::is\+\_\+running (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+获取程序整体运行状态。 
+
+\begin{DoxyReturn}{返回}
+返回程序运行状态。 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_world_a9957df94d0d75429c23c7d70c2db282e}\label{class_world_a9957df94d0d75429c23c7d70c2db282e}} 
+\index{World@{World}!new\+Enemy\+Wave@{new\+Enemy\+Wave}}
+\index{new\+Enemy\+Wave@{new\+Enemy\+Wave}!World@{World}}
+\subsubsection{\texorpdfstring{new\+Enemy\+Wave()}{newEnemyWave()}}
+{\footnotesize\ttfamily void World\+::new\+Enemy\+Wave (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+产生新一波敌军。 
+
+函数中有一个计时器用来控制刷新冷却。
+
+敌军的刷新数量由当前的\hyperlink{class_world_a594e81a86f319eea4e8e5a2029cdaa90}{difficulty\+Level}控制。同时难度等级也会在这个函数中根据当前分数更新。
+
+对于新兵飞机与自机狙飞机，他们有不同的刷新机制，分别为：
+\begin{DoxyItemize}
+\item 新兵飞机： 始终从屏幕最上方出现，x轴位置随机。
+\item 自机狙飞机： 会在屏幕上方或左右随机出现。上方出现时，x轴随机；左右边出现时，y轴随机（不会超过屏幕的上1/3位置）。 
+\end{DoxyItemize}\mbox{\Hypertarget{class_world_a150eab10c21532162bb698d72aecec16}\label{class_world_a150eab10c21532162bb698d72aecec16}} 
+\index{World@{World}!render@{render}}
+\index{render@{render}!World@{World}}
+\subsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void World\+::render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+渲染主入口函数。 
+
+此方法调用各子部件对应的渲染函数，渲染出完整的一帧画面。 \mbox{\Hypertarget{class_world_adb9973193b6f45377a3911ed023a9f73}\label{class_world_adb9973193b6f45377a3911ed023a9f73}} 
+\index{World@{World}!render\+Background@{render\+Background}}
+\index{render\+Background@{render\+Background}!World@{World}}
+\subsubsection{\texorpdfstring{render\+Background()}{renderBackground()}}
+{\footnotesize\ttfamily void World\+::render\+Background (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+渲染游戏背景。 
+
+游戏背景是滚动的，实现方式为：
+
+两张相同的背景图拼接在一起，拼接处的水平线的y轴坐标从上往下不断移动。到达底端后，y轴重新设为0。 \mbox{\Hypertarget{class_world_af956580b52927299a0bf200740f8ea0d}\label{class_world_af956580b52927299a0bf200740f8ea0d}} 
+\index{World@{World}!render\+Menu@{render\+Menu}}
+\index{render\+Menu@{render\+Menu}!World@{World}}
+\subsubsection{\texorpdfstring{render\+Menu()}{renderMenu()}}
+{\footnotesize\ttfamily void World\+::render\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+渲染游戏初始菜单。 
+
+目前只有一个画面，按任意键后进入游戏。
+
+T\+O\+DO\+: 为目录添加按钮设置，可以开始游戏、设置选项或退出。 \mbox{\Hypertarget{class_world_ae265f543993824e9cca76eef29e375cb}\label{class_world_ae265f543993824e9cca76eef29e375cb}} 
+\index{World@{World}!render\+Over\+Interface@{render\+Over\+Interface}}
+\index{render\+Over\+Interface@{render\+Over\+Interface}!World@{World}}
+\subsubsection{\texorpdfstring{render\+Over\+Interface()}{renderOverInterface()}}
+{\footnotesize\ttfamily void World\+::render\+Over\+Interface (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+渲染\+Game Over界面。 
+
+游戏结束后调用此方法渲染结束界面。
+
+内容包括背景、当前得分、评级及下一步的按钮（\+Q退出 R重新开始）。
+
+评级由\hyperlink{class_world_a594e81a86f319eea4e8e5a2029cdaa90}{difficulty\+Level}决定，如下：
+\begin{DoxyItemize}
+\item 1\+: 朝鲜飞行员
+\item 2\+: 初级飞行员
+\item 3\+: 中级飞行员
+\item 4 or more\+: 高级飞行员 
+\end{DoxyItemize}\mbox{\Hypertarget{class_world_a96d63470a94d9ab0426db992981b5ce5}\label{class_world_a96d63470a94d9ab0426db992981b5ce5}} 
+\index{World@{World}!render\+UI@{render\+UI}}
+\index{render\+UI@{render\+UI}!World@{World}}
+\subsubsection{\texorpdfstring{render\+U\+I()}{renderUI()}}
+{\footnotesize\ttfamily void World\+::render\+UI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+渲染游戏\+U\+I。 
+
+U\+I的渲染由以下几部分组成：
+\begin{DoxyEnumerate}
+\item 当前飞机的\+H\+P数据；
+\item 当前游戏得分数据；
+\item 当前被追踪状态的敌机的\+H\+P数据。
+\end{DoxyEnumerate}
+
+其中，当前被追踪的敌机由\hyperlink{class_world_ac8553c1be4fb1e79e94bf9f63f834963}{focused\+\_\+enemy}指针控制。当指针不为空时，追踪指针指向的飞机的数据。 同时，函数会在一段时间后自动将指针置空，避免一直显示飞机数据。 \mbox{\Hypertarget{class_world_aac8c1fde63c06577ffc648aaefdb37f0}\label{class_world_aac8c1fde63c06577ffc648aaefdb37f0}} 
+\index{World@{World}!update@{update}}
+\index{update@{update}!World@{World}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void World\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+主逻辑更新函数。 
+
+此方法开始更新下一帧画面逻辑。 具体步骤为：
+\begin{DoxyEnumerate}
+\item 更新键盘输入；
+\item 判断-\/更新新一波敌军；
+\item 更新所有\+Entity的行动。如所有飞机、子弹根据当前速度进行下一次移动。 
+\end{DoxyEnumerate}\mbox{\Hypertarget{class_world_ab86ffcea335fe909467eb754edc5f1a5}\label{class_world_ab86ffcea335fe909467eb754edc5f1a5}} 
+\index{World@{World}!update\+Collision@{update\+Collision}}
+\index{update\+Collision@{update\+Collision}!World@{World}}
+\subsubsection{\texorpdfstring{update\+Collision()}{updateCollision()}}
+{\footnotesize\ttfamily void World\+::update\+Collision (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+碰撞逻辑更新函数。 
+
+此方法在所有\+Entity位置更新后，判断碰撞状态并执行对应动作。 具体步骤为：
+\begin{DoxyEnumerate}
+\item 判断并处理{\ttfamily 自机、敌机、子弹}与{\ttfamily 边界}的碰撞：
+\begin{DoxyItemize}
+\item 自机与自机狙敌机作出速度改变；
+\item 新兵敌机与子弹被删除（方法不一定相同）。
+\end{DoxyItemize}
+\item 判断并处理{\ttfamily 自机、敌机}与{\ttfamily 子弹}的碰撞：
+\begin{DoxyItemize}
+\item 通过判断子弹所属的\+Camp与源飞机来处理伤害；
+\item 处理玩家得分。
+\end{DoxyItemize}
+\item 判断并处理{\ttfamily 自机}与{\ttfamily 敌机}的碰撞：
+\begin{DoxyItemize}
+\item 敌机坠毁，获得对应得分；
+\item 玩家受到敌机剩余生命值的伤害。 
+\end{DoxyItemize}
+\end{DoxyEnumerate}\mbox{\Hypertarget{class_world_a6a1abe665fc8056caf3dd84663bccfb8}\label{class_world_a6a1abe665fc8056caf3dd84663bccfb8}} 
+\index{World@{World}!update\+State@{update\+State}}
+\index{update\+State@{update\+State}!World@{World}}
+\subsubsection{\texorpdfstring{update\+State()}{updateState()}}
+{\footnotesize\ttfamily void World\+::update\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+状态逻辑更新函数。 
+
+此方法在处理主逻辑与碰撞后，判断当前状态（\+State）并执行对应动作。 具体步骤为：
+\begin{DoxyEnumerate}
+\item 处理敌机状态：
+\begin{DoxyItemize}
+\item 判断飞机状态(\+Alive, Dead, Vanished)；
+\item 若为非存活状态，判断是否产生爆炸动画。
+\end{DoxyItemize}
+\item 处理子弹状态：
+\begin{DoxyItemize}
+\item 判断子弹是否为\char`\"{}\+End\char`\"{}状态并决定是否销毁。
+\item 子弹在被销毁时，可能会通过析构函数调用\hyperlink{class_action}{Action}。
+\end{DoxyItemize}
+\item 判断自机是否坠毁：
+\begin{DoxyItemize}
+\item 坠毁后，调用\hyperlink{class_action___plane___explode}{Action\+\_\+\+Plane\+\_\+\+Explode}动画，传入gameover函数作为回调函数；
+\end{DoxyItemize}
+\item 处理所有\hyperlink{class_world_aefe8e0e9e418bbf81671314bf8d019f2}{actions}：
+\begin{DoxyItemize}
+\item 由于\+E\+G\+E图形库的\+B\+U\+G限制，只能在这里通过遍历所有\+Actions，处理他们是否达到\char`\"{}\+End\char`\"{}状态。
+\item 对于\char`\"{}\+End\char`\"{}状态的\+Action,将其销毁，并调用对应的回调函数。 
+\end{DoxyItemize}
+\end{DoxyEnumerate}\mbox{\Hypertarget{class_world_a1be83eac68417720386d6f04406675e2}\label{class_world_a1be83eac68417720386d6f04406675e2}} 
+\index{World@{World}!window\+Height@{window\+Height}}
+\index{window\+Height@{window\+Height}!World@{World}}
+\subsubsection{\texorpdfstring{window\+Height()}{windowHeight()}}
+{\footnotesize\ttfamily int World\+::window\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+获取窗口高度。 
+
+\begin{DoxyReturn}{返回}
+返回当前设置分辨率对应的高度。 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_world_abaa042832b0d02dd6d9d01a1d03308ee}\label{class_world_abaa042832b0d02dd6d9d01a1d03308ee}} 
+\index{World@{World}!window\+Width@{window\+Width}}
+\index{window\+Width@{window\+Width}!World@{World}}
+\subsubsection{\texorpdfstring{window\+Width()}{windowWidth()}}
+{\footnotesize\ttfamily int World\+::window\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+获取窗口宽度。 
+
+\begin{DoxyReturn}{返回}
+返回当前设置分辨率对应的宽度。 
+\end{DoxyReturn}
+
+
+\subsection{类成员变量说明}
+\mbox{\Hypertarget{class_world_aefe8e0e9e418bbf81671314bf8d019f2}\label{class_world_aefe8e0e9e418bbf81671314bf8d019f2}} 
+\index{World@{World}!actions@{actions}}
+\index{actions@{actions}!World@{World}}
+\subsubsection{\texorpdfstring{actions}{actions}}
+{\footnotesize\ttfamily std\+::list$<$\hyperlink{class_action}{Action}$\ast$$>$ World\+::actions}
+
+
+
+存储所有\+Action基类指针的链表。 
+
+最初，想通过action在触发条件后自动{\ttfamily delete this}来\char`\"{}自杀\char`\"{}的方法触发回调函数。 但受限于\+E\+G\+E的实现机制，这样做会引起指针悬挂\+B\+U\+G。
+
+因此，换用一个链表来存储指针，此链表仅用来检查\+Action状态，通过\hyperlink{class_world_a6a1abe665fc8056caf3dd84663bccfb8}{update\+State}函数来进行销毁。 \mbox{\Hypertarget{class_world_a932c82c701ec6d13e2857943562954f2}\label{class_world_a932c82c701ec6d13e2857943562954f2}} 
+\index{World@{World}!bullets@{bullets}}
+\index{bullets@{bullets}!World@{World}}
+\subsubsection{\texorpdfstring{bullets}{bullets}}
+{\footnotesize\ttfamily std\+::list$<$\hyperlink{class_bullet}{Bullet}$\ast$$>$ World\+::bullets}
+
+
+
+存储所有子弹基类指针的链表。 
+
+链表中的子弹不分敌我，通过子弹存储的源飞机指针判定阵营。
+
+所有新构造的子弹（主要通过new）将被自动放入这个链表中。 \mbox{\Hypertarget{class_world_a594e81a86f319eea4e8e5a2029cdaa90}\label{class_world_a594e81a86f319eea4e8e5a2029cdaa90}} 
+\index{World@{World}!difficulty\+Level@{difficulty\+Level}}
+\index{difficulty\+Level@{difficulty\+Level}!World@{World}}
+\subsubsection{\texorpdfstring{difficulty\+Level}{difficultyLevel}}
+{\footnotesize\ttfamily size\+\_\+t World\+::difficulty\+Level}
+
+
+
+当前的难度等级。 
+
+难度等级越高，刷新的敌机数量越多。
+
+同时，根据不同的难度等级，游戏结束后将授予不同的称号。
+
+难度等级的计算方式为：
+\begin{DoxyItemize}
+\item 当 {\ttfamily (等级的开方) $<$= (分数) / (1000 $\ast$ (1 + (等级) / 5) $\ast$ (等级))} 时， 难度等级 + 1。
+\item 这样，等级的更新速度大致为 {\ttfamily 等级$^\wedge$1.5} （{\ttfamily 等级 / 5}因子的影响较小）。
+\item 作为对比，飞机数量的增加速度（对应涨分速度）为 {\ttfamily 2 $\ast$ 等级 + (等级 + 1) / 2}。
+\end{DoxyItemize}
+
+\begin{quote}
+未来，可以在达到一定难度等级后，刷出\+B\+O\+S\+S。 \end{quote}
+\mbox{\Hypertarget{class_world_a9692ac6798300e7fde98eb3ef1bb7c79}\label{class_world_a9692ac6798300e7fde98eb3ef1bb7c79}} 
+\index{World@{World}!enemy\+\_\+planes@{enemy\+\_\+planes}}
+\index{enemy\+\_\+planes@{enemy\+\_\+planes}!World@{World}}
+\subsubsection{\texorpdfstring{enemy\+\_\+planes}{enemy\_planes}}
+{\footnotesize\ttfamily std\+::list$<$\hyperlink{class_plane}{Plane}$\ast$$>$ World\+::enemy\+\_\+planes}
+
+
+
+存储所有敌机基类指针的链表。 
+
+所有新构造的敌机（主要通过new）将被自动放入这个链表中。 \mbox{\Hypertarget{class_world_ac8553c1be4fb1e79e94bf9f63f834963}\label{class_world_ac8553c1be4fb1e79e94bf9f63f834963}} 
+\index{World@{World}!focused\+\_\+enemy@{focused\+\_\+enemy}}
+\index{focused\+\_\+enemy@{focused\+\_\+enemy}!World@{World}}
+\subsubsection{\texorpdfstring{focused\+\_\+enemy}{focused\_enemy}}
+{\footnotesize\ttfamily \hyperlink{class_plane}{Plane}$\ast$ World\+::focused\+\_\+enemy}
+
+
+
+指向当前被追踪的敌机的指针。 
+
+当自机子弹击中一个敌机后，对应敌机将被设为追踪状态，用此指针来进行托管。
+
+被追踪的敌机将会将其当前状态（\+H\+P）显示在屏幕上。一段时间后，自动取消追踪。
+
+若为nullptr，表示当前未追踪任何敌机。 \mbox{\Hypertarget{class_world_ae4cc86850d7092edbb7648d4cbd093aa}\label{class_world_ae4cc86850d7092edbb7648d4cbd093aa}} 
+\index{World@{World}!input\+Ctrl@{input\+Ctrl}}
+\index{input\+Ctrl@{input\+Ctrl}!World@{World}}
+\subsubsection{\texorpdfstring{input\+Ctrl}{inputCtrl}}
+{\footnotesize\ttfamily \hyperlink{class_input_controller}{Input\+Controller} World\+::input\+Ctrl}
+
+
+
+键盘输入控制器。 
+
+\mbox{\Hypertarget{class_world_ada7a87d1778bfc543635656ea8f12d3f}\label{class_world_ada7a87d1778bfc543635656ea8f12d3f}} 
+\index{World@{World}!player\+\_\+plane@{player\+\_\+plane}}
+\index{player\+\_\+plane@{player\+\_\+plane}!World@{World}}
+\subsubsection{\texorpdfstring{player\+\_\+plane}{player\_plane}}
+{\footnotesize\ttfamily \hyperlink{class_plane___player}{Plane\+\_\+\+Player}$\ast$ World\+::player\+\_\+plane}
+
+
+
+玩家飞机实例的托管指针。 
+
+\mbox{\Hypertarget{class_world_ad9027ba6a4913c21191e7321e9bb2f9f}\label{class_world_ad9027ba6a4913c21191e7321e9bb2f9f}} 
+\index{World@{World}!running@{running}}
+\index{running@{running}!World@{World}}
+\subsubsection{\texorpdfstring{running}{running}}
+{\footnotesize\ttfamily bool World\+::running\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+表征当前游戏状态。 
+
+\mbox{\Hypertarget{class_world_ae70b4ef5dd9cb9e7336169a25aaee39c}\label{class_world_ae70b4ef5dd9cb9e7336169a25aaee39c}} 
+\index{World@{World}!score@{score}}
+\index{score@{score}!World@{World}}
+\subsubsection{\texorpdfstring{score}{score}}
+{\footnotesize\ttfamily int World\+::score}
+
+
+
+当前游戏分数。 
+
+分数的获得方式有以下几种：
+\begin{DoxyEnumerate}
+\item 子弹击中敌机。按敌机受到的伤害获得分数。
+\item 敌机坠毁。根据敌机种类获得一定分数。
+\end{DoxyEnumerate}
+
+但与此同时，自己飞机受到伤害时，也会根据伤害扣除相应的分数。 
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/叶志浩文件夹/\+Vigilans的文档/\+Programming/\+Visual Studio/\+Projects/\+Grade 1 Summer Vacation/\+Lost Phoenix/\+Lost Phoenix/include/\hyperlink{_world_8h}{World.\+h}\item 
+D\+:/叶志浩文件夹/\+Vigilans的文档/\+Programming/\+Visual Studio/\+Projects/\+Grade 1 Summer Vacation/\+Lost Phoenix/\+Lost Phoenix/src/\hyperlink{_world_8cpp}{World.\+cpp}\end{DoxyCompactItemize}

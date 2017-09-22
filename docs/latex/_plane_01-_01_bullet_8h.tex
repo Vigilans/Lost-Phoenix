@@ -1,0 +1,63 @@
+\hypertarget{_plane_01-_01_bullet_8h}{}\section{D\+:/叶志浩文件夹/\+Vigilans的文档/\+Programming/\+Visual Studio/\+Projects/\+Grade 1 Summer Vacation/\+Lost Phoenix/\+Lost Phoenix/include/\+Plane -\/ Bullet.\+h 文件参考}
+\label{_plane_01-_01_bullet_8h}\index{D\+:/叶志浩文件夹/\+Vigilans的文档/\+Programming/\+Visual Studio/\+Projects/\+Grade 1 Summer Vacation/\+Lost Phoenix/\+Lost Phoenix/include/\+Plane -\/ Bullet.\+h@{D\+:/叶志浩文件夹/\+Vigilans的文档/\+Programming/\+Visual Studio/\+Projects/\+Grade 1 Summer Vacation/\+Lost Phoenix/\+Lost Phoenix/include/\+Plane -\/ Bullet.\+h}}
+{\ttfamily \#include \char`\"{}Entity.\+h\char`\"{}}\newline
+\subsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_plane}{Plane}
+\item 
+class \hyperlink{class_bullet}{Bullet}
+\end{DoxyCompactItemize}
+\subsection*{枚举}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{_plane_01-_01_bullet_8h_a9f852e2715e13ec145d551659d2813bc}{Plane\+State} \{ \hyperlink{_plane_01-_01_bullet_8h_a9f852e2715e13ec145d551659d2813bcabd9f7c5d6ab4201b138a3e51dab7056f}{Plane\+State\+::\+Alive}, 
+\hyperlink{_plane_01-_01_bullet_8h_a9f852e2715e13ec145d551659d2813bca183b62c7f067711f9c5a54913c054617}{Plane\+State\+::\+Dead}, 
+\hyperlink{_plane_01-_01_bullet_8h_a9f852e2715e13ec145d551659d2813bcaece4f1ae7ea969a1a47e63cb8ac086ae}{Plane\+State\+::\+Vanished}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_plane_01-_01_bullet_8h_a62df33be634d89b2428bc84d98761bb7}{deal\+Damage} (\hyperlink{class_plane}{Plane} $\ast$plane, \hyperlink{class_bullet}{Bullet} $\ast$bullet)
+\item 
+void \hyperlink{_plane_01-_01_bullet_8h_ab0e76936bbaa057d4f15ddf206b75b91}{deal\+Damage} (\hyperlink{class_plane___player}{Plane\+\_\+\+Player} $\ast$player, \hyperlink{class_plane}{Plane} $\ast$enemy)
+\end{DoxyCompactItemize}
+
+
+\subsection{枚举类型说明}
+\mbox{\Hypertarget{_plane_01-_01_bullet_8h_a9f852e2715e13ec145d551659d2813bc}\label{_plane_01-_01_bullet_8h_a9f852e2715e13ec145d551659d2813bc}} 
+\index{Plane -\/ Bullet.\+h@{Plane -\/ Bullet.\+h}!Plane\+State@{Plane\+State}}
+\index{Plane\+State@{Plane\+State}!Plane -\/ Bullet.\+h@{Plane -\/ Bullet.\+h}}
+\subsubsection{\texorpdfstring{Plane\+State}{PlaneState}}
+{\footnotesize\ttfamily enum \hyperlink{_plane_01-_01_bullet_8h_a9f852e2715e13ec145d551659d2813bc}{Plane\+State}\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Alive@{Alive}!Plane -\/ Bullet.\+h@{Plane -\/ Bullet.\+h}}\index{Plane -\/ Bullet.\+h@{Plane -\/ Bullet.\+h}!Alive@{Alive}}}\mbox{\Hypertarget{_plane_01-_01_bullet_8h_a9f852e2715e13ec145d551659d2813bcabd9f7c5d6ab4201b138a3e51dab7056f}\label{_plane_01-_01_bullet_8h_a9f852e2715e13ec145d551659d2813bcabd9f7c5d6ab4201b138a3e51dab7056f}} 
+Alive&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Dead@{Dead}!Plane -\/ Bullet.\+h@{Plane -\/ Bullet.\+h}}\index{Plane -\/ Bullet.\+h@{Plane -\/ Bullet.\+h}!Dead@{Dead}}}\mbox{\Hypertarget{_plane_01-_01_bullet_8h_a9f852e2715e13ec145d551659d2813bca183b62c7f067711f9c5a54913c054617}\label{_plane_01-_01_bullet_8h_a9f852e2715e13ec145d551659d2813bca183b62c7f067711f9c5a54913c054617}} 
+Dead&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Vanished@{Vanished}!Plane -\/ Bullet.\+h@{Plane -\/ Bullet.\+h}}\index{Plane -\/ Bullet.\+h@{Plane -\/ Bullet.\+h}!Vanished@{Vanished}}}\mbox{\Hypertarget{_plane_01-_01_bullet_8h_a9f852e2715e13ec145d551659d2813bcaece4f1ae7ea969a1a47e63cb8ac086ae}\label{_plane_01-_01_bullet_8h_a9f852e2715e13ec145d551659d2813bcaece4f1ae7ea969a1a47e63cb8ac086ae}} 
+Vanished&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{函数说明}
+\mbox{\Hypertarget{_plane_01-_01_bullet_8h_a62df33be634d89b2428bc84d98761bb7}\label{_plane_01-_01_bullet_8h_a62df33be634d89b2428bc84d98761bb7}} 
+\index{Plane -\/ Bullet.\+h@{Plane -\/ Bullet.\+h}!deal\+Damage@{deal\+Damage}}
+\index{deal\+Damage@{deal\+Damage}!Plane -\/ Bullet.\+h@{Plane -\/ Bullet.\+h}}
+\subsubsection{\texorpdfstring{deal\+Damage()}{dealDamage()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void deal\+Damage (\begin{DoxyParamCaption}\item[{\hyperlink{class_plane}{Plane} $\ast$}]{plane,  }\item[{\hyperlink{class_bullet}{Bullet} $\ast$}]{bullet }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_plane_01-_01_bullet_8h_ab0e76936bbaa057d4f15ddf206b75b91}\label{_plane_01-_01_bullet_8h_ab0e76936bbaa057d4f15ddf206b75b91}} 
+\index{Plane -\/ Bullet.\+h@{Plane -\/ Bullet.\+h}!deal\+Damage@{deal\+Damage}}
+\index{deal\+Damage@{deal\+Damage}!Plane -\/ Bullet.\+h@{Plane -\/ Bullet.\+h}}
+\subsubsection{\texorpdfstring{deal\+Damage()}{dealDamage()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void deal\+Damage (\begin{DoxyParamCaption}\item[{\hyperlink{class_plane___player}{Plane\+\_\+\+Player} $\ast$}]{player,  }\item[{\hyperlink{class_plane}{Plane} $\ast$}]{enemy }\end{DoxyParamCaption})}
+

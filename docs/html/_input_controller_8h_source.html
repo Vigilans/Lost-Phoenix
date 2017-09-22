@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Lost Phoenix: D:/叶志浩文件夹/Vigilans的文档/Programming/Visual Studio/Projects/Grade 1 Summer Vacation/Lost Phoenix/Lost Phoenix/include/InputController.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Lost Phoenix
+   &#160;<span id="projectnumber">1.1</span>
+   </div>
+   <div id="projectbrief">一个简单的飞机大战游戏，由EGE图形库编写而成。</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_input_controller_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">InputController.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_input_controller_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div><div class="line"><a name="l00003"></a><span class="lineno"><a class="line" href="_input_controller_8h.html#ab3c7af4820830f9166ede9e5623c4e73">    3</a></span>&#160;<span class="keyword">enum class</span> <a class="code" href="_input_controller_8h.html#ab3c7af4820830f9166ede9e5623c4e73">Key</a> </div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;{</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;    <a class="code" href="_input_controller_8h.html#ab3c7af4820830f9166ede9e5623c4e73a61e9c06ea9a85a5088a499df6458d276">W</a>, <a class="code" href="_input_controller_8h.html#ab3c7af4820830f9166ede9e5623c4e73a7fc56270e7a70fa81a5935b72eacbe29">A</a>, <a class="code" href="_input_controller_8h.html#ab3c7af4820830f9166ede9e5623c4e73a5dbc98dcc983a70728bd082d1a47546e">S</a>, <a class="code" href="_input_controller_8h.html#ab3c7af4820830f9166ede9e5623c4e73af623e75af30e62bbd73d6df5b50bb7b5">D</a>, <a class="code" href="_input_controller_8h.html#ab3c7af4820830f9166ede9e5623c4e73ad511f8439ecde36647437fbba67a4394">Space</a>, <a class="code" href="_input_controller_8h.html#ab3c7af4820830f9166ede9e5623c4e73a6f6cb72d544962fa333e2e34ce64f719">Size</a></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;};</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_input_controller.html">    8</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_input_controller.html">InputController</a></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="class_input_controller.html">InputController</a>( );</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordtype">void</span> updateInput( );</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordtype">bool</span> isKeyDown(<a class="code" href="_input_controller_8h.html#ab3c7af4820830f9166ede9e5623c4e73">Key</a> key);</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_input_controller.html#afa9908a71b2107375b9104e51b465b06">   17</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> KeysEnum[(int)<a class="code" href="_input_controller_8h.html#ab3c7af4820830f9166ede9e5623c4e73a6f6cb72d544962fa333e2e34ce64f719">Key::Size</a>];</div><div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_input_controller.html#aebe382d8d20e579a3f2c92b58ad53ac3">   18</a></span>&#160;    <span class="keywordtype">bool</span> m_KeyState[(int)<a class="code" href="_input_controller_8h.html#ab3c7af4820830f9166ede9e5623c4e73a6f6cb72d544962fa333e2e34ce64f719">Key::Size</a>];</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;};</div><div class="ttc" id="_input_controller_8h_html_ab3c7af4820830f9166ede9e5623c4e73"><div class="ttname"><a href="_input_controller_8h.html#ab3c7af4820830f9166ede9e5623c4e73">Key</a></div><div class="ttdeci">Key</div><div class="ttdef"><b>Definition:</b> InputController.h:3</div></div>
+<div class="ttc" id="_input_controller_8h_html_ab3c7af4820830f9166ede9e5623c4e73ad511f8439ecde36647437fbba67a4394"><div class="ttname"><a href="_input_controller_8h.html#ab3c7af4820830f9166ede9e5623c4e73ad511f8439ecde36647437fbba67a4394">Key::Space</a></div></div>
+<div class="ttc" id="_input_controller_8h_html_ab3c7af4820830f9166ede9e5623c4e73a5dbc98dcc983a70728bd082d1a47546e"><div class="ttname"><a href="_input_controller_8h.html#ab3c7af4820830f9166ede9e5623c4e73a5dbc98dcc983a70728bd082d1a47546e">Key::S</a></div></div>
+<div class="ttc" id="_input_controller_8h_html_ab3c7af4820830f9166ede9e5623c4e73a6f6cb72d544962fa333e2e34ce64f719"><div class="ttname"><a href="_input_controller_8h.html#ab3c7af4820830f9166ede9e5623c4e73a6f6cb72d544962fa333e2e34ce64f719">Key::Size</a></div></div>
+<div class="ttc" id="_input_controller_8h_html_ab3c7af4820830f9166ede9e5623c4e73af623e75af30e62bbd73d6df5b50bb7b5"><div class="ttname"><a href="_input_controller_8h.html#ab3c7af4820830f9166ede9e5623c4e73af623e75af30e62bbd73d6df5b50bb7b5">Key::D</a></div></div>
+<div class="ttc" id="_input_controller_8h_html_ab3c7af4820830f9166ede9e5623c4e73a61e9c06ea9a85a5088a499df6458d276"><div class="ttname"><a href="_input_controller_8h.html#ab3c7af4820830f9166ede9e5623c4e73a61e9c06ea9a85a5088a499df6458d276">Key::W</a></div></div>
+<div class="ttc" id="class_input_controller_html"><div class="ttname"><a href="class_input_controller.html">InputController</a></div><div class="ttdef"><b>Definition:</b> InputController.h:8</div></div>
+<div class="ttc" id="_input_controller_8h_html_ab3c7af4820830f9166ede9e5623c4e73a7fc56270e7a70fa81a5935b72eacbe29"><div class="ttname"><a href="_input_controller_8h.html#ab3c7af4820830f9166ede9e5623c4e73a7fc56270e7a70fa81a5935b72eacbe29">Key::A</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_6e6b16da925a92726867f3472ab3e402.html">Lost Phoenix</a></li><li class="navelem"><a class="el" href="dir_665497e2755fa1fce0a2d99d98d16b67.html">include</a></li><li class="navelem"><a class="el" href="_input_controller_8h.html">InputController.h</a></li>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

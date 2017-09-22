@@ -1,0 +1,931 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Lost Phoenix: World类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Lost Phoenix
+   &#160;<span id="projectnumber">1.1</span>
+   </div>
+   <div id="projectbrief">一个简单的飞机大战游戏，由EGE图形库编写而成。</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_world.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="#pri-methods">Private 成员函数</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
+<a href="class_world-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">World类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>承载整个游戏运行逻辑的总类。有一个extern声明的实例。  
+ <a href="class_world.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_world_8h_source.html">World.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ae75511e9504917690bc4ab1421cff6d5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#ae75511e9504917690bc4ab1421cff6d5">initialize</a> ()</td></tr>
+<tr class="memdesc:ae75511e9504917690bc4ab1421cff6d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始化游戏世界。  <a href="#ae75511e9504917690bc4ab1421cff6d5">更多...</a><br /></td></tr>
+<tr class="separator:ae75511e9504917690bc4ab1421cff6d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad15782e0eaf62c5ab4fcd3620e2c866a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#ad15782e0eaf62c5ab4fcd3620e2c866a">is_running</a> ()</td></tr>
+<tr class="memdesc:ad15782e0eaf62c5ab4fcd3620e2c866a"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取程序整体运行状态。  <a href="#ad15782e0eaf62c5ab4fcd3620e2c866a">更多...</a><br /></td></tr>
+<tr class="separator:ad15782e0eaf62c5ab4fcd3620e2c866a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af956580b52927299a0bf200740f8ea0d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#af956580b52927299a0bf200740f8ea0d">renderMenu</a> ()</td></tr>
+<tr class="memdesc:af956580b52927299a0bf200740f8ea0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">渲染游戏初始菜单。  <a href="#af956580b52927299a0bf200740f8ea0d">更多...</a><br /></td></tr>
+<tr class="separator:af956580b52927299a0bf200740f8ea0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac8c1fde63c06577ffc648aaefdb37f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#aac8c1fde63c06577ffc648aaefdb37f0">update</a> ()</td></tr>
+<tr class="memdesc:aac8c1fde63c06577ffc648aaefdb37f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">主逻辑更新函数。  <a href="#aac8c1fde63c06577ffc648aaefdb37f0">更多...</a><br /></td></tr>
+<tr class="separator:aac8c1fde63c06577ffc648aaefdb37f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab86ffcea335fe909467eb754edc5f1a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#ab86ffcea335fe909467eb754edc5f1a5">updateCollision</a> ()</td></tr>
+<tr class="memdesc:ab86ffcea335fe909467eb754edc5f1a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">碰撞逻辑更新函数。  <a href="#ab86ffcea335fe909467eb754edc5f1a5">更多...</a><br /></td></tr>
+<tr class="separator:ab86ffcea335fe909467eb754edc5f1a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a1abe665fc8056caf3dd84663bccfb8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#a6a1abe665fc8056caf3dd84663bccfb8">updateState</a> ()</td></tr>
+<tr class="memdesc:a6a1abe665fc8056caf3dd84663bccfb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">状态逻辑更新函数。  <a href="#a6a1abe665fc8056caf3dd84663bccfb8">更多...</a><br /></td></tr>
+<tr class="separator:a6a1abe665fc8056caf3dd84663bccfb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a150eab10c21532162bb698d72aecec16"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#a150eab10c21532162bb698d72aecec16">render</a> ()</td></tr>
+<tr class="memdesc:a150eab10c21532162bb698d72aecec16"><td class="mdescLeft">&#160;</td><td class="mdescRight">渲染主入口函数。  <a href="#a150eab10c21532162bb698d72aecec16">更多...</a><br /></td></tr>
+<tr class="separator:a150eab10c21532162bb698d72aecec16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6e788d15f389d634ccd1148f47cfb96"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#aa6e788d15f389d634ccd1148f47cfb96">clearWorld</a> ()</td></tr>
+<tr class="memdesc:aa6e788d15f389d634ccd1148f47cfb96"><td class="mdescLeft">&#160;</td><td class="mdescRight">清除World的所有状态。  <a href="#aa6e788d15f389d634ccd1148f47cfb96">更多...</a><br /></td></tr>
+<tr class="separator:aa6e788d15f389d634ccd1148f47cfb96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae265f543993824e9cca76eef29e375cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#ae265f543993824e9cca76eef29e375cb">renderOverInterface</a> ()</td></tr>
+<tr class="memdesc:ae265f543993824e9cca76eef29e375cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">渲染Game Over界面。  <a href="#ae265f543993824e9cca76eef29e375cb">更多...</a><br /></td></tr>
+<tr class="separator:ae265f543993824e9cca76eef29e375cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19de028e63984484f24d0c01107060d2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#a19de028e63984484f24d0c01107060d2">fps</a> ()</td></tr>
+<tr class="memdesc:a19de028e63984484f24d0c01107060d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回游戏预设FPS。  <a href="#a19de028e63984484f24d0c01107060d2">更多...</a><br /></td></tr>
+<tr class="separator:a19de028e63984484f24d0c01107060d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abaa042832b0d02dd6d9d01a1d03308ee"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#abaa042832b0d02dd6d9d01a1d03308ee">windowWidth</a> ()</td></tr>
+<tr class="memdesc:abaa042832b0d02dd6d9d01a1d03308ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取窗口宽度。  <a href="#abaa042832b0d02dd6d9d01a1d03308ee">更多...</a><br /></td></tr>
+<tr class="separator:abaa042832b0d02dd6d9d01a1d03308ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1be83eac68417720386d6f04406675e2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#a1be83eac68417720386d6f04406675e2">windowHeight</a> ()</td></tr>
+<tr class="memdesc:a1be83eac68417720386d6f04406675e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取窗口高度。  <a href="#a1be83eac68417720386d6f04406675e2">更多...</a><br /></td></tr>
+<tr class="separator:a1be83eac68417720386d6f04406675e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2e956852ab6159780a873c961dad416"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#ac2e956852ab6159780a873c961dad416">fontHeight</a> ()</td></tr>
+<tr class="memdesc:ac2e956852ab6159780a873c961dad416"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取游戏中字体高度。目前均设为同一高度。  <a href="#ac2e956852ab6159780a873c961dad416">更多...</a><br /></td></tr>
+<tr class="separator:ac2e956852ab6159780a873c961dad416"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a485fb0b11ed568979df0b6f782aa3ac8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#a485fb0b11ed568979df0b6f782aa3ac8">get_running</a> ()</td></tr>
+<tr class="memdesc:a485fb0b11ed568979df0b6f782aa3ac8"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回游戏进行状态  <a href="#a485fb0b11ed568979df0b6f782aa3ac8">更多...</a><br /></td></tr>
+<tr class="separator:a485fb0b11ed568979df0b6f782aa3ac8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:ae70b4ef5dd9cb9e7336169a25aaee39c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#ae70b4ef5dd9cb9e7336169a25aaee39c">score</a></td></tr>
+<tr class="memdesc:ae70b4ef5dd9cb9e7336169a25aaee39c"><td class="mdescLeft">&#160;</td><td class="mdescRight">当前游戏分数。  <a href="#ae70b4ef5dd9cb9e7336169a25aaee39c">更多...</a><br /></td></tr>
+<tr class="separator:ae70b4ef5dd9cb9e7336169a25aaee39c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a594e81a86f319eea4e8e5a2029cdaa90"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#a594e81a86f319eea4e8e5a2029cdaa90">difficultyLevel</a></td></tr>
+<tr class="memdesc:a594e81a86f319eea4e8e5a2029cdaa90"><td class="mdescLeft">&#160;</td><td class="mdescRight">当前的难度等级。  <a href="#a594e81a86f319eea4e8e5a2029cdaa90">更多...</a><br /></td></tr>
+<tr class="separator:a594e81a86f319eea4e8e5a2029cdaa90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4cc86850d7092edbb7648d4cbd093aa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_input_controller.html">InputController</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#ae4cc86850d7092edbb7648d4cbd093aa">inputCtrl</a></td></tr>
+<tr class="memdesc:ae4cc86850d7092edbb7648d4cbd093aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">键盘输入控制器。  <a href="#ae4cc86850d7092edbb7648d4cbd093aa">更多...</a><br /></td></tr>
+<tr class="separator:ae4cc86850d7092edbb7648d4cbd093aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada7a87d1778bfc543635656ea8f12d3f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_plane___player.html">Plane_Player</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#ada7a87d1778bfc543635656ea8f12d3f">player_plane</a></td></tr>
+<tr class="memdesc:ada7a87d1778bfc543635656ea8f12d3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">玩家飞机实例的托管指针。  <a href="#ada7a87d1778bfc543635656ea8f12d3f">更多...</a><br /></td></tr>
+<tr class="separator:ada7a87d1778bfc543635656ea8f12d3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8553c1be4fb1e79e94bf9f63f834963"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_plane.html">Plane</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#ac8553c1be4fb1e79e94bf9f63f834963">focused_enemy</a></td></tr>
+<tr class="memdesc:ac8553c1be4fb1e79e94bf9f63f834963"><td class="mdescLeft">&#160;</td><td class="mdescRight">指向当前被追踪的敌机的指针。  <a href="#ac8553c1be4fb1e79e94bf9f63f834963">更多...</a><br /></td></tr>
+<tr class="separator:ac8553c1be4fb1e79e94bf9f63f834963"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9692ac6798300e7fde98eb3ef1bb7c79"><td class="memItemLeft" align="right" valign="top">std::list&lt; <a class="el" href="class_plane.html">Plane</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#a9692ac6798300e7fde98eb3ef1bb7c79">enemy_planes</a></td></tr>
+<tr class="memdesc:a9692ac6798300e7fde98eb3ef1bb7c79"><td class="mdescLeft">&#160;</td><td class="mdescRight">存储所有敌机基类指针的链表。  <a href="#a9692ac6798300e7fde98eb3ef1bb7c79">更多...</a><br /></td></tr>
+<tr class="separator:a9692ac6798300e7fde98eb3ef1bb7c79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a932c82c701ec6d13e2857943562954f2"><td class="memItemLeft" align="right" valign="top">std::list&lt; <a class="el" href="class_bullet.html">Bullet</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#a932c82c701ec6d13e2857943562954f2">bullets</a></td></tr>
+<tr class="memdesc:a932c82c701ec6d13e2857943562954f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">存储所有子弹基类指针的链表。  <a href="#a932c82c701ec6d13e2857943562954f2">更多...</a><br /></td></tr>
+<tr class="separator:a932c82c701ec6d13e2857943562954f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefe8e0e9e418bbf81671314bf8d019f2"><td class="memItemLeft" align="right" valign="top">std::list&lt; <a class="el" href="class_action.html">Action</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#aefe8e0e9e418bbf81671314bf8d019f2">actions</a></td></tr>
+<tr class="memdesc:aefe8e0e9e418bbf81671314bf8d019f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">存储所有Action基类指针的链表。  <a href="#aefe8e0e9e418bbf81671314bf8d019f2">更多...</a><br /></td></tr>
+<tr class="separator:aefe8e0e9e418bbf81671314bf8d019f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private 成员函数</h2></td></tr>
+<tr class="memitem:adb9973193b6f45377a3911ed023a9f73"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#adb9973193b6f45377a3911ed023a9f73">renderBackground</a> ()</td></tr>
+<tr class="memdesc:adb9973193b6f45377a3911ed023a9f73"><td class="mdescLeft">&#160;</td><td class="mdescRight">渲染游戏背景。  <a href="#adb9973193b6f45377a3911ed023a9f73">更多...</a><br /></td></tr>
+<tr class="separator:adb9973193b6f45377a3911ed023a9f73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96d63470a94d9ab0426db992981b5ce5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#a96d63470a94d9ab0426db992981b5ce5">renderUI</a> ()</td></tr>
+<tr class="memdesc:a96d63470a94d9ab0426db992981b5ce5"><td class="mdescLeft">&#160;</td><td class="mdescRight">渲染游戏UI。  <a href="#a96d63470a94d9ab0426db992981b5ce5">更多...</a><br /></td></tr>
+<tr class="separator:a96d63470a94d9ab0426db992981b5ce5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b447a1788dc0d2e507dce41486ad1b4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#a3b447a1788dc0d2e507dce41486ad1b4">checkBackgroundCollision</a> (<a class="el" href="class_entity.html">Entity</a> *e, bool leftRight=true, bool upDown=true, bool isOuter=false)</td></tr>
+<tr class="memdesc:a3b447a1788dc0d2e507dce41486ad1b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">检测一个Entity是否与边界发生碰撞。  <a href="#a3b447a1788dc0d2e507dce41486ad1b4">更多...</a><br /></td></tr>
+<tr class="separator:a3b447a1788dc0d2e507dce41486ad1b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9957df94d0d75429c23c7d70c2db282e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#a9957df94d0d75429c23c7d70c2db282e">newEnemyWave</a> ()</td></tr>
+<tr class="memdesc:a9957df94d0d75429c23c7d70c2db282e"><td class="mdescLeft">&#160;</td><td class="mdescRight">产生新一波敌军。  <a href="#a9957df94d0d75429c23c7d70c2db282e">更多...</a><br /></td></tr>
+<tr class="separator:a9957df94d0d75429c23c7d70c2db282e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a699c52e5991e939402c6c7396c3e931a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#a699c52e5991e939402c6c7396c3e931a">gameOver</a> ()</td></tr>
+<tr class="memdesc:a699c52e5991e939402c6c7396c3e931a"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置游戏状态为“结束”。  <a href="#a699c52e5991e939402c6c7396c3e931a">更多...</a><br /></td></tr>
+<tr class="separator:a699c52e5991e939402c6c7396c3e931a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:ad9027ba6a4913c21191e7321e9bb2f9f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#ad9027ba6a4913c21191e7321e9bb2f9f">running</a></td></tr>
+<tr class="memdesc:ad9027ba6a4913c21191e7321e9bb2f9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">表征当前游戏状态。  <a href="#ad9027ba6a4913c21191e7321e9bb2f9f">更多...</a><br /></td></tr>
+<tr class="separator:ad9027ba6a4913c21191e7321e9bb2f9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>承载整个游戏运行逻辑的总类。有一个extern声明的实例。 </p>
+<p>具体承载内容有：</p><ol type="1">
+<li>游戏界面；</li>
+<li>所有物体的存储；</li>
+<li>程序输入与输出；</li>
+<li>游戏整体逻辑流程。 </li>
+</ol>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a id="a3b447a1788dc0d2e507dce41486ad1b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b447a1788dc0d2e507dce41486ad1b4">&#9670;&nbsp;</a></span>checkBackgroundCollision()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool World::checkBackgroundCollision </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_entity.html">Entity</a> *&#160;</td>
+          <td class="paramname"><em>e</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>leftRight</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>upDown</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isOuter</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>检测一个Entity是否与边界发生碰撞。 </p>
+<p>可以以内部碰撞和外部碰撞两种方式检测。</p>
+<p>当leftRight与upDown都为false时，表示不检测，返回false（没有碰撞到墙壁）。. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">e</td><td>[in,out] 被检测的Entity的指针。. </td></tr>
+    <tr><td class="paramname">leftRight</td><td>(可选) 检测是否与左右边界碰撞。默认为真。. </td></tr>
+    <tr><td class="paramname">upDown</td><td>(可选) 检测是否与上下边界碰撞。默认为真。. </td></tr>
+    <tr><td class="paramname">isOuter</td><td>(可选) 为真时，检测Entity是否已超出边界外；为假时，检测Entity是否在内侧与边界碰撞。. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>返回指定条件下的碰撞检测结果。 </dd></dl>
+
+</div>
+</div>
+<a id="aa6e788d15f389d634ccd1148f47cfb96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6e788d15f389d634ccd1148f47cfb96">&#9670;&nbsp;</a></span>clearWorld()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void World::clearWorld </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>清除World的所有状态。 </p>
+<p>此方法清除World所有相关变量的状态，为下一次初始化作准备。</p>
+<p>目前的实现是销毁所有相关指针托管的资源，并将容器置空。 </p>
+
+</div>
+</div>
+<a id="ac2e956852ab6159780a873c961dad416"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2e956852ab6159780a873c961dad416">&#9670;&nbsp;</a></span>fontHeight()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int World::fontHeight </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取游戏中字体高度。目前均设为同一高度。 </p>
+<dl class="section return"><dt>返回</dt><dd>返回字体的高度。 </dd></dl>
+
+</div>
+</div>
+<a id="a19de028e63984484f24d0c01107060d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19de028e63984484f24d0c01107060d2">&#9670;&nbsp;</a></span>fps()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int World::fps </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>返回游戏预设FPS。 </p>
+<dl class="section return"><dt>返回</dt><dd>当前FPS值。 </dd></dl>
+
+</div>
+</div>
+<a id="a699c52e5991e939402c6c7396c3e931a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a699c52e5991e939402c6c7396c3e931a">&#9670;&nbsp;</a></span>gameOver()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void World::gameOver </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置游戏状态为“结束”。 </p>
+
+</div>
+</div>
+<a id="a485fb0b11ed568979df0b6f782aa3ac8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a485fb0b11ed568979df0b6f782aa3ac8">&#9670;&nbsp;</a></span>get_running()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool World::get_running </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>返回游戏进行状态 </p>
+<dl class="section return"><dt>返回</dt><dd>返回游戏是否正在进行中 </dd></dl>
+
+</div>
+</div>
+<a id="ae75511e9504917690bc4ab1421cff6d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae75511e9504917690bc4ab1421cff6d5">&#9670;&nbsp;</a></span>initialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool World::initialize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>初始化游戏世界。 </p>
+<p>目前初始化内容有：</p><ol type="1">
+<li>重置运行状态、分数、难度等级；</li>
+<li>初始化游戏窗口；</li>
+<li>初始化玩家飞机。 </li>
+</ol>
+<dl class="section return"><dt>返回</dt><dd>返回是否初始化成功。 </dd></dl>
+
+</div>
+</div>
+<a id="ad15782e0eaf62c5ab4fcd3620e2c866a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad15782e0eaf62c5ab4fcd3620e2c866a">&#9670;&nbsp;</a></span>is_running()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool World::is_running </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取程序整体运行状态。 </p>
+<dl class="section return"><dt>返回</dt><dd>返回程序运行状态。 </dd></dl>
+
+</div>
+</div>
+<a id="a9957df94d0d75429c23c7d70c2db282e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9957df94d0d75429c23c7d70c2db282e">&#9670;&nbsp;</a></span>newEnemyWave()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void World::newEnemyWave </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>产生新一波敌军。 </p>
+<p>函数中有一个计时器用来控制刷新冷却。</p>
+<p>敌军的刷新数量由当前的<a class="el" href="class_world.html#a594e81a86f319eea4e8e5a2029cdaa90" title="当前的难度等级。 ">difficultyLevel</a>控制。同时难度等级也会在这个函数中根据当前分数更新。</p>
+<p>对于新兵飞机与自机狙飞机，他们有不同的刷新机制，分别为：</p><ul>
+<li>新兵飞机： 始终从屏幕最上方出现，x轴位置随机。</li>
+<li>自机狙飞机： 会在屏幕上方或左右随机出现。上方出现时，x轴随机；左右边出现时，y轴随机（不会超过屏幕的上1/3位置）。 </li>
+</ul>
+
+</div>
+</div>
+<a id="a150eab10c21532162bb698d72aecec16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a150eab10c21532162bb698d72aecec16">&#9670;&nbsp;</a></span>render()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void World::render </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>渲染主入口函数。 </p>
+<p>此方法调用各子部件对应的渲染函数，渲染出完整的一帧画面。 </p>
+
+</div>
+</div>
+<a id="adb9973193b6f45377a3911ed023a9f73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb9973193b6f45377a3911ed023a9f73">&#9670;&nbsp;</a></span>renderBackground()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void World::renderBackground </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>渲染游戏背景。 </p>
+<p>游戏背景是滚动的，实现方式为：</p>
+<p>两张相同的背景图拼接在一起，拼接处的水平线的y轴坐标从上往下不断移动。到达底端后，y轴重新设为0。 </p>
+
+</div>
+</div>
+<a id="af956580b52927299a0bf200740f8ea0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af956580b52927299a0bf200740f8ea0d">&#9670;&nbsp;</a></span>renderMenu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void World::renderMenu </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>渲染游戏初始菜单。 </p>
+<p>目前只有一个画面，按任意键后进入游戏。</p>
+<p>TODO: 为目录添加按钮设置，可以开始游戏、设置选项或退出。 </p>
+
+</div>
+</div>
+<a id="ae265f543993824e9cca76eef29e375cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae265f543993824e9cca76eef29e375cb">&#9670;&nbsp;</a></span>renderOverInterface()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void World::renderOverInterface </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>渲染Game Over界面。 </p>
+<p>游戏结束后调用此方法渲染结束界面。</p>
+<p>内容包括背景、当前得分、评级及下一步的按钮（Q退出 R重新开始）。</p>
+<p>评级由<a class="el" href="class_world.html#a594e81a86f319eea4e8e5a2029cdaa90" title="当前的难度等级。 ">difficultyLevel</a>决定，如下：</p><ul>
+<li>1: 朝鲜飞行员</li>
+<li>2: 初级飞行员</li>
+<li>3: 中级飞行员</li>
+<li>4 or more: 高级飞行员 </li>
+</ul>
+
+</div>
+</div>
+<a id="a96d63470a94d9ab0426db992981b5ce5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96d63470a94d9ab0426db992981b5ce5">&#9670;&nbsp;</a></span>renderUI()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void World::renderUI </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>渲染游戏UI。 </p>
+<p>UI的渲染由以下几部分组成：</p><ol type="1">
+<li>当前飞机的HP数据；</li>
+<li>当前游戏得分数据；</li>
+<li>当前被追踪状态的敌机的HP数据。</li>
+</ol>
+<p>其中，当前被追踪的敌机由<a class="el" href="class_world.html#ac8553c1be4fb1e79e94bf9f63f834963" title="指向当前被追踪的敌机的指针。 ">focused_enemy</a>指针控制。当指针不为空时，追踪指针指向的飞机的数据。 同时，函数会在一段时间后自动将指针置空，避免一直显示飞机数据。 </p>
+
+</div>
+</div>
+<a id="aac8c1fde63c06577ffc648aaefdb37f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac8c1fde63c06577ffc648aaefdb37f0">&#9670;&nbsp;</a></span>update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void World::update </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>主逻辑更新函数。 </p>
+<p>此方法开始更新下一帧画面逻辑。 具体步骤为：</p><ol type="1">
+<li>更新键盘输入；</li>
+<li>判断-更新新一波敌军；</li>
+<li>更新所有Entity的行动。如所有飞机、子弹根据当前速度进行下一次移动。 </li>
+</ol>
+
+</div>
+</div>
+<a id="ab86ffcea335fe909467eb754edc5f1a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab86ffcea335fe909467eb754edc5f1a5">&#9670;&nbsp;</a></span>updateCollision()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void World::updateCollision </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>碰撞逻辑更新函数。 </p>
+<p>此方法在所有Entity位置更新后，判断碰撞状态并执行对应动作。 具体步骤为：</p><ol type="1">
+<li>判断并处理<code>自机、敌机、子弹</code>与<code>边界</code>的碰撞：<ul>
+<li>自机与自机狙敌机作出速度改变；</li>
+<li>新兵敌机与子弹被删除（方法不一定相同）。</li>
+</ul>
+</li>
+<li>判断并处理<code>自机、敌机</code>与<code>子弹</code>的碰撞：<ul>
+<li>通过判断子弹所属的Camp与源飞机来处理伤害；</li>
+<li>处理玩家得分。</li>
+</ul>
+</li>
+<li>判断并处理<code>自机</code>与<code>敌机</code>的碰撞：<ul>
+<li>敌机坠毁，获得对应得分；</li>
+<li>玩家受到敌机剩余生命值的伤害。 </li>
+</ul>
+</li>
+</ol>
+
+</div>
+</div>
+<a id="a6a1abe665fc8056caf3dd84663bccfb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a1abe665fc8056caf3dd84663bccfb8">&#9670;&nbsp;</a></span>updateState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void World::updateState </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>状态逻辑更新函数。 </p>
+<p>此方法在处理主逻辑与碰撞后，判断当前状态（State）并执行对应动作。 具体步骤为：</p><ol type="1">
+<li>处理敌机状态：<ul>
+<li>判断飞机状态(Alive, Dead, Vanished)；</li>
+<li>若为非存活状态，判断是否产生爆炸动画。</li>
+</ul>
+</li>
+<li>处理子弹状态：<ul>
+<li>判断子弹是否为"End"状态并决定是否销毁。</li>
+<li>子弹在被销毁时，可能会通过析构函数调用<a class="el" href="class_action.html">Action</a>。</li>
+</ul>
+</li>
+<li>判断自机是否坠毁：<ul>
+<li>坠毁后，调用<a class="el" href="class_action___plane___explode.html">Action_Plane_Explode</a>动画，传入gameover函数作为回调函数；</li>
+</ul>
+</li>
+<li>处理所有<a class="el" href="class_world.html#aefe8e0e9e418bbf81671314bf8d019f2" title="存储所有Action基类指针的链表。 ">actions</a>：<ul>
+<li>由于EGE图形库的BUG限制，只能在这里通过遍历所有Actions，处理他们是否达到"End"状态。</li>
+<li>对于"End"状态的Action,将其销毁，并调用对应的回调函数。 </li>
+</ul>
+</li>
+</ol>
+
+</div>
+</div>
+<a id="a1be83eac68417720386d6f04406675e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1be83eac68417720386d6f04406675e2">&#9670;&nbsp;</a></span>windowHeight()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int World::windowHeight </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取窗口高度。 </p>
+<dl class="section return"><dt>返回</dt><dd>返回当前设置分辨率对应的高度。 </dd></dl>
+
+</div>
+</div>
+<a id="abaa042832b0d02dd6d9d01a1d03308ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abaa042832b0d02dd6d9d01a1d03308ee">&#9670;&nbsp;</a></span>windowWidth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int World::windowWidth </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取窗口宽度。 </p>
+<dl class="section return"><dt>返回</dt><dd>返回当前设置分辨率对应的宽度。 </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="aefe8e0e9e418bbf81671314bf8d019f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefe8e0e9e418bbf81671314bf8d019f2">&#9670;&nbsp;</a></span>actions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::list&lt;<a class="el" href="class_action.html">Action</a>*&gt; World::actions</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>存储所有Action基类指针的链表。 </p>
+<p>最初，想通过action在触发条件后自动<code>delete this</code>来"自杀"的方法触发回调函数。 但受限于EGE的实现机制，这样做会引起指针悬挂BUG。</p>
+<p>因此，换用一个链表来存储指针，此链表仅用来检查Action状态，通过<a class="el" href="class_world.html#a6a1abe665fc8056caf3dd84663bccfb8" title="状态逻辑更新函数。 ">updateState</a>函数来进行销毁。 </p>
+
+</div>
+</div>
+<a id="a932c82c701ec6d13e2857943562954f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a932c82c701ec6d13e2857943562954f2">&#9670;&nbsp;</a></span>bullets</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::list&lt;<a class="el" href="class_bullet.html">Bullet</a>*&gt; World::bullets</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>存储所有子弹基类指针的链表。 </p>
+<p>链表中的子弹不分敌我，通过子弹存储的源飞机指针判定阵营。</p>
+<p>所有新构造的子弹（主要通过new）将被自动放入这个链表中。 </p>
+
+</div>
+</div>
+<a id="a594e81a86f319eea4e8e5a2029cdaa90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a594e81a86f319eea4e8e5a2029cdaa90">&#9670;&nbsp;</a></span>difficultyLevel</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t World::difficultyLevel</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>当前的难度等级。 </p>
+<p>难度等级越高，刷新的敌机数量越多。</p>
+<p>同时，根据不同的难度等级，游戏结束后将授予不同的称号。</p>
+<p>难度等级的计算方式为：</p><ul>
+<li>当 <code>(等级的开方) &lt;= (分数) / (1000 * (1 + (等级) / 5) * (等级))</code> 时， 难度等级 + 1。</li>
+<li>这样，等级的更新速度大致为 <code>等级^1.5</code> （<code>等级 / 5</code>因子的影响较小）。</li>
+<li>作为对比，飞机数量的增加速度（对应涨分速度）为 <code>2 * 等级 + (等级 + 1) / 2</code>。</li>
+</ul>
+<blockquote class="doxtable">
+<p>未来，可以在达到一定难度等级后，刷出BOSS。 </p>
+</blockquote>
+
+</div>
+</div>
+<a id="a9692ac6798300e7fde98eb3ef1bb7c79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9692ac6798300e7fde98eb3ef1bb7c79">&#9670;&nbsp;</a></span>enemy_planes</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::list&lt;<a class="el" href="class_plane.html">Plane</a>*&gt; World::enemy_planes</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>存储所有敌机基类指针的链表。 </p>
+<p>所有新构造的敌机（主要通过new）将被自动放入这个链表中。 </p>
+
+</div>
+</div>
+<a id="ac8553c1be4fb1e79e94bf9f63f834963"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8553c1be4fb1e79e94bf9f63f834963">&#9670;&nbsp;</a></span>focused_enemy</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_plane.html">Plane</a>* World::focused_enemy</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>指向当前被追踪的敌机的指针。 </p>
+<p>当自机子弹击中一个敌机后，对应敌机将被设为追踪状态，用此指针来进行托管。</p>
+<p>被追踪的敌机将会将其当前状态（HP）显示在屏幕上。一段时间后，自动取消追踪。</p>
+<p>若为nullptr，表示当前未追踪任何敌机。 </p>
+
+</div>
+</div>
+<a id="ae4cc86850d7092edbb7648d4cbd093aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4cc86850d7092edbb7648d4cbd093aa">&#9670;&nbsp;</a></span>inputCtrl</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_input_controller.html">InputController</a> World::inputCtrl</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>键盘输入控制器。 </p>
+
+</div>
+</div>
+<a id="ada7a87d1778bfc543635656ea8f12d3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada7a87d1778bfc543635656ea8f12d3f">&#9670;&nbsp;</a></span>player_plane</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_plane___player.html">Plane_Player</a>* World::player_plane</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>玩家飞机实例的托管指针。 </p>
+
+</div>
+</div>
+<a id="ad9027ba6a4913c21191e7321e9bb2f9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9027ba6a4913c21191e7321e9bb2f9f">&#9670;&nbsp;</a></span>running</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool World::running</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>表征当前游戏状态。 </p>
+
+</div>
+</div>
+<a id="ae70b4ef5dd9cb9e7336169a25aaee39c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae70b4ef5dd9cb9e7336169a25aaee39c">&#9670;&nbsp;</a></span>score</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int World::score</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>当前游戏分数。 </p>
+<p>分数的获得方式有以下几种：</p><ol type="1">
+<li>子弹击中敌机。按敌机受到的伤害获得分数。</li>
+<li>敌机坠毁。根据敌机种类获得一定分数。</li>
+</ol>
+<p>但与此同时，自己飞机受到伤害时，也会根据伤害扣除相应的分数。 </p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>D:/叶志浩文件夹/Vigilans的文档/Programming/Visual Studio/Projects/Grade 1 Summer Vacation/Lost Phoenix/Lost Phoenix/include/<a class="el" href="_world_8h_source.html">World.h</a></li>
+<li>D:/叶志浩文件夹/Vigilans的文档/Programming/Visual Studio/Projects/Grade 1 Summer Vacation/Lost Phoenix/Lost Phoenix/src/<a class="el" href="_world_8cpp.html">World.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_world.html">World</a></li>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

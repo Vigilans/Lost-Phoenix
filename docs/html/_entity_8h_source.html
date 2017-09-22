@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Lost Phoenix: D:/叶志浩文件夹/Vigilans的文档/Programming/Visual Studio/Projects/Grade 1 Summer Vacation/Lost Phoenix/Lost Phoenix/include/Entity.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Lost Phoenix
+   &#160;<span id="projectnumber">1.1</span>
+   </div>
+   <div id="projectbrief">一个简单的飞机大战游戏，由EGE图形库编写而成。</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_entity_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Entity.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_entity_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_resources_8h.html">Resources.h</a>&quot;</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="_entity_8h.html#ad54c4fe39f1c51b786c24ae0b7763b44">    4</a></span>&#160;<span class="keyword">enum class</span> <a class="code" href="_entity_8h.html#ad54c4fe39f1c51b786c24ae0b7763b44">Camp</a></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    <a class="code" href="_entity_8h.html#ad54c4fe39f1c51b786c24ae0b7763b44a930a91848917f92cf7e2f8d744fa4177">Friend</a>,</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <a class="code" href="_entity_8h.html#ad54c4fe39f1c51b786c24ae0b7763b44a8c6d21187fb58b7a079d70030686b33e">Enemy</a></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;};</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_entity.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_entity.html">Entity</a></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_entity.html#a604327e36e9783d29dd6ae6e4626777a">   13</a></span>&#160;    <a class="code" href="class_entity.html#a604327e36e9783d29dd6ae6e4626777a">Entity</a>(<a class="code" href="struct_texture.html">Texture</a> texture, <a class="code" href="_entity_8h.html#ad54c4fe39f1c51b786c24ae0b7763b44">Camp</a> camp, <a class="code" href="structbasic__vector2_d.html">Vector2D</a> position, <a class="code" href="structbasic__vector2_d.html">Vector2D</a> velocity = <a class="code" href="_vector2_d_8hpp.html#aa1f1145650f1dd9bddf7335ec6434d7c">Vector2D</a>()) :</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        model(texture), camp(camp), curPos(position), velocity(velocity) { }</div><div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_entity.html#a588098978eea6a3486b7361605ff3f0f">   15</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_entity.html#a588098978eea6a3486b7361605ff3f0f">~Entity</a>() { }</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> update();</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> draw();</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="comment">/* -------------- get &amp; set --------------*/</span></div><div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_entity.html#a0be9d16acca47749b5450954b7cd8865">   21</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_entity.html#a0be9d16acca47749b5450954b7cd8865">getXPos</a>() { <span class="keywordflow">return</span> curPos.x; }</div><div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_entity.html#a84360a6824c2e29fa324eb9cc0d988e0">   22</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_entity.html#a84360a6824c2e29fa324eb9cc0d988e0">getYPos</a>() { <span class="keywordflow">return</span> curPos.y; }</div><div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_entity.html#a8afb8aa252cbbffecc2dff0669cb2896">   23</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_entity.html#a8afb8aa252cbbffecc2dff0669cb2896">setXPos</a>(<span class="keywordtype">int</span> x) { curPos.x = x; }</div><div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_entity.html#a66278a362d97e2a30912c2a31962bfb9">   24</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_entity.html#a66278a362d97e2a30912c2a31962bfb9">setYPos</a>(<span class="keywordtype">int</span> y) { curPos.y = y; }</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_entity.html#af10fa675180cfc3c61bf84a9c9c56b3c">   26</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_entity.html#af10fa675180cfc3c61bf84a9c9c56b3c">getXVel</a>() { <span class="keywordflow">return</span> velocity.x; }</div><div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_entity.html#a56464fa481c71c541c51700c5498c6b0">   27</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_entity.html#a56464fa481c71c541c51700c5498c6b0">getYVel</a>() { <span class="keywordflow">return</span> velocity.y; }</div><div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_entity.html#a7f20a2190046121150e5903ec769e9dc">   28</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_entity.html#a7f20a2190046121150e5903ec769e9dc">setXVel</a>(<span class="keywordtype">int</span> x) { velocity.x = x; }</div><div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_entity.html#a9d7c4a35217e6f83ac21da314aa3ec9a">   29</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_entity.html#a9d7c4a35217e6f83ac21da314aa3ec9a">setYVel</a>(<span class="keywordtype">int</span> y) { velocity.y = y; }</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div><div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_entity.html#a82c547dbbfc7d0f353f3af2d04e17723">   31</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_entity.html#a82c547dbbfc7d0f353f3af2d04e17723">getXHitBox</a>() { <span class="keywordflow">return</span> model.hitBox.x; }</div><div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_entity.html#a843b664cfecb1a912f3bc385f6ef2ae2">   32</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_entity.html#a843b664cfecb1a912f3bc385f6ef2ae2">getYHitBox</a>() { <span class="keywordflow">return</span> model.hitBox.y; }</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div><div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_entity.html#a76d40195158d4ac1353834b6c95aba21">   34</a></span>&#160;    <a class="code" href="structbasic__vector2_d.html">Vector2D</a> <a class="code" href="class_entity.html#a76d40195158d4ac1353834b6c95aba21">getPosition</a>() { <span class="keywordflow">return</span> curPos; }</div><div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_entity.html#a00fb331557faca43b55eadc30f03c746">   35</a></span>&#160;    <a class="code" href="structbasic__vector2_d.html">Vector2D</a> <a class="code" href="class_entity.html#a00fb331557faca43b55eadc30f03c746">getVelocity</a>() { <span class="keywordflow">return</span> velocity; }</div><div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_entity.html#a973839fe04fc483c016d8f09e1c6f52a">   36</a></span>&#160;    <a class="code" href="structbasic__vector2_d.html">Vector2D</a> <a class="code" href="class_entity.html#a973839fe04fc483c016d8f09e1c6f52a">getHitBox</a>() { <span class="keywordflow">return</span> model.hitBox; }</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div><div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_entity.html#a372b9155542c8a228a4f1305f5f67341">   38</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_entity.html#a372b9155542c8a228a4f1305f5f67341">setPosition</a>(<span class="keyword">const</span> <a class="code" href="structbasic__vector2_d.html">Vector2D</a>&amp; pos) { curPos = pos; }</div><div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_entity.html#af41c73b5b2a7e68a7f285b12d0dab9f1">   39</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_entity.html#af41c73b5b2a7e68a7f285b12d0dab9f1">setVelocity</a>(<span class="keyword">const</span> <a class="code" href="structbasic__vector2_d.html">Vector2D</a>&amp; vel) { velocity = vel; }</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div><div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_entity.html#aad037bf3c41999855c70a47c58f3bf0a">   41</a></span>&#160;    <a class="code" href="_entity_8h.html#ad54c4fe39f1c51b786c24ae0b7763b44">Camp</a> <a class="code" href="class_entity.html#aad037bf3c41999855c70a47c58f3bf0a">getCamp</a>() { <span class="keywordflow">return</span> camp; }</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">protected</span>:</div><div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_entity.html#a22ccba8fb86e5b4e10b2c33b6f56d238">   44</a></span>&#160;    <a class="code" href="struct_texture.html">Texture</a> <a class="code" href="class_entity.html#a22ccba8fb86e5b4e10b2c33b6f56d238">model</a>;</div><div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_entity.html#a5031aa6b058f2231daad16b35e3d536d">   45</a></span>&#160;    <a class="code" href="structbasic__vector2_d.html">Vector2D</a> <a class="code" href="class_entity.html#a5031aa6b058f2231daad16b35e3d536d">curPos</a>;</div><div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="class_entity.html#a386d25b56772b8913eb3e5adc636f6e0">   46</a></span>&#160;    <a class="code" href="structbasic__vector2_d.html">Vector2D</a> <a class="code" href="class_entity.html#a386d25b56772b8913eb3e5adc636f6e0">velocity</a>;</div><div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_entity.html#a5326accd49d3817310ec90692b9da3df">   47</a></span>&#160;    <a class="code" href="_entity_8h.html#ad54c4fe39f1c51b786c24ae0b7763b44">Camp</a> <a class="code" href="class_entity.html#a5326accd49d3817310ec90692b9da3df">camp</a>;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;};</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="_entity_8h.html#a80e8c486f6adfe5d58192da6b9857ba6">judgeCollision</a>(<a class="code" href="class_entity.html">Entity</a>* e1, <a class="code" href="class_entity.html">Entity</a>* e2);</div><div class="ttc" id="class_entity_html_a82c547dbbfc7d0f353f3af2d04e17723"><div class="ttname"><a href="class_entity.html#a82c547dbbfc7d0f353f3af2d04e17723">Entity::getXHitBox</a></div><div class="ttdeci">int getXHitBox()</div><div class="ttdef"><b>Definition:</b> Entity.h:31</div></div>
+<div class="ttc" id="_vector2_d_8hpp_html_aa1f1145650f1dd9bddf7335ec6434d7c"><div class="ttname"><a href="_vector2_d_8hpp.html#aa1f1145650f1dd9bddf7335ec6434d7c">Vector2D</a></div><div class="ttdeci">basic_vector2D&lt; double &gt; Vector2D</div><div class="ttdef"><b>Definition:</b> Vector2D.hpp:82</div></div>
+<div class="ttc" id="class_entity_html_a84360a6824c2e29fa324eb9cc0d988e0"><div class="ttname"><a href="class_entity.html#a84360a6824c2e29fa324eb9cc0d988e0">Entity::getYPos</a></div><div class="ttdeci">int getYPos()</div><div class="ttdef"><b>Definition:</b> Entity.h:22</div></div>
+<div class="ttc" id="class_entity_html_a56464fa481c71c541c51700c5498c6b0"><div class="ttname"><a href="class_entity.html#a56464fa481c71c541c51700c5498c6b0">Entity::getYVel</a></div><div class="ttdeci">int getYVel()</div><div class="ttdef"><b>Definition:</b> Entity.h:27</div></div>
+<div class="ttc" id="_entity_8h_html_ad54c4fe39f1c51b786c24ae0b7763b44a8c6d21187fb58b7a079d70030686b33e"><div class="ttname"><a href="_entity_8h.html#ad54c4fe39f1c51b786c24ae0b7763b44a8c6d21187fb58b7a079d70030686b33e">Camp::Enemy</a></div></div>
+<div class="ttc" id="class_entity_html_af41c73b5b2a7e68a7f285b12d0dab9f1"><div class="ttname"><a href="class_entity.html#af41c73b5b2a7e68a7f285b12d0dab9f1">Entity::setVelocity</a></div><div class="ttdeci">void setVelocity(const Vector2D &amp;vel)</div><div class="ttdef"><b>Definition:</b> Entity.h:39</div></div>
+<div class="ttc" id="class_entity_html_af10fa675180cfc3c61bf84a9c9c56b3c"><div class="ttname"><a href="class_entity.html#af10fa675180cfc3c61bf84a9c9c56b3c">Entity::getXVel</a></div><div class="ttdeci">int getXVel()</div><div class="ttdef"><b>Definition:</b> Entity.h:26</div></div>
+<div class="ttc" id="class_entity_html_a588098978eea6a3486b7361605ff3f0f"><div class="ttname"><a href="class_entity.html#a588098978eea6a3486b7361605ff3f0f">Entity::~Entity</a></div><div class="ttdeci">virtual ~Entity()</div><div class="ttdef"><b>Definition:</b> Entity.h:15</div></div>
+<div class="ttc" id="class_entity_html_a8afb8aa252cbbffecc2dff0669cb2896"><div class="ttname"><a href="class_entity.html#a8afb8aa252cbbffecc2dff0669cb2896">Entity::setXPos</a></div><div class="ttdeci">void setXPos(int x)</div><div class="ttdef"><b>Definition:</b> Entity.h:23</div></div>
+<div class="ttc" id="class_entity_html_a7f20a2190046121150e5903ec769e9dc"><div class="ttname"><a href="class_entity.html#a7f20a2190046121150e5903ec769e9dc">Entity::setXVel</a></div><div class="ttdeci">void setXVel(int x)</div><div class="ttdef"><b>Definition:</b> Entity.h:28</div></div>
+<div class="ttc" id="class_entity_html_a604327e36e9783d29dd6ae6e4626777a"><div class="ttname"><a href="class_entity.html#a604327e36e9783d29dd6ae6e4626777a">Entity::Entity</a></div><div class="ttdeci">Entity(Texture texture, Camp camp, Vector2D position, Vector2D velocity=Vector2D())</div><div class="ttdef"><b>Definition:</b> Entity.h:13</div></div>
+<div class="ttc" id="class_entity_html_a372b9155542c8a228a4f1305f5f67341"><div class="ttname"><a href="class_entity.html#a372b9155542c8a228a4f1305f5f67341">Entity::setPosition</a></div><div class="ttdeci">void setPosition(const Vector2D &amp;pos)</div><div class="ttdef"><b>Definition:</b> Entity.h:38</div></div>
+<div class="ttc" id="class_entity_html_a386d25b56772b8913eb3e5adc636f6e0"><div class="ttname"><a href="class_entity.html#a386d25b56772b8913eb3e5adc636f6e0">Entity::velocity</a></div><div class="ttdeci">Vector2D velocity</div><div class="ttdef"><b>Definition:</b> Entity.h:46</div></div>
+<div class="ttc" id="class_entity_html_a00fb331557faca43b55eadc30f03c746"><div class="ttname"><a href="class_entity.html#a00fb331557faca43b55eadc30f03c746">Entity::getVelocity</a></div><div class="ttdeci">Vector2D getVelocity()</div><div class="ttdef"><b>Definition:</b> Entity.h:35</div></div>
+<div class="ttc" id="struct_texture_html"><div class="ttname"><a href="struct_texture.html">Texture</a></div><div class="ttdef"><b>Definition:</b> Resources.h:11</div></div>
+<div class="ttc" id="class_entity_html_a973839fe04fc483c016d8f09e1c6f52a"><div class="ttname"><a href="class_entity.html#a973839fe04fc483c016d8f09e1c6f52a">Entity::getHitBox</a></div><div class="ttdeci">Vector2D getHitBox()</div><div class="ttdef"><b>Definition:</b> Entity.h:36</div></div>
+<div class="ttc" id="class_entity_html_a0be9d16acca47749b5450954b7cd8865"><div class="ttname"><a href="class_entity.html#a0be9d16acca47749b5450954b7cd8865">Entity::getXPos</a></div><div class="ttdeci">int getXPos()</div><div class="ttdef"><b>Definition:</b> Entity.h:21</div></div>
+<div class="ttc" id="class_entity_html"><div class="ttname"><a href="class_entity.html">Entity</a></div><div class="ttdef"><b>Definition:</b> Entity.h:10</div></div>
+<div class="ttc" id="class_entity_html_a22ccba8fb86e5b4e10b2c33b6f56d238"><div class="ttname"><a href="class_entity.html#a22ccba8fb86e5b4e10b2c33b6f56d238">Entity::model</a></div><div class="ttdeci">Texture model</div><div class="ttdef"><b>Definition:</b> Entity.h:44</div></div>
+<div class="ttc" id="class_entity_html_a5031aa6b058f2231daad16b35e3d536d"><div class="ttname"><a href="class_entity.html#a5031aa6b058f2231daad16b35e3d536d">Entity::curPos</a></div><div class="ttdeci">Vector2D curPos</div><div class="ttdef"><b>Definition:</b> Entity.h:45</div></div>
+<div class="ttc" id="_entity_8h_html_ad54c4fe39f1c51b786c24ae0b7763b44a930a91848917f92cf7e2f8d744fa4177"><div class="ttname"><a href="_entity_8h.html#ad54c4fe39f1c51b786c24ae0b7763b44a930a91848917f92cf7e2f8d744fa4177">Camp::Friend</a></div></div>
+<div class="ttc" id="class_entity_html_a76d40195158d4ac1353834b6c95aba21"><div class="ttname"><a href="class_entity.html#a76d40195158d4ac1353834b6c95aba21">Entity::getPosition</a></div><div class="ttdeci">Vector2D getPosition()</div><div class="ttdef"><b>Definition:</b> Entity.h:34</div></div>
+<div class="ttc" id="class_entity_html_a66278a362d97e2a30912c2a31962bfb9"><div class="ttname"><a href="class_entity.html#a66278a362d97e2a30912c2a31962bfb9">Entity::setYPos</a></div><div class="ttdeci">void setYPos(int y)</div><div class="ttdef"><b>Definition:</b> Entity.h:24</div></div>
+<div class="ttc" id="_entity_8h_html_a80e8c486f6adfe5d58192da6b9857ba6"><div class="ttname"><a href="_entity_8h.html#a80e8c486f6adfe5d58192da6b9857ba6">judgeCollision</a></div><div class="ttdeci">bool judgeCollision(Entity *e1, Entity *e2)</div><div class="ttdef"><b>Definition:</b> Entity.cpp:4</div></div>
+<div class="ttc" id="structbasic__vector2_d_html"><div class="ttname"><a href="structbasic__vector2_d.html">basic_vector2D&lt; double &gt;</a></div></div>
+<div class="ttc" id="_entity_8h_html_ad54c4fe39f1c51b786c24ae0b7763b44"><div class="ttname"><a href="_entity_8h.html#ad54c4fe39f1c51b786c24ae0b7763b44">Camp</a></div><div class="ttdeci">Camp</div><div class="ttdef"><b>Definition:</b> Entity.h:4</div></div>
+<div class="ttc" id="class_entity_html_a9d7c4a35217e6f83ac21da314aa3ec9a"><div class="ttname"><a href="class_entity.html#a9d7c4a35217e6f83ac21da314aa3ec9a">Entity::setYVel</a></div><div class="ttdeci">void setYVel(int y)</div><div class="ttdef"><b>Definition:</b> Entity.h:29</div></div>
+<div class="ttc" id="_resources_8h_html"><div class="ttname"><a href="_resources_8h.html">Resources.h</a></div></div>
+<div class="ttc" id="class_entity_html_aad037bf3c41999855c70a47c58f3bf0a"><div class="ttname"><a href="class_entity.html#aad037bf3c41999855c70a47c58f3bf0a">Entity::getCamp</a></div><div class="ttdeci">Camp getCamp()</div><div class="ttdef"><b>Definition:</b> Entity.h:41</div></div>
+<div class="ttc" id="class_entity_html_a5326accd49d3817310ec90692b9da3df"><div class="ttname"><a href="class_entity.html#a5326accd49d3817310ec90692b9da3df">Entity::camp</a></div><div class="ttdeci">Camp camp</div><div class="ttdef"><b>Definition:</b> Entity.h:47</div></div>
+<div class="ttc" id="class_entity_html_a843b664cfecb1a912f3bc385f6ef2ae2"><div class="ttname"><a href="class_entity.html#a843b664cfecb1a912f3bc385f6ef2ae2">Entity::getYHitBox</a></div><div class="ttdeci">int getYHitBox()</div><div class="ttdef"><b>Definition:</b> Entity.h:32</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_6e6b16da925a92726867f3472ab3e402.html">Lost Phoenix</a></li><li class="navelem"><a class="el" href="dir_665497e2755fa1fce0a2d99d98d16b67.html">include</a></li><li class="navelem"><a class="el" href="_entity_8h.html">Entity.h</a></li>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

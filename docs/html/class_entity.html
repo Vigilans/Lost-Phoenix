@@ -1,0 +1,805 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Lost Phoenix: Entity类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Lost Phoenix
+   &#160;<span id="projectnumber">1.1</span>
+   </div>
+   <div id="projectbrief">一个简单的飞机大战游戏，由EGE图形库编写而成。</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_entity.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pro-attribs">Protected 属性</a> &#124;
+<a href="class_entity-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">Entity类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_entity_8h_source.html">Entity.h</a>&gt;</code></p>
+<div class="dynheader">
+类 Entity 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_entity.png" usemap="#Entity_map" alt=""/>
+  <map id="Entity_map" name="Entity_map">
+<area href="class_bullet.html" alt="Bullet" shape="rect" coords="168,56,326,80"/>
+<area href="class_plane.html" alt="Plane" shape="rect" coords="672,56,830,80"/>
+<area href="class_bullet___enemy___auto_target.html" alt="Bullet_Enemy_AutoTarget" shape="rect" coords="0,112,158,136"/>
+<area href="class_bullet___enemy___junior.html" alt="Bullet_Enemy_Junior" shape="rect" coords="168,112,326,136"/>
+<area href="class_bullet___player.html" alt="Bullet_Player" shape="rect" coords="336,112,494,136"/>
+<area href="class_plane___enemy___auto_target.html" alt="Plane_Enemy_AutoTarget" shape="rect" coords="504,112,662,136"/>
+<area href="class_plane___enemy___junior.html" alt="Plane_Enemy_Junior" shape="rect" coords="672,112,830,136"/>
+<area href="class_plane___player.html" alt="Plane_Player" shape="rect" coords="840,112,998,136"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a604327e36e9783d29dd6ae6e4626777a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entity.html#a604327e36e9783d29dd6ae6e4626777a">Entity</a> (<a class="el" href="struct_texture.html">Texture</a> texture, <a class="el" href="_entity_8h.html#ad54c4fe39f1c51b786c24ae0b7763b44">Camp</a> <a class="el" href="class_entity.html#a5326accd49d3817310ec90692b9da3df">camp</a>, <a class="el" href="_vector2_d_8hpp.html#aa1f1145650f1dd9bddf7335ec6434d7c">Vector2D</a> position, <a class="el" href="_vector2_d_8hpp.html#aa1f1145650f1dd9bddf7335ec6434d7c">Vector2D</a> <a class="el" href="class_entity.html#a386d25b56772b8913eb3e5adc636f6e0">velocity</a>=<a class="el" href="_vector2_d_8hpp.html#aa1f1145650f1dd9bddf7335ec6434d7c">Vector2D</a>())</td></tr>
+<tr class="separator:a604327e36e9783d29dd6ae6e4626777a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a588098978eea6a3486b7361605ff3f0f"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entity.html#a588098978eea6a3486b7361605ff3f0f">~Entity</a> ()</td></tr>
+<tr class="separator:a588098978eea6a3486b7361605ff3f0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00b6eeaf99b35c8f8b10b5fbfc1baf4f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entity.html#a00b6eeaf99b35c8f8b10b5fbfc1baf4f">update</a> ()</td></tr>
+<tr class="separator:a00b6eeaf99b35c8f8b10b5fbfc1baf4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7666f416dd0d1fce0f1133f78df44476"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entity.html#a7666f416dd0d1fce0f1133f78df44476">draw</a> ()</td></tr>
+<tr class="separator:a7666f416dd0d1fce0f1133f78df44476"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0be9d16acca47749b5450954b7cd8865"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entity.html#a0be9d16acca47749b5450954b7cd8865">getXPos</a> ()</td></tr>
+<tr class="separator:a0be9d16acca47749b5450954b7cd8865"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84360a6824c2e29fa324eb9cc0d988e0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entity.html#a84360a6824c2e29fa324eb9cc0d988e0">getYPos</a> ()</td></tr>
+<tr class="separator:a84360a6824c2e29fa324eb9cc0d988e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8afb8aa252cbbffecc2dff0669cb2896"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entity.html#a8afb8aa252cbbffecc2dff0669cb2896">setXPos</a> (int x)</td></tr>
+<tr class="separator:a8afb8aa252cbbffecc2dff0669cb2896"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66278a362d97e2a30912c2a31962bfb9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entity.html#a66278a362d97e2a30912c2a31962bfb9">setYPos</a> (int y)</td></tr>
+<tr class="separator:a66278a362d97e2a30912c2a31962bfb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af10fa675180cfc3c61bf84a9c9c56b3c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entity.html#af10fa675180cfc3c61bf84a9c9c56b3c">getXVel</a> ()</td></tr>
+<tr class="separator:af10fa675180cfc3c61bf84a9c9c56b3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56464fa481c71c541c51700c5498c6b0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entity.html#a56464fa481c71c541c51700c5498c6b0">getYVel</a> ()</td></tr>
+<tr class="separator:a56464fa481c71c541c51700c5498c6b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f20a2190046121150e5903ec769e9dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entity.html#a7f20a2190046121150e5903ec769e9dc">setXVel</a> (int x)</td></tr>
+<tr class="separator:a7f20a2190046121150e5903ec769e9dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d7c4a35217e6f83ac21da314aa3ec9a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entity.html#a9d7c4a35217e6f83ac21da314aa3ec9a">setYVel</a> (int y)</td></tr>
+<tr class="separator:a9d7c4a35217e6f83ac21da314aa3ec9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82c547dbbfc7d0f353f3af2d04e17723"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entity.html#a82c547dbbfc7d0f353f3af2d04e17723">getXHitBox</a> ()</td></tr>
+<tr class="separator:a82c547dbbfc7d0f353f3af2d04e17723"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a843b664cfecb1a912f3bc385f6ef2ae2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entity.html#a843b664cfecb1a912f3bc385f6ef2ae2">getYHitBox</a> ()</td></tr>
+<tr class="separator:a843b664cfecb1a912f3bc385f6ef2ae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76d40195158d4ac1353834b6c95aba21"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_vector2_d_8hpp.html#aa1f1145650f1dd9bddf7335ec6434d7c">Vector2D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entity.html#a76d40195158d4ac1353834b6c95aba21">getPosition</a> ()</td></tr>
+<tr class="separator:a76d40195158d4ac1353834b6c95aba21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00fb331557faca43b55eadc30f03c746"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_vector2_d_8hpp.html#aa1f1145650f1dd9bddf7335ec6434d7c">Vector2D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entity.html#a00fb331557faca43b55eadc30f03c746">getVelocity</a> ()</td></tr>
+<tr class="separator:a00fb331557faca43b55eadc30f03c746"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a973839fe04fc483c016d8f09e1c6f52a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_vector2_d_8hpp.html#aa1f1145650f1dd9bddf7335ec6434d7c">Vector2D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entity.html#a973839fe04fc483c016d8f09e1c6f52a">getHitBox</a> ()</td></tr>
+<tr class="separator:a973839fe04fc483c016d8f09e1c6f52a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a372b9155542c8a228a4f1305f5f67341"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entity.html#a372b9155542c8a228a4f1305f5f67341">setPosition</a> (const <a class="el" href="_vector2_d_8hpp.html#aa1f1145650f1dd9bddf7335ec6434d7c">Vector2D</a> &amp;pos)</td></tr>
+<tr class="separator:a372b9155542c8a228a4f1305f5f67341"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af41c73b5b2a7e68a7f285b12d0dab9f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entity.html#af41c73b5b2a7e68a7f285b12d0dab9f1">setVelocity</a> (const <a class="el" href="_vector2_d_8hpp.html#aa1f1145650f1dd9bddf7335ec6434d7c">Vector2D</a> &amp;vel)</td></tr>
+<tr class="separator:af41c73b5b2a7e68a7f285b12d0dab9f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad037bf3c41999855c70a47c58f3bf0a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_entity_8h.html#ad54c4fe39f1c51b786c24ae0b7763b44">Camp</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entity.html#aad037bf3c41999855c70a47c58f3bf0a">getCamp</a> ()</td></tr>
+<tr class="separator:aad037bf3c41999855c70a47c58f3bf0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:a22ccba8fb86e5b4e10b2c33b6f56d238"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_texture.html">Texture</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entity.html#a22ccba8fb86e5b4e10b2c33b6f56d238">model</a></td></tr>
+<tr class="separator:a22ccba8fb86e5b4e10b2c33b6f56d238"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5031aa6b058f2231daad16b35e3d536d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_vector2_d_8hpp.html#aa1f1145650f1dd9bddf7335ec6434d7c">Vector2D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entity.html#a5031aa6b058f2231daad16b35e3d536d">curPos</a></td></tr>
+<tr class="separator:a5031aa6b058f2231daad16b35e3d536d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a386d25b56772b8913eb3e5adc636f6e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_vector2_d_8hpp.html#aa1f1145650f1dd9bddf7335ec6434d7c">Vector2D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entity.html#a386d25b56772b8913eb3e5adc636f6e0">velocity</a></td></tr>
+<tr class="separator:a386d25b56772b8913eb3e5adc636f6e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5326accd49d3817310ec90692b9da3df"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_entity_8h.html#ad54c4fe39f1c51b786c24ae0b7763b44">Camp</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entity.html#a5326accd49d3817310ec90692b9da3df">camp</a></td></tr>
+<tr class="separator:a5326accd49d3817310ec90692b9da3df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a604327e36e9783d29dd6ae6e4626777a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a604327e36e9783d29dd6ae6e4626777a">&#9670;&nbsp;</a></span>Entity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Entity::Entity </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_texture.html">Texture</a>&#160;</td>
+          <td class="paramname"><em>texture</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_entity_8h.html#ad54c4fe39f1c51b786c24ae0b7763b44">Camp</a>&#160;</td>
+          <td class="paramname"><em>camp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_vector2_d_8hpp.html#aa1f1145650f1dd9bddf7335ec6434d7c">Vector2D</a>&#160;</td>
+          <td class="paramname"><em>position</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_vector2_d_8hpp.html#aa1f1145650f1dd9bddf7335ec6434d7c">Vector2D</a>&#160;</td>
+          <td class="paramname"><em>velocity</em> = <code><a class="el" href="_vector2_d_8hpp.html#aa1f1145650f1dd9bddf7335ec6434d7c">Vector2D</a>()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a588098978eea6a3486b7361605ff3f0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a588098978eea6a3486b7361605ff3f0f">&#9670;&nbsp;</a></span>~Entity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual Entity::~Entity </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a7666f416dd0d1fce0f1133f78df44476"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7666f416dd0d1fce0f1133f78df44476">&#9670;&nbsp;</a></span>draw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Entity::draw </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>被 <a class="el" href="class_plane.html#a8877358878e91929c4c01bad40cbdb78">Plane</a> 重载.</p>
+
+</div>
+</div>
+<a id="aad037bf3c41999855c70a47c58f3bf0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad037bf3c41999855c70a47c58f3bf0a">&#9670;&nbsp;</a></span>getCamp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_entity_8h.html#ad54c4fe39f1c51b786c24ae0b7763b44">Camp</a> Entity::getCamp </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a973839fe04fc483c016d8f09e1c6f52a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a973839fe04fc483c016d8f09e1c6f52a">&#9670;&nbsp;</a></span>getHitBox()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_vector2_d_8hpp.html#aa1f1145650f1dd9bddf7335ec6434d7c">Vector2D</a> Entity::getHitBox </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a76d40195158d4ac1353834b6c95aba21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76d40195158d4ac1353834b6c95aba21">&#9670;&nbsp;</a></span>getPosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_vector2_d_8hpp.html#aa1f1145650f1dd9bddf7335ec6434d7c">Vector2D</a> Entity::getPosition </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a00fb331557faca43b55eadc30f03c746"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00fb331557faca43b55eadc30f03c746">&#9670;&nbsp;</a></span>getVelocity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_vector2_d_8hpp.html#aa1f1145650f1dd9bddf7335ec6434d7c">Vector2D</a> Entity::getVelocity </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a82c547dbbfc7d0f353f3af2d04e17723"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82c547dbbfc7d0f353f3af2d04e17723">&#9670;&nbsp;</a></span>getXHitBox()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Entity::getXHitBox </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0be9d16acca47749b5450954b7cd8865"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0be9d16acca47749b5450954b7cd8865">&#9670;&nbsp;</a></span>getXPos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Entity::getXPos </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af10fa675180cfc3c61bf84a9c9c56b3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af10fa675180cfc3c61bf84a9c9c56b3c">&#9670;&nbsp;</a></span>getXVel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Entity::getXVel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a843b664cfecb1a912f3bc385f6ef2ae2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a843b664cfecb1a912f3bc385f6ef2ae2">&#9670;&nbsp;</a></span>getYHitBox()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Entity::getYHitBox </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a84360a6824c2e29fa324eb9cc0d988e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84360a6824c2e29fa324eb9cc0d988e0">&#9670;&nbsp;</a></span>getYPos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Entity::getYPos </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a56464fa481c71c541c51700c5498c6b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56464fa481c71c541c51700c5498c6b0">&#9670;&nbsp;</a></span>getYVel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Entity::getYVel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a372b9155542c8a228a4f1305f5f67341"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a372b9155542c8a228a4f1305f5f67341">&#9670;&nbsp;</a></span>setPosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Entity::setPosition </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_vector2_d_8hpp.html#aa1f1145650f1dd9bddf7335ec6434d7c">Vector2D</a> &amp;&#160;</td>
+          <td class="paramname"><em>pos</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af41c73b5b2a7e68a7f285b12d0dab9f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af41c73b5b2a7e68a7f285b12d0dab9f1">&#9670;&nbsp;</a></span>setVelocity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Entity::setVelocity </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_vector2_d_8hpp.html#aa1f1145650f1dd9bddf7335ec6434d7c">Vector2D</a> &amp;&#160;</td>
+          <td class="paramname"><em>vel</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8afb8aa252cbbffecc2dff0669cb2896"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8afb8aa252cbbffecc2dff0669cb2896">&#9670;&nbsp;</a></span>setXPos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Entity::setXPos </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7f20a2190046121150e5903ec769e9dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f20a2190046121150e5903ec769e9dc">&#9670;&nbsp;</a></span>setXVel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Entity::setXVel </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a66278a362d97e2a30912c2a31962bfb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66278a362d97e2a30912c2a31962bfb9">&#9670;&nbsp;</a></span>setYPos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Entity::setYPos </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9d7c4a35217e6f83ac21da314aa3ec9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d7c4a35217e6f83ac21da314aa3ec9a">&#9670;&nbsp;</a></span>setYVel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Entity::setYVel </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a00b6eeaf99b35c8f8b10b5fbfc1baf4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00b6eeaf99b35c8f8b10b5fbfc1baf4f">&#9670;&nbsp;</a></span>update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Entity::update </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>被 <a class="el" href="class_bullet.html#a32f4a0611fe2dd245fee955d14ca1f68">Bullet</a>, <a class="el" href="class_plane.html#a7fbb07f76503fe057772e01f542afc32">Plane</a>, <a class="el" href="class_plane___enemy___auto_target.html#acae2a6f38bdc71d17188e2b7711f4d5b">Plane_Enemy_AutoTarget</a>, <a class="el" href="class_plane___enemy___junior.html#a686e46c9927793dd07235cac72d52405">Plane_Enemy_Junior</a> , 以及 <a class="el" href="class_plane___player.html#ae68c08ce11fad9fd164c00eb4db6b348">Plane_Player</a> 重载.</p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="a5326accd49d3817310ec90692b9da3df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5326accd49d3817310ec90692b9da3df">&#9670;&nbsp;</a></span>camp</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_entity_8h.html#ad54c4fe39f1c51b786c24ae0b7763b44">Camp</a> Entity::camp</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5031aa6b058f2231daad16b35e3d536d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5031aa6b058f2231daad16b35e3d536d">&#9670;&nbsp;</a></span>curPos</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_vector2_d_8hpp.html#aa1f1145650f1dd9bddf7335ec6434d7c">Vector2D</a> Entity::curPos</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a22ccba8fb86e5b4e10b2c33b6f56d238"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22ccba8fb86e5b4e10b2c33b6f56d238">&#9670;&nbsp;</a></span>model</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_texture.html">Texture</a> Entity::model</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a386d25b56772b8913eb3e5adc636f6e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a386d25b56772b8913eb3e5adc636f6e0">&#9670;&nbsp;</a></span>velocity</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_vector2_d_8hpp.html#aa1f1145650f1dd9bddf7335ec6434d7c">Vector2D</a> Entity::velocity</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>D:/叶志浩文件夹/Vigilans的文档/Programming/Visual Studio/Projects/Grade 1 Summer Vacation/Lost Phoenix/Lost Phoenix/include/<a class="el" href="_entity_8h_source.html">Entity.h</a></li>
+<li>D:/叶志浩文件夹/Vigilans的文档/Programming/Visual Studio/Projects/Grade 1 Summer Vacation/Lost Phoenix/Lost Phoenix/src/<a class="el" href="_entity_8cpp.html">Entity.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_entity.html">Entity</a></li>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

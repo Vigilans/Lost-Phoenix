@@ -1,0 +1,233 @@
+\hypertarget{class_entity}{}\section{Entity类 参考}
+\label{class_entity}\index{Entity@{Entity}}
+
+
+{\ttfamily \#include $<$Entity.\+h$>$}
+
+类 Entity 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.686747cm]{class_entity}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_entity_a604327e36e9783d29dd6ae6e4626777a}{Entity} (\hyperlink{struct_texture}{Texture} texture, \hyperlink{_entity_8h_ad54c4fe39f1c51b786c24ae0b7763b44}{Camp} \hyperlink{class_entity_a5326accd49d3817310ec90692b9da3df}{camp}, \hyperlink{_vector2_d_8hpp_aa1f1145650f1dd9bddf7335ec6434d7c}{Vector2D} position, \hyperlink{_vector2_d_8hpp_aa1f1145650f1dd9bddf7335ec6434d7c}{Vector2D} \hyperlink{class_entity_a386d25b56772b8913eb3e5adc636f6e0}{velocity}=\hyperlink{_vector2_d_8hpp_aa1f1145650f1dd9bddf7335ec6434d7c}{Vector2D}())
+\item 
+virtual \hyperlink{class_entity_a588098978eea6a3486b7361605ff3f0f}{$\sim$\+Entity} ()
+\item 
+virtual void \hyperlink{class_entity_a00b6eeaf99b35c8f8b10b5fbfc1baf4f}{update} ()
+\item 
+virtual void \hyperlink{class_entity_a7666f416dd0d1fce0f1133f78df44476}{draw} ()
+\item 
+int \hyperlink{class_entity_a0be9d16acca47749b5450954b7cd8865}{get\+X\+Pos} ()
+\item 
+int \hyperlink{class_entity_a84360a6824c2e29fa324eb9cc0d988e0}{get\+Y\+Pos} ()
+\item 
+void \hyperlink{class_entity_a8afb8aa252cbbffecc2dff0669cb2896}{set\+X\+Pos} (int x)
+\item 
+void \hyperlink{class_entity_a66278a362d97e2a30912c2a31962bfb9}{set\+Y\+Pos} (int y)
+\item 
+int \hyperlink{class_entity_af10fa675180cfc3c61bf84a9c9c56b3c}{get\+X\+Vel} ()
+\item 
+int \hyperlink{class_entity_a56464fa481c71c541c51700c5498c6b0}{get\+Y\+Vel} ()
+\item 
+void \hyperlink{class_entity_a7f20a2190046121150e5903ec769e9dc}{set\+X\+Vel} (int x)
+\item 
+void \hyperlink{class_entity_a9d7c4a35217e6f83ac21da314aa3ec9a}{set\+Y\+Vel} (int y)
+\item 
+int \hyperlink{class_entity_a82c547dbbfc7d0f353f3af2d04e17723}{get\+X\+Hit\+Box} ()
+\item 
+int \hyperlink{class_entity_a843b664cfecb1a912f3bc385f6ef2ae2}{get\+Y\+Hit\+Box} ()
+\item 
+\hyperlink{_vector2_d_8hpp_aa1f1145650f1dd9bddf7335ec6434d7c}{Vector2D} \hyperlink{class_entity_a76d40195158d4ac1353834b6c95aba21}{get\+Position} ()
+\item 
+\hyperlink{_vector2_d_8hpp_aa1f1145650f1dd9bddf7335ec6434d7c}{Vector2D} \hyperlink{class_entity_a00fb331557faca43b55eadc30f03c746}{get\+Velocity} ()
+\item 
+\hyperlink{_vector2_d_8hpp_aa1f1145650f1dd9bddf7335ec6434d7c}{Vector2D} \hyperlink{class_entity_a973839fe04fc483c016d8f09e1c6f52a}{get\+Hit\+Box} ()
+\item 
+void \hyperlink{class_entity_a372b9155542c8a228a4f1305f5f67341}{set\+Position} (const \hyperlink{_vector2_d_8hpp_aa1f1145650f1dd9bddf7335ec6434d7c}{Vector2D} \&pos)
+\item 
+void \hyperlink{class_entity_af41c73b5b2a7e68a7f285b12d0dab9f1}{set\+Velocity} (const \hyperlink{_vector2_d_8hpp_aa1f1145650f1dd9bddf7335ec6434d7c}{Vector2D} \&vel)
+\item 
+\hyperlink{_entity_8h_ad54c4fe39f1c51b786c24ae0b7763b44}{Camp} \hyperlink{class_entity_aad037bf3c41999855c70a47c58f3bf0a}{get\+Camp} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_texture}{Texture} \hyperlink{class_entity_a22ccba8fb86e5b4e10b2c33b6f56d238}{model}
+\item 
+\hyperlink{_vector2_d_8hpp_aa1f1145650f1dd9bddf7335ec6434d7c}{Vector2D} \hyperlink{class_entity_a5031aa6b058f2231daad16b35e3d536d}{cur\+Pos}
+\item 
+\hyperlink{_vector2_d_8hpp_aa1f1145650f1dd9bddf7335ec6434d7c}{Vector2D} \hyperlink{class_entity_a386d25b56772b8913eb3e5adc636f6e0}{velocity}
+\item 
+\hyperlink{_entity_8h_ad54c4fe39f1c51b786c24ae0b7763b44}{Camp} \hyperlink{class_entity_a5326accd49d3817310ec90692b9da3df}{camp}
+\end{DoxyCompactItemize}
+
+
+\subsection{构造及析构函数说明}
+\mbox{\Hypertarget{class_entity_a604327e36e9783d29dd6ae6e4626777a}\label{class_entity_a604327e36e9783d29dd6ae6e4626777a}} 
+\index{Entity@{Entity}!Entity@{Entity}}
+\index{Entity@{Entity}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{Entity()}{Entity()}}
+{\footnotesize\ttfamily Entity\+::\+Entity (\begin{DoxyParamCaption}\item[{\hyperlink{struct_texture}{Texture}}]{texture,  }\item[{\hyperlink{_entity_8h_ad54c4fe39f1c51b786c24ae0b7763b44}{Camp}}]{camp,  }\item[{\hyperlink{_vector2_d_8hpp_aa1f1145650f1dd9bddf7335ec6434d7c}{Vector2D}}]{position,  }\item[{\hyperlink{_vector2_d_8hpp_aa1f1145650f1dd9bddf7335ec6434d7c}{Vector2D}}]{velocity = {\ttfamily \hyperlink{_vector2_d_8hpp_aa1f1145650f1dd9bddf7335ec6434d7c}{Vector2D}()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_entity_a588098978eea6a3486b7361605ff3f0f}\label{class_entity_a588098978eea6a3486b7361605ff3f0f}} 
+\index{Entity@{Entity}!````~Entity@{$\sim$\+Entity}}
+\index{````~Entity@{$\sim$\+Entity}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{$\sim$\+Entity()}{~Entity()}}
+{\footnotesize\ttfamily virtual Entity\+::$\sim$\+Entity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\subsection{成员函数说明}
+\mbox{\Hypertarget{class_entity_a7666f416dd0d1fce0f1133f78df44476}\label{class_entity_a7666f416dd0d1fce0f1133f78df44476}} 
+\index{Entity@{Entity}!draw@{draw}}
+\index{draw@{draw}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Entity\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+被 \hyperlink{class_plane_a8877358878e91929c4c01bad40cbdb78}{Plane} 重载.
+
+\mbox{\Hypertarget{class_entity_aad037bf3c41999855c70a47c58f3bf0a}\label{class_entity_aad037bf3c41999855c70a47c58f3bf0a}} 
+\index{Entity@{Entity}!get\+Camp@{get\+Camp}}
+\index{get\+Camp@{get\+Camp}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{get\+Camp()}{getCamp()}}
+{\footnotesize\ttfamily \hyperlink{_entity_8h_ad54c4fe39f1c51b786c24ae0b7763b44}{Camp} Entity\+::get\+Camp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_entity_a973839fe04fc483c016d8f09e1c6f52a}\label{class_entity_a973839fe04fc483c016d8f09e1c6f52a}} 
+\index{Entity@{Entity}!get\+Hit\+Box@{get\+Hit\+Box}}
+\index{get\+Hit\+Box@{get\+Hit\+Box}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{get\+Hit\+Box()}{getHitBox()}}
+{\footnotesize\ttfamily \hyperlink{_vector2_d_8hpp_aa1f1145650f1dd9bddf7335ec6434d7c}{Vector2D} Entity\+::get\+Hit\+Box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_entity_a76d40195158d4ac1353834b6c95aba21}\label{class_entity_a76d40195158d4ac1353834b6c95aba21}} 
+\index{Entity@{Entity}!get\+Position@{get\+Position}}
+\index{get\+Position@{get\+Position}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{get\+Position()}{getPosition()}}
+{\footnotesize\ttfamily \hyperlink{_vector2_d_8hpp_aa1f1145650f1dd9bddf7335ec6434d7c}{Vector2D} Entity\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_entity_a00fb331557faca43b55eadc30f03c746}\label{class_entity_a00fb331557faca43b55eadc30f03c746}} 
+\index{Entity@{Entity}!get\+Velocity@{get\+Velocity}}
+\index{get\+Velocity@{get\+Velocity}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{get\+Velocity()}{getVelocity()}}
+{\footnotesize\ttfamily \hyperlink{_vector2_d_8hpp_aa1f1145650f1dd9bddf7335ec6434d7c}{Vector2D} Entity\+::get\+Velocity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_entity_a82c547dbbfc7d0f353f3af2d04e17723}\label{class_entity_a82c547dbbfc7d0f353f3af2d04e17723}} 
+\index{Entity@{Entity}!get\+X\+Hit\+Box@{get\+X\+Hit\+Box}}
+\index{get\+X\+Hit\+Box@{get\+X\+Hit\+Box}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{get\+X\+Hit\+Box()}{getXHitBox()}}
+{\footnotesize\ttfamily int Entity\+::get\+X\+Hit\+Box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_entity_a0be9d16acca47749b5450954b7cd8865}\label{class_entity_a0be9d16acca47749b5450954b7cd8865}} 
+\index{Entity@{Entity}!get\+X\+Pos@{get\+X\+Pos}}
+\index{get\+X\+Pos@{get\+X\+Pos}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{get\+X\+Pos()}{getXPos()}}
+{\footnotesize\ttfamily int Entity\+::get\+X\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_entity_af10fa675180cfc3c61bf84a9c9c56b3c}\label{class_entity_af10fa675180cfc3c61bf84a9c9c56b3c}} 
+\index{Entity@{Entity}!get\+X\+Vel@{get\+X\+Vel}}
+\index{get\+X\+Vel@{get\+X\+Vel}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{get\+X\+Vel()}{getXVel()}}
+{\footnotesize\ttfamily int Entity\+::get\+X\+Vel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_entity_a843b664cfecb1a912f3bc385f6ef2ae2}\label{class_entity_a843b664cfecb1a912f3bc385f6ef2ae2}} 
+\index{Entity@{Entity}!get\+Y\+Hit\+Box@{get\+Y\+Hit\+Box}}
+\index{get\+Y\+Hit\+Box@{get\+Y\+Hit\+Box}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{get\+Y\+Hit\+Box()}{getYHitBox()}}
+{\footnotesize\ttfamily int Entity\+::get\+Y\+Hit\+Box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_entity_a84360a6824c2e29fa324eb9cc0d988e0}\label{class_entity_a84360a6824c2e29fa324eb9cc0d988e0}} 
+\index{Entity@{Entity}!get\+Y\+Pos@{get\+Y\+Pos}}
+\index{get\+Y\+Pos@{get\+Y\+Pos}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{get\+Y\+Pos()}{getYPos()}}
+{\footnotesize\ttfamily int Entity\+::get\+Y\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_entity_a56464fa481c71c541c51700c5498c6b0}\label{class_entity_a56464fa481c71c541c51700c5498c6b0}} 
+\index{Entity@{Entity}!get\+Y\+Vel@{get\+Y\+Vel}}
+\index{get\+Y\+Vel@{get\+Y\+Vel}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{get\+Y\+Vel()}{getYVel()}}
+{\footnotesize\ttfamily int Entity\+::get\+Y\+Vel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_entity_a372b9155542c8a228a4f1305f5f67341}\label{class_entity_a372b9155542c8a228a4f1305f5f67341}} 
+\index{Entity@{Entity}!set\+Position@{set\+Position}}
+\index{set\+Position@{set\+Position}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{set\+Position()}{setPosition()}}
+{\footnotesize\ttfamily void Entity\+::set\+Position (\begin{DoxyParamCaption}\item[{const \hyperlink{_vector2_d_8hpp_aa1f1145650f1dd9bddf7335ec6434d7c}{Vector2D} \&}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_entity_af41c73b5b2a7e68a7f285b12d0dab9f1}\label{class_entity_af41c73b5b2a7e68a7f285b12d0dab9f1}} 
+\index{Entity@{Entity}!set\+Velocity@{set\+Velocity}}
+\index{set\+Velocity@{set\+Velocity}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{set\+Velocity()}{setVelocity()}}
+{\footnotesize\ttfamily void Entity\+::set\+Velocity (\begin{DoxyParamCaption}\item[{const \hyperlink{_vector2_d_8hpp_aa1f1145650f1dd9bddf7335ec6434d7c}{Vector2D} \&}]{vel }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_entity_a8afb8aa252cbbffecc2dff0669cb2896}\label{class_entity_a8afb8aa252cbbffecc2dff0669cb2896}} 
+\index{Entity@{Entity}!set\+X\+Pos@{set\+X\+Pos}}
+\index{set\+X\+Pos@{set\+X\+Pos}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{set\+X\+Pos()}{setXPos()}}
+{\footnotesize\ttfamily void Entity\+::set\+X\+Pos (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_entity_a7f20a2190046121150e5903ec769e9dc}\label{class_entity_a7f20a2190046121150e5903ec769e9dc}} 
+\index{Entity@{Entity}!set\+X\+Vel@{set\+X\+Vel}}
+\index{set\+X\+Vel@{set\+X\+Vel}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{set\+X\+Vel()}{setXVel()}}
+{\footnotesize\ttfamily void Entity\+::set\+X\+Vel (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_entity_a66278a362d97e2a30912c2a31962bfb9}\label{class_entity_a66278a362d97e2a30912c2a31962bfb9}} 
+\index{Entity@{Entity}!set\+Y\+Pos@{set\+Y\+Pos}}
+\index{set\+Y\+Pos@{set\+Y\+Pos}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{set\+Y\+Pos()}{setYPos()}}
+{\footnotesize\ttfamily void Entity\+::set\+Y\+Pos (\begin{DoxyParamCaption}\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_entity_a9d7c4a35217e6f83ac21da314aa3ec9a}\label{class_entity_a9d7c4a35217e6f83ac21da314aa3ec9a}} 
+\index{Entity@{Entity}!set\+Y\+Vel@{set\+Y\+Vel}}
+\index{set\+Y\+Vel@{set\+Y\+Vel}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{set\+Y\+Vel()}{setYVel()}}
+{\footnotesize\ttfamily void Entity\+::set\+Y\+Vel (\begin{DoxyParamCaption}\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_entity_a00b6eeaf99b35c8f8b10b5fbfc1baf4f}\label{class_entity_a00b6eeaf99b35c8f8b10b5fbfc1baf4f}} 
+\index{Entity@{Entity}!update@{update}}
+\index{update@{update}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Entity\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+被 \hyperlink{class_bullet_a32f4a0611fe2dd245fee955d14ca1f68}{Bullet}, \hyperlink{class_plane_a7fbb07f76503fe057772e01f542afc32}{Plane}, \hyperlink{class_plane___enemy___auto_target_acae2a6f38bdc71d17188e2b7711f4d5b}{Plane\+\_\+\+Enemy\+\_\+\+Auto\+Target}, \hyperlink{class_plane___enemy___junior_a686e46c9927793dd07235cac72d52405}{Plane\+\_\+\+Enemy\+\_\+\+Junior} , 以及 \hyperlink{class_plane___player_ae68c08ce11fad9fd164c00eb4db6b348}{Plane\+\_\+\+Player} 重载.
+
+
+
+\subsection{类成员变量说明}
+\mbox{\Hypertarget{class_entity_a5326accd49d3817310ec90692b9da3df}\label{class_entity_a5326accd49d3817310ec90692b9da3df}} 
+\index{Entity@{Entity}!camp@{camp}}
+\index{camp@{camp}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{camp}{camp}}
+{\footnotesize\ttfamily \hyperlink{_entity_8h_ad54c4fe39f1c51b786c24ae0b7763b44}{Camp} Entity\+::camp\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_entity_a5031aa6b058f2231daad16b35e3d536d}\label{class_entity_a5031aa6b058f2231daad16b35e3d536d}} 
+\index{Entity@{Entity}!cur\+Pos@{cur\+Pos}}
+\index{cur\+Pos@{cur\+Pos}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{cur\+Pos}{curPos}}
+{\footnotesize\ttfamily \hyperlink{_vector2_d_8hpp_aa1f1145650f1dd9bddf7335ec6434d7c}{Vector2D} Entity\+::cur\+Pos\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_entity_a22ccba8fb86e5b4e10b2c33b6f56d238}\label{class_entity_a22ccba8fb86e5b4e10b2c33b6f56d238}} 
+\index{Entity@{Entity}!model@{model}}
+\index{model@{model}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{model}{model}}
+{\footnotesize\ttfamily \hyperlink{struct_texture}{Texture} Entity\+::model\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_entity_a386d25b56772b8913eb3e5adc636f6e0}\label{class_entity_a386d25b56772b8913eb3e5adc636f6e0}} 
+\index{Entity@{Entity}!velocity@{velocity}}
+\index{velocity@{velocity}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{velocity}{velocity}}
+{\footnotesize\ttfamily \hyperlink{_vector2_d_8hpp_aa1f1145650f1dd9bddf7335ec6434d7c}{Vector2D} Entity\+::velocity\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/叶志浩文件夹/\+Vigilans的文档/\+Programming/\+Visual Studio/\+Projects/\+Grade 1 Summer Vacation/\+Lost Phoenix/\+Lost Phoenix/include/\hyperlink{_entity_8h}{Entity.\+h}\item 
+D\+:/叶志浩文件夹/\+Vigilans的文档/\+Programming/\+Visual Studio/\+Projects/\+Grade 1 Summer Vacation/\+Lost Phoenix/\+Lost Phoenix/src/\hyperlink{_entity_8cpp}{Entity.\+cpp}\end{DoxyCompactItemize}

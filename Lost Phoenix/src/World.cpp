@@ -34,7 +34,7 @@ void World::renderMenu()
 	setcolor(LIGHTGRAY);
 	settextjustify(LEFT_TEXT, TOP_TEXT);
 	setfont(-80, 0, "Arial");
-	outtextxy(220, 150, "Plane War");
+	outtextxy(220, 150, "Lost Phoenix");
 	setfont(0, 0, "Arial");
 	outtextxy(300, 250, "W S A D —— move");
 	outtextxy(300, 300, "SPACE —— shoot");
@@ -388,7 +388,7 @@ void World::renderUI()
 }
 
 bool World::checkBackgroundCollision(Entity * e, bool leftRight, bool upDown, bool isOuter)
-{ // leftRight表示检测左右碰撞, upDown表示检测上下碰撞，当都为false时，表示不检测，返回false（没有碰撞到墙壁）
+{ 
 	if (isOuter)
 		return leftRight && (e->getXPos( ) + e->getXHitBox( ) < 0 || e->getXPos( ) > windowWidth()) ||
 			   upDown && (e->getYPos( ) + e->getYHitBox( ) < 0 || e->getYPos( ) > windowHeight());

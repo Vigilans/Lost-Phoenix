@@ -1,0 +1,51 @@
+\hypertarget{_resources_loader_8cpp}{}\section{D\+:/叶志浩文件夹/\+Vigilans的文档/\+Programming/\+Visual Studio/\+Projects/\+Grade 1 Summer Vacation/\+Lost Phoenix/\+Lost Phoenix/src/\+Resources\+Loader.cpp 文件参考}
+\label{_resources_loader_8cpp}\index{D\+:/叶志浩文件夹/\+Vigilans的文档/\+Programming/\+Visual Studio/\+Projects/\+Grade 1 Summer Vacation/\+Lost Phoenix/\+Lost Phoenix/src/\+Resources\+Loader.\+cpp@{D\+:/叶志浩文件夹/\+Vigilans的文档/\+Programming/\+Visual Studio/\+Projects/\+Grade 1 Summer Vacation/\+Lost Phoenix/\+Lost Phoenix/src/\+Resources\+Loader.\+cpp}}
+{\ttfamily \#include \char`\"{}Resources\+Loader.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$json.\+hpp$>$}\newline
+{\ttfamily \#include $<$graphics.\+h$>$}\newline
+\subsection*{命名空间}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespace_settings}{Settings}
+\end{DoxyCompactItemize}
+\subsection*{类型定义}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{_resources_loader_8cpp_ab701e3ac61a85b337ec5c1abaad6742d}{json} = nlohmann\+::json
+\end{DoxyCompactItemize}
+\subsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_resources_loader_8cpp_a0469577179ffc24e7374bb420469cfc1}{to\+\_\+json} (\hyperlink{_resources_loader_8cpp_ab701e3ac61a85b337ec5c1abaad6742d}{json} \&j, const \hyperlink{_vector2_d_8hpp_aa1f1145650f1dd9bddf7335ec6434d7c}{Vector2D} \&v)
+\item 
+void \hyperlink{_resources_loader_8cpp_afed86ab0a641b25fed058b9a903e6d7b}{from\+\_\+json} (const \hyperlink{_resources_loader_8cpp_ab701e3ac61a85b337ec5c1abaad6742d}{json} \&j, \hyperlink{_vector2_d_8hpp_aa1f1145650f1dd9bddf7335ec6434d7c}{Vector2D} \&v)
+\item 
+void \hyperlink{namespace_settings_a42e5acb521fa66b1f2311a896df95a98}{Settings\+::from\+\_\+json} (const \hyperlink{_resources_loader_8cpp_ab701e3ac61a85b337ec5c1abaad6742d}{json} \&j, \hyperlink{struct_settings_1_1_bullet}{Settings\+::\+Bullet} \&b)
+\item 
+void \hyperlink{namespace_settings_aaba1604e449415b4bcbbb0a6e50a0ac9}{Settings\+::from\+\_\+json} (const \hyperlink{_resources_loader_8cpp_ab701e3ac61a85b337ec5c1abaad6742d}{json} \&j, \hyperlink{struct_settings_1_1_plane}{Settings\+::\+Plane} \&s)
+\end{DoxyCompactItemize}
+
+
+\subsection{类型定义说明}
+\mbox{\Hypertarget{_resources_loader_8cpp_ab701e3ac61a85b337ec5c1abaad6742d}\label{_resources_loader_8cpp_ab701e3ac61a85b337ec5c1abaad6742d}} 
+\index{Resources\+Loader.\+cpp@{Resources\+Loader.\+cpp}!json@{json}}
+\index{json@{json}!Resources\+Loader.\+cpp@{Resources\+Loader.\+cpp}}
+\subsubsection{\texorpdfstring{json}{json}}
+{\footnotesize\ttfamily using \hyperlink{_resources_loader_8cpp_ab701e3ac61a85b337ec5c1abaad6742d}{json} =  nlohmann\+::json}
+
+
+
+\subsection{函数说明}
+\mbox{\Hypertarget{_resources_loader_8cpp_afed86ab0a641b25fed058b9a903e6d7b}\label{_resources_loader_8cpp_afed86ab0a641b25fed058b9a903e6d7b}} 
+\index{Resources\+Loader.\+cpp@{Resources\+Loader.\+cpp}!from\+\_\+json@{from\+\_\+json}}
+\index{from\+\_\+json@{from\+\_\+json}!Resources\+Loader.\+cpp@{Resources\+Loader.\+cpp}}
+\subsubsection{\texorpdfstring{from\+\_\+json()}{from\_json()}}
+{\footnotesize\ttfamily void from\+\_\+json (\begin{DoxyParamCaption}\item[{const \hyperlink{_resources_loader_8cpp_ab701e3ac61a85b337ec5c1abaad6742d}{json} \&}]{j,  }\item[{\hyperlink{_vector2_d_8hpp_aa1f1145650f1dd9bddf7335ec6434d7c}{Vector2D} \&}]{v }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_resources_loader_8cpp_a0469577179ffc24e7374bb420469cfc1}\label{_resources_loader_8cpp_a0469577179ffc24e7374bb420469cfc1}} 
+\index{Resources\+Loader.\+cpp@{Resources\+Loader.\+cpp}!to\+\_\+json@{to\+\_\+json}}
+\index{to\+\_\+json@{to\+\_\+json}!Resources\+Loader.\+cpp@{Resources\+Loader.\+cpp}}
+\subsubsection{\texorpdfstring{to\+\_\+json()}{to\_json()}}
+{\footnotesize\ttfamily void to\+\_\+json (\begin{DoxyParamCaption}\item[{\hyperlink{_resources_loader_8cpp_ab701e3ac61a85b337ec5c1abaad6742d}{json} \&}]{j,  }\item[{const \hyperlink{_vector2_d_8hpp_aa1f1145650f1dd9bddf7335ec6434d7c}{Vector2D} \&}]{v }\end{DoxyParamCaption})}
+
