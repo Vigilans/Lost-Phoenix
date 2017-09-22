@@ -19,6 +19,7 @@ var NAVTREE =
         [ "函数", "functions_func.html", null ],
         [ "变量", "functions_vars.html", null ],
         [ "类型定义", "functions_type.html", null ],
+        [ "枚举", "functions_enum.html", null ],
         [ "相关函数", "functions_rela.html", null ]
       ] ]
     ] ],
@@ -38,7 +39,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_actions_8cpp.html",
-"index.html"
+"hierarchy.html"
 ];
 
 var SYNCONMSG = '点击 关闭 面板同步';

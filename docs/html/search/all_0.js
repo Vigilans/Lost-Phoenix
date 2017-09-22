@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['a',['A',['../_input_controller_8h.html#ab3c7af4820830f9166ede9e5623c4e73a7fc56270e7a70fa81a5935b72eacbe29',1,'InputController.h']]],
+  ['a',['A',['../class_input_controller.html#a840a7425e2220e1ef5659a7ea4ba122da7fc56270e7a70fa81a5935b72eacbe29',1,'InputController']]],
   ['action',['Action',['../class_action.html',1,'Action'],['../class_action.html#a656f4ac0205bbd055dd360248786475a',1,'Action::Action()']]],
   ['action_5fplane_5fexplode',['Action_Plane_Explode',['../class_action___plane___explode.html',1,'Action_Plane_Explode'],['../class_action___plane___explode.html#aa7aeb998cd636ad6d0b42d9e23a43b57',1,'Action_Plane_Explode::Action_Plane_Explode()']]],
   ['actions',['actions',['../class_world.html#aefe8e0e9e418bbf81671314bf8d019f2',1,'World']]],

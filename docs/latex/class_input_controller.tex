@@ -2,27 +2,89 @@
 \label{class_input_controller}\index{Input\+Controller@{Input\+Controller}}
 
 
+处理键盘输入的控制器类。  
+
+
+
+
 {\ttfamily \#include $<$Input\+Controller.\+h$>$}
 
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_input_controller_a840a7425e2220e1ef5659a7ea4ba122d}{Key} \{ \newline
+\hyperlink{class_input_controller_a840a7425e2220e1ef5659a7ea4ba122da61e9c06ea9a85a5088a499df6458d276}{Key\+::W}, 
+\hyperlink{class_input_controller_a840a7425e2220e1ef5659a7ea4ba122da7fc56270e7a70fa81a5935b72eacbe29}{Key\+::A}, 
+\hyperlink{class_input_controller_a840a7425e2220e1ef5659a7ea4ba122da5dbc98dcc983a70728bd082d1a47546e}{Key\+::S}, 
+\hyperlink{class_input_controller_a840a7425e2220e1ef5659a7ea4ba122daf623e75af30e62bbd73d6df5b50bb7b5}{Key\+::D}, 
+\newline
+\hyperlink{class_input_controller_a840a7425e2220e1ef5659a7ea4ba122dad511f8439ecde36647437fbba67a4394}{Key\+::\+Space}, 
+\hyperlink{class_input_controller_a840a7425e2220e1ef5659a7ea4ba122da6f6cb72d544962fa333e2e34ce64f719}{Key\+::\+Size}
+ \}\begin{DoxyCompactList}\small\item\em 用来与存储键位的数组一一对应的枚举。 \end{DoxyCompactList}
+\end{DoxyCompactItemize}
 \subsection*{Public 成员函数}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{class_input_controller_aba927fffeb0bf4c4fd0835d4dfbdfaec}{Input\+Controller} ()
-\item 
+\begin{DoxyCompactList}\small\item\em 默认构造函数，用以初始化按键状态数组（全部置零）。 \end{DoxyCompactList}\item 
 void \hyperlink{class_input_controller_a2a88542ae1370cf3f5ace3c4bb8813d9}{update\+Input} ()
-\item 
-bool \hyperlink{class_input_controller_a7ed265c719c06edf5a7294e98739d932}{is\+Key\+Down} (\hyperlink{_input_controller_8h_ab3c7af4820830f9166ede9e5623c4e73}{Key} key)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em 从键盘更新输入。该函数会被\hyperlink{class_world_aac8c1fde63c06577ffc648aaefdb37f0}{World\+::update}调用。 \end{DoxyCompactList}\item 
+bool \hyperlink{class_input_controller_a7ed265c719c06edf5a7294e98739d932}{is\+Key\+Down} (\hyperlink{class_input_controller_a840a7425e2220e1ef5659a7ea4ba122d}{Key} key)
+\begin{DoxyCompactList}\small\item\em 判断当前是否按下某个键。 \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private 属性}
 \begin{DoxyCompactItemize}
 \item 
-bool \hyperlink{class_input_controller_aebe382d8d20e579a3f2c92b58ad53ac3}{m\+\_\+\+Key\+State} \mbox{[}(int) \hyperlink{_input_controller_8h_ab3c7af4820830f9166ede9e5623c4e73a6f6cb72d544962fa333e2e34ce64f719}{Key\+::\+Size}\mbox{]}
-\end{DoxyCompactItemize}
+bool \hyperlink{class_input_controller_aebe382d8d20e579a3f2c92b58ad53ac3}{m\+\_\+\+Key\+State} \mbox{[}(int) \hyperlink{class_input_controller_a840a7425e2220e1ef5659a7ea4ba122da6f6cb72d544962fa333e2e34ce64f719}{Key\+::\+Size}\mbox{]}
+\begin{DoxyCompactList}\small\item\em 存储按键状态的数组。\+Key枚举值对应元素为\hyperlink{class_input_controller_a840a7425e2220e1ef5659a7ea4ba122d}{Key}表示对应按键正被按下。 \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{静态 Private 属性}
 \begin{DoxyCompactItemize}
 \item 
-static int \hyperlink{class_input_controller_afa9908a71b2107375b9104e51b465b06}{Keys\+Enum} \mbox{[}(int) \hyperlink{_input_controller_8h_ab3c7af4820830f9166ede9e5623c4e73a6f6cb72d544962fa333e2e34ce64f719}{Key\+::\+Size}\mbox{]} = \{\textquotesingle{}\hyperlink{_input_controller_8h_ab3c7af4820830f9166ede9e5623c4e73a61e9c06ea9a85a5088a499df6458d276}{W}\textquotesingle{}, \textquotesingle{}\hyperlink{_input_controller_8h_ab3c7af4820830f9166ede9e5623c4e73a7fc56270e7a70fa81a5935b72eacbe29}{A}\textquotesingle{}, \textquotesingle{}\hyperlink{_input_controller_8h_ab3c7af4820830f9166ede9e5623c4e73a5dbc98dcc983a70728bd082d1a47546e}{S}\textquotesingle{}, \textquotesingle{}\hyperlink{_input_controller_8h_ab3c7af4820830f9166ede9e5623c4e73af623e75af30e62bbd73d6df5b50bb7b5}{D}\textquotesingle{}, V\+K\+\_\+\+S\+P\+A\+CE\}
-\end{DoxyCompactItemize}
+static int \hyperlink{class_input_controller_afa9908a71b2107375b9104e51b465b06}{Keys\+Enum} \mbox{[}(int) \hyperlink{class_input_controller_a840a7425e2220e1ef5659a7ea4ba122da6f6cb72d544962fa333e2e34ce64f719}{Key\+::\+Size}\mbox{]} = \{\textquotesingle{}W\textquotesingle{}, \textquotesingle{}A\textquotesingle{}, \textquotesingle{}S\textquotesingle{}, \textquotesingle{}D\textquotesingle{}, V\+K\+\_\+\+S\+P\+A\+CE\}
+\begin{DoxyCompactList}\small\item\em 存储某个按键对应的\+Virtual Key的数组。每个元素的索引号与\hyperlink{class_input_controller_a840a7425e2220e1ef5659a7ea4ba122d}{Key}枚举的对应枚举值一一对应。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+处理键盘输入的控制器类。 
+
+
+
+\subsection{成员枚举类型说明}
+\mbox{\Hypertarget{class_input_controller_a840a7425e2220e1ef5659a7ea4ba122d}\label{class_input_controller_a840a7425e2220e1ef5659a7ea4ba122d}} 
+\index{Input\+Controller@{Input\+Controller}!Key@{Key}}
+\index{Key@{Key}!Input\+Controller@{Input\+Controller}}
+\subsubsection{\texorpdfstring{Key}{Key}}
+{\footnotesize\ttfamily enum \hyperlink{class_input_controller_a840a7425e2220e1ef5659a7ea4ba122d}{Input\+Controller\+::\+Key}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+用来与存储键位的数组一一对应的枚举。 
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{W@{W}!Input\+Controller@{Input\+Controller}}\index{Input\+Controller@{Input\+Controller}!W@{W}}}\mbox{\Hypertarget{class_input_controller_a840a7425e2220e1ef5659a7ea4ba122da61e9c06ea9a85a5088a499df6458d276}\label{class_input_controller_a840a7425e2220e1ef5659a7ea4ba122da61e9c06ea9a85a5088a499df6458d276}} 
+W&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{A@{A}!Input\+Controller@{Input\+Controller}}\index{Input\+Controller@{Input\+Controller}!A@{A}}}\mbox{\Hypertarget{class_input_controller_a840a7425e2220e1ef5659a7ea4ba122da7fc56270e7a70fa81a5935b72eacbe29}\label{class_input_controller_a840a7425e2220e1ef5659a7ea4ba122da7fc56270e7a70fa81a5935b72eacbe29}} 
+A&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S@{S}!Input\+Controller@{Input\+Controller}}\index{Input\+Controller@{Input\+Controller}!S@{S}}}\mbox{\Hypertarget{class_input_controller_a840a7425e2220e1ef5659a7ea4ba122da5dbc98dcc983a70728bd082d1a47546e}\label{class_input_controller_a840a7425e2220e1ef5659a7ea4ba122da5dbc98dcc983a70728bd082d1a47546e}} 
+S&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{D@{D}!Input\+Controller@{Input\+Controller}}\index{Input\+Controller@{Input\+Controller}!D@{D}}}\mbox{\Hypertarget{class_input_controller_a840a7425e2220e1ef5659a7ea4ba122daf623e75af30e62bbd73d6df5b50bb7b5}\label{class_input_controller_a840a7425e2220e1ef5659a7ea4ba122daf623e75af30e62bbd73d6df5b50bb7b5}} 
+D&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Space@{Space}!Input\+Controller@{Input\+Controller}}\index{Input\+Controller@{Input\+Controller}!Space@{Space}}}\mbox{\Hypertarget{class_input_controller_a840a7425e2220e1ef5659a7ea4ba122dad511f8439ecde36647437fbba67a4394}\label{class_input_controller_a840a7425e2220e1ef5659a7ea4ba122dad511f8439ecde36647437fbba67a4394}} 
+Space&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Size@{Size}!Input\+Controller@{Input\+Controller}}\index{Input\+Controller@{Input\+Controller}!Size@{Size}}}\mbox{\Hypertarget{class_input_controller_a840a7425e2220e1ef5659a7ea4ba122da6f6cb72d544962fa333e2e34ce64f719}\label{class_input_controller_a840a7425e2220e1ef5659a7ea4ba122da6f6cb72d544962fa333e2e34ce64f719}} 
+Size&置于枚举的最后一位，用来代表枚举拥有的元素个数（除了\+Size） \\
+\hline
+
+\end{DoxyEnumFields}
 
 
 \subsection{构造及析构函数说明}
@@ -34,13 +96,29 @@ static int \hyperlink{class_input_controller_afa9908a71b2107375b9104e51b465b06}{
 
 
 
+默认构造函数，用以初始化按键状态数组（全部置零）。 
+
+
+
 \subsection{成员函数说明}
 \mbox{\Hypertarget{class_input_controller_a7ed265c719c06edf5a7294e98739d932}\label{class_input_controller_a7ed265c719c06edf5a7294e98739d932}} 
 \index{Input\+Controller@{Input\+Controller}!is\+Key\+Down@{is\+Key\+Down}}
 \index{is\+Key\+Down@{is\+Key\+Down}!Input\+Controller@{Input\+Controller}}
 \subsubsection{\texorpdfstring{is\+Key\+Down()}{isKeyDown()}}
-{\footnotesize\ttfamily bool Input\+Controller\+::is\+Key\+Down (\begin{DoxyParamCaption}\item[{\hyperlink{_input_controller_8h_ab3c7af4820830f9166ede9e5623c4e73}{Key}}]{key }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily bool Input\+Controller\+::is\+Key\+Down (\begin{DoxyParamCaption}\item[{\hyperlink{class_input_controller_a840a7425e2220e1ef5659a7ea4ba122d}{Key}}]{key }\end{DoxyParamCaption})}
 
+
+
+判断当前是否按下某个键。 
+
+
+\begin{DoxyParams}{参数}
+{\em key} & 要检测的键位枚举值。 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+若按下则返回真。 
+\end{DoxyReturn}
 \mbox{\Hypertarget{class_input_controller_a2a88542ae1370cf3f5ace3c4bb8813d9}\label{class_input_controller_a2a88542ae1370cf3f5ace3c4bb8813d9}} 
 \index{Input\+Controller@{Input\+Controller}!update\+Input@{update\+Input}}
 \index{update\+Input@{update\+Input}!Input\+Controller@{Input\+Controller}}
@@ -49,18 +127,32 @@ static int \hyperlink{class_input_controller_afa9908a71b2107375b9104e51b465b06}{
 
 
 
+从键盘更新输入。该函数会被\hyperlink{class_world_aac8c1fde63c06577ffc648aaefdb37f0}{World\+::update}调用。 
+
+此方法将遍历键盘按键消息队列，在状态数组中将对应按键状态设为true，同时将未搜索到按键的状态设为false。
+
+时间复杂度最差为k$\ast$n, k为按键消息队列size，n为按键枚举的size。 
+
 \subsection{类成员变量说明}
 \mbox{\Hypertarget{class_input_controller_afa9908a71b2107375b9104e51b465b06}\label{class_input_controller_afa9908a71b2107375b9104e51b465b06}} 
 \index{Input\+Controller@{Input\+Controller}!Keys\+Enum@{Keys\+Enum}}
 \index{Keys\+Enum@{Keys\+Enum}!Input\+Controller@{Input\+Controller}}
 \subsubsection{\texorpdfstring{Keys\+Enum}{KeysEnum}}
-{\footnotesize\ttfamily int Input\+Controller\+::\+Keys\+Enum = \{\textquotesingle{}\hyperlink{_input_controller_8h_ab3c7af4820830f9166ede9e5623c4e73a61e9c06ea9a85a5088a499df6458d276}{W}\textquotesingle{}, \textquotesingle{}\hyperlink{_input_controller_8h_ab3c7af4820830f9166ede9e5623c4e73a7fc56270e7a70fa81a5935b72eacbe29}{A}\textquotesingle{}, \textquotesingle{}\hyperlink{_input_controller_8h_ab3c7af4820830f9166ede9e5623c4e73a5dbc98dcc983a70728bd082d1a47546e}{S}\textquotesingle{}, \textquotesingle{}\hyperlink{_input_controller_8h_ab3c7af4820830f9166ede9e5623c4e73af623e75af30e62bbd73d6df5b50bb7b5}{D}\textquotesingle{}, V\+K\+\_\+\+S\+P\+A\+CE\}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+{\footnotesize\ttfamily int Input\+Controller\+::\+Keys\+Enum = \{\textquotesingle{}W\textquotesingle{}, \textquotesingle{}A\textquotesingle{}, \textquotesingle{}S\textquotesingle{}, \textquotesingle{}D\textquotesingle{}, V\+K\+\_\+\+S\+P\+A\+CE\}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+存储某个按键对应的\+Virtual Key的数组。每个元素的索引号与\hyperlink{class_input_controller_a840a7425e2220e1ef5659a7ea4ba122d}{Key}枚举的对应枚举值一一对应。 
 
 \mbox{\Hypertarget{class_input_controller_aebe382d8d20e579a3f2c92b58ad53ac3}\label{class_input_controller_aebe382d8d20e579a3f2c92b58ad53ac3}} 
 \index{Input\+Controller@{Input\+Controller}!m\+\_\+\+Key\+State@{m\+\_\+\+Key\+State}}
 \index{m\+\_\+\+Key\+State@{m\+\_\+\+Key\+State}!Input\+Controller@{Input\+Controller}}
 \subsubsection{\texorpdfstring{m\+\_\+\+Key\+State}{m\_KeyState}}
-{\footnotesize\ttfamily bool Input\+Controller\+::m\+\_\+\+Key\+State\mbox{[}(int) \hyperlink{_input_controller_8h_ab3c7af4820830f9166ede9e5623c4e73a6f6cb72d544962fa333e2e34ce64f719}{Key\+::\+Size}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily bool Input\+Controller\+::m\+\_\+\+Key\+State\mbox{[}(int) \hyperlink{class_input_controller_a840a7425e2220e1ef5659a7ea4ba122da6f6cb72d544962fa333e2e34ce64f719}{Key\+::\+Size}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+存储按键状态的数组。\+Key枚举值对应元素为\hyperlink{class_input_controller_a840a7425e2220e1ef5659a7ea4ba122d}{Key}表示对应按键正被按下。 
 
 
 

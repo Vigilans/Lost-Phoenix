@@ -1,5 +1,6 @@
 var NAVTREEINDEX1 =
 {
+"hierarchy.html":[1,2],
 "index.html":[],
 "main_8cpp.html":[2,0,0,1,6],
 "main_8cpp.html#a1bbbb767071fbc720a401c03b59ee461":[2,0,0,1,6,0],

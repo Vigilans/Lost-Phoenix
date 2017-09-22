@@ -82,6 +82,7 @@ $(document).ready(function(){initNavTree('class_input_controller.html','');});
 
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
 <a href="#pub-methods">Public 成员函数</a> &#124;
 <a href="#pri-attribs">Private 属性</a> &#124;
 <a href="#pri-static-attribs">静态 Private 属性</a> &#124;
@@ -91,27 +92,86 @@ $(document).ready(function(){initNavTree('class_input_controller.html','');});
 </div><!--header-->
 <div class="contents">
 
+<p>处理键盘输入的控制器类。  
+ <a href="class_input_controller.html#details">更多...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_input_controller_8h_source.html">InputController.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a840a7425e2220e1ef5659a7ea4ba122d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_input_controller.html#a840a7425e2220e1ef5659a7ea4ba122d">Key</a> { <br />
+&#160;&#160;<a class="el" href="class_input_controller.html#a840a7425e2220e1ef5659a7ea4ba122da61e9c06ea9a85a5088a499df6458d276">Key::W</a>, 
+<a class="el" href="class_input_controller.html#a840a7425e2220e1ef5659a7ea4ba122da7fc56270e7a70fa81a5935b72eacbe29">Key::A</a>, 
+<a class="el" href="class_input_controller.html#a840a7425e2220e1ef5659a7ea4ba122da5dbc98dcc983a70728bd082d1a47546e">Key::S</a>, 
+<a class="el" href="class_input_controller.html#a840a7425e2220e1ef5659a7ea4ba122daf623e75af30e62bbd73d6df5b50bb7b5">Key::D</a>, 
+<br />
+&#160;&#160;<a class="el" href="class_input_controller.html#a840a7425e2220e1ef5659a7ea4ba122dad511f8439ecde36647437fbba67a4394">Key::Space</a>, 
+<a class="el" href="class_input_controller.html#a840a7425e2220e1ef5659a7ea4ba122da6f6cb72d544962fa333e2e34ce64f719">Key::Size</a>
+<br />
+ }<tr class="memdesc:a840a7425e2220e1ef5659a7ea4ba122d"><td class="mdescLeft">&#160;</td><td class="mdescRight">用来与存储键位的数组一一对应的枚举。  <a href="class_input_controller.html#a840a7425e2220e1ef5659a7ea4ba122d">更多...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:a840a7425e2220e1ef5659a7ea4ba122d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
 <tr class="memitem:aba927fffeb0bf4c4fd0835d4dfbdfaec"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_input_controller.html#aba927fffeb0bf4c4fd0835d4dfbdfaec">InputController</a> ()</td></tr>
+<tr class="memdesc:aba927fffeb0bf4c4fd0835d4dfbdfaec"><td class="mdescLeft">&#160;</td><td class="mdescRight">默认构造函数，用以初始化按键状态数组（全部置零）。  <a href="#aba927fffeb0bf4c4fd0835d4dfbdfaec">更多...</a><br /></td></tr>
 <tr class="separator:aba927fffeb0bf4c4fd0835d4dfbdfaec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a88542ae1370cf3f5ace3c4bb8813d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_input_controller.html#a2a88542ae1370cf3f5ace3c4bb8813d9">updateInput</a> ()</td></tr>
+<tr class="memdesc:a2a88542ae1370cf3f5ace3c4bb8813d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">从键盘更新输入。该函数会被<a class="el" href="class_world.html#aac8c1fde63c06577ffc648aaefdb37f0" title="主逻辑更新函数。 ">World::update</a>调用。  <a href="#a2a88542ae1370cf3f5ace3c4bb8813d9">更多...</a><br /></td></tr>
 <tr class="separator:a2a88542ae1370cf3f5ace3c4bb8813d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ed265c719c06edf5a7294e98739d932"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_input_controller.html#a7ed265c719c06edf5a7294e98739d932">isKeyDown</a> (<a class="el" href="_input_controller_8h.html#ab3c7af4820830f9166ede9e5623c4e73">Key</a> key)</td></tr>
+<tr class="memitem:a7ed265c719c06edf5a7294e98739d932"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_input_controller.html#a7ed265c719c06edf5a7294e98739d932">isKeyDown</a> (<a class="el" href="class_input_controller.html#a840a7425e2220e1ef5659a7ea4ba122d">Key</a> key)</td></tr>
+<tr class="memdesc:a7ed265c719c06edf5a7294e98739d932"><td class="mdescLeft">&#160;</td><td class="mdescRight">判断当前是否按下某个键。  <a href="#a7ed265c719c06edf5a7294e98739d932">更多...</a><br /></td></tr>
 <tr class="separator:a7ed265c719c06edf5a7294e98739d932"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private 属性</h2></td></tr>
-<tr class="memitem:aebe382d8d20e579a3f2c92b58ad53ac3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_input_controller.html#aebe382d8d20e579a3f2c92b58ad53ac3">m_KeyState</a> [(int) <a class="el" href="_input_controller_8h.html#ab3c7af4820830f9166ede9e5623c4e73a6f6cb72d544962fa333e2e34ce64f719">Key::Size</a>]</td></tr>
+<tr class="memitem:aebe382d8d20e579a3f2c92b58ad53ac3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_input_controller.html#aebe382d8d20e579a3f2c92b58ad53ac3">m_KeyState</a> [(int) <a class="el" href="class_input_controller.html#a840a7425e2220e1ef5659a7ea4ba122da6f6cb72d544962fa333e2e34ce64f719">Key::Size</a>]</td></tr>
+<tr class="memdesc:aebe382d8d20e579a3f2c92b58ad53ac3"><td class="mdescLeft">&#160;</td><td class="mdescRight">存储按键状态的数组。Key枚举值对应元素为<a class="el" href="class_input_controller.html#a840a7425e2220e1ef5659a7ea4ba122d" title="用来与存储键位的数组一一对应的枚举。 ">Key</a>表示对应按键正被按下。  <a href="#aebe382d8d20e579a3f2c92b58ad53ac3">更多...</a><br /></td></tr>
 <tr class="separator:aebe382d8d20e579a3f2c92b58ad53ac3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
 静态 Private 属性</h2></td></tr>
-<tr class="memitem:afa9908a71b2107375b9104e51b465b06"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_input_controller.html#afa9908a71b2107375b9104e51b465b06">KeysEnum</a> [(int) <a class="el" href="_input_controller_8h.html#ab3c7af4820830f9166ede9e5623c4e73a6f6cb72d544962fa333e2e34ce64f719">Key::Size</a>] = {'<a class="el" href="_input_controller_8h.html#ab3c7af4820830f9166ede9e5623c4e73a61e9c06ea9a85a5088a499df6458d276">W</a>', '<a class="el" href="_input_controller_8h.html#ab3c7af4820830f9166ede9e5623c4e73a7fc56270e7a70fa81a5935b72eacbe29">A</a>', '<a class="el" href="_input_controller_8h.html#ab3c7af4820830f9166ede9e5623c4e73a5dbc98dcc983a70728bd082d1a47546e">S</a>', '<a class="el" href="_input_controller_8h.html#ab3c7af4820830f9166ede9e5623c4e73af623e75af30e62bbd73d6df5b50bb7b5">D</a>', VK_SPACE}</td></tr>
+<tr class="memitem:afa9908a71b2107375b9104e51b465b06"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_input_controller.html#afa9908a71b2107375b9104e51b465b06">KeysEnum</a> [(int) <a class="el" href="class_input_controller.html#a840a7425e2220e1ef5659a7ea4ba122da6f6cb72d544962fa333e2e34ce64f719">Key::Size</a>] = {'W', 'A', 'S', 'D', VK_SPACE}</td></tr>
+<tr class="memdesc:afa9908a71b2107375b9104e51b465b06"><td class="mdescLeft">&#160;</td><td class="mdescRight">存储某个按键对应的Virtual Key的数组。每个元素的索引号与<a class="el" href="class_input_controller.html#a840a7425e2220e1ef5659a7ea4ba122d" title="用来与存储键位的数组一一对应的枚举。 ">Key</a>枚举的对应枚举值一一对应。  <a href="#afa9908a71b2107375b9104e51b465b06">更多...</a><br /></td></tr>
 <tr class="separator:afa9908a71b2107375b9104e51b465b06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>处理键盘输入的控制器类。 </p>
+</div><h2 class="groupheader">成员枚举类型说明</h2>
+<a id="a840a7425e2220e1ef5659a7ea4ba122d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a840a7425e2220e1ef5659a7ea4ba122d">&#9670;&nbsp;</a></span>Key</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_input_controller.html#a840a7425e2220e1ef5659a7ea4ba122d">InputController::Key</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>用来与存储键位的数组一一对应的枚举。 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a840a7425e2220e1ef5659a7ea4ba122da61e9c06ea9a85a5088a499df6458d276"></a>W&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a840a7425e2220e1ef5659a7ea4ba122da7fc56270e7a70fa81a5935b72eacbe29"></a>A&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a840a7425e2220e1ef5659a7ea4ba122da5dbc98dcc983a70728bd082d1a47546e"></a>S&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a840a7425e2220e1ef5659a7ea4ba122daf623e75af30e62bbd73d6df5b50bb7b5"></a>D&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a840a7425e2220e1ef5659a7ea4ba122dad511f8439ecde36647437fbba67a4394"></a>Space&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a840a7425e2220e1ef5659a7ea4ba122da6f6cb72d544962fa333e2e34ce64f719"></a>Size&#160;</td><td class="fielddoc"><p>置于枚举的最后一位，用来代表枚举拥有的元素个数（除了Size） </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <h2 class="groupheader">构造及析构函数说明</h2>
 <a id="aba927fffeb0bf4c4fd0835d4dfbdfaec"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aba927fffeb0bf4c4fd0835d4dfbdfaec">&#9670;&nbsp;</a></span>InputController()</h2>
@@ -128,6 +188,8 @@ Private 属性</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>默认构造函数，用以初始化按键状态数组（全部置零）。 </p>
+
 </div>
 </div>
 <h2 class="groupheader">成员函数说明</h2>
@@ -140,12 +202,21 @@ Private 属性</h2></td></tr>
         <tr>
           <td class="memname">bool InputController::isKeyDown </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="_input_controller_8h.html#ab3c7af4820830f9166ede9e5623c4e73">Key</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="class_input_controller.html#a840a7425e2220e1ef5659a7ea4ba122d">Key</a>&#160;</td>
           <td class="paramname"><em>key</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>判断当前是否按下某个键。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>要检测的键位枚举值。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>若按下则返回真。 </dd></dl>
 
 </div>
 </div>
@@ -164,6 +235,10 @@ Private 属性</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>从键盘更新输入。该函数会被<a class="el" href="class_world.html#aac8c1fde63c06577ffc648aaefdb37f0" title="主逻辑更新函数。 ">World::update</a>调用。 </p>
+<p>此方法将遍历键盘按键消息队列，在状态数组中将对应按键状态设为true，同时将未搜索到按键的状态设为false。</p>
+<p>时间复杂度最差为k*n, k为按键消息队列size，n为按键枚举的size。 </p>
+
 </div>
 </div>
 <h2 class="groupheader">类成员变量说明</h2>
@@ -177,7 +252,7 @@ Private 属性</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int InputController::KeysEnum = {'<a class="el" href="_input_controller_8h.html#ab3c7af4820830f9166ede9e5623c4e73a61e9c06ea9a85a5088a499df6458d276">W</a>', '<a class="el" href="_input_controller_8h.html#ab3c7af4820830f9166ede9e5623c4e73a7fc56270e7a70fa81a5935b72eacbe29">A</a>', '<a class="el" href="_input_controller_8h.html#ab3c7af4820830f9166ede9e5623c4e73a5dbc98dcc983a70728bd082d1a47546e">S</a>', '<a class="el" href="_input_controller_8h.html#ab3c7af4820830f9166ede9e5623c4e73af623e75af30e62bbd73d6df5b50bb7b5">D</a>', VK_SPACE}</td>
+          <td class="memname">int InputController::KeysEnum = {'W', 'A', 'S', 'D', VK_SPACE}</td>
         </tr>
       </table>
   </td>
@@ -186,6 +261,8 @@ Private 属性</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>存储某个按键对应的Virtual Key的数组。每个元素的索引号与<a class="el" href="class_input_controller.html#a840a7425e2220e1ef5659a7ea4ba122d" title="用来与存储键位的数组一一对应的枚举。 ">Key</a>枚举的对应枚举值一一对应。 </p>
 
 </div>
 </div>
@@ -199,7 +276,7 @@ Private 属性</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool InputController::m_KeyState[(int) <a class="el" href="_input_controller_8h.html#ab3c7af4820830f9166ede9e5623c4e73a6f6cb72d544962fa333e2e34ce64f719">Key::Size</a>]</td>
+          <td class="memname">bool InputController::m_KeyState[(int) <a class="el" href="class_input_controller.html#a840a7425e2220e1ef5659a7ea4ba122da6f6cb72d544962fa333e2e34ce64f719">Key::Size</a>]</td>
         </tr>
       </table>
   </td>
@@ -208,6 +285,8 @@ Private 属性</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>存储按键状态的数组。Key枚举值对应元素为<a class="el" href="class_input_controller.html#a840a7425e2220e1ef5659a7ea4ba122d" title="用来与存储键位的数组一一对应的枚举。 ">Key</a>表示对应按键正被按下。 </p>
 
 </div>
 </div>
