@@ -4,11 +4,11 @@ var dir_7ab7d3040e99e44a1796f7113ac68e26 =
     [ "Enemy_AutoTarget.cpp", "_enemy___auto_target_8cpp.html", null ],
     [ "Enemy_Cruiser.cpp", "_enemy___cruiser_8cpp.html", null ],
     [ "Enemy_Junior.cpp", "_enemy___junior_8cpp.html", null ],
-    [ "Entity.cpp", "_entity_8cpp.html", "_entity_8cpp" ],
+    [ "Entity.cpp", "_entity_8cpp.html", null ],
     [ "InputController.cpp", "_input_controller_8cpp.html", null ],
     [ "main.cpp", "main_8cpp.html", "main_8cpp" ],
     [ "Plane - Bullet.cpp", "_plane_01-_01_bullet_8cpp.html", "_plane_01-_01_bullet_8cpp" ],
-    [ "Player.cpp", "_player_8cpp.html", null ],
+    [ "Player.cpp", "_player_8cpp.html", "_player_8cpp" ],
     [ "Resources.cpp", "_resources_8cpp.html", "_resources_8cpp" ],
     [ "ResourcesLoader.cpp", "_resources_loader_8cpp.html", "_resources_loader_8cpp" ],
     [ "ResourcesLoader.h", "_resources_loader_8h.html", [

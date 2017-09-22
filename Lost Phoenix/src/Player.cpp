@@ -3,6 +3,8 @@
 #include "Actions.h"
 #include <graphics.h>
 
+using Key = InputController::Key;
+
 Plane_Player::Plane_Player(Settings::Plane setting)
 	: Plane(setting, Settings::general().UI.resolution - setting.texture.hitBox, Vector2D())
 {

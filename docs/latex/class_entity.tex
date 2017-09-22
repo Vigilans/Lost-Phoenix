@@ -2,6 +2,11 @@
 \label{class_entity}\index{Entity@{Entity}}
 
 
+游戏中所有实体的总基类。  
+
+
+
+
 {\ttfamily \#include $<$Entity.\+h$>$}
 
 类 Entity 继承关系图\+:\begin{figure}[H]
@@ -14,56 +19,71 @@
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{class_entity_a604327e36e9783d29dd6ae6e4626777a}{Entity} (\hyperlink{struct_texture}{Texture} texture, \hyperlink{_entity_8h_ad54c4fe39f1c51b786c24ae0b7763b44}{Camp} \hyperlink{class_entity_a5326accd49d3817310ec90692b9da3df}{camp}, \hyperlink{_vector2_d_8hpp_aa1f1145650f1dd9bddf7335ec6434d7c}{Vector2D} position, \hyperlink{_vector2_d_8hpp_aa1f1145650f1dd9bddf7335ec6434d7c}{Vector2D} \hyperlink{class_entity_a386d25b56772b8913eb3e5adc636f6e0}{velocity}=\hyperlink{_vector2_d_8hpp_aa1f1145650f1dd9bddf7335ec6434d7c}{Vector2D}())
-\item 
+\begin{DoxyCompactList}\small\item\em 唯一构造函数。 \end{DoxyCompactList}\item 
 virtual \hyperlink{class_entity_a588098978eea6a3486b7361605ff3f0f}{$\sim$\+Entity} ()
-\item 
+\begin{DoxyCompactList}\small\item\em 基类虚析构函数，保证子类能正常析构。 \end{DoxyCompactList}\item 
 virtual void \hyperlink{class_entity_a00b6eeaf99b35c8f8b10b5fbfc1baf4f}{update} ()
-\item 
+\begin{DoxyCompactList}\small\item\em 更新实体状态。作为基类虚函数，此方法只通过速度更新当前位置。 \end{DoxyCompactList}\item 
 virtual void \hyperlink{class_entity_a7666f416dd0d1fce0f1133f78df44476}{draw} ()
+\begin{DoxyCompactList}\small\item\em 在地图上绘制实体。使用了透明通道，因此可以渲染出透明材质。 \end{DoxyCompactList}\item 
+int \hyperlink{class_entity_ac704e83937d21eb280bf0618c27e2e66}{get\+X\+Pos} () const
 \item 
-int \hyperlink{class_entity_a0be9d16acca47749b5450954b7cd8865}{get\+X\+Pos} ()
-\item 
-int \hyperlink{class_entity_a84360a6824c2e29fa324eb9cc0d988e0}{get\+Y\+Pos} ()
+int \hyperlink{class_entity_a8dc5891871faff09d565738104e1d42f}{get\+Y\+Pos} () const
 \item 
 void \hyperlink{class_entity_a8afb8aa252cbbffecc2dff0669cb2896}{set\+X\+Pos} (int x)
 \item 
 void \hyperlink{class_entity_a66278a362d97e2a30912c2a31962bfb9}{set\+Y\+Pos} (int y)
 \item 
-int \hyperlink{class_entity_af10fa675180cfc3c61bf84a9c9c56b3c}{get\+X\+Vel} ()
+int \hyperlink{class_entity_a31c55ae9457507b1c3ad5688b8f2eda2}{get\+X\+Vel} () const
 \item 
-int \hyperlink{class_entity_a56464fa481c71c541c51700c5498c6b0}{get\+Y\+Vel} ()
+int \hyperlink{class_entity_abaf01d725e35883d60f1fec3f39a8ea0}{get\+Y\+Vel} () const
 \item 
 void \hyperlink{class_entity_a7f20a2190046121150e5903ec769e9dc}{set\+X\+Vel} (int x)
 \item 
 void \hyperlink{class_entity_a9d7c4a35217e6f83ac21da314aa3ec9a}{set\+Y\+Vel} (int y)
 \item 
-int \hyperlink{class_entity_a82c547dbbfc7d0f353f3af2d04e17723}{get\+X\+Hit\+Box} ()
+int \hyperlink{class_entity_a5077b09978b28e502737475686ee893d}{get\+X\+Hit\+Box} () const
 \item 
-int \hyperlink{class_entity_a843b664cfecb1a912f3bc385f6ef2ae2}{get\+Y\+Hit\+Box} ()
+int \hyperlink{class_entity_ad46d1d4faf814a6b501101bc1c914754}{get\+Y\+Hit\+Box} () const
 \item 
-\hyperlink{_vector2_d_8hpp_aa1f1145650f1dd9bddf7335ec6434d7c}{Vector2D} \hyperlink{class_entity_a76d40195158d4ac1353834b6c95aba21}{get\+Position} ()
+\hyperlink{_vector2_d_8hpp_aa1f1145650f1dd9bddf7335ec6434d7c}{Vector2D} \hyperlink{class_entity_a6086a606c751be107efdc29109346d32}{get\+Position} () const
 \item 
-\hyperlink{_vector2_d_8hpp_aa1f1145650f1dd9bddf7335ec6434d7c}{Vector2D} \hyperlink{class_entity_a00fb331557faca43b55eadc30f03c746}{get\+Velocity} ()
+\hyperlink{_vector2_d_8hpp_aa1f1145650f1dd9bddf7335ec6434d7c}{Vector2D} \hyperlink{class_entity_a3107fab87440ee7e410c4a98505dfc50}{get\+Velocity} () const
 \item 
-\hyperlink{_vector2_d_8hpp_aa1f1145650f1dd9bddf7335ec6434d7c}{Vector2D} \hyperlink{class_entity_a973839fe04fc483c016d8f09e1c6f52a}{get\+Hit\+Box} ()
+\hyperlink{_vector2_d_8hpp_aa1f1145650f1dd9bddf7335ec6434d7c}{Vector2D} \hyperlink{class_entity_a4d69956308b0a0396ddba314c0aa0972}{get\+Hit\+Box} () const
 \item 
 void \hyperlink{class_entity_a372b9155542c8a228a4f1305f5f67341}{set\+Position} (const \hyperlink{_vector2_d_8hpp_aa1f1145650f1dd9bddf7335ec6434d7c}{Vector2D} \&pos)
 \item 
 void \hyperlink{class_entity_af41c73b5b2a7e68a7f285b12d0dab9f1}{set\+Velocity} (const \hyperlink{_vector2_d_8hpp_aa1f1145650f1dd9bddf7335ec6434d7c}{Vector2D} \&vel)
 \item 
-\hyperlink{_entity_8h_ad54c4fe39f1c51b786c24ae0b7763b44}{Camp} \hyperlink{class_entity_aad037bf3c41999855c70a47c58f3bf0a}{get\+Camp} ()
+\hyperlink{_entity_8h_ad54c4fe39f1c51b786c24ae0b7763b44}{Camp} \hyperlink{class_entity_a80b1c04df243bcdba1225a10e54995f1}{get\+Camp} () const
 \end{DoxyCompactItemize}
+\subsection*{静态 Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+static bool \hyperlink{class_entity_afeab7f54f15446e13fbf218eccb8be53}{judge\+Collision} (const \hyperlink{class_entity}{Entity} $\ast$e1, const \hyperlink{class_entity}{Entity} $\ast$e2)
+\begin{DoxyCompactList}\small\item\em 判断两个实体是否发生碰撞。 \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Protected 属性}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{struct_texture}{Texture} \hyperlink{class_entity_a22ccba8fb86e5b4e10b2c33b6f56d238}{model}
-\item 
+\begin{DoxyCompactList}\small\item\em 实体的材质模型。通过它获取实体的\+Hit\+Box属性。\begin{DoxySeeAlso}{参见}
+\hyperlink{struct_texture}{Texture}
+
+
+\end{DoxySeeAlso}
+\end{DoxyCompactList}\item 
 \hyperlink{_vector2_d_8hpp_aa1f1145650f1dd9bddf7335ec6434d7c}{Vector2D} \hyperlink{class_entity_a5031aa6b058f2231daad16b35e3d536d}{cur\+Pos}
-\item 
+\begin{DoxyCompactList}\small\item\em 实体当前在地图上的位置。 \end{DoxyCompactList}\item 
 \hyperlink{_vector2_d_8hpp_aa1f1145650f1dd9bddf7335ec6434d7c}{Vector2D} \hyperlink{class_entity_a386d25b56772b8913eb3e5adc636f6e0}{velocity}
-\item 
+\begin{DoxyCompactList}\small\item\em 实体当前的速度矢量。 \end{DoxyCompactList}\item 
 \hyperlink{_entity_8h_ad54c4fe39f1c51b786c24ae0b7763b44}{Camp} \hyperlink{class_entity_a5326accd49d3817310ec90692b9da3df}{camp}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em 实体当前的\hyperlink{_entity_8h_ad54c4fe39f1c51b786c24ae0b7763b44}{Camp}（阵营）。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+游戏中所有实体的总基类。 
+
 
 
 \subsection{构造及析构函数说明}
@@ -73,11 +93,30 @@ void \hyperlink{class_entity_af41c73b5b2a7e68a7f285b12d0dab9f1}{set\+Velocity} (
 \subsubsection{\texorpdfstring{Entity()}{Entity()}}
 {\footnotesize\ttfamily Entity\+::\+Entity (\begin{DoxyParamCaption}\item[{\hyperlink{struct_texture}{Texture}}]{texture,  }\item[{\hyperlink{_entity_8h_ad54c4fe39f1c51b786c24ae0b7763b44}{Camp}}]{camp,  }\item[{\hyperlink{_vector2_d_8hpp_aa1f1145650f1dd9bddf7335ec6434d7c}{Vector2D}}]{position,  }\item[{\hyperlink{_vector2_d_8hpp_aa1f1145650f1dd9bddf7335ec6434d7c}{Vector2D}}]{velocity = {\ttfamily \hyperlink{_vector2_d_8hpp_aa1f1145650f1dd9bddf7335ec6434d7c}{Vector2D}()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+唯一构造函数。 
+
+
+\begin{DoxyParams}{参数}
+{\em texture} & 实体的材质。 \\
+\hline
+{\em camp} & 实体的\hyperlink{_entity_8h_ad54c4fe39f1c51b786c24ae0b7763b44}{Camp}（阵营）。 \\
+\hline
+{\em position} & 实体在地图上的坐标。 \\
+\hline
+{\em velocity} & (可选) 实体的速度矢量。默认为0。 \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{class_entity_a588098978eea6a3486b7361605ff3f0f}\label{class_entity_a588098978eea6a3486b7361605ff3f0f}} 
 \index{Entity@{Entity}!````~Entity@{$\sim$\+Entity}}
 \index{````~Entity@{$\sim$\+Entity}!Entity@{Entity}}
 \subsubsection{\texorpdfstring{$\sim$\+Entity()}{~Entity()}}
 {\footnotesize\ttfamily virtual Entity\+::$\sim$\+Entity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+基类虚析构函数，保证子类能正常析构。 
 
 
 
@@ -90,68 +129,103 @@ void \hyperlink{class_entity_af41c73b5b2a7e68a7f285b12d0dab9f1}{set\+Velocity} (
 
 
 
+在地图上绘制实体。使用了透明通道，因此可以渲染出透明材质。 
+
+
+
 被 \hyperlink{class_plane_a8877358878e91929c4c01bad40cbdb78}{Plane} 重载.
 
-\mbox{\Hypertarget{class_entity_aad037bf3c41999855c70a47c58f3bf0a}\label{class_entity_aad037bf3c41999855c70a47c58f3bf0a}} 
+\mbox{\Hypertarget{class_entity_a80b1c04df243bcdba1225a10e54995f1}\label{class_entity_a80b1c04df243bcdba1225a10e54995f1}} 
 \index{Entity@{Entity}!get\+Camp@{get\+Camp}}
 \index{get\+Camp@{get\+Camp}!Entity@{Entity}}
 \subsubsection{\texorpdfstring{get\+Camp()}{getCamp()}}
-{\footnotesize\ttfamily \hyperlink{_entity_8h_ad54c4fe39f1c51b786c24ae0b7763b44}{Camp} Entity\+::get\+Camp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily \hyperlink{_entity_8h_ad54c4fe39f1c51b786c24ae0b7763b44}{Camp} Entity\+::get\+Camp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-\mbox{\Hypertarget{class_entity_a973839fe04fc483c016d8f09e1c6f52a}\label{class_entity_a973839fe04fc483c016d8f09e1c6f52a}} 
+\mbox{\Hypertarget{class_entity_a4d69956308b0a0396ddba314c0aa0972}\label{class_entity_a4d69956308b0a0396ddba314c0aa0972}} 
 \index{Entity@{Entity}!get\+Hit\+Box@{get\+Hit\+Box}}
 \index{get\+Hit\+Box@{get\+Hit\+Box}!Entity@{Entity}}
 \subsubsection{\texorpdfstring{get\+Hit\+Box()}{getHitBox()}}
-{\footnotesize\ttfamily \hyperlink{_vector2_d_8hpp_aa1f1145650f1dd9bddf7335ec6434d7c}{Vector2D} Entity\+::get\+Hit\+Box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily \hyperlink{_vector2_d_8hpp_aa1f1145650f1dd9bddf7335ec6434d7c}{Vector2D} Entity\+::get\+Hit\+Box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-\mbox{\Hypertarget{class_entity_a76d40195158d4ac1353834b6c95aba21}\label{class_entity_a76d40195158d4ac1353834b6c95aba21}} 
+\mbox{\Hypertarget{class_entity_a6086a606c751be107efdc29109346d32}\label{class_entity_a6086a606c751be107efdc29109346d32}} 
 \index{Entity@{Entity}!get\+Position@{get\+Position}}
 \index{get\+Position@{get\+Position}!Entity@{Entity}}
 \subsubsection{\texorpdfstring{get\+Position()}{getPosition()}}
-{\footnotesize\ttfamily \hyperlink{_vector2_d_8hpp_aa1f1145650f1dd9bddf7335ec6434d7c}{Vector2D} Entity\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily \hyperlink{_vector2_d_8hpp_aa1f1145650f1dd9bddf7335ec6434d7c}{Vector2D} Entity\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-\mbox{\Hypertarget{class_entity_a00fb331557faca43b55eadc30f03c746}\label{class_entity_a00fb331557faca43b55eadc30f03c746}} 
+\mbox{\Hypertarget{class_entity_a3107fab87440ee7e410c4a98505dfc50}\label{class_entity_a3107fab87440ee7e410c4a98505dfc50}} 
 \index{Entity@{Entity}!get\+Velocity@{get\+Velocity}}
 \index{get\+Velocity@{get\+Velocity}!Entity@{Entity}}
 \subsubsection{\texorpdfstring{get\+Velocity()}{getVelocity()}}
-{\footnotesize\ttfamily \hyperlink{_vector2_d_8hpp_aa1f1145650f1dd9bddf7335ec6434d7c}{Vector2D} Entity\+::get\+Velocity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily \hyperlink{_vector2_d_8hpp_aa1f1145650f1dd9bddf7335ec6434d7c}{Vector2D} Entity\+::get\+Velocity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-\mbox{\Hypertarget{class_entity_a82c547dbbfc7d0f353f3af2d04e17723}\label{class_entity_a82c547dbbfc7d0f353f3af2d04e17723}} 
+\mbox{\Hypertarget{class_entity_a5077b09978b28e502737475686ee893d}\label{class_entity_a5077b09978b28e502737475686ee893d}} 
 \index{Entity@{Entity}!get\+X\+Hit\+Box@{get\+X\+Hit\+Box}}
 \index{get\+X\+Hit\+Box@{get\+X\+Hit\+Box}!Entity@{Entity}}
 \subsubsection{\texorpdfstring{get\+X\+Hit\+Box()}{getXHitBox()}}
-{\footnotesize\ttfamily int Entity\+::get\+X\+Hit\+Box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily int Entity\+::get\+X\+Hit\+Box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-\mbox{\Hypertarget{class_entity_a0be9d16acca47749b5450954b7cd8865}\label{class_entity_a0be9d16acca47749b5450954b7cd8865}} 
+\mbox{\Hypertarget{class_entity_ac704e83937d21eb280bf0618c27e2e66}\label{class_entity_ac704e83937d21eb280bf0618c27e2e66}} 
 \index{Entity@{Entity}!get\+X\+Pos@{get\+X\+Pos}}
 \index{get\+X\+Pos@{get\+X\+Pos}!Entity@{Entity}}
 \subsubsection{\texorpdfstring{get\+X\+Pos()}{getXPos()}}
-{\footnotesize\ttfamily int Entity\+::get\+X\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily int Entity\+::get\+X\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-\mbox{\Hypertarget{class_entity_af10fa675180cfc3c61bf84a9c9c56b3c}\label{class_entity_af10fa675180cfc3c61bf84a9c9c56b3c}} 
+\mbox{\Hypertarget{class_entity_a31c55ae9457507b1c3ad5688b8f2eda2}\label{class_entity_a31c55ae9457507b1c3ad5688b8f2eda2}} 
 \index{Entity@{Entity}!get\+X\+Vel@{get\+X\+Vel}}
 \index{get\+X\+Vel@{get\+X\+Vel}!Entity@{Entity}}
 \subsubsection{\texorpdfstring{get\+X\+Vel()}{getXVel()}}
-{\footnotesize\ttfamily int Entity\+::get\+X\+Vel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily int Entity\+::get\+X\+Vel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-\mbox{\Hypertarget{class_entity_a843b664cfecb1a912f3bc385f6ef2ae2}\label{class_entity_a843b664cfecb1a912f3bc385f6ef2ae2}} 
+\mbox{\Hypertarget{class_entity_ad46d1d4faf814a6b501101bc1c914754}\label{class_entity_ad46d1d4faf814a6b501101bc1c914754}} 
 \index{Entity@{Entity}!get\+Y\+Hit\+Box@{get\+Y\+Hit\+Box}}
 \index{get\+Y\+Hit\+Box@{get\+Y\+Hit\+Box}!Entity@{Entity}}
 \subsubsection{\texorpdfstring{get\+Y\+Hit\+Box()}{getYHitBox()}}
-{\footnotesize\ttfamily int Entity\+::get\+Y\+Hit\+Box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily int Entity\+::get\+Y\+Hit\+Box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-\mbox{\Hypertarget{class_entity_a84360a6824c2e29fa324eb9cc0d988e0}\label{class_entity_a84360a6824c2e29fa324eb9cc0d988e0}} 
+\mbox{\Hypertarget{class_entity_a8dc5891871faff09d565738104e1d42f}\label{class_entity_a8dc5891871faff09d565738104e1d42f}} 
 \index{Entity@{Entity}!get\+Y\+Pos@{get\+Y\+Pos}}
 \index{get\+Y\+Pos@{get\+Y\+Pos}!Entity@{Entity}}
 \subsubsection{\texorpdfstring{get\+Y\+Pos()}{getYPos()}}
-{\footnotesize\ttfamily int Entity\+::get\+Y\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily int Entity\+::get\+Y\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-\mbox{\Hypertarget{class_entity_a56464fa481c71c541c51700c5498c6b0}\label{class_entity_a56464fa481c71c541c51700c5498c6b0}} 
+\mbox{\Hypertarget{class_entity_abaf01d725e35883d60f1fec3f39a8ea0}\label{class_entity_abaf01d725e35883d60f1fec3f39a8ea0}} 
 \index{Entity@{Entity}!get\+Y\+Vel@{get\+Y\+Vel}}
 \index{get\+Y\+Vel@{get\+Y\+Vel}!Entity@{Entity}}
 \subsubsection{\texorpdfstring{get\+Y\+Vel()}{getYVel()}}
-{\footnotesize\ttfamily int Entity\+::get\+Y\+Vel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily int Entity\+::get\+Y\+Vel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
+\mbox{\Hypertarget{class_entity_afeab7f54f15446e13fbf218eccb8be53}\label{class_entity_afeab7f54f15446e13fbf218eccb8be53}} 
+\index{Entity@{Entity}!judge\+Collision@{judge\+Collision}}
+\index{judge\+Collision@{judge\+Collision}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{judge\+Collision()}{judgeCollision()}}
+{\footnotesize\ttfamily bool Entity\+::judge\+Collision (\begin{DoxyParamCaption}\item[{const \hyperlink{class_entity}{Entity} $\ast$}]{e1,  }\item[{const \hyperlink{class_entity}{Entity} $\ast$}]{e2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+判断两个实体是否发生碰撞。 
+
+本来，用代码判断两个矩形是否碰撞是一件很麻烦的事……（曾经一个项目写了很长的代码但还是有问题……） 但是后来找到了一个即简单又严格的数学方法，即$\ast$$\ast$比较两个矩形重心的绝对值距离与矩形长宽的关系$\ast$$\ast$。 \begin{DoxySeeAlso}{参见}
+http\+://blog.\+csdn.\+net/u011483306/article/details/45368367
+
+
+\end{DoxySeeAlso}
+
+
+
+\begin{DoxyParams}{参数}
+{\em e1} & 一个实体的指针（非空）。\\
+\hline
+{\em e2} & 另一个实体的指针（非空）。 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item 如果发生碰撞，则返回true；
+\item 如果未发生碰撞或任一参数为空，则返回false。 
+\end{DoxyItemize}
+\end{DoxyReturn}
 \mbox{\Hypertarget{class_entity_a372b9155542c8a228a4f1305f5f67341}\label{class_entity_a372b9155542c8a228a4f1305f5f67341}} 
 \index{Entity@{Entity}!set\+Position@{set\+Position}}
 \index{set\+Position@{set\+Position}!Entity@{Entity}}
@@ -196,6 +270,10 @@ void \hyperlink{class_entity_af41c73b5b2a7e68a7f285b12d0dab9f1}{set\+Velocity} (
 
 
 
+更新实体状态。作为基类虚函数，此方法只通过速度更新当前位置。 
+
+
+
 被 \hyperlink{class_bullet_a32f4a0611fe2dd245fee955d14ca1f68}{Bullet}, \hyperlink{class_plane_a7fbb07f76503fe057772e01f542afc32}{Plane}, \hyperlink{class_plane___enemy___auto_target_acae2a6f38bdc71d17188e2b7711f4d5b}{Plane\+\_\+\+Enemy\+\_\+\+Auto\+Target}, \hyperlink{class_plane___enemy___junior_a686e46c9927793dd07235cac72d52405}{Plane\+\_\+\+Enemy\+\_\+\+Junior} , 以及 \hyperlink{class_plane___player_ae68c08ce11fad9fd164c00eb4db6b348}{Plane\+\_\+\+Player} 重载.
 
 
@@ -207,11 +285,19 @@ void \hyperlink{class_entity_af41c73b5b2a7e68a7f285b12d0dab9f1}{set\+Velocity} (
 \subsubsection{\texorpdfstring{camp}{camp}}
 {\footnotesize\ttfamily \hyperlink{_entity_8h_ad54c4fe39f1c51b786c24ae0b7763b44}{Camp} Entity\+::camp\hspace{0.3cm}{\ttfamily [protected]}}
 
+
+
+实体当前的\hyperlink{_entity_8h_ad54c4fe39f1c51b786c24ae0b7763b44}{Camp}（阵营）。 
+
 \mbox{\Hypertarget{class_entity_a5031aa6b058f2231daad16b35e3d536d}\label{class_entity_a5031aa6b058f2231daad16b35e3d536d}} 
 \index{Entity@{Entity}!cur\+Pos@{cur\+Pos}}
 \index{cur\+Pos@{cur\+Pos}!Entity@{Entity}}
 \subsubsection{\texorpdfstring{cur\+Pos}{curPos}}
 {\footnotesize\ttfamily \hyperlink{_vector2_d_8hpp_aa1f1145650f1dd9bddf7335ec6434d7c}{Vector2D} Entity\+::cur\+Pos\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+实体当前在地图上的位置。 
 
 \mbox{\Hypertarget{class_entity_a22ccba8fb86e5b4e10b2c33b6f56d238}\label{class_entity_a22ccba8fb86e5b4e10b2c33b6f56d238}} 
 \index{Entity@{Entity}!model@{model}}
@@ -219,11 +305,24 @@ void \hyperlink{class_entity_af41c73b5b2a7e68a7f285b12d0dab9f1}{set\+Velocity} (
 \subsubsection{\texorpdfstring{model}{model}}
 {\footnotesize\ttfamily \hyperlink{struct_texture}{Texture} Entity\+::model\hspace{0.3cm}{\ttfamily [protected]}}
 
+
+
+实体的材质模型。通过它获取实体的\+Hit\+Box属性。\begin{DoxySeeAlso}{参见}
+\hyperlink{struct_texture}{Texture}
+
+
+\end{DoxySeeAlso}
+
+
 \mbox{\Hypertarget{class_entity_a386d25b56772b8913eb3e5adc636f6e0}\label{class_entity_a386d25b56772b8913eb3e5adc636f6e0}} 
 \index{Entity@{Entity}!velocity@{velocity}}
 \index{velocity@{velocity}!Entity@{Entity}}
 \subsubsection{\texorpdfstring{velocity}{velocity}}
 {\footnotesize\ttfamily \hyperlink{_vector2_d_8hpp_aa1f1145650f1dd9bddf7335ec6434d7c}{Vector2D} Entity\+::velocity\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+实体当前的速度矢量。 
 
 
 

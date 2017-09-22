@@ -126,7 +126,7 @@ void World::updateCollision()
 	{
 		for (auto bullet : bullets)
 		{
-			if (plane->getCamp() != bullet->getCamp() && plane->getState() == PlaneState::Alive && judgeCollision(plane, bullet))
+			if (plane->getCamp() != bullet->getCamp() && plane->getState() == PlaneState::Alive && Entity::judgeCollision(plane, bullet))
 			{
 				focused_enemy = plane;
 				dealDamage(plane, bullet);
@@ -137,7 +137,7 @@ void World::updateCollision()
 	// ----- PLAYER COLLISION WITH BULLET
 	for (auto bullet : bullets)
 	{
-		if (judgeCollision(player_plane, bullet) && player_plane->getState() == PlaneState::Alive && bullet->getCamp() == Camp::Enemy)
+		if (Entity::judgeCollision(player_plane, bullet) && player_plane->getState() == PlaneState::Alive && bullet->getCamp() == Camp::Enemy)
 		{
 			dealDamage(player_plane, bullet);
 			new Action_Plane_Explode(player_plane, false);
@@ -147,7 +147,7 @@ void World::updateCollision()
 	// ----- PLAYER COLLISION WITH ENMEY
 	for (auto enemy : enemy_planes)
 	{
-		if (judgeCollision(player_plane, enemy) && player_plane->getState() == PlaneState::Alive)
+		if (Entity::judgeCollision(player_plane, enemy) && player_plane->getState() == PlaneState::Alive)
 		{
 			dealDamage(player_plane, enemy);
 		}
