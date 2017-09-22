@@ -34,11 +34,13 @@ void World::renderMenu()
 	setcolor(LIGHTGRAY);
 	settextjustify(LEFT_TEXT, TOP_TEXT);
 	setfont(-80, 0, "Arial");
-	outtextxy(220, 150, "Lost Phoenix");
+	settextjustify(CENTER_TEXT, CENTER_TEXT);
+	outtextxy(windowWidth() / 2, windowHeight() / 5, "Lost Phoenix");
+	settextjustify(LEFT_TEXT, TOP_TEXT);
 	setfont(0, 0, "Arial");
 	outtextxy(300, 250, "W S A D ！！ move");
 	outtextxy(300, 300, "SPACE ！！ shoot");
-	outtextxy(280, 400, "press any key to continue");
+	outtextxy(280, 400, "Press any key to continue");
 	getch();
 }
 
@@ -364,6 +366,11 @@ void World::renderUI()
 	// render score
 	xyprintf(0, windowHeight() - fontHeight(), "Score: %d", score);
 
+	// render difficulty level
+	settextjustify(RIGHT_TEXT, TOP_TEXT);
+	xyprintf(windowWidth(), windowHeight() - fontHeight(), "Level: %d", difficultyLevel);
+	settextjustify(LEFT_TEXT, TOP_TEXT);
+
 	// render focused enemy health
 	static const char* enemy_name;
 	static int enemy_curHP;
@@ -389,10 +396,10 @@ void World::renderUI()
 
 bool World::checkBackgroundCollision(Entity * e, bool leftRight, bool upDown, bool isOuter)
 { 
-	if (isOuter)
-		return leftRight && (e->getXPos( ) + e->getXHitBox( ) < 0 || e->getXPos( ) > windowWidth()) ||
-			   upDown && (e->getYPos( ) + e->getYHitBox( ) < 0 || e->getYPos( ) > windowHeight());
-	else
-		return leftRight && (e->getXPos( ) < 0 || e->getXPos( ) + e->getXHitBox( ) > windowWidth()) ||
-			   upDown && (e->getYPos( ) < 0 || e->getYPos( ) + e->getYHitBox( ) > windowHeight());
+	return isOuter ?
+		leftRight && (e->getXPos( ) + e->getXHitBox( ) < 0 || e->getXPos( ) > windowWidth()) ||
+		upDown && (e->getYPos( ) + e->getYHitBox( ) < 0 || e->getYPos( ) > windowHeight())
+		:
+		leftRight && (e->getXPos( ) < 0 || e->getXPos( ) + e->getXHitBox( ) > windowWidth()) ||
+		upDown && (e->getYPos( ) < 0 || e->getYPos( ) + e->getYHitBox( ) > windowHeight());
 }

@@ -46,6 +46,9 @@
     <ClInclude Include="include\World.h" />
     <ClInclude Include="src\ResourcesLoader.h" />
   </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Lost Phoenix.rc" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{002D66E8-0C05-45E8-A60A-7A951BE8E119}</ProjectGuid>

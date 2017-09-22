@@ -28,4 +28,7 @@
     <ClInclude Include="src\ResourcesLoader.h" />
     <ClInclude Include="include\Vector2D.hpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Lost Phoenix.rc" />
+  </ItemGroup>
 </Project>

@@ -19,9 +19,11 @@ void Plane_Enemy_AutoTarget::shoot()
 	if (checkShootCoolDown())
 	{
 		double newYVel = 3 * (1.0*(rand() % 160 - 80) / 100);
-		if (abs(newYVel) > 2)
-			setXVel(-getXVel());
-		setYVel(newYVel);
+		int xVelFactor = world.difficultyLevel > 2 ? rand() % (world.difficultyLevel - 1) : 0;
+		double newXVel = xVelFactor + Settings::enemy_autoTarget().speed;
+		velocity.set(newXVel, newYVel);
+		if (abs(newYVel) > 2.0)
+			velocity.x *= -1;
 		new Bullet_Enemy_AutoTarget(this, world.player_plane, Settings::enemy_autoTarget().bulletSetting);
 	}
 }
