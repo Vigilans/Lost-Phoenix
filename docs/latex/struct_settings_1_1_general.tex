@@ -2,89 +2,51 @@
 \label{struct_settings_1_1_general}\index{Settings\+::\+General@{Settings\+::\+General}}
 
 
+游戏全局设置，主要包含\+U\+I与相关时间设置。  
+
+
+
+
 {\ttfamily \#include $<$Resources.\+h$>$}
 
 \subsection*{Public 属性}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\Hypertarget{struct_settings_1_1_general_a414f100b330453215b514ec726a9fac9}\label{struct_settings_1_1_general_a414f100b330453215b514ec726a9fac9}} 
 \begin{tabbing}
 xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
 struct \{\\
 \>char $\ast$ \hyperlink{struct_settings_1_1_general_acb5598e7641429cde268ecd8f80c4da0}{title}\\
+\>\>{\em 游戏标题。 }\\
 \>int \hyperlink{struct_settings_1_1_general_a5ebbaffe3220c3daf7ef79c4cd7f1ad6}{fps}\\
-\>\hyperlink{_vector2_d_8hpp_aa1f1145650f1dd9bddf7335ec6434d7c}{Vector2D} \hyperlink{struct_settings_1_1_general_a4cdcf50e69a10db0e410db97bd547d38}{resolution}\\
+\>\>{\em 游戏的FPS。 }\\
+\>\hyperlink{structbasic__vector2_d}{Vector2D} \hyperlink{struct_settings_1_1_general_a4cdcf50e69a10db0e410db97bd547d38}{resolution}\\
+\>\>{\em 游戏窗口的分辨率。 }\\
 \>int \hyperlink{struct_settings_1_1_general_ad459481ace3b01e1d80a7548325d28d2}{fontHeight}\\
-\} \hyperlink{struct_settings_1_1_general_a414f100b330453215b514ec726a9fac9}{UI}\\
+\>\>{\em UI的字体高度。 }\\
+\} {\bfseries UI}\\
 
 \end{tabbing}\item 
+\mbox{\Hypertarget{struct_settings_1_1_general_ae31b262693f15e6ab5ea1e1c609249b9}\label{struct_settings_1_1_general_ae31b262693f15e6ab5ea1e1c609249b9}} 
 \begin{tabbing}
 xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
 struct \{\\
 \>int \hyperlink{struct_settings_1_1_general_a48c8c522f1359b0e60c08404ac84b481}{enemyInfoDuration}\\
+\>\>{\em 被追踪敌机的追踪状态保留时间。 }\\
 \>int \hyperlink{struct_settings_1_1_general_a309cc676568d698298f225d2755141f9}{enemyWaveCoolDown}\\
+\>\>{\em 敌机每一波刷新的基础冷却时间。 }\\
 \>int \hyperlink{struct_settings_1_1_general_ae17ce428cf02b7c52530c8752ebca9cd}{bgShiftSpeed}\\
-\} \hyperlink{struct_settings_1_1_general_ae31b262693f15e6ab5ea1e1c609249b9}{times}\\
+\>\>{\em 背景的移动速度。 }\\
+\} {\bfseries times}\\
 
 \end{tabbing}\end{DoxyCompactItemize}
 
 
-\subsection{类成员变量说明}
-\mbox{\Hypertarget{struct_settings_1_1_general_ae17ce428cf02b7c52530c8752ebca9cd}\label{struct_settings_1_1_general_ae17ce428cf02b7c52530c8752ebca9cd}} 
-\index{Settings\+::\+General@{Settings\+::\+General}!bg\+Shift\+Speed@{bg\+Shift\+Speed}}
-\index{bg\+Shift\+Speed@{bg\+Shift\+Speed}!Settings\+::\+General@{Settings\+::\+General}}
-\subsubsection{\texorpdfstring{bg\+Shift\+Speed}{bgShiftSpeed}}
-{\footnotesize\ttfamily int Settings\+::\+General\+::bg\+Shift\+Speed}
-
-\mbox{\Hypertarget{struct_settings_1_1_general_a48c8c522f1359b0e60c08404ac84b481}\label{struct_settings_1_1_general_a48c8c522f1359b0e60c08404ac84b481}} 
-\index{Settings\+::\+General@{Settings\+::\+General}!enemy\+Info\+Duration@{enemy\+Info\+Duration}}
-\index{enemy\+Info\+Duration@{enemy\+Info\+Duration}!Settings\+::\+General@{Settings\+::\+General}}
-\subsubsection{\texorpdfstring{enemy\+Info\+Duration}{enemyInfoDuration}}
-{\footnotesize\ttfamily int Settings\+::\+General\+::enemy\+Info\+Duration}
-
-\mbox{\Hypertarget{struct_settings_1_1_general_a309cc676568d698298f225d2755141f9}\label{struct_settings_1_1_general_a309cc676568d698298f225d2755141f9}} 
-\index{Settings\+::\+General@{Settings\+::\+General}!enemy\+Wave\+Cool\+Down@{enemy\+Wave\+Cool\+Down}}
-\index{enemy\+Wave\+Cool\+Down@{enemy\+Wave\+Cool\+Down}!Settings\+::\+General@{Settings\+::\+General}}
-\subsubsection{\texorpdfstring{enemy\+Wave\+Cool\+Down}{enemyWaveCoolDown}}
-{\footnotesize\ttfamily int Settings\+::\+General\+::enemy\+Wave\+Cool\+Down}
-
-\mbox{\Hypertarget{struct_settings_1_1_general_ad459481ace3b01e1d80a7548325d28d2}\label{struct_settings_1_1_general_ad459481ace3b01e1d80a7548325d28d2}} 
-\index{Settings\+::\+General@{Settings\+::\+General}!font\+Height@{font\+Height}}
-\index{font\+Height@{font\+Height}!Settings\+::\+General@{Settings\+::\+General}}
-\subsubsection{\texorpdfstring{font\+Height}{fontHeight}}
-{\footnotesize\ttfamily int Settings\+::\+General\+::font\+Height}
-
-\mbox{\Hypertarget{struct_settings_1_1_general_a5ebbaffe3220c3daf7ef79c4cd7f1ad6}\label{struct_settings_1_1_general_a5ebbaffe3220c3daf7ef79c4cd7f1ad6}} 
-\index{Settings\+::\+General@{Settings\+::\+General}!fps@{fps}}
-\index{fps@{fps}!Settings\+::\+General@{Settings\+::\+General}}
-\subsubsection{\texorpdfstring{fps}{fps}}
-{\footnotesize\ttfamily int Settings\+::\+General\+::fps}
-
-\mbox{\Hypertarget{struct_settings_1_1_general_a4cdcf50e69a10db0e410db97bd547d38}\label{struct_settings_1_1_general_a4cdcf50e69a10db0e410db97bd547d38}} 
-\index{Settings\+::\+General@{Settings\+::\+General}!resolution@{resolution}}
-\index{resolution@{resolution}!Settings\+::\+General@{Settings\+::\+General}}
-\subsubsection{\texorpdfstring{resolution}{resolution}}
-{\footnotesize\ttfamily \hyperlink{_vector2_d_8hpp_aa1f1145650f1dd9bddf7335ec6434d7c}{Vector2D} Settings\+::\+General\+::resolution}
-
-\mbox{\Hypertarget{struct_settings_1_1_general_ae31b262693f15e6ab5ea1e1c609249b9}\label{struct_settings_1_1_general_ae31b262693f15e6ab5ea1e1c609249b9}} 
-\index{Settings\+::\+General@{Settings\+::\+General}!times@{times}}
-\index{times@{times}!Settings\+::\+General@{Settings\+::\+General}}
-\subsubsection{\texorpdfstring{times}{times}}
-{\footnotesize\ttfamily struct \{ ... \}   Settings\+::\+General\+::times}
-
-\mbox{\Hypertarget{struct_settings_1_1_general_acb5598e7641429cde268ecd8f80c4da0}\label{struct_settings_1_1_general_acb5598e7641429cde268ecd8f80c4da0}} 
-\index{Settings\+::\+General@{Settings\+::\+General}!title@{title}}
-\index{title@{title}!Settings\+::\+General@{Settings\+::\+General}}
-\subsubsection{\texorpdfstring{title}{title}}
-{\footnotesize\ttfamily char$\ast$ Settings\+::\+General\+::title}
-
-\mbox{\Hypertarget{struct_settings_1_1_general_a414f100b330453215b514ec726a9fac9}\label{struct_settings_1_1_general_a414f100b330453215b514ec726a9fac9}} 
-\index{Settings\+::\+General@{Settings\+::\+General}!UI@{UI}}
-\index{UI@{UI}!Settings\+::\+General@{Settings\+::\+General}}
-\subsubsection{\texorpdfstring{UI}{UI}}
-{\footnotesize\ttfamily struct \{ ... \}   Settings\+::\+General\+::\+UI}
+\subsection{详细描述}
+游戏全局设置，主要包含\+U\+I与相关时间设置。 
 
 
 
 该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
 \item 
-D\+:/叶志浩文件夹/\+Vigilans的文档/\+Programming/\+Visual Studio/\+Projects/\+Grade 1 Summer Vacation/\+Lost Phoenix/\+Lost Phoenix/include/\hyperlink{_resources_8h}{Resources.\+h}\end{DoxyCompactItemize}
+D\+:/叶志浩文件夹/\+Vigilans的文档/\+Programming/\+Visual Studio/\+Projects/\+Grade 1 Summer Vacation/\+Lost Phoenix/\+Lost Phoenix/include/Resources.\+h\end{DoxyCompactItemize}

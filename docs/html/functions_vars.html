@@ -27,11 +27,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="icon64.ico"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Lost Phoenix
    &#160;<span id="projectnumber">1.1</span>
    </div>
-   <div id="projectbrief">一个简单的飞机大战游戏，由EGE图形库编写而成。</div>
+   <div id="projectbrief">Simple and naive Plane War game.</div>
   </td>
  </tr>
  </tbody>
@@ -88,8 +89,7 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 : <a class="el" href="class_world.html#aefe8e0e9e418bbf81671314bf8d019f2">World</a>
 </li>
 <li>attack
-: <a class="el" href="class_bullet.html#ab9e1e40341cddf25f8acc4e378b26f4a">Bullet</a>
-, <a class="el" href="struct_settings_1_1_bullet.html#a21e484cc6e290496e36a68da5b1a7b76">Settings::Bullet</a>
+: <a class="el" href="struct_settings_1_1_bullet.html#a21e484cc6e290496e36a68da5b1a7b76">Settings::Bullet</a>
 </li>
 </ul>
 
@@ -97,9 +97,6 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 <h3><a id="index_b"></a>- b -</h3><ul>
 <li>bgShiftSpeed
 : <a class="el" href="struct_settings_1_1_general.html#ae17ce428cf02b7c52530c8752ebca9cd">Settings::General</a>
-</li>
-<li>boomTime
-: <a class="el" href="class_action___plane___explode.html#a3425e9988fc97a794c01b3288df4afe6">Action_Plane_Explode</a>
 </li>
 <li>bullets
 : <a class="el" href="class_world.html#a932c82c701ec6d13e2857943562954f2">World</a>
@@ -111,24 +108,12 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 
 
 <h3><a id="index_c"></a>- c -</h3><ul>
-<li>callback
-: <a class="el" href="class_action.html#aef6c7c00b09ea1b0ddd7a26926309717">Action</a>
-</li>
 <li>camp
 : <a class="el" href="class_entity.html#a5326accd49d3817310ec90692b9da3df">Entity</a>
 , <a class="el" href="struct_settings_1_1_plane.html#a62d563a2ebc841e01bfe4737bf1fe0ab">Settings::Plane</a>
 </li>
 <li>coolDown
 : <a class="el" href="struct_settings_1_1_bullet.html#a00faad5dff02426e73ab0326057b66ed">Settings::Bullet</a>
-</li>
-<li>CTL_PREINITEND
-: <a class="el" href="class_action.html#a682e7ba0a9ef3f891382df776c1ce883">Action</a>
-</li>
-<li>curHealth
-: <a class="el" href="class_plane.html#a0434f35fe3f56acb865e51c042e43df8">Plane</a>
-</li>
-<li>curIndex
-: <a class="el" href="class_action___plane___explode.html#a5da7d39e28db0b1a852ae81cc6e96ba5">Action_Plane_Explode</a>
 </li>
 <li>curPos
 : <a class="el" href="class_entity.html#a5031aa6b058f2231daad16b35e3d536d">Entity</a>
@@ -144,10 +129,6 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 
 
 <h3><a id="index_e"></a>- e -</h3><ul>
-<li>end
-: <a class="el" href="class_action.html#a28332e6535d45661d768bb1b321f4715">Action</a>
-, <a class="el" href="class_bullet.html#aff37198e603e1a2b8ff28e0df6e156a4">Bullet</a>
-</li>
 <li>enemy_planes
 : <a class="el" href="class_world.html#a9692ac6798300e7fde98eb3ef1bb7c79">World</a>
 </li>
@@ -156,9 +137,6 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 </li>
 <li>enemyWaveCoolDown
 : <a class="el" href="struct_settings_1_1_general.html#a309cc676568d698298f225d2755141f9">Settings::General</a>
-</li>
-<li>expectHitBox
-: <a class="el" href="struct_settings_1_1_texture_info.html#a4bec21902818b3afb2993e5d67a62dfe">Settings::TextureInfo</a>
 </li>
 <li>explosion
 : <a class="el" href="struct_settings_1_1_anime_textures.html#ac7d7f8216a2c1f3f06dfcb59d6ed7a10">Settings::AnimeTextures</a>
@@ -193,9 +171,6 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 <li>health
 : <a class="el" href="struct_settings_1_1_plane.html#a71ffa9166855277d353d0fb6ac8f58f6">Settings::Plane</a>
 </li>
-<li>hitbox
-: <a class="el" href="struct_settings_1_1_texture_info.html#a5b7e1f0b9d305faa03de6d0c31cc0859">Settings::TextureInfo</a>
-</li>
 <li>hitBox
 : <a class="el" href="struct_texture.html#a1142de09bebe1683ee67c816953f9ad1">Texture</a>
 </li>
@@ -223,48 +198,18 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 <li>m_KeyState
 : <a class="el" href="class_input_controller.html#aebe382d8d20e579a3f2c92b58ad53ac3">InputController</a>
 </li>
-<li>maxHealth
-: <a class="el" href="class_plane.html#ac39ded6721a8137c4a8044adfbfb8a6c">Plane</a>
-</li>
 <li>menu
 : <a class="el" href="struct_settings_1_1_bg_textures.html#ab2f017635aaeb1ee5dbb544f2a053b30">Settings::BgTextures</a>
 </li>
 <li>model
 : <a class="el" href="class_entity.html#a22ccba8fb86e5b4e10b2c33b6f56d238">Entity</a>
 </li>
-<li>models
-: <a class="el" href="class_action___plane___explode.html#ab37c2419e1e16a739b856de09df79909">Action_Plane_Explode</a>
-</li>
-<li>mTextureInfos
-: <a class="el" href="class_resources_loader.html#ae364e855ac860a1404ddf324b0ef0300">ResourcesLoader</a>
-</li>
 </ul>
 
 
 <h3><a id="index_p"></a>- p -</h3><ul>
-<li>pAnimeTextures
-: <a class="el" href="class_resources_loader.html#a72df15c8b925035fda4edfeb52830d82">ResourcesLoader</a>
-</li>
-<li>path
-: <a class="el" href="struct_settings_1_1_texture_info.html#ae8163d14505552c69b973a262fb896f6">Settings::TextureInfo</a>
-</li>
-<li>pBgTextures
-: <a class="el" href="class_resources_loader.html#aada194614a803df2a3680e5c5992a18a">ResourcesLoader</a>
-</li>
-<li>pEnemyAutoTarget
-: <a class="el" href="class_resources_loader.html#a99ac5605a8b7fedb9c79b3f6b6d310cb">ResourcesLoader</a>
-</li>
-<li>pEnemyJunior
-: <a class="el" href="class_resources_loader.html#a150dacb6180f32ab8fafadcefdc65f96">ResourcesLoader</a>
-</li>
-<li>pGeneral
-: <a class="el" href="class_resources_loader.html#a65888b4ea57a744c09dc0c9e22f9f186">ResourcesLoader</a>
-</li>
 <li>player_plane
 : <a class="el" href="class_world.html#ada7a87d1778bfc543635656ea8f12d3f">World</a>
-</li>
-<li>pPlayer
-: <a class="el" href="class_resources_loader.html#ae874a55d363c3cb651f36e47570d30a9">ResourcesLoader</a>
 </li>
 </ul>
 
@@ -284,26 +229,9 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 : <a class="el" href="struct_settings_1_1_plane.html#a20a8861d723406f4d49610804226dd82">Settings::Plane</a>
 , <a class="el" href="class_world.html#ae70b4ef5dd9cb9e7336169a25aaee39c">World</a>
 </li>
-<li>settings
-: <a class="el" href="class_resources_loader.html#a2310f32324c20d8294cfbfd893f1c2d9">ResourcesLoader</a>
-</li>
-<li>shootCheckPoint
-: <a class="el" href="class_plane.html#a36cb09c56fbf7b8c28506d8dd70f07cb">Plane</a>
-</li>
-<li>shootCoolDown
-: <a class="el" href="class_plane.html#ae9f4ab92b0aa75cff1f14df37980eabd">Plane</a>
-</li>
 <li>speed
-: <a class="el" href="class_bullet.html#a110bd4348fc7547125b4ec4bbf94d5f5">Bullet</a>
-, <a class="el" href="class_plane.html#a6ca15b26a453dfd4f81fa11a5ee278c9">Plane</a>
-, <a class="el" href="struct_settings_1_1_bullet.html#a8969e02d4dba2f87284855e0a141f6f3">Settings::Bullet</a>
+: <a class="el" href="struct_settings_1_1_bullet.html#a8969e02d4dba2f87284855e0a141f6f3">Settings::Bullet</a>
 , <a class="el" href="struct_settings_1_1_plane.html#a814ee5fe2c6b873ff4f0e0208f2c240a">Settings::Plane</a>
-</li>
-<li>srcPlane
-: <a class="el" href="class_action___plane___explode.html#a98d4991b3266a6c7fc5ebbad4d41f136">Action_Plane_Explode</a>
-</li>
-<li>state
-: <a class="el" href="class_plane.html#a30babe177abbe22e61d2cc274945f3fc">Plane</a>
 </li>
 </ul>
 
@@ -313,24 +241,8 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 : <a class="el" href="struct_settings_1_1_bullet.html#a274a4b14c0bfaa540c5e60c273567bbd">Settings::Bullet</a>
 , <a class="el" href="struct_settings_1_1_plane.html#a6a000124604eb5435f4d77bbec170a4f">Settings::Plane</a>
 </li>
-<li>textures
-: <a class="el" href="class_resources_loader.html#a5b18435b040ae9562a84570712be922c">ResourcesLoader</a>
-</li>
-<li>times
-: <a class="el" href="struct_settings_1_1_general.html#ae31b262693f15e6ab5ea1e1c609249b9">Settings::General</a>
-</li>
 <li>title
 : <a class="el" href="struct_settings_1_1_general.html#acb5598e7641429cde268ecd8f80c4da0">Settings::General</a>
-</li>
-<li>toDestroy
-: <a class="el" href="class_action___plane___explode.html#a655f5cf52656c4ce16040d2310494029">Action_Plane_Explode</a>
-</li>
-</ul>
-
-
-<h3><a id="index_u"></a>- u -</h3><ul>
-<li>UI
-: <a class="el" href="struct_settings_1_1_general.html#a414f100b330453215b514ec726a9fac9">Settings::General</a>
 </li>
 </ul>
 
@@ -338,20 +250,6 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 <h3><a id="index_v"></a>- v -</h3><ul>
 <li>velocity
 : <a class="el" href="class_entity.html#a386d25b56772b8913eb3e5adc636f6e0">Entity</a>
-</li>
-</ul>
-
-
-<h3><a id="index_x"></a>- x -</h3><ul>
-<li>x
-: <a class="el" href="structbasic__vector2_d.html#a9f606d50a5993d8c8f3834e67e2e750d">basic_vector2D&lt; _Ty &gt;</a>
-</li>
-</ul>
-
-
-<h3><a id="index_y"></a>- y -</h3><ul>
-<li>y
-: <a class="el" href="structbasic__vector2_d.html#ad874ba527147096c9ee6c56ded52be73">basic_vector2D&lt; _Ty &gt;</a>
 </li>
 </ul>
 </div><!-- contents -->

@@ -1,101 +1,76 @@
 \hypertarget{namespace_settings}{}\section{Settings 命名空间参考}
 \label{namespace_settings}\index{Settings@{Settings}}
+
+
+封装了游戏全局与所有实体设置的名空间。 所有获取默认设置的方法采用 {\itshape Lazy Load（延时加载）} 机制。 {\bfseries 推荐参考详细描述来获取完整信息} 。  
+
+
 \subsection*{类}
 \begin{DoxyCompactItemize}
 \item 
 struct \hyperlink{struct_settings_1_1_anime_textures}{Anime\+Textures}
-\item 
+\begin{DoxyCompactList}\small\item\em 所有动画、\hyperlink{class_action}{Action}相关材质设置。 \end{DoxyCompactList}\item 
 struct \hyperlink{struct_settings_1_1_bg_textures}{Bg\+Textures}
-\item 
+\begin{DoxyCompactList}\small\item\em 所有游戏背景材质设置。 \end{DoxyCompactList}\item 
 struct \hyperlink{struct_settings_1_1_bullet}{Bullet}
-\item 
+\begin{DoxyCompactList}\small\item\em 子弹的设置基类。 \end{DoxyCompactList}\item 
 struct \hyperlink{struct_settings_1_1_general}{General}
-\item 
+\begin{DoxyCompactList}\small\item\em 游戏全局设置，主要包含\+U\+I与相关时间设置。 \end{DoxyCompactList}\item 
 struct \hyperlink{struct_settings_1_1_plane}{Plane}
-\item 
+\begin{DoxyCompactList}\small\item\em 飞机的设置基类。 \end{DoxyCompactList}\item 
 struct \hyperlink{struct_settings_1_1_texture_info}{Texture\+Info}
 \end{DoxyCompactItemize}
 \subsection*{函数}
 \begin{DoxyCompactItemize}
 \item 
-const struct \hyperlink{struct_settings_1_1_general}{Settings\+::\+General} \hyperlink{namespace_settings_a8d5eb32bea233e3b9ae9ce6e29b8d8bb}{general} ()
-\item 
-const struct \hyperlink{struct_settings_1_1_bg_textures}{Settings\+::\+Bg\+Textures} \hyperlink{namespace_settings_a8bae923ac0d881b72bbec4f50730ec72}{bg\+Textures} ()
-\item 
-const struct \hyperlink{struct_settings_1_1_anime_textures}{Settings\+::\+Anime\+Textures} \hyperlink{namespace_settings_a106c90d315148ccd78a2d961dae148a8}{anime\+Textures} ()
-\item 
-const \hyperlink{struct_settings_1_1_plane}{Settings\+::\+Plane} \& \hyperlink{namespace_settings_ab78c6dca0d1b2fc76eae348e81a3eed7}{player} ()
-\item 
-const \hyperlink{struct_settings_1_1_plane}{Settings\+::\+Plane} \& \hyperlink{namespace_settings_a5d571065d327daba740814f8e90261f5}{enemy\+\_\+junior} ()
-\item 
-const \hyperlink{struct_settings_1_1_plane}{Settings\+::\+Plane} \& \hyperlink{namespace_settings_a77e282eadc82f97cb15c2c3eef3c535b}{enemy\+\_\+auto\+Target} ()
-\item 
-void \hyperlink{namespace_settings_a42e5acb521fa66b1f2311a896df95a98}{from\+\_\+json} (const \hyperlink{_resources_loader_8cpp_ab701e3ac61a85b337ec5c1abaad6742d}{json} \&j, \hyperlink{struct_settings_1_1_bullet}{Settings\+::\+Bullet} \&b)
-\item 
-void \hyperlink{namespace_settings_aaba1604e449415b4bcbbb0a6e50a0ac9}{from\+\_\+json} (const \hyperlink{_resources_loader_8cpp_ab701e3ac61a85b337ec5c1abaad6742d}{json} \&j, \hyperlink{struct_settings_1_1_plane}{Settings\+::\+Plane} \&s)
-\end{DoxyCompactItemize}
-\subsection*{变量}
-\begin{DoxyCompactItemize}
-\item 
-struct \hyperlink{struct_settings_1_1_bullet}{Settings\+::\+Bullet} \& \hyperlink{namespace_settings_a60c5dfdfb55f1abb671e786f06fc24dd}{anime\+Textures}
-\end{DoxyCompactItemize}
-
-
-\subsection{函数说明}
-\mbox{\Hypertarget{namespace_settings_a106c90d315148ccd78a2d961dae148a8}\label{namespace_settings_a106c90d315148ccd78a2d961dae148a8}} 
-\index{Settings@{Settings}!anime\+Textures@{anime\+Textures}}
-\index{anime\+Textures@{anime\+Textures}!Settings@{Settings}}
-\subsubsection{\texorpdfstring{anime\+Textures()}{animeTextures()}}
-{\footnotesize\ttfamily const struct \hyperlink{struct_settings_1_1_anime_textures}{Settings\+::\+Anime\+Textures} Settings\+::anime\+Textures (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-\mbox{\Hypertarget{namespace_settings_a8bae923ac0d881b72bbec4f50730ec72}\label{namespace_settings_a8bae923ac0d881b72bbec4f50730ec72}} 
-\index{Settings@{Settings}!bg\+Textures@{bg\+Textures}}
-\index{bg\+Textures@{bg\+Textures}!Settings@{Settings}}
-\subsubsection{\texorpdfstring{bg\+Textures()}{bgTextures()}}
-{\footnotesize\ttfamily const \hyperlink{struct_settings_1_1_bg_textures}{Settings\+::\+Bg\+Textures} \& Settings\+::bg\+Textures (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-\mbox{\Hypertarget{namespace_settings_a77e282eadc82f97cb15c2c3eef3c535b}\label{namespace_settings_a77e282eadc82f97cb15c2c3eef3c535b}} 
-\index{Settings@{Settings}!enemy\+\_\+auto\+Target@{enemy\+\_\+auto\+Target}}
-\index{enemy\+\_\+auto\+Target@{enemy\+\_\+auto\+Target}!Settings@{Settings}}
-\subsubsection{\texorpdfstring{enemy\+\_\+auto\+Target()}{enemy\_autoTarget()}}
-{\footnotesize\ttfamily const \hyperlink{struct_settings_1_1_plane}{Settings\+::\+Plane} \& Settings\+::enemy\+\_\+auto\+Target (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-\mbox{\Hypertarget{namespace_settings_a5d571065d327daba740814f8e90261f5}\label{namespace_settings_a5d571065d327daba740814f8e90261f5}} 
-\index{Settings@{Settings}!enemy\+\_\+junior@{enemy\+\_\+junior}}
-\index{enemy\+\_\+junior@{enemy\+\_\+junior}!Settings@{Settings}}
-\subsubsection{\texorpdfstring{enemy\+\_\+junior()}{enemy\_junior()}}
-{\footnotesize\ttfamily const \hyperlink{struct_settings_1_1_plane}{Settings\+::\+Plane} \& Settings\+::enemy\+\_\+junior (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-\mbox{\Hypertarget{namespace_settings_a42e5acb521fa66b1f2311a896df95a98}\label{namespace_settings_a42e5acb521fa66b1f2311a896df95a98}} 
-\index{Settings@{Settings}!from\+\_\+json@{from\+\_\+json}}
-\index{from\+\_\+json@{from\+\_\+json}!Settings@{Settings}}
-\subsubsection{\texorpdfstring{from\+\_\+json()}{from\_json()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily void Settings\+::from\+\_\+json (\begin{DoxyParamCaption}\item[{const \hyperlink{_resources_loader_8cpp_ab701e3ac61a85b337ec5c1abaad6742d}{json} \&}]{j,  }\item[{\hyperlink{struct_settings_1_1_bullet}{Settings\+::\+Bullet} \&}]{b }\end{DoxyParamCaption})}
-
-\mbox{\Hypertarget{namespace_settings_aaba1604e449415b4bcbbb0a6e50a0ac9}\label{namespace_settings_aaba1604e449415b4bcbbb0a6e50a0ac9}} 
-\index{Settings@{Settings}!from\+\_\+json@{from\+\_\+json}}
-\index{from\+\_\+json@{from\+\_\+json}!Settings@{Settings}}
-\subsubsection{\texorpdfstring{from\+\_\+json()}{from\_json()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily void Settings\+::from\+\_\+json (\begin{DoxyParamCaption}\item[{const \hyperlink{_resources_loader_8cpp_ab701e3ac61a85b337ec5c1abaad6742d}{json} \&}]{j,  }\item[{\hyperlink{struct_settings_1_1_plane}{Settings\+::\+Plane} \&}]{s }\end{DoxyParamCaption})}
-
 \mbox{\Hypertarget{namespace_settings_a8d5eb32bea233e3b9ae9ce6e29b8d8bb}\label{namespace_settings_a8d5eb32bea233e3b9ae9ce6e29b8d8bb}} 
-\index{Settings@{Settings}!general@{general}}
-\index{general@{general}!Settings@{Settings}}
-\subsubsection{\texorpdfstring{general()}{general()}}
-{\footnotesize\ttfamily const \hyperlink{struct_settings_1_1_general}{Settings\+::\+General} \& Settings\+::general (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
+const \hyperlink{struct_settings_1_1_general}{Settings\+::\+General} \& \hyperlink{namespace_settings_a8d5eb32bea233e3b9ae9ce6e29b8d8bb}{general} ()
+\begin{DoxyCompactList}\small\item\em 获取默认的全局游戏设置。采取\+Lazy Load机制。 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_settings_a8bae923ac0d881b72bbec4f50730ec72}\label{namespace_settings_a8bae923ac0d881b72bbec4f50730ec72}} 
+const \hyperlink{struct_settings_1_1_bg_textures}{Settings\+::\+Bg\+Textures} \& \hyperlink{namespace_settings_a8bae923ac0d881b72bbec4f50730ec72}{bg\+Textures} ()
+\begin{DoxyCompactList}\small\item\em 获取默认的背景材质设置。采取\+Lazy Load机制。 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_settings_ae61a4eddbf5405fae02d781d7e698413}\label{namespace_settings_ae61a4eddbf5405fae02d781d7e698413}} 
+const \hyperlink{struct_settings_1_1_anime_textures}{Settings\+::\+Anime\+Textures} \& \hyperlink{namespace_settings_ae61a4eddbf5405fae02d781d7e698413}{anime\+Textures} ()
+\begin{DoxyCompactList}\small\item\em 获取默认的动画材质设置。采取\+Lazy Load机制。 \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{namespace_settings_ab78c6dca0d1b2fc76eae348e81a3eed7}\label{namespace_settings_ab78c6dca0d1b2fc76eae348e81a3eed7}} 
-\index{Settings@{Settings}!player@{player}}
-\index{player@{player}!Settings@{Settings}}
-\subsubsection{\texorpdfstring{player()}{player()}}
-{\footnotesize\ttfamily const \hyperlink{struct_settings_1_1_plane}{Settings\+::\+Plane} \& Settings\+::player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+const \hyperlink{struct_settings_1_1_plane}{Settings\+::\+Plane} \& \hyperlink{namespace_settings_ab78c6dca0d1b2fc76eae348e81a3eed7}{player} ()
+\begin{DoxyCompactList}\small\item\em 获取默认的玩家飞机设置。采取\+Lazy Load机制。 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_settings_a5d571065d327daba740814f8e90261f5}\label{namespace_settings_a5d571065d327daba740814f8e90261f5}} 
+const \hyperlink{struct_settings_1_1_plane}{Settings\+::\+Plane} \& \hyperlink{namespace_settings_a5d571065d327daba740814f8e90261f5}{enemy\+\_\+junior} ()
+\begin{DoxyCompactList}\small\item\em 获取默认的新兵敌机设置。采取\+Lazy Load机制。 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_settings_a77e282eadc82f97cb15c2c3eef3c535b}\label{namespace_settings_a77e282eadc82f97cb15c2c3eef3c535b}} 
+const \hyperlink{struct_settings_1_1_plane}{Settings\+::\+Plane} \& \hyperlink{namespace_settings_a77e282eadc82f97cb15c2c3eef3c535b}{enemy\+\_\+auto\+Target} ()
+\begin{DoxyCompactList}\small\item\em 获取默认的自机狙敌机设置。采取\+Lazy Load机制。 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_settings_a42e5acb521fa66b1f2311a896df95a98}\label{namespace_settings_a42e5acb521fa66b1f2311a896df95a98}} 
+void {\bfseries from\+\_\+json} (const json \&j, \hyperlink{struct_settings_1_1_bullet}{Settings\+::\+Bullet} \&b)
+\item 
+\mbox{\Hypertarget{namespace_settings_aaba1604e449415b4bcbbb0a6e50a0ac9}\label{namespace_settings_aaba1604e449415b4bcbbb0a6e50a0ac9}} 
+void {\bfseries from\+\_\+json} (const json \&j, \hyperlink{struct_settings_1_1_plane}{Settings\+::\+Plane} \&s)
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+封装了游戏全局与所有实体设置的名空间。 所有获取默认设置的方法采用 {\itshape Lazy Load（延时加载）} 机制。 {\bfseries 推荐参考详细描述来获取完整信息} 。 
+
+这个名空间将游戏的所有设置用几个struct进行表示，以提高可读性与扩展性。
+
+所有默认设置保存在json文件中，放置于/settings文件夹下。 相比于用一个宏头文件保存设置，使用json的可读性与结构性更强，同时在修改相关设置数据时，也不需要 {\bfseries 全部重新编译一遍} 。
+
+运行游戏后，会陆续从json文件中读取相关设置，在堆上用一块专门的内存保存。具体机制为：
+\begin{DoxyItemize}
+\item 程序开始运行时，读取所有材质的索引信息到\hyperlink{struct_settings_1_1_texture_info}{Texture\+Info}的std\+::map中，为此后设置的\+Lazy Load作准备。
+\item Setting名空间中提供几个获取$\ast$$\ast$默认设置引用$\ast$$\ast$的函数。此时尚未加载任何设置。
+\item 当外部类调用任一\+Setting名空间的函数后，若未加载，则加载设置到堆上的一块稳定内存区域中，并返回引用。这有两个效果：
+\begin{DoxyItemize}
+\item 所有设置都采取了\+Lazy Load机制，这避免了在ege图形库未初始化窗口前读取材质而造成bug，同时节省内存。
+\item 默认设置始终返回堆上一块稳定内存的引用，达到一处保存多处使用的效果，同时减少拷贝。
+\end{DoxyItemize}
+\end{DoxyItemize}
 
 
 
-\subsection{变量说明}
-\mbox{\Hypertarget{namespace_settings_a60c5dfdfb55f1abb671e786f06fc24dd}\label{namespace_settings_a60c5dfdfb55f1abb671e786f06fc24dd}} 
-\index{Settings@{Settings}!anime\+Textures@{anime\+Textures}}
-\index{anime\+Textures@{anime\+Textures}!Settings@{Settings}}
-\subsubsection{\texorpdfstring{anime\+Textures}{animeTextures}}
-{\footnotesize\ttfamily const \hyperlink{struct_settings_1_1_anime_textures}{Settings\+::\+Anime\+Textures} \& Settings\+::anime\+Textures}
 
+
+对于飞机与子弹这样的实体，设置还有另一层作用：在一个实例构造函数中使用。 实体可能有很多的属性，若全部放在构造函数中显得十分臃肿；同时，要新增一个属性，需要修改很多地方，容易出错。
+
+因此，飞机与子弹的构造函数设计为只需要传一个 {\ttfamily 设置} 与其他 {\ttfamily 非设置信息} 进去即可。 在传入设置前，可以对设置的实例进行修改，达到修改飞机子弹相关数据的效果。 

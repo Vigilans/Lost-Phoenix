@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['judgecollision',['judgeCollision',['../class_entity.html#afeab7f54f15446e13fbf218eccb8be53',1,'Entity']]]
+  ['newenemywave',['newEnemyWave',['../class_world.html#a9957df94d0d75429c23c7d70c2db282e',1,'World']]]
 ];

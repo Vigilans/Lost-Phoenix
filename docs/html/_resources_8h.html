@@ -27,11 +27,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="icon.ico"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Lost Phoenix
    &#160;<span id="projectnumber">1.1</span>
    </div>
-   <div id="projectbrief">一个简单的飞机大战游戏，由EGE图形库编写而成。</div>
+   <div id="projectbrief">Simple and naive Plane War game.</div>
   </td>
  </tr>
  </tbody>
@@ -98,8 +99,10 @@ $(document).ready(function(){initNavTree('_resources_8h.html','');});
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 类</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_texture.html">Texture</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">表征图像材质的结构体。  <a href="struct_texture.html#details">更多...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_settings_1_1_general.html">Settings::General</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">游戏全局设置，主要包含UI与相关时间设置。  <a href="struct_settings_1_1_general.html#details">更多...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_settings_1_1_bg_textures.html">Settings::BgTextures</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -125,12 +128,18 @@ $(document).ready(function(){initNavTree('_resources_8h.html','');});
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 函数</h2></td></tr>
 <tr class="memitem:a99c3d431629a8754bd6adc9f7c00f462"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_texture.html">Texture</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_resources_8h.html#a99c3d431629a8754bd6adc9f7c00f462">getTexture</a> (int id)</td></tr>
+<tr class="memdesc:a99c3d431629a8754bd6adc9f7c00f462"><td class="mdescLeft">&#160;</td><td class="mdescRight">根据ID获取材质。  <a href="#a99c3d431629a8754bd6adc9f7c00f462">更多...</a><br /></td></tr>
 <tr class="separator:a99c3d431629a8754bd6adc9f7c00f462"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf30880e372321fddf5effb966b76956"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_texture.html">Texture</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_resources_8h.html#aaf30880e372321fddf5effb966b76956">splitTexture</a> (<a class="el" href="struct_texture.html">Texture</a> texture, int x, int y, int w, int h)</td></tr>
+<tr class="memdesc:aaf30880e372321fddf5effb966b76956"><td class="mdescLeft">&#160;</td><td class="mdescRight">切割材质。  <a href="#aaf30880e372321fddf5effb966b76956">更多...</a><br /></td></tr>
 <tr class="separator:aaf30880e372321fddf5effb966b76956"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02c2fe822e975db1ac21baa838305c3d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_texture.html">Texture</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_resources_8h.html#a02c2fe822e975db1ac21baa838305c3d">splitTexture</a> (<a class="el" href="struct_texture.html">Texture</a> texture, <a class="el" href="_vector2_d_8hpp.html#aa1f1145650f1dd9bddf7335ec6434d7c">Vector2D</a> refPos, <a class="el" href="_vector2_d_8hpp.html#aa1f1145650f1dd9bddf7335ec6434d7c">Vector2D</a> hitBox)</td></tr>
+<tr class="memdesc:a02c2fe822e975db1ac21baa838305c3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">切割材质。封装了一个接收两个Vector2D参数的更良好的接口。  <a href="#a02c2fe822e975db1ac21baa838305c3d">更多...</a><br /></td></tr>
+<tr class="separator:a02c2fe822e975db1ac21baa838305c3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d5eb32bea233e3b9ae9ce6e29b8d8bb"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="struct_settings_1_1_general.html">Settings::General</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_settings.html#a8d5eb32bea233e3b9ae9ce6e29b8d8bb">Settings::general</a> ()</td></tr>
 <tr class="separator:a8d5eb32bea233e3b9ae9ce6e29b8d8bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8bae923ac0d881b72bbec4f50730ec72"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="struct_settings_1_1_bg_textures.html">Settings::BgTextures</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_settings.html#a8bae923ac0d881b72bbec4f50730ec72">Settings::bgTextures</a> ()</td></tr>
+<tr class="memdesc:a8bae923ac0d881b72bbec4f50730ec72"><td class="mdescLeft">&#160;</td><td class="mdescRight">从设置数据保存区中读取背景材质。  <a href="namespace_settings.html#a8bae923ac0d881b72bbec4f50730ec72">更多...</a><br /></td></tr>
 <tr class="separator:a8bae923ac0d881b72bbec4f50730ec72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a106c90d315148ccd78a2d961dae148a8"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="struct_settings_1_1_anime_textures.html">Settings::AnimeTextures</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_settings.html#a106c90d315148ccd78a2d961dae148a8">Settings::animeTextures</a> ()</td></tr>
 <tr class="separator:a106c90d315148ccd78a2d961dae148a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -145,31 +154,44 @@ $(document).ready(function(){initNavTree('_resources_8h.html','');});
 变量</h2></td></tr>
 <tr class="memitem:a26f54923c5fa99ea71855d8e59aac786"><td class="memItemLeft" >struct {</td></tr>
 <tr class="memitem:a0e7c394da18677485e0be672f76756a4"><td class="memItemLeft" >&#160;&#160;&#160;char *&#160;&#160;&#160;<a class="el" href="_resources_8h.html#af06d911bb9e05f491ef3da520d03796c">title</a></td></tr>
+<tr class="memdesc:a0e7c394da18677485e0be672f76756a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">游戏标题  <a href="#a0e7c394da18677485e0be672f76756a4">更多...</a><br /></td></tr>
 <tr class="separator:a0e7c394da18677485e0be672f76756a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a7c2c7c2ef1ddded61e5ed35e5a716b"><td class="memItemLeft" >&#160;&#160;&#160;int&#160;&#160;&#160;<a class="el" href="_resources_8h.html#a45b67662d620a977a2cfe519f7ab6273">fps</a></td></tr>
+<tr class="memdesc:a3a7c2c7c2ef1ddded61e5ed35e5a716b"><td class="mdescLeft">&#160;</td><td class="mdescRight">游戏的FPS  <a href="#a3a7c2c7c2ef1ddded61e5ed35e5a716b">更多...</a><br /></td></tr>
 <tr class="separator:a3a7c2c7c2ef1ddded61e5ed35e5a716b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa00f70964e2320ddf57b684af0f3b53a"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="_vector2_d_8hpp.html#aa1f1145650f1dd9bddf7335ec6434d7c">Vector2D</a>&#160;&#160;&#160;<a class="el" href="_resources_8h.html#a7da3248055a0406f64d1afd658691706">resolution</a></td></tr>
+<tr class="memdesc:aa00f70964e2320ddf57b684af0f3b53a"><td class="mdescLeft">&#160;</td><td class="mdescRight">游戏窗口的分辨率  <a href="#aa00f70964e2320ddf57b684af0f3b53a">更多...</a><br /></td></tr>
 <tr class="separator:aa00f70964e2320ddf57b684af0f3b53a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0eb3710e3536ca1af34df7855132e84"><td class="memItemLeft" >&#160;&#160;&#160;int&#160;&#160;&#160;<a class="el" href="_resources_8h.html#a138aa411131d5957c32a183d2789457e">fontHeight</a></td></tr>
+<tr class="memdesc:af0eb3710e3536ca1af34df7855132e84"><td class="mdescLeft">&#160;</td><td class="mdescRight">UI的字体高度  <a href="#af0eb3710e3536ca1af34df7855132e84">更多...</a><br /></td></tr>
 <tr class="separator:af0eb3710e3536ca1af34df7855132e84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26f54923c5fa99ea71855d8e59aac786"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_resources_8h.html#a26f54923c5fa99ea71855d8e59aac786">UI</a></td></tr>
+<tr class="memdesc:a26f54923c5fa99ea71855d8e59aac786"><td class="mdescLeft">&#160;</td><td class="mdescRight">UI相关设置  <a href="#a26f54923c5fa99ea71855d8e59aac786">更多...</a><br /></td></tr>
 <tr class="separator:a26f54923c5fa99ea71855d8e59aac786"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a470d2461f9671e448ac6a770f7d8dcc3"><td class="memItemLeft" >struct {</td></tr>
 <tr class="memitem:ac979fb40707a1e67039fc09c099c702f"><td class="memItemLeft" >&#160;&#160;&#160;int&#160;&#160;&#160;<a class="el" href="_resources_8h.html#a3577a22974e2bd8b9b784e82d2d7f525">enemyInfoDuration</a></td></tr>
+<tr class="memdesc:ac979fb40707a1e67039fc09c099c702f"><td class="mdescLeft">&#160;</td><td class="mdescRight">被追踪敌机的追踪状态保留时间  <a href="#ac979fb40707a1e67039fc09c099c702f">更多...</a><br /></td></tr>
 <tr class="separator:ac979fb40707a1e67039fc09c099c702f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a772a724c39d04f0054549660c8e5b66d"><td class="memItemLeft" >&#160;&#160;&#160;int&#160;&#160;&#160;<a class="el" href="_resources_8h.html#a21c9402dbb72408a1ec00368f4b8f1ea">enemyWaveCoolDown</a></td></tr>
+<tr class="memdesc:a772a724c39d04f0054549660c8e5b66d"><td class="mdescLeft">&#160;</td><td class="mdescRight">敌机每一波刷新的基础冷却时间  <a href="#a772a724c39d04f0054549660c8e5b66d">更多...</a><br /></td></tr>
 <tr class="separator:a772a724c39d04f0054549660c8e5b66d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac77f60d2cc06679de6fe3a125f005f26"><td class="memItemLeft" >&#160;&#160;&#160;int&#160;&#160;&#160;<a class="el" href="_resources_8h.html#a14204b2c9dee15208f0978510cb60778">bgShiftSpeed</a></td></tr>
+<tr class="memdesc:ac77f60d2cc06679de6fe3a125f005f26"><td class="mdescLeft">&#160;</td><td class="mdescRight">背景的移动速度  <a href="#ac77f60d2cc06679de6fe3a125f005f26">更多...</a><br /></td></tr>
 <tr class="separator:ac77f60d2cc06679de6fe3a125f005f26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a470d2461f9671e448ac6a770f7d8dcc3"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_resources_8h.html#a470d2461f9671e448ac6a770f7d8dcc3">times</a></td></tr>
+<tr class="memdesc:a470d2461f9671e448ac6a770f7d8dcc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">时间相关设置  <a href="#a470d2461f9671e448ac6a770f7d8dcc3">更多...</a><br /></td></tr>
 <tr class="separator:a470d2461f9671e448ac6a770f7d8dcc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fae3220a2fcc103896c2e51427a17f4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_texture.html">Texture</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_resources_8h.html#a3fae3220a2fcc103896c2e51427a17f4">menu</a></td></tr>
+<tr class="memdesc:a3fae3220a2fcc103896c2e51427a17f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">主菜单背景材质  <a href="#a3fae3220a2fcc103896c2e51427a17f4">更多...</a><br /></td></tr>
 <tr class="separator:a3fae3220a2fcc103896c2e51427a17f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb59534669da71dd65aecf139d9844d1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_texture.html">Texture</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_resources_8h.html#afb59534669da71dd65aecf139d9844d1">gaming</a></td></tr>
+<tr class="memdesc:afb59534669da71dd65aecf139d9844d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">正式游戏期间背景材质  <a href="#afb59534669da71dd65aecf139d9844d1">更多...</a><br /></td></tr>
 <tr class="separator:afb59534669da71dd65aecf139d9844d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a6efb427d38aa304129f70da0b519f5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_texture.html">Texture</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_resources_8h.html#a6a6efb427d38aa304129f70da0b519f5">gameOver</a></td></tr>
+<tr class="memdesc:a6a6efb427d38aa304129f70da0b519f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">游戏结束背景材质  <a href="#a6a6efb427d38aa304129f70da0b519f5">更多...</a><br /></td></tr>
 <tr class="separator:a6a6efb427d38aa304129f70da0b519f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae154bc28b3f12862ba8162935259da9b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_texture.html">Texture</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_resources_8h.html#ae154bc28b3f12862ba8162935259da9b">explosion</a></td></tr>
+<tr class="memdesc:ae154bc28b3f12862ba8162935259da9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">爆炸贴图材质  <a href="#ae154bc28b3f12862ba8162935259da9b">更多...</a><br /></td></tr>
 <tr class="separator:ae154bc28b3f12862ba8162935259da9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60c5dfdfb55f1abb671e786f06fc24dd"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="struct_settings_1_1_bullet.html">Settings::Bullet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_settings.html#a60c5dfdfb55f1abb671e786f06fc24dd">Settings::animeTextures</a></td></tr>
 <tr class="separator:a60c5dfdfb55f1abb671e786f06fc24dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -191,10 +213,19 @@ $(document).ready(function(){initNavTree('_resources_8h.html','');});
       </table>
 </div><div class="memdoc">
 
+<p>根据ID获取材质。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>材质的唯一标识ID。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>唯一标识ID对应的材质。 </dd></dl>
+
 </div>
 </div>
 <a id="aaf30880e372321fddf5effb966b76956"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaf30880e372321fddf5effb966b76956">&#9670;&nbsp;</a></span>splitTexture()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf30880e372321fddf5effb966b76956">&#9670;&nbsp;</a></span>splitTexture() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -237,6 +268,74 @@ $(document).ready(function(){initNavTree('_resources_8h.html','');});
       </table>
 </div><div class="memdoc">
 
+<p>切割材质。 </p>
+<p>从材质中切割一块矩形子材质。</p>
+<p>基准点为矩形自材质左上角坐标。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">texture</td><td>待切割的材质。 </td></tr>
+    <tr><td class="paramname">x</td><td>被切割材质基准点x坐标。 </td></tr>
+    <tr><td class="paramname">y</td><td>被切割材质基准点y坐标。 </td></tr>
+    <tr><td class="paramname">w</td><td>欲切割下来的宽度。 </td></tr>
+    <tr><td class="paramname">h</td><td>欲切割下来的高度。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>切割后的材质。 </dd></dl>
+
+</div>
+</div>
+<a id="a02c2fe822e975db1ac21baa838305c3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02c2fe822e975db1ac21baa838305c3d">&#9670;&nbsp;</a></span>splitTexture() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_texture.html">Texture</a> splitTexture </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_texture.html">Texture</a>&#160;</td>
+          <td class="paramname"><em>texture</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_vector2_d_8hpp.html#aa1f1145650f1dd9bddf7335ec6434d7c">Vector2D</a>&#160;</td>
+          <td class="paramname"><em>refPos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_vector2_d_8hpp.html#aa1f1145650f1dd9bddf7335ec6434d7c">Vector2D</a>&#160;</td>
+          <td class="paramname"><em>hitBox</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>切割材质。封装了一个接收两个Vector2D参数的更良好的接口。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">texture</td><td>待切割的材质。 </td></tr>
+    <tr><td class="paramname">refPos</td><td>被切割材质基准点（矩形左上角）坐标。 </td></tr>
+    <tr><td class="paramname">hitBox</td><td>欲切割矩形的长宽矢量。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>切割后的材质。 </dd></dl>
+
 </div>
 </div>
 <h2 class="groupheader">变量说明</h2>
@@ -252,6 +351,8 @@ $(document).ready(function(){initNavTree('_resources_8h.html','');});
       </table>
 </div><div class="memdoc">
 
+<p>背景的移动速度 </p>
+
 </div>
 </div>
 <a id="a3577a22974e2bd8b9b784e82d2d7f525"></a>
@@ -265,6 +366,8 @@ $(document).ready(function(){initNavTree('_resources_8h.html','');});
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>被追踪敌机的追踪状态保留时间 </p>
 
 </div>
 </div>
@@ -280,6 +383,8 @@ $(document).ready(function(){initNavTree('_resources_8h.html','');});
       </table>
 </div><div class="memdoc">
 
+<p>敌机每一波刷新的基础冷却时间 </p>
+
 </div>
 </div>
 <a id="ae154bc28b3f12862ba8162935259da9b"></a>
@@ -293,6 +398,8 @@ $(document).ready(function(){initNavTree('_resources_8h.html','');});
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>爆炸贴图材质 </p>
 
 </div>
 </div>
@@ -308,6 +415,8 @@ $(document).ready(function(){initNavTree('_resources_8h.html','');});
       </table>
 </div><div class="memdoc">
 
+<p>UI的字体高度 </p>
+
 </div>
 </div>
 <a id="a45b67662d620a977a2cfe519f7ab6273"></a>
@@ -321,6 +430,8 @@ $(document).ready(function(){initNavTree('_resources_8h.html','');});
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>游戏的FPS </p>
 
 </div>
 </div>
@@ -336,6 +447,8 @@ $(document).ready(function(){initNavTree('_resources_8h.html','');});
       </table>
 </div><div class="memdoc">
 
+<p>游戏结束背景材质 </p>
+
 </div>
 </div>
 <a id="afb59534669da71dd65aecf139d9844d1"></a>
@@ -349,6 +462,8 @@ $(document).ready(function(){initNavTree('_resources_8h.html','');});
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>正式游戏期间背景材质 </p>
 
 </div>
 </div>
@@ -364,6 +479,8 @@ $(document).ready(function(){initNavTree('_resources_8h.html','');});
       </table>
 </div><div class="memdoc">
 
+<p>主菜单背景材质 </p>
+
 </div>
 </div>
 <a id="a7da3248055a0406f64d1afd658691706"></a>
@@ -377,6 +494,8 @@ $(document).ready(function(){initNavTree('_resources_8h.html','');});
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>游戏窗口的分辨率 </p>
 
 </div>
 </div>
@@ -392,6 +511,8 @@ $(document).ready(function(){initNavTree('_resources_8h.html','');});
       </table>
 </div><div class="memdoc">
 
+<p>时间相关设置 </p>
+
 </div>
 </div>
 <a id="af06d911bb9e05f491ef3da520d03796c"></a>
@@ -406,6 +527,8 @@ $(document).ready(function(){initNavTree('_resources_8h.html','');});
       </table>
 </div><div class="memdoc">
 
+<p>游戏标题 </p>
+
 </div>
 </div>
 <a id="a26f54923c5fa99ea71855d8e59aac786"></a>
@@ -419,6 +542,8 @@ $(document).ready(function(){initNavTree('_resources_8h.html','');});
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>UI相关设置 </p>
 
 </div>
 </div>

@@ -9,13 +9,14 @@ void updateNewAction(Action * newAction)
 /* -----------Action_Plane_Explode类实现----------- */
 Texture Action_Plane_Explode::models[4] = { };
 
-void Action_Plane_Explode::initializeModels( )
+void Action_Plane_Explode::initializeModels()
 {
 	auto texture = Settings::animeTextures().explosion;
-	models[0] = splitTexture(texture, 0, 0, 128, 128);
-	models[1] = splitTexture(texture, 128, 0, 128, 128);
-	models[2] = splitTexture(texture, 0, 128, 128, 128);
-	models[3] = splitTexture(texture, 128, 128, 128, 128);
+	auto subHitBox = texture.hitBox / 2; // 1/4矩形
+	models[0] = splitTexture(texture, { 0, 0 }, subHitBox);
+	models[1] = splitTexture(texture, { subHitBox.x, 0 }, subHitBox);
+	models[2] = splitTexture(texture, { 0, subHitBox.y }, subHitBox);
+	models[3] = splitTexture(texture, { subHitBox.x, subHitBox.y }, subHitBox);
 }
 
 Action_Plane_Explode::Action_Plane_Explode(Plane* src, bool destroy, int time, void(*endCallbackFunc)())

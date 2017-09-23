@@ -2,24 +2,36 @@
 \label{struct_texture}\index{Texture@{Texture}}
 
 
+表征图像材质的结构体。  
+
+
+
+
 {\ttfamily \#include $<$Resources.\+h$>$}
 
 \subsection*{Public 成员函数}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{struct_texture_a66179be276016021e80b1c67c047d4ad}{Texture} ()=default
-\item 
-\hyperlink{struct_texture_af59bcad788f8cdb48b1690e0ab31e095}{Texture} (\hyperlink{namespaceege_a72e07306fee47bc08f1baf842cb681fb}{ege\+::\+P\+I\+M\+A\+GE} \hyperlink{struct_texture_ac4b0ce38664ca13285a077c12277e753}{image}, \hyperlink{_vector2_d_8hpp_aa1f1145650f1dd9bddf7335ec6434d7c}{Vector2D} \hyperlink{struct_texture_a1142de09bebe1683ee67c816953f9ad1}{hit\+Box})
-\item 
+\begin{DoxyCompactList}\small\item\em 保证可以默认构造，声明为=default的构造函数。 \end{DoxyCompactList}\item 
+\hyperlink{struct_texture_af59bcad788f8cdb48b1690e0ab31e095}{Texture} (ege\+::\+P\+I\+M\+A\+GE \hyperlink{struct_texture_ac4b0ce38664ca13285a077c12277e753}{image}, \hyperlink{structbasic__vector2_d}{Vector2D} \hyperlink{struct_texture_a1142de09bebe1683ee67c816953f9ad1}{hit\+Box})
+\begin{DoxyCompactList}\small\item\em 保证\+Texture结构体能继续使用\+Aggregate Initialization的构造函数。 \end{DoxyCompactList}\item 
 \hyperlink{struct_texture_a654c58271c71ff72ea2a417ea33e65d2}{Texture} (int id)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em 从材质\+I\+D索引找到对应材质的显式转换构造函数。 \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Public 属性}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{namespaceege_a72e07306fee47bc08f1baf842cb681fb}{ege\+::\+P\+I\+M\+A\+GE} \hyperlink{struct_texture_ac4b0ce38664ca13285a077c12277e753}{image}
-\item 
-\hyperlink{_vector2_d_8hpp_aa1f1145650f1dd9bddf7335ec6434d7c}{Vector2D} \hyperlink{struct_texture_a1142de09bebe1683ee67c816953f9ad1}{hit\+Box}
-\end{DoxyCompactItemize}
+\mbox{\Hypertarget{struct_texture_ac4b0ce38664ca13285a077c12277e753}\label{struct_texture_ac4b0ce38664ca13285a077c12277e753}} 
+ege\+::\+P\+I\+M\+A\+GE \hyperlink{struct_texture_ac4b0ce38664ca13285a077c12277e753}{image}
+\begin{DoxyCompactList}\small\item\em 保存对应图片的图像指针。 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_texture_a1142de09bebe1683ee67c816953f9ad1}\label{struct_texture_a1142de09bebe1683ee67c816953f9ad1}} 
+\hyperlink{structbasic__vector2_d}{Vector2D} \hyperlink{struct_texture_a1142de09bebe1683ee67c816953f9ad1}{hit\+Box}
+\begin{DoxyCompactList}\small\item\em 保存图片长与宽的矩形矢量。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+表征图像材质的结构体。 
+
 
 
 \subsection{构造及析构函数说明}
@@ -29,11 +41,19 @@
 \subsubsection{\texorpdfstring{Texture()}{Texture()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
 {\footnotesize\ttfamily Texture\+::\+Texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
 
+
+
+保证可以默认构造，声明为=default的构造函数。 
+
 \mbox{\Hypertarget{struct_texture_af59bcad788f8cdb48b1690e0ab31e095}\label{struct_texture_af59bcad788f8cdb48b1690e0ab31e095}} 
 \index{Texture@{Texture}!Texture@{Texture}}
 \index{Texture@{Texture}!Texture@{Texture}}
 \subsubsection{\texorpdfstring{Texture()}{Texture()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
-{\footnotesize\ttfamily Texture\+::\+Texture (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceege_a72e07306fee47bc08f1baf842cb681fb}{ege\+::\+P\+I\+M\+A\+GE}}]{image,  }\item[{\hyperlink{_vector2_d_8hpp_aa1f1145650f1dd9bddf7335ec6434d7c}{Vector2D}}]{hit\+Box }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily Texture\+::\+Texture (\begin{DoxyParamCaption}\item[{ege\+::\+P\+I\+M\+A\+GE}]{image,  }\item[{\hyperlink{structbasic__vector2_d}{Vector2D}}]{hit\+Box }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+保证\+Texture结构体能继续使用\+Aggregate Initialization的构造函数。 
 
 \mbox{\Hypertarget{struct_texture_a654c58271c71ff72ea2a417ea33e65d2}\label{struct_texture_a654c58271c71ff72ea2a417ea33e65d2}} 
 \index{Texture@{Texture}!Texture@{Texture}}
@@ -43,22 +63,16 @@
 
 
 
-\subsection{类成员变量说明}
-\mbox{\Hypertarget{struct_texture_a1142de09bebe1683ee67c816953f9ad1}\label{struct_texture_a1142de09bebe1683ee67c816953f9ad1}} 
-\index{Texture@{Texture}!hit\+Box@{hit\+Box}}
-\index{hit\+Box@{hit\+Box}!Texture@{Texture}}
-\subsubsection{\texorpdfstring{hit\+Box}{hitBox}}
-{\footnotesize\ttfamily \hyperlink{_vector2_d_8hpp_aa1f1145650f1dd9bddf7335ec6434d7c}{Vector2D} Texture\+::hit\+Box}
+从材质\+I\+D索引找到对应材质的显式转换构造函数。 
 
-\mbox{\Hypertarget{struct_texture_ac4b0ce38664ca13285a077c12277e753}\label{struct_texture_ac4b0ce38664ca13285a077c12277e753}} 
-\index{Texture@{Texture}!image@{image}}
-\index{image@{image}!Texture@{Texture}}
-\subsubsection{\texorpdfstring{image}{image}}
-{\footnotesize\ttfamily \hyperlink{namespaceege_a72e07306fee47bc08f1baf842cb681fb}{ege\+::\+P\+I\+M\+A\+GE} Texture\+::image}
 
+\begin{DoxyParams}{参数}
+{\em id} & 材质的唯一标识\+I\+D。 \\
+\hline
+\end{DoxyParams}
 
 
 该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
 \item 
-D\+:/叶志浩文件夹/\+Vigilans的文档/\+Programming/\+Visual Studio/\+Projects/\+Grade 1 Summer Vacation/\+Lost Phoenix/\+Lost Phoenix/include/\hyperlink{_resources_8h}{Resources.\+h}\item 
-D\+:/叶志浩文件夹/\+Vigilans的文档/\+Programming/\+Visual Studio/\+Projects/\+Grade 1 Summer Vacation/\+Lost Phoenix/\+Lost Phoenix/src/\hyperlink{_resources_8cpp}{Resources.\+cpp}\end{DoxyCompactItemize}
+D\+:/叶志浩文件夹/\+Vigilans的文档/\+Programming/\+Visual Studio/\+Projects/\+Grade 1 Summer Vacation/\+Lost Phoenix/\+Lost Phoenix/include/Resources.\+h\item 
+D\+:/叶志浩文件夹/\+Vigilans的文档/\+Programming/\+Visual Studio/\+Projects/\+Grade 1 Summer Vacation/\+Lost Phoenix/\+Lost Phoenix/src/Resources.\+cpp\end{DoxyCompactItemize}

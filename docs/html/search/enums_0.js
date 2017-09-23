@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['camp',['Camp',['../_entity_8h.html#ad54c4fe39f1c51b786c24ae0b7763b44',1,'Entity.h']]]
+  ['key',['Key',['../class_input_controller.html#a840a7425e2220e1ef5659a7ea4ba122d',1,'InputController']]]
 ];

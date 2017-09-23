@@ -27,11 +27,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="icon64.ico"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Lost Phoenix
    &#160;<span id="projectnumber">1.1</span>
    </div>
-   <div id="projectbrief">一个简单的飞机大战游戏，由EGE图形库编写而成。</div>
+   <div id="projectbrief">Simple and naive Plane War game.</div>
   </td>
  </tr>
  </tbody>
@@ -83,227 +84,85 @@ $(document).ready(function(){initNavTree('namespace_settings.html','');});
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">类</a> &#124;
-<a href="#func-members">函数</a> &#124;
-<a href="#var-members">变量</a>  </div>
+<a href="#func-members">函数</a>  </div>
   <div class="headertitle">
 <div class="title">Settings 命名空间参考</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>封装了游戏全局与所有实体设置的名空间。 所有获取默认设置的方法采用 <em>Lazy Load（延时加载）</em> 机制。 <b>推荐参考详细描述来获取完整信息</b> 。  
+<a href="#details">更多...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 类</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_settings_1_1_anime_textures.html">AnimeTextures</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">所有动画、<a class="el" href="class_action.html">Action</a>相关材质设置。  <a href="struct_settings_1_1_anime_textures.html#details">更多...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_settings_1_1_bg_textures.html">BgTextures</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">所有游戏背景材质设置。  <a href="struct_settings_1_1_bg_textures.html#details">更多...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_settings_1_1_bullet.html">Bullet</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">子弹的设置基类。  <a href="struct_settings_1_1_bullet.html#details">更多...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_settings_1_1_general.html">General</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">游戏全局设置，主要包含UI与相关时间设置。  <a href="struct_settings_1_1_general.html#details">更多...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_settings_1_1_plane.html">Plane</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">飞机的设置基类。  <a href="struct_settings_1_1_plane.html#details">更多...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_settings_1_1_texture_info.html">TextureInfo</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 函数</h2></td></tr>
-<tr class="memitem:a8d5eb32bea233e3b9ae9ce6e29b8d8bb"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="struct_settings_1_1_general.html">Settings::General</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_settings.html#a8d5eb32bea233e3b9ae9ce6e29b8d8bb">general</a> ()</td></tr>
+<tr class="memitem:a8d5eb32bea233e3b9ae9ce6e29b8d8bb"><td class="memItemLeft" align="right" valign="top"><a id="a8d5eb32bea233e3b9ae9ce6e29b8d8bb"></a>
+const <a class="el" href="struct_settings_1_1_general.html">Settings::General</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_settings.html#a8d5eb32bea233e3b9ae9ce6e29b8d8bb">general</a> ()</td></tr>
+<tr class="memdesc:a8d5eb32bea233e3b9ae9ce6e29b8d8bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取默认的全局游戏设置。采取Lazy Load机制。 <br /></td></tr>
 <tr class="separator:a8d5eb32bea233e3b9ae9ce6e29b8d8bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8bae923ac0d881b72bbec4f50730ec72"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="struct_settings_1_1_bg_textures.html">Settings::BgTextures</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_settings.html#a8bae923ac0d881b72bbec4f50730ec72">bgTextures</a> ()</td></tr>
+<tr class="memitem:a8bae923ac0d881b72bbec4f50730ec72"><td class="memItemLeft" align="right" valign="top"><a id="a8bae923ac0d881b72bbec4f50730ec72"></a>
+const <a class="el" href="struct_settings_1_1_bg_textures.html">Settings::BgTextures</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_settings.html#a8bae923ac0d881b72bbec4f50730ec72">bgTextures</a> ()</td></tr>
+<tr class="memdesc:a8bae923ac0d881b72bbec4f50730ec72"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取默认的背景材质设置。采取Lazy Load机制。 <br /></td></tr>
 <tr class="separator:a8bae923ac0d881b72bbec4f50730ec72"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a106c90d315148ccd78a2d961dae148a8"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="struct_settings_1_1_anime_textures.html">Settings::AnimeTextures</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_settings.html#a106c90d315148ccd78a2d961dae148a8">animeTextures</a> ()</td></tr>
-<tr class="separator:a106c90d315148ccd78a2d961dae148a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab78c6dca0d1b2fc76eae348e81a3eed7"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct_settings_1_1_plane.html">Settings::Plane</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_settings.html#ab78c6dca0d1b2fc76eae348e81a3eed7">player</a> ()</td></tr>
+<tr class="memitem:ae61a4eddbf5405fae02d781d7e698413"><td class="memItemLeft" align="right" valign="top"><a id="ae61a4eddbf5405fae02d781d7e698413"></a>
+const <a class="el" href="struct_settings_1_1_anime_textures.html">Settings::AnimeTextures</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_settings.html#ae61a4eddbf5405fae02d781d7e698413">animeTextures</a> ()</td></tr>
+<tr class="memdesc:ae61a4eddbf5405fae02d781d7e698413"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取默认的动画材质设置。采取Lazy Load机制。 <br /></td></tr>
+<tr class="separator:ae61a4eddbf5405fae02d781d7e698413"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab78c6dca0d1b2fc76eae348e81a3eed7"><td class="memItemLeft" align="right" valign="top"><a id="ab78c6dca0d1b2fc76eae348e81a3eed7"></a>
+const <a class="el" href="struct_settings_1_1_plane.html">Settings::Plane</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_settings.html#ab78c6dca0d1b2fc76eae348e81a3eed7">player</a> ()</td></tr>
+<tr class="memdesc:ab78c6dca0d1b2fc76eae348e81a3eed7"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取默认的玩家飞机设置。采取Lazy Load机制。 <br /></td></tr>
 <tr class="separator:ab78c6dca0d1b2fc76eae348e81a3eed7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d571065d327daba740814f8e90261f5"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct_settings_1_1_plane.html">Settings::Plane</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_settings.html#a5d571065d327daba740814f8e90261f5">enemy_junior</a> ()</td></tr>
+<tr class="memitem:a5d571065d327daba740814f8e90261f5"><td class="memItemLeft" align="right" valign="top"><a id="a5d571065d327daba740814f8e90261f5"></a>
+const <a class="el" href="struct_settings_1_1_plane.html">Settings::Plane</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_settings.html#a5d571065d327daba740814f8e90261f5">enemy_junior</a> ()</td></tr>
+<tr class="memdesc:a5d571065d327daba740814f8e90261f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取默认的新兵敌机设置。采取Lazy Load机制。 <br /></td></tr>
 <tr class="separator:a5d571065d327daba740814f8e90261f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77e282eadc82f97cb15c2c3eef3c535b"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct_settings_1_1_plane.html">Settings::Plane</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_settings.html#a77e282eadc82f97cb15c2c3eef3c535b">enemy_autoTarget</a> ()</td></tr>
+<tr class="memitem:a77e282eadc82f97cb15c2c3eef3c535b"><td class="memItemLeft" align="right" valign="top"><a id="a77e282eadc82f97cb15c2c3eef3c535b"></a>
+const <a class="el" href="struct_settings_1_1_plane.html">Settings::Plane</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_settings.html#a77e282eadc82f97cb15c2c3eef3c535b">enemy_autoTarget</a> ()</td></tr>
+<tr class="memdesc:a77e282eadc82f97cb15c2c3eef3c535b"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取默认的自机狙敌机设置。采取Lazy Load机制。 <br /></td></tr>
 <tr class="separator:a77e282eadc82f97cb15c2c3eef3c535b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42e5acb521fa66b1f2311a896df95a98"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_settings.html#a42e5acb521fa66b1f2311a896df95a98">from_json</a> (const <a class="el" href="_resources_loader_8cpp.html#ab701e3ac61a85b337ec5c1abaad6742d">json</a> &amp;j, <a class="el" href="struct_settings_1_1_bullet.html">Settings::Bullet</a> &amp;b)</td></tr>
+<tr class="memitem:a42e5acb521fa66b1f2311a896df95a98"><td class="memItemLeft" align="right" valign="top"><a id="a42e5acb521fa66b1f2311a896df95a98"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>from_json</b> (const json &amp;j, <a class="el" href="struct_settings_1_1_bullet.html">Settings::Bullet</a> &amp;b)</td></tr>
 <tr class="separator:a42e5acb521fa66b1f2311a896df95a98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaba1604e449415b4bcbbb0a6e50a0ac9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_settings.html#aaba1604e449415b4bcbbb0a6e50a0ac9">from_json</a> (const <a class="el" href="_resources_loader_8cpp.html#ab701e3ac61a85b337ec5c1abaad6742d">json</a> &amp;j, <a class="el" href="struct_settings_1_1_plane.html">Settings::Plane</a> &amp;s)</td></tr>
+<tr class="memitem:aaba1604e449415b4bcbbb0a6e50a0ac9"><td class="memItemLeft" align="right" valign="top"><a id="aaba1604e449415b4bcbbb0a6e50a0ac9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>from_json</b> (const json &amp;j, <a class="el" href="struct_settings_1_1_plane.html">Settings::Plane</a> &amp;s)</td></tr>
 <tr class="separator:aaba1604e449415b4bcbbb0a6e50a0ac9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-变量</h2></td></tr>
-<tr class="memitem:a60c5dfdfb55f1abb671e786f06fc24dd"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="struct_settings_1_1_bullet.html">Settings::Bullet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_settings.html#a60c5dfdfb55f1abb671e786f06fc24dd">animeTextures</a></td></tr>
-<tr class="separator:a60c5dfdfb55f1abb671e786f06fc24dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">函数说明</h2>
-<a id="a106c90d315148ccd78a2d961dae148a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a106c90d315148ccd78a2d961dae148a8">&#9670;&nbsp;</a></span>animeTextures()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const struct <a class="el" href="struct_settings_1_1_anime_textures.html">Settings::AnimeTextures</a> Settings::animeTextures </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a8bae923ac0d881b72bbec4f50730ec72"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8bae923ac0d881b72bbec4f50730ec72">&#9670;&nbsp;</a></span>bgTextures()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="struct_settings_1_1_bg_textures.html">Settings::BgTextures</a> &amp; Settings::bgTextures </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a77e282eadc82f97cb15c2c3eef3c535b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a77e282eadc82f97cb15c2c3eef3c535b">&#9670;&nbsp;</a></span>enemy_autoTarget()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="struct_settings_1_1_plane.html">Settings::Plane</a> &amp; Settings::enemy_autoTarget </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a5d571065d327daba740814f8e90261f5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5d571065d327daba740814f8e90261f5">&#9670;&nbsp;</a></span>enemy_junior()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="struct_settings_1_1_plane.html">Settings::Plane</a> &amp; Settings::enemy_junior </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a42e5acb521fa66b1f2311a896df95a98"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a42e5acb521fa66b1f2311a896df95a98">&#9670;&nbsp;</a></span>from_json() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Settings::from_json </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="_resources_loader_8cpp.html#ab701e3ac61a85b337ec5c1abaad6742d">json</a> &amp;&#160;</td>
-          <td class="paramname"><em>j</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_settings_1_1_bullet.html">Settings::Bullet</a> &amp;&#160;</td>
-          <td class="paramname"><em>b</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aaba1604e449415b4bcbbb0a6e50a0ac9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaba1604e449415b4bcbbb0a6e50a0ac9">&#9670;&nbsp;</a></span>from_json() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Settings::from_json </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="_resources_loader_8cpp.html#ab701e3ac61a85b337ec5c1abaad6742d">json</a> &amp;&#160;</td>
-          <td class="paramname"><em>j</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_settings_1_1_plane.html">Settings::Plane</a> &amp;&#160;</td>
-          <td class="paramname"><em>s</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a8d5eb32bea233e3b9ae9ce6e29b8d8bb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8d5eb32bea233e3b9ae9ce6e29b8d8bb">&#9670;&nbsp;</a></span>general()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="struct_settings_1_1_general.html">Settings::General</a> &amp; Settings::general </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab78c6dca0d1b2fc76eae348e81a3eed7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab78c6dca0d1b2fc76eae348e81a3eed7">&#9670;&nbsp;</a></span>player()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="struct_settings_1_1_plane.html">Settings::Plane</a> &amp; Settings::player </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">变量说明</h2>
-<a id="a60c5dfdfb55f1abb671e786f06fc24dd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a60c5dfdfb55f1abb671e786f06fc24dd">&#9670;&nbsp;</a></span>animeTextures</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="struct_settings_1_1_anime_textures.html">Settings::AnimeTextures</a> &amp; Settings::animeTextures</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>封装了游戏全局与所有实体设置的名空间。 所有获取默认设置的方法采用 <em>Lazy Load（延时加载）</em> 机制。 <b>推荐参考详细描述来获取完整信息</b> 。 </p>
+<p>这个名空间将游戏的所有设置用几个struct进行表示，以提高可读性与扩展性。</p>
+<p>所有默认设置保存在json文件中，放置于/settings文件夹下。 相比于用一个宏头文件保存设置，使用json的可读性与结构性更强，同时在修改相关设置数据时，也不需要 <b>全部重新编译一遍</b> 。</p>
+<p>运行游戏后，会陆续从json文件中读取相关设置，在堆上用一块专门的内存保存。具体机制为：</p><ul>
+<li>程序开始运行时，读取所有材质的索引信息到<a class="el" href="struct_settings_1_1_texture_info.html">TextureInfo</a>的std::map中，为此后设置的Lazy Load作准备。</li>
+<li>Setting名空间中提供几个获取**默认设置引用**的函数。此时尚未加载任何设置。</li>
+<li>当外部类调用任一Setting名空间的函数后，若未加载，则加载设置到堆上的一块稳定内存区域中，并返回引用。这有两个效果：<ul>
+<li>所有设置都采取了Lazy Load机制，这避免了在ege图形库未初始化窗口前读取材质而造成bug，同时节省内存。</li>
+<li>默认设置始终返回堆上一块稳定内存的引用，达到一处保存多处使用的效果，同时减少拷贝。</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<p>对于飞机与子弹这样的实体，设置还有另一层作用：在一个实例构造函数中使用。 实体可能有很多的属性，若全部放在构造函数中显得十分臃肿；同时，要新增一个属性，需要修改很多地方，容易出错。</p>
+<p>因此，飞机与子弹的构造函数设计为只需要传一个 <code>设置</code> 与其他 <code>非设置信息</code> 进去即可。 在传入设置前，可以对设置的实例进行修改，达到修改飞机子弹相关数据的效果。 </p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

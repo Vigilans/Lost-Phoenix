@@ -15,6 +15,7 @@ var _resources_8h =
     [ "getTexture", "_resources_8h.html#a99c3d431629a8754bd6adc9f7c00f462", null ],
     [ "player", "_resources_8h.html#ab78c6dca0d1b2fc76eae348e81a3eed7", null ],
     [ "splitTexture", "_resources_8h.html#aaf30880e372321fddf5effb966b76956", null ],
+    [ "splitTexture", "_resources_8h.html#a02c2fe822e975db1ac21baa838305c3d", null ],
     [ "animeTextures", "_resources_8h.html#a60c5dfdfb55f1abb671e786f06fc24dd", null ],
     [ "bgShiftSpeed", "_resources_8h.html#a14204b2c9dee15208f0978510cb60778", null ],
     [ "enemyInfoDuration", "_resources_8h.html#a3577a22974e2bd8b9b784e82d2d7f525", null ],

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ege',['ege',['../namespaceege.html',1,'']]]
+  ['settings',['Settings',['../namespace_settings.html',1,'']]]
 ];

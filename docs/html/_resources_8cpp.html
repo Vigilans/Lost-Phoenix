@@ -27,11 +27,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="icon.ico"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Lost Phoenix
    &#160;<span id="projectnumber">1.1</span>
    </div>
-   <div id="projectbrief">一个简单的飞机大战游戏，由EGE图形库编写而成。</div>
+   <div id="projectbrief">Simple and naive Plane War game.</div>
   </td>
  </tr>
  </tbody>
@@ -95,8 +96,10 @@ $(document).ready(function(){initNavTree('_resources_8cpp.html','');});
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 函数</h2></td></tr>
 <tr class="memitem:a99c3d431629a8754bd6adc9f7c00f462"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_texture.html">Texture</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_resources_8cpp.html#a99c3d431629a8754bd6adc9f7c00f462">getTexture</a> (int id)</td></tr>
+<tr class="memdesc:a99c3d431629a8754bd6adc9f7c00f462"><td class="mdescLeft">&#160;</td><td class="mdescRight">根据ID获取材质。  <a href="#a99c3d431629a8754bd6adc9f7c00f462">更多...</a><br /></td></tr>
 <tr class="separator:a99c3d431629a8754bd6adc9f7c00f462"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf30880e372321fddf5effb966b76956"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_texture.html">Texture</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_resources_8cpp.html#aaf30880e372321fddf5effb966b76956">splitTexture</a> (<a class="el" href="struct_texture.html">Texture</a> texture, int x, int y, int w, int h)</td></tr>
+<tr class="memdesc:aaf30880e372321fddf5effb966b76956"><td class="mdescLeft">&#160;</td><td class="mdescRight">切割材质。  <a href="#aaf30880e372321fddf5effb966b76956">更多...</a><br /></td></tr>
 <tr class="separator:aaf30880e372321fddf5effb966b76956"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
@@ -121,6 +124,15 @@ $(document).ready(function(){initNavTree('_resources_8cpp.html','');});
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>根据ID获取材质。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>材质的唯一标识ID。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>唯一标识ID对应的材质。 </dd></dl>
 
 </div>
 </div>
@@ -167,6 +179,21 @@ $(document).ready(function(){initNavTree('_resources_8cpp.html','');});
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>切割材质。 </p>
+<p>从材质中切割一块矩形子材质。</p>
+<p>基准点为矩形自材质左上角坐标。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">texture</td><td>待切割的材质。 </td></tr>
+    <tr><td class="paramname">x</td><td>被切割材质基准点x坐标。 </td></tr>
+    <tr><td class="paramname">y</td><td>被切割材质基准点y坐标。 </td></tr>
+    <tr><td class="paramname">w</td><td>欲切割下来的宽度。 </td></tr>
+    <tr><td class="paramname">h</td><td>欲切割下来的高度。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>切割后的材质。 </dd></dl>
 
 </div>
 </div>

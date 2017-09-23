@@ -27,11 +27,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="icon64.ico"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Lost Phoenix
    &#160;<span id="projectnumber">1.1</span>
    </div>
-   <div id="projectbrief">一个简单的飞机大战游戏，由EGE图形库编写而成。</div>
+   <div id="projectbrief">Simple and naive Plane War game.</div>
   </td>
  </tr>
  </tbody>
@@ -89,109 +90,41 @@ $(document).ready(function(){initNavTree('struct_settings_1_1_plane.html','');})
 </div><!--header-->
 <div class="contents">
 
+<p>飞机的设置基类。  
+ <a href="struct_settings_1_1_plane.html#details">更多...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_resources_8h_source.html">Resources.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public 属性</h2></td></tr>
-<tr class="memitem:a62d563a2ebc841e01bfe4737bf1fe0ab"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_settings_1_1_plane.html#a62d563a2ebc841e01bfe4737bf1fe0ab">camp</a></td></tr>
+<tr class="memitem:a62d563a2ebc841e01bfe4737bf1fe0ab"><td class="memItemLeft" align="right" valign="top"><a id="a62d563a2ebc841e01bfe4737bf1fe0ab"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_settings_1_1_plane.html#a62d563a2ebc841e01bfe4737bf1fe0ab">camp</a></td></tr>
+<tr class="memdesc:a62d563a2ebc841e01bfe4737bf1fe0ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">飞机所属阵营，与Camp枚举一一对应。 <br /></td></tr>
 <tr class="separator:a62d563a2ebc841e01bfe4737bf1fe0ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a000124604eb5435f4d77bbec170a4f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_texture.html">Texture</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_settings_1_1_plane.html#a6a000124604eb5435f4d77bbec170a4f">texture</a></td></tr>
+<tr class="memitem:a6a000124604eb5435f4d77bbec170a4f"><td class="memItemLeft" align="right" valign="top"><a id="a6a000124604eb5435f4d77bbec170a4f"></a>
+<a class="el" href="struct_texture.html">Texture</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_settings_1_1_plane.html#a6a000124604eb5435f4d77bbec170a4f">texture</a></td></tr>
+<tr class="memdesc:a6a000124604eb5435f4d77bbec170a4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">飞机材质。 <br /></td></tr>
 <tr class="separator:a6a000124604eb5435f4d77bbec170a4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71ffa9166855277d353d0fb6ac8f58f6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_settings_1_1_plane.html#a71ffa9166855277d353d0fb6ac8f58f6">health</a></td></tr>
+<tr class="memitem:a71ffa9166855277d353d0fb6ac8f58f6"><td class="memItemLeft" align="right" valign="top"><a id="a71ffa9166855277d353d0fb6ac8f58f6"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_settings_1_1_plane.html#a71ffa9166855277d353d0fb6ac8f58f6">health</a></td></tr>
+<tr class="memdesc:a71ffa9166855277d353d0fb6ac8f58f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">飞机HP上限。 <br /></td></tr>
 <tr class="separator:a71ffa9166855277d353d0fb6ac8f58f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a814ee5fe2c6b873ff4f0e0208f2c240a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_settings_1_1_plane.html#a814ee5fe2c6b873ff4f0e0208f2c240a">speed</a></td></tr>
+<tr class="memitem:a814ee5fe2c6b873ff4f0e0208f2c240a"><td class="memItemLeft" align="right" valign="top"><a id="a814ee5fe2c6b873ff4f0e0208f2c240a"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_settings_1_1_plane.html#a814ee5fe2c6b873ff4f0e0208f2c240a">speed</a></td></tr>
+<tr class="memdesc:a814ee5fe2c6b873ff4f0e0208f2c240a"><td class="mdescLeft">&#160;</td><td class="mdescRight">飞机移动速率（速度的模）。 <br /></td></tr>
 <tr class="separator:a814ee5fe2c6b873ff4f0e0208f2c240a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8416c74c0910b4c7a9da8d633e0c346a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_settings_1_1_bullet.html">Bullet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_settings_1_1_plane.html#a8416c74c0910b4c7a9da8d633e0c346a">bulletSetting</a></td></tr>
+<tr class="memitem:a8416c74c0910b4c7a9da8d633e0c346a"><td class="memItemLeft" align="right" valign="top"><a id="a8416c74c0910b4c7a9da8d633e0c346a"></a>
+<a class="el" href="struct_settings_1_1_bullet.html">Bullet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_settings_1_1_plane.html#a8416c74c0910b4c7a9da8d633e0c346a">bulletSetting</a></td></tr>
+<tr class="memdesc:a8416c74c0910b4c7a9da8d633e0c346a"><td class="mdescLeft">&#160;</td><td class="mdescRight">飞机默认子弹设置。 <br /></td></tr>
 <tr class="separator:a8416c74c0910b4c7a9da8d633e0c346a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20a8861d723406f4d49610804226dd82"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_settings_1_1_plane.html#a20a8861d723406f4d49610804226dd82">score</a></td></tr>
+<tr class="memitem:a20a8861d723406f4d49610804226dd82"><td class="memItemLeft" align="right" valign="top"><a id="a20a8861d723406f4d49610804226dd82"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_settings_1_1_plane.html#a20a8861d723406f4d49610804226dd82">score</a></td></tr>
+<tr class="memdesc:a20a8861d723406f4d49610804226dd82"><td class="mdescLeft">&#160;</td><td class="mdescRight">飞机坠毁分数。 <br /></td></tr>
 <tr class="separator:a20a8861d723406f4d49610804226dd82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">类成员变量说明</h2>
-<a id="a8416c74c0910b4c7a9da8d633e0c346a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8416c74c0910b4c7a9da8d633e0c346a">&#9670;&nbsp;</a></span>bulletSetting</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="struct_settings_1_1_bullet.html">Bullet</a> Settings::Plane::bulletSetting</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a62d563a2ebc841e01bfe4737bf1fe0ab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a62d563a2ebc841e01bfe4737bf1fe0ab">&#9670;&nbsp;</a></span>camp</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int Settings::Plane::camp</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a71ffa9166855277d353d0fb6ac8f58f6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a71ffa9166855277d353d0fb6ac8f58f6">&#9670;&nbsp;</a></span>health</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int Settings::Plane::health</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a20a8861d723406f4d49610804226dd82"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a20a8861d723406f4d49610804226dd82">&#9670;&nbsp;</a></span>score</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int Settings::Plane::score</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a814ee5fe2c6b873ff4f0e0208f2c240a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a814ee5fe2c6b873ff4f0e0208f2c240a">&#9670;&nbsp;</a></span>speed</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int Settings::Plane::speed</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6a000124604eb5435f4d77bbec170a4f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6a000124604eb5435f4d77bbec170a4f">&#9670;&nbsp;</a></span>texture</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="struct_texture.html">Texture</a> Settings::Plane::texture</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<hr/>该结构体的文档由以下文件生成:<ul>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>飞机的设置基类。 </p>
+</div><hr/>该结构体的文档由以下文件生成:<ul>
 <li>D:/叶志浩文件夹/Vigilans的文档/Programming/Visual Studio/Projects/Grade 1 Summer Vacation/Lost Phoenix/Lost Phoenix/include/<a class="el" href="_resources_8h_source.html">Resources.h</a></li>
 </ul>
 </div><!-- contents -->

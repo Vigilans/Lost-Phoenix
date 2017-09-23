@@ -1,16 +1,6 @@
 var searchData=
 [
-  ['reference_5ft',['reference_t',['../structbasic__vector2_d.html#afa9c650d6178f708c88f7abab001c4a3',1,'basic_vector2D']]],
-  ['render',['render',['../class_world.html#a150eab10c21532162bb698d72aecec16',1,'World']]],
-  ['renderbackground',['renderBackground',['../class_world.html#adb9973193b6f45377a3911ed023a9f73',1,'World']]],
-  ['rendermenu',['renderMenu',['../class_world.html#af956580b52927299a0bf200740f8ea0d',1,'World']]],
-  ['renderoverinterface',['renderOverInterface',['../class_world.html#ae265f543993824e9cca76eef29e375cb',1,'World']]],
-  ['renderui',['renderUI',['../class_world.html#a96d63470a94d9ab0426db992981b5ce5',1,'World']]],
-  ['resolution',['resolution',['../struct_settings_1_1_general.html#a4cdcf50e69a10db0e410db97bd547d38',1,'Settings::General::resolution()'],['../_resources_8h.html#a7da3248055a0406f64d1afd658691706',1,'resolution():&#160;Resources.h']]],
-  ['resources_2ecpp',['Resources.cpp',['../_resources_8cpp.html',1,'']]],
-  ['resources_2eh',['Resources.h',['../_resources_8h.html',1,'']]],
-  ['resourcesloader',['ResourcesLoader',['../class_resources_loader.html',1,'ResourcesLoader'],['../class_resources_loader.html#a571b6232d8f1dc1cf94ec752c984a834',1,'ResourcesLoader::ResourcesLoader()']]],
-  ['resourcesloader_2ecpp',['ResourcesLoader.cpp',['../_resources_loader_8cpp.html',1,'']]],
-  ['resourcesloader_2eh',['ResourcesLoader.h',['../_resources_loader_8h.html',1,'']]],
-  ['running',['running',['../class_world.html#ad9027ba6a4913c21191e7321e9bb2f9f',1,'World']]]
+  ['texture',['Texture',['../struct_texture.html',1,'Texture'],['../struct_settings_1_1_bullet.html#a274a4b14c0bfaa540c5e60c273567bbd',1,'Settings::Bullet::texture()'],['../struct_settings_1_1_plane.html#a6a000124604eb5435f4d77bbec170a4f',1,'Settings::Plane::texture()'],['../struct_texture.html#a66179be276016021e80b1c67c047d4ad',1,'Texture::Texture()=default'],['../struct_texture.html#af59bcad788f8cdb48b1690e0ab31e095',1,'Texture::Texture(ege::PIMAGE image, Vector2D hitBox)'],['../struct_texture.html#a654c58271c71ff72ea2a417ea33e65d2',1,'Texture::Texture(int id)']]],
+  ['textureinfo',['TextureInfo',['../struct_settings_1_1_texture_info.html',1,'Settings']]],
+  ['title',['title',['../struct_settings_1_1_general.html#acb5598e7641429cde268ecd8f80c4da0',1,'Settings::General']]]
 ];

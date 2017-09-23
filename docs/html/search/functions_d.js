@@ -1,13 +1,7 @@
 var searchData=
 [
-  ['ondraw',['onDraw',['../class_action___plane___explode.html#a8436b3848df9d2f27434d5b7bebea525',1,'Action_Plane_Explode']]],
-  ['onupdate',['onUpdate',['../class_action___plane___explode.html#a1786450893420df4539056e93dcdc3b6',1,'Action_Plane_Explode']]],
-  ['operator_21_3d',['operator!=',['../structbasic__vector2_d.html#abd00075de4f4635651d57ede1800ad27',1,'basic_vector2D']]],
-  ['operator_2a',['operator*',['../structbasic__vector2_d.html#a749249ddf6d61699428d2dee790dfd9a',1,'basic_vector2D']]],
-  ['operator_2a_3d',['operator*=',['../structbasic__vector2_d.html#aab570d392ff446a6e16f6ca648ee65c6',1,'basic_vector2D']]],
-  ['operator_2b',['operator+',['../structbasic__vector2_d.html#a0d01680904379f6984ee35cbe0ba3cf2',1,'basic_vector2D']]],
-  ['operator_2d',['operator-',['../structbasic__vector2_d.html#a7d335c93ec37013c5d4804bd721a04ac',1,'basic_vector2D']]],
-  ['operator_2f',['operator/',['../structbasic__vector2_d.html#a13a6172f8b5e7308964a372ed57a794b',1,'basic_vector2D']]],
-  ['operator_2f_3d',['operator/=',['../structbasic__vector2_d.html#ac608e28b6dc06bfeb28236e44bf850d0',1,'basic_vector2D']]],
-  ['operator_3d_3d',['operator==',['../structbasic__vector2_d.html#a51f3108036d2f3df7a4d5da488717d71',1,'basic_vector2D']]]
+  ['update',['update',['../class_plane___enemy___auto_target.html#acae2a6f38bdc71d17188e2b7711f4d5b',1,'Plane_Enemy_AutoTarget::update()'],['../class_plane___enemy___junior.html#a686e46c9927793dd07235cac72d52405',1,'Plane_Enemy_Junior::update()'],['../class_entity.html#a00b6eeaf99b35c8f8b10b5fbfc1baf4f',1,'Entity::update()'],['../class_plane.html#a7fbb07f76503fe057772e01f542afc32',1,'Plane::update()'],['../class_bullet.html#a32f4a0611fe2dd245fee955d14ca1f68',1,'Bullet::update()'],['../class_plane___player.html#ae68c08ce11fad9fd164c00eb4db6b348',1,'Plane_Player::update()'],['../class_world.html#aac8c1fde63c06577ffc648aaefdb37f0',1,'World::update()']]],
+  ['updatecollision',['updateCollision',['../class_world.html#ab86ffcea335fe909467eb754edc5f1a5',1,'World']]],
+  ['updateinput',['updateInput',['../class_input_controller.html#a2a88542ae1370cf3f5ace3c4bb8813d9',1,'InputController']]],
+  ['updatestate',['updateState',['../class_world.html#a6a1abe665fc8056caf3dd84663bccfb8',1,'World']]]
 ];

@@ -259,7 +259,8 @@ void World::renderOverInterface()
 	case 1: grade = "朝鲜飞行员"; break;
 	case 2: grade = "初级飞行员"; break;
 	case 3: grade = "中级飞行员"; break;
-	default:grade = "高级飞行员"; break;
+	case 4: grade = "高级飞行员"; break;
+	default: grade = "王牌飞行员"; break;
 	}
 
 	settextjustify(CENTER_TEXT, CENTER_TEXT);
@@ -269,12 +270,10 @@ void World::renderOverInterface()
 
 	for (; ; )
 	{
-		switch (getch())
+		switch (tolower(getch()))
 		{
-		case 'r':
-		case 'R': running = true; return;
-		case 'q':
-		case 'Q': return;
+		case 'r': running = true; return;
+		case 'q': return;
 		}
 	}
 }

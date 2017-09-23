@@ -17,6 +17,6 @@ var class_resources_loader =
     [ "pEnemyJunior", "class_resources_loader.html#a150dacb6180f32ab8fafadcefdc65f96", null ],
     [ "pGeneral", "class_resources_loader.html#a65888b4ea57a744c09dc0c9e22f9f186", null ],
     [ "pPlayer", "class_resources_loader.html#ae874a55d363c3cb651f36e47570d30a9", null ],
-    [ "settings", "class_resources_loader.html#a2310f32324c20d8294cfbfd893f1c2d9", null ],
+    [ "settings", "class_resources_loader.html#a355d825da8f96dc10cd17fc659e599ae", null ],
     [ "textures", "class_resources_loader.html#a5b18435b040ae9562a84570712be922c", null ]
 ];

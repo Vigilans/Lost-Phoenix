@@ -5,9 +5,7 @@ var NAVTREE =
       [ "命名空间列表", "namespaces.html", "namespaces" ],
       [ "命名空间成员", "namespacemembers.html", [
         [ "全部", "namespacemembers.html", null ],
-        [ "函数", "namespacemembers_func.html", null ],
-        [ "变量", "namespacemembers_vars.html", null ],
-        [ "类型定义", "namespacemembers_type.html", null ]
+        [ "函数", "namespacemembers_func.html", null ]
       ] ]
     ] ],
     [ "类", "annotated.html", [
@@ -18,28 +16,18 @@ var NAVTREE =
         [ "全部", "functions.html", null ],
         [ "函数", "functions_func.html", null ],
         [ "变量", "functions_vars.html", null ],
-        [ "类型定义", "functions_type.html", null ],
-        [ "枚举", "functions_enum.html", null ],
-        [ "相关函数", "functions_rela.html", null ]
+        [ "枚举", "functions_enum.html", null ]
       ] ]
     ] ],
     [ "文件", null, [
-      [ "文件列表", "files.html", "files" ],
-      [ "文件成员", "globals.html", [
-        [ "全部", "globals.html", null ],
-        [ "函数", "globals_func.html", null ],
-        [ "变量", "globals_vars.html", null ],
-        [ "类型定义", "globals_type.html", null ],
-        [ "枚举", "globals_enum.html", null ]
-      ] ]
+      [ "文件列表", "files.html", "files" ]
     ] ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"_actions_8cpp.html",
-"hierarchy.html"
+"_actions_8h_source.html"
 ];
 
 var SYNCONMSG = '点击 关闭 面板同步';

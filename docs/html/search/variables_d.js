@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['resolution',['resolution',['../struct_settings_1_1_general.html#a4cdcf50e69a10db0e410db97bd547d38',1,'Settings::General::resolution()'],['../_resources_8h.html#a7da3248055a0406f64d1afd658691706',1,'resolution():&#160;Resources.h']]],
-  ['running',['running',['../class_world.html#ad9027ba6a4913c21191e7321e9bb2f9f',1,'World']]]
+  ['score',['score',['../struct_settings_1_1_plane.html#a20a8861d723406f4d49610804226dd82',1,'Settings::Plane::score()'],['../class_world.html#ae70b4ef5dd9cb9e7336169a25aaee39c',1,'World::score()']]],
+  ['speed',['speed',['../struct_settings_1_1_bullet.html#a8969e02d4dba2f87284855e0a141f6f3',1,'Settings::Bullet::speed()'],['../struct_settings_1_1_plane.html#a814ee5fe2c6b873ff4f0e0208f2c240a',1,'Settings::Plane::speed()']]]
 ];

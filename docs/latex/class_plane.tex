@@ -1,9 +1,5 @@
 \hypertarget{class_plane}{}\section{Plane类 参考}
 \label{class_plane}\index{Plane@{Plane}}
-
-
-{\ttfamily \#include $<$Plane -\/ Bullet.\+h$>$}
-
 类 Plane 继承关系图\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -13,74 +9,65 @@
 \subsection*{Public 成员函数}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_plane_ab0729538ddb380ca9a5b501f4cf72714}{Plane} (\hyperlink{struct_settings_1_1_plane}{Settings\+::\+Plane} setting, \hyperlink{_vector2_d_8hpp_aa1f1145650f1dd9bddf7335ec6434d7c}{Vector2D} position, \hyperlink{_vector2_d_8hpp_aa1f1145650f1dd9bddf7335ec6434d7c}{Vector2D} \hyperlink{class_entity_a386d25b56772b8913eb3e5adc636f6e0}{velocity})
-\item 
-\hyperlink{class_plane_a69abd86051c880dcb44b249ad10c4436}{$\sim$\+Plane} ()
+\mbox{\Hypertarget{class_plane_ab0729538ddb380ca9a5b501f4cf72714}\label{class_plane_ab0729538ddb380ca9a5b501f4cf72714}} 
+{\bfseries Plane} (\hyperlink{struct_settings_1_1_plane}{Settings\+::\+Plane} setting, \hyperlink{structbasic__vector2_d}{Vector2D} position, \hyperlink{structbasic__vector2_d}{Vector2D} \hyperlink{class_entity_a386d25b56772b8913eb3e5adc636f6e0}{velocity})
 \item 
 virtual void \hyperlink{class_plane_a7fbb07f76503fe057772e01f542afc32}{update} ()
 \begin{DoxyCompactList}\small\item\em 更新实体状态。作为基类虚函数，此方法只通过速度更新当前位置。 \end{DoxyCompactList}\item 
 virtual void \hyperlink{class_plane_a8877358878e91929c4c01bad40cbdb78}{draw} ()
 \begin{DoxyCompactList}\small\item\em 在地图上绘制实体。使用了透明通道，因此可以渲染出透明材质。 \end{DoxyCompactList}\item 
-virtual void \hyperlink{class_plane_af999499b5e79309d94004e8d012fe9c4}{shoot} ()=0
+\mbox{\Hypertarget{class_plane_af999499b5e79309d94004e8d012fe9c4}\label{class_plane_af999499b5e79309d94004e8d012fe9c4}} 
+virtual void {\bfseries shoot} ()=0
 \item 
-virtual void \hyperlink{class_plane_a1a93dbb00292aaae274c152079f5f6f3}{take\+Damage} (int damage)
+\mbox{\Hypertarget{class_plane_a1a93dbb00292aaae274c152079f5f6f3}\label{class_plane_a1a93dbb00292aaae274c152079f5f6f3}} 
+virtual void {\bfseries take\+Damage} (int damage)
 \item 
-\hyperlink{_plane_01-_01_bullet_8h_a9f852e2715e13ec145d551659d2813bc}{Plane\+State} \hyperlink{class_plane_a4b45bbcd85eb0ad999ab256f44b93fcc}{get\+State} ()
+\mbox{\Hypertarget{class_plane_a4b45bbcd85eb0ad999ab256f44b93fcc}\label{class_plane_a4b45bbcd85eb0ad999ab256f44b93fcc}} 
+Plane\+State {\bfseries get\+State} ()
 \item 
-void \hyperlink{class_plane_a40cb32f3c42f1fc772be20448724d277}{set\+State} (\hyperlink{_plane_01-_01_bullet_8h_a9f852e2715e13ec145d551659d2813bc}{Plane\+State} new\+\_\+state)
+\mbox{\Hypertarget{class_plane_a40cb32f3c42f1fc772be20448724d277}\label{class_plane_a40cb32f3c42f1fc772be20448724d277}} 
+void {\bfseries set\+State} (Plane\+State new\+\_\+state)
 \item 
-int \hyperlink{class_plane_ad63d1e65ff9ca0d8b0ea1f6d37c55388}{get\+Health} ()
+\mbox{\Hypertarget{class_plane_ad63d1e65ff9ca0d8b0ea1f6d37c55388}\label{class_plane_ad63d1e65ff9ca0d8b0ea1f6d37c55388}} 
+int {\bfseries get\+Health} ()
 \item 
-void \hyperlink{class_plane_a139404454150aac00b0f94b7f7d0d68e}{set\+Health} (int hp)
+\mbox{\Hypertarget{class_plane_a139404454150aac00b0f94b7f7d0d68e}\label{class_plane_a139404454150aac00b0f94b7f7d0d68e}} 
+void {\bfseries set\+Health} (int hp)
 \end{DoxyCompactItemize}
 \subsection*{Public 属性}
 \begin{DoxyCompactItemize}
 \item 
-int \hyperlink{class_plane_a6ca15b26a453dfd4f81fa11a5ee278c9}{speed}
+\mbox{\Hypertarget{class_plane_a6ca15b26a453dfd4f81fa11a5ee278c9}\label{class_plane_a6ca15b26a453dfd4f81fa11a5ee278c9}} 
+int {\bfseries speed}
 \item 
-int \hyperlink{class_plane_ac39ded6721a8137c4a8044adfbfb8a6c}{max\+Health}
+\mbox{\Hypertarget{class_plane_ac39ded6721a8137c4a8044adfbfb8a6c}\label{class_plane_ac39ded6721a8137c4a8044adfbfb8a6c}} 
+int {\bfseries max\+Health}
 \item 
-int \hyperlink{class_plane_a0434f35fe3f56acb865e51c042e43df8}{cur\+Health}
+\mbox{\Hypertarget{class_plane_a0434f35fe3f56acb865e51c042e43df8}\label{class_plane_a0434f35fe3f56acb865e51c042e43df8}} 
+int {\bfseries cur\+Health}
 \item 
-int \hyperlink{class_plane_ae9f4ab92b0aa75cff1f14df37980eabd}{shoot\+Cool\+Down}
+\mbox{\Hypertarget{class_plane_ae9f4ab92b0aa75cff1f14df37980eabd}\label{class_plane_ae9f4ab92b0aa75cff1f14df37980eabd}} 
+int {\bfseries shoot\+Cool\+Down}
 \end{DoxyCompactItemize}
 \subsection*{Protected 成员函数}
 \begin{DoxyCompactItemize}
 \item 
-bool \hyperlink{class_plane_a77bd3df33921e215669be6583619ee45}{check\+Shoot\+Cool\+Down} ()
+\mbox{\Hypertarget{class_plane_a77bd3df33921e215669be6583619ee45}\label{class_plane_a77bd3df33921e215669be6583619ee45}} 
+bool {\bfseries check\+Shoot\+Cool\+Down} ()
 \end{DoxyCompactItemize}
 \subsection*{Protected 属性}
 \begin{DoxyCompactItemize}
 \item 
-int \hyperlink{class_plane_a36cb09c56fbf7b8c28506d8dd70f07cb}{shoot\+Check\+Point}
+\mbox{\Hypertarget{class_plane_a36cb09c56fbf7b8c28506d8dd70f07cb}\label{class_plane_a36cb09c56fbf7b8c28506d8dd70f07cb}} 
+int {\bfseries shoot\+Check\+Point}
 \item 
-\hyperlink{_plane_01-_01_bullet_8h_a9f852e2715e13ec145d551659d2813bc}{Plane\+State} \hyperlink{class_plane_a30babe177abbe22e61d2cc274945f3fc}{state}
+\mbox{\Hypertarget{class_plane_a30babe177abbe22e61d2cc274945f3fc}\label{class_plane_a30babe177abbe22e61d2cc274945f3fc}} 
+Plane\+State {\bfseries state}
 \end{DoxyCompactItemize}
 \subsection*{额外继承的成员函数}
 
 
-\subsection{构造及析构函数说明}
-\mbox{\Hypertarget{class_plane_ab0729538ddb380ca9a5b501f4cf72714}\label{class_plane_ab0729538ddb380ca9a5b501f4cf72714}} 
-\index{Plane@{Plane}!Plane@{Plane}}
-\index{Plane@{Plane}!Plane@{Plane}}
-\subsubsection{\texorpdfstring{Plane()}{Plane()}}
-{\footnotesize\ttfamily Plane\+::\+Plane (\begin{DoxyParamCaption}\item[{\hyperlink{struct_settings_1_1_plane}{Settings\+::\+Plane}}]{setting,  }\item[{\hyperlink{_vector2_d_8hpp_aa1f1145650f1dd9bddf7335ec6434d7c}{Vector2D}}]{position,  }\item[{\hyperlink{_vector2_d_8hpp_aa1f1145650f1dd9bddf7335ec6434d7c}{Vector2D}}]{velocity }\end{DoxyParamCaption})}
-
-\mbox{\Hypertarget{class_plane_a69abd86051c880dcb44b249ad10c4436}\label{class_plane_a69abd86051c880dcb44b249ad10c4436}} 
-\index{Plane@{Plane}!````~Plane@{$\sim$\+Plane}}
-\index{````~Plane@{$\sim$\+Plane}!Plane@{Plane}}
-\subsubsection{\texorpdfstring{$\sim$\+Plane()}{~Plane()}}
-{\footnotesize\ttfamily Plane\+::$\sim$\+Plane (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-
-
 \subsection{成员函数说明}
-\mbox{\Hypertarget{class_plane_a77bd3df33921e215669be6583619ee45}\label{class_plane_a77bd3df33921e215669be6583619ee45}} 
-\index{Plane@{Plane}!check\+Shoot\+Cool\+Down@{check\+Shoot\+Cool\+Down}}
-\index{check\+Shoot\+Cool\+Down@{check\+Shoot\+Cool\+Down}!Plane@{Plane}}
-\subsubsection{\texorpdfstring{check\+Shoot\+Cool\+Down()}{checkShootCoolDown()}}
-{\footnotesize\ttfamily bool Plane\+::check\+Shoot\+Cool\+Down (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
-
 \mbox{\Hypertarget{class_plane_a8877358878e91929c4c01bad40cbdb78}\label{class_plane_a8877358878e91929c4c01bad40cbdb78}} 
 \index{Plane@{Plane}!draw@{draw}}
 \index{draw@{draw}!Plane@{Plane}}
@@ -94,50 +81,6 @@ int \hyperlink{class_plane_a36cb09c56fbf7b8c28506d8dd70f07cb}{shoot\+Check\+Poin
 
 
 重载 \hyperlink{class_entity_a7666f416dd0d1fce0f1133f78df44476}{Entity} .
-
-\mbox{\Hypertarget{class_plane_ad63d1e65ff9ca0d8b0ea1f6d37c55388}\label{class_plane_ad63d1e65ff9ca0d8b0ea1f6d37c55388}} 
-\index{Plane@{Plane}!get\+Health@{get\+Health}}
-\index{get\+Health@{get\+Health}!Plane@{Plane}}
-\subsubsection{\texorpdfstring{get\+Health()}{getHealth()}}
-{\footnotesize\ttfamily int Plane\+::get\+Health (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-\mbox{\Hypertarget{class_plane_a4b45bbcd85eb0ad999ab256f44b93fcc}\label{class_plane_a4b45bbcd85eb0ad999ab256f44b93fcc}} 
-\index{Plane@{Plane}!get\+State@{get\+State}}
-\index{get\+State@{get\+State}!Plane@{Plane}}
-\subsubsection{\texorpdfstring{get\+State()}{getState()}}
-{\footnotesize\ttfamily \hyperlink{_plane_01-_01_bullet_8h_a9f852e2715e13ec145d551659d2813bc}{Plane\+State} Plane\+::get\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-\mbox{\Hypertarget{class_plane_a139404454150aac00b0f94b7f7d0d68e}\label{class_plane_a139404454150aac00b0f94b7f7d0d68e}} 
-\index{Plane@{Plane}!set\+Health@{set\+Health}}
-\index{set\+Health@{set\+Health}!Plane@{Plane}}
-\subsubsection{\texorpdfstring{set\+Health()}{setHealth()}}
-{\footnotesize\ttfamily void Plane\+::set\+Health (\begin{DoxyParamCaption}\item[{int}]{hp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-\mbox{\Hypertarget{class_plane_a40cb32f3c42f1fc772be20448724d277}\label{class_plane_a40cb32f3c42f1fc772be20448724d277}} 
-\index{Plane@{Plane}!set\+State@{set\+State}}
-\index{set\+State@{set\+State}!Plane@{Plane}}
-\subsubsection{\texorpdfstring{set\+State()}{setState()}}
-{\footnotesize\ttfamily void Plane\+::set\+State (\begin{DoxyParamCaption}\item[{\hyperlink{_plane_01-_01_bullet_8h_a9f852e2715e13ec145d551659d2813bc}{Plane\+State}}]{new\+\_\+state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-\mbox{\Hypertarget{class_plane_af999499b5e79309d94004e8d012fe9c4}\label{class_plane_af999499b5e79309d94004e8d012fe9c4}} 
-\index{Plane@{Plane}!shoot@{shoot}}
-\index{shoot@{shoot}!Plane@{Plane}}
-\subsubsection{\texorpdfstring{shoot()}{shoot()}}
-{\footnotesize\ttfamily virtual void Plane\+::shoot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
-
-
-
-在 \hyperlink{class_plane___player_a3ffa86506370f74ec859e74d42c568c2}{Plane\+\_\+\+Player}, \hyperlink{class_plane___enemy___auto_target_a002ba5754abc49b37ab3131f1a8f48c7}{Plane\+\_\+\+Enemy\+\_\+\+Auto\+Target} , 以及 \hyperlink{class_plane___enemy___junior_ac9c3559aa4616f1b1efbe4a055fca0ac}{Plane\+\_\+\+Enemy\+\_\+\+Junior} 内被实现.
-
-\mbox{\Hypertarget{class_plane_a1a93dbb00292aaae274c152079f5f6f3}\label{class_plane_a1a93dbb00292aaae274c152079f5f6f3}} 
-\index{Plane@{Plane}!take\+Damage@{take\+Damage}}
-\index{take\+Damage@{take\+Damage}!Plane@{Plane}}
-\subsubsection{\texorpdfstring{take\+Damage()}{takeDamage()}}
-{\footnotesize\ttfamily void Plane\+::take\+Damage (\begin{DoxyParamCaption}\item[{int}]{damage }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
-
-
-
-被 \hyperlink{class_plane___player_a40e7f20858e2738e5a72b15eb1c28421}{Plane\+\_\+\+Player} 重载.
 
 \mbox{\Hypertarget{class_plane_a7fbb07f76503fe057772e01f542afc32}\label{class_plane_a7fbb07f76503fe057772e01f542afc32}} 
 \index{Plane@{Plane}!update@{update}}
@@ -159,46 +102,7 @@ int \hyperlink{class_plane_a36cb09c56fbf7b8c28506d8dd70f07cb}{shoot\+Check\+Poin
 
 
 
-\subsection{类成员变量说明}
-\mbox{\Hypertarget{class_plane_a0434f35fe3f56acb865e51c042e43df8}\label{class_plane_a0434f35fe3f56acb865e51c042e43df8}} 
-\index{Plane@{Plane}!cur\+Health@{cur\+Health}}
-\index{cur\+Health@{cur\+Health}!Plane@{Plane}}
-\subsubsection{\texorpdfstring{cur\+Health}{curHealth}}
-{\footnotesize\ttfamily int Plane\+::cur\+Health}
-
-\mbox{\Hypertarget{class_plane_ac39ded6721a8137c4a8044adfbfb8a6c}\label{class_plane_ac39ded6721a8137c4a8044adfbfb8a6c}} 
-\index{Plane@{Plane}!max\+Health@{max\+Health}}
-\index{max\+Health@{max\+Health}!Plane@{Plane}}
-\subsubsection{\texorpdfstring{max\+Health}{maxHealth}}
-{\footnotesize\ttfamily int Plane\+::max\+Health}
-
-\mbox{\Hypertarget{class_plane_a36cb09c56fbf7b8c28506d8dd70f07cb}\label{class_plane_a36cb09c56fbf7b8c28506d8dd70f07cb}} 
-\index{Plane@{Plane}!shoot\+Check\+Point@{shoot\+Check\+Point}}
-\index{shoot\+Check\+Point@{shoot\+Check\+Point}!Plane@{Plane}}
-\subsubsection{\texorpdfstring{shoot\+Check\+Point}{shootCheckPoint}}
-{\footnotesize\ttfamily int Plane\+::shoot\+Check\+Point\hspace{0.3cm}{\ttfamily [protected]}}
-
-\mbox{\Hypertarget{class_plane_ae9f4ab92b0aa75cff1f14df37980eabd}\label{class_plane_ae9f4ab92b0aa75cff1f14df37980eabd}} 
-\index{Plane@{Plane}!shoot\+Cool\+Down@{shoot\+Cool\+Down}}
-\index{shoot\+Cool\+Down@{shoot\+Cool\+Down}!Plane@{Plane}}
-\subsubsection{\texorpdfstring{shoot\+Cool\+Down}{shootCoolDown}}
-{\footnotesize\ttfamily int Plane\+::shoot\+Cool\+Down}
-
-\mbox{\Hypertarget{class_plane_a6ca15b26a453dfd4f81fa11a5ee278c9}\label{class_plane_a6ca15b26a453dfd4f81fa11a5ee278c9}} 
-\index{Plane@{Plane}!speed@{speed}}
-\index{speed@{speed}!Plane@{Plane}}
-\subsubsection{\texorpdfstring{speed}{speed}}
-{\footnotesize\ttfamily int Plane\+::speed}
-
-\mbox{\Hypertarget{class_plane_a30babe177abbe22e61d2cc274945f3fc}\label{class_plane_a30babe177abbe22e61d2cc274945f3fc}} 
-\index{Plane@{Plane}!state@{state}}
-\index{state@{state}!Plane@{Plane}}
-\subsubsection{\texorpdfstring{state}{state}}
-{\footnotesize\ttfamily \hyperlink{_plane_01-_01_bullet_8h_a9f852e2715e13ec145d551659d2813bc}{Plane\+State} Plane\+::state\hspace{0.3cm}{\ttfamily [protected]}}
-
-
-
 该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
 \item 
-D\+:/叶志浩文件夹/\+Vigilans的文档/\+Programming/\+Visual Studio/\+Projects/\+Grade 1 Summer Vacation/\+Lost Phoenix/\+Lost Phoenix/include/\hyperlink{_plane_01-_01_bullet_8h}{Plane -\/ Bullet.\+h}\item 
-D\+:/叶志浩文件夹/\+Vigilans的文档/\+Programming/\+Visual Studio/\+Projects/\+Grade 1 Summer Vacation/\+Lost Phoenix/\+Lost Phoenix/src/\hyperlink{_plane_01-_01_bullet_8cpp}{Plane -\/ Bullet.\+cpp}\end{DoxyCompactItemize}
+D\+:/叶志浩文件夹/\+Vigilans的文档/\+Programming/\+Visual Studio/\+Projects/\+Grade 1 Summer Vacation/\+Lost Phoenix/\+Lost Phoenix/include/Plane -\/ Bullet.\+h\item 
+D\+:/叶志浩文件夹/\+Vigilans的文档/\+Programming/\+Visual Studio/\+Projects/\+Grade 1 Summer Vacation/\+Lost Phoenix/\+Lost Phoenix/src/Plane -\/ Bullet.\+cpp\end{DoxyCompactItemize}
