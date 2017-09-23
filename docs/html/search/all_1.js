@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['basic_5fvector2d',['basic_vector2D',['../structbasic__vector2_d.html',1,'']]],
+  ['basic_5fvector2d',['basic_vector2D',['../structbasic__vector2_d.html',1,'basic_vector2D&lt; _Ty &gt;'],['../structbasic__vector2_d.html#ad8b15c63d5ad6e86e1192ff820f53a67',1,'basic_vector2D::basic_vector2D(_Ty _x=_Ty(), _Ty _y=_Ty())'],['../structbasic__vector2_d.html#a348d37f966eeda40626112688649cb70',1,'basic_vector2D::basic_vector2D(const basic_vector2D &amp;a, const basic_vector2D &amp;b)']]],
   ['basic_5fvector2d_3c_20double_20_3e',['basic_vector2D&lt; double &gt;',['../structbasic__vector2_d.html',1,'']]],
   ['bgshiftspeed',['bgShiftSpeed',['../struct_settings_1_1_general.html#ae17ce428cf02b7c52530c8752ebca9cd',1,'Settings::General']]],
   ['bgtextures',['BgTextures',['../struct_settings_1_1_bg_textures.html',1,'Settings::BgTextures'],['../namespace_settings.html#a8bae923ac0d881b72bbec4f50730ec72',1,'Settings::bgTextures()']]],

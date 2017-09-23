@@ -1,5 +1,14 @@
 \hypertarget{structbasic__vector2_d}{}\section{basic\+\_\+vector2D$<$ \+\_\+\+Ty $>$ 模板结构体 参考}
 \label{structbasic__vector2_d}\index{basic\+\_\+vector2\+D$<$ \+\_\+\+Ty $>$@{basic\+\_\+vector2\+D$<$ \+\_\+\+Ty $>$}}
+
+
+数学二维向量模板类。  
+
+
+
+
+{\ttfamily \#include $<$Vector2\+D.\+hpp$>$}
+
 \subsection*{Public 类型}
 \begin{DoxyCompactItemize}
 \item 
@@ -12,21 +21,18 @@ using {\bfseries reference\+\_\+t} = \+\_\+\+Ty \&
 \subsection*{Public 成员函数}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{structbasic__vector2_d_ad8b15c63d5ad6e86e1192ff820f53a67}\label{structbasic__vector2_d_ad8b15c63d5ad6e86e1192ff820f53a67}} 
-{\bfseries basic\+\_\+vector2D} (\+\_\+\+Ty \+\_\+x=\+\_\+\+Ty(), \+\_\+\+Ty \+\_\+y=\+\_\+\+Ty())
-\item 
-\mbox{\Hypertarget{structbasic__vector2_d_a348d37f966eeda40626112688649cb70}\label{structbasic__vector2_d_a348d37f966eeda40626112688649cb70}} 
-{\bfseries basic\+\_\+vector2D} (const \hyperlink{structbasic__vector2_d}{basic\+\_\+vector2D} \&a, const \hyperlink{structbasic__vector2_d}{basic\+\_\+vector2D} \&b)
-\item 
+\hyperlink{structbasic__vector2_d_ad8b15c63d5ad6e86e1192ff820f53a67}{basic\+\_\+vector2D} (\+\_\+\+Ty \+\_\+x=\+\_\+\+Ty(), \+\_\+\+Ty \+\_\+y=\+\_\+\+Ty())
+\begin{DoxyCompactList}\small\item\em 根据分量构造向量。 \end{DoxyCompactList}\item 
+\hyperlink{structbasic__vector2_d_a348d37f966eeda40626112688649cb70}{basic\+\_\+vector2D} (const \hyperlink{structbasic__vector2_d}{basic\+\_\+vector2D} \&a, const \hyperlink{structbasic__vector2_d}{basic\+\_\+vector2D} \&b)
+\begin{DoxyCompactList}\small\item\em 根据两个向量a,b构建一个从a指向b的单位方向向量。 \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{structbasic__vector2_d_a4085ab29a73798d9a1958eef96bf5f33}\label{structbasic__vector2_d_a4085ab29a73798d9a1958eef96bf5f33}} 
 void {\bfseries set} (\+\_\+\+Ty \+\_\+x, \+\_\+\+Ty \+\_\+y)
 \item 
 \mbox{\Hypertarget{structbasic__vector2_d_a9a5e3046e0e3c08caa6bc56e6cf2d270}\label{structbasic__vector2_d_a9a5e3046e0e3c08caa6bc56e6cf2d270}} 
 double {\bfseries length} ()
 \item 
-\mbox{\Hypertarget{structbasic__vector2_d_aa4b24c577ef24c814370beebc22f3bb8}\label{structbasic__vector2_d_aa4b24c577ef24c814370beebc22f3bb8}} 
-\hyperlink{structbasic__vector2_d}{basic\+\_\+vector2D} {\bfseries unit} ()
-\item 
+\hyperlink{structbasic__vector2_d}{basic\+\_\+vector2D} \hyperlink{structbasic__vector2_d_aa4b24c577ef24c814370beebc22f3bb8}{unit} ()
+\begin{DoxyCompactList}\small\item\em 获取当前向量的方向单位向量。 \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{structbasic__vector2_d_a51f3108036d2f3df7a4d5da488717d71}\label{structbasic__vector2_d_a51f3108036d2f3df7a4d5da488717d71}} 
 bool {\bfseries operator==} (const \hyperlink{structbasic__vector2_d}{basic\+\_\+vector2D} \&v2)
 \item 
@@ -54,9 +60,8 @@ bool {\bfseries operator!=} (const \hyperlink{structbasic__vector2_d}{basic\+\_\
 \subsection*{静态 Public 成员函数}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{structbasic__vector2_d_aa31b5b9b9261d28ecd2626ba38b61278}\label{structbasic__vector2_d_aa31b5b9b9261d28ecd2626ba38b61278}} 
-static \hyperlink{structbasic__vector2_d}{basic\+\_\+vector2D}$<$ double $>$ {\bfseries unit\+By\+Degree} (double degree)
-\end{DoxyCompactItemize}
+static \hyperlink{structbasic__vector2_d}{basic\+\_\+vector2D}$<$ double $>$ \hyperlink{structbasic__vector2_d_aa31b5b9b9261d28ecd2626ba38b61278}{unit\+By\+Degree} (double degree)
+\begin{DoxyCompactList}\small\item\em 根据与x轴的偏角构造一个单位向量。 \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Public 属性}
 \begin{DoxyCompactItemize}
 \item 
@@ -75,6 +80,89 @@ static \hyperlink{structbasic__vector2_d}{basic\+\_\+vector2D}$<$ double $>$ {\b
 \mbox{\Hypertarget{structbasic__vector2_d_a840973b019d576292fcfbb982e351314}\label{structbasic__vector2_d_a840973b019d576292fcfbb982e351314}} 
 \hyperlink{structbasic__vector2_d}{basic\+\_\+vector2D} \& {\bfseries operator-\/=} (\hyperlink{structbasic__vector2_d}{basic\+\_\+vector2D} \&v1, const \hyperlink{structbasic__vector2_d}{basic\+\_\+vector2D} \&v2)
 \end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+\subsubsection*{template$<$typename \+\_\+\+Ty$>$\newline
+struct basic\+\_\+vector2\+D$<$ \+\_\+\+Ty $>$}
+
+数学二维向量模板类。 
+
+
+
+\subsection{构造及析构函数说明}
+\mbox{\Hypertarget{structbasic__vector2_d_ad8b15c63d5ad6e86e1192ff820f53a67}\label{structbasic__vector2_d_ad8b15c63d5ad6e86e1192ff820f53a67}} 
+\index{basic\+\_\+vector2D@{basic\+\_\+vector2D}!basic\+\_\+vector2D@{basic\+\_\+vector2D}}
+\index{basic\+\_\+vector2D@{basic\+\_\+vector2D}!basic\+\_\+vector2D@{basic\+\_\+vector2D}}
+\subsubsection{\texorpdfstring{basic\+\_\+vector2\+D()}{basic\_vector2D()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename \+\_\+\+Ty$>$ \\
+\hyperlink{structbasic__vector2_d}{basic\+\_\+vector2D}$<$ \+\_\+\+Ty $>$\+::\hyperlink{structbasic__vector2_d}{basic\+\_\+vector2D} (\begin{DoxyParamCaption}\item[{\+\_\+\+Ty}]{\+\_\+x = {\ttfamily \+\_\+Ty()},  }\item[{\+\_\+\+Ty}]{\+\_\+y = {\ttfamily \+\_\+Ty()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+根据分量构造向量。 
+
+
+\begin{DoxyParams}{参数}
+{\em \+\_\+x} & (可选) x方向分量。默认为0。 \\
+\hline
+{\em \+\_\+y} & (Optional) y方向分量。默认为0。 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structbasic__vector2_d_a348d37f966eeda40626112688649cb70}\label{structbasic__vector2_d_a348d37f966eeda40626112688649cb70}} 
+\index{basic\+\_\+vector2D@{basic\+\_\+vector2D}!basic\+\_\+vector2D@{basic\+\_\+vector2D}}
+\index{basic\+\_\+vector2D@{basic\+\_\+vector2D}!basic\+\_\+vector2D@{basic\+\_\+vector2D}}
+\subsubsection{\texorpdfstring{basic\+\_\+vector2\+D()}{basic\_vector2D()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename \+\_\+\+Ty$>$ \\
+\hyperlink{structbasic__vector2_d}{basic\+\_\+vector2D}$<$ \+\_\+\+Ty $>$\+::\hyperlink{structbasic__vector2_d}{basic\+\_\+vector2D} (\begin{DoxyParamCaption}\item[{const \hyperlink{structbasic__vector2_d}{basic\+\_\+vector2D}$<$ \+\_\+\+Ty $>$ \&}]{a,  }\item[{const \hyperlink{structbasic__vector2_d}{basic\+\_\+vector2D}$<$ \+\_\+\+Ty $>$ \&}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+根据两个向量a,b构建一个从a指向b的单位方向向量。 
+
+
+\begin{DoxyParams}{参数}
+{\em a} & 起点向量。 \\
+\hline
+{\em b} & 终点向量。 \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{成员函数说明}
+\mbox{\Hypertarget{structbasic__vector2_d_aa4b24c577ef24c814370beebc22f3bb8}\label{structbasic__vector2_d_aa4b24c577ef24c814370beebc22f3bb8}} 
+\index{basic\+\_\+vector2D@{basic\+\_\+vector2D}!unit@{unit}}
+\index{unit@{unit}!basic\+\_\+vector2D@{basic\+\_\+vector2D}}
+\subsubsection{\texorpdfstring{unit()}{unit()}}
+{\footnotesize\ttfamily template$<$typename \+\_\+\+Ty$>$ \\
+\hyperlink{structbasic__vector2_d}{basic\+\_\+vector2D} \hyperlink{structbasic__vector2_d}{basic\+\_\+vector2D}$<$ \+\_\+\+Ty $>$\+::unit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+获取当前向量的方向单位向量。 
+
+\begin{DoxyReturn}{返回}
+一个单位向量，方向与当前向量相同。 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structbasic__vector2_d_aa31b5b9b9261d28ecd2626ba38b61278}\label{structbasic__vector2_d_aa31b5b9b9261d28ecd2626ba38b61278}} 
+\index{basic\+\_\+vector2D@{basic\+\_\+vector2D}!unit\+By\+Degree@{unit\+By\+Degree}}
+\index{unit\+By\+Degree@{unit\+By\+Degree}!basic\+\_\+vector2D@{basic\+\_\+vector2D}}
+\subsubsection{\texorpdfstring{unit\+By\+Degree()}{unitByDegree()}}
+{\footnotesize\ttfamily template$<$typename \+\_\+\+Ty$>$ \\
+static \hyperlink{structbasic__vector2_d}{basic\+\_\+vector2D}$<$double$>$ \hyperlink{structbasic__vector2_d}{basic\+\_\+vector2D}$<$ \+\_\+\+Ty $>$\+::unit\+By\+Degree (\begin{DoxyParamCaption}\item[{double}]{degree }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+根据与x轴的偏角构造一个单位向量。 
+
+
+\begin{DoxyParams}{参数}
+{\em degree} & 与x轴正向的夹角。为角度制。 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+一个单位向量，与x轴正向夹角为参数偏角。 
+\end{DoxyReturn}
 
 
 该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
