@@ -1,5 +1,14 @@
 \hypertarget{class_action___plane___explode}{}\section{Action\+\_\+\+Plane\+\_\+\+Explode类 参考}
 \label{class_action___plane___explode}\index{Action\+\_\+\+Plane\+\_\+\+Explode@{Action\+\_\+\+Plane\+\_\+\+Explode}}
+
+
+Action之飞机爆炸。对于敌机，会在坠毁时出现；对于自机，会在受到伤害会坠毁时出现。  
+
+
+
+
+{\ttfamily \#include $<$Actions.\+h$>$}
+
 类 Action\+\_\+\+Plane\+\_\+\+Explode 继承关系图\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,42 +18,90 @@
 \subsection*{Public 成员函数}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_action___plane___explode_aa7aeb998cd636ad6d0b42d9e23a43b57}\label{class_action___plane___explode_aa7aeb998cd636ad6d0b42d9e23a43b57}} 
-{\bfseries Action\+\_\+\+Plane\+\_\+\+Explode} (\hyperlink{class_plane}{Plane} $\ast$src, bool do\+Destroy=true, int boom\+Speed=5, void($\ast$end\+Callback\+Func)()=N\+U\+LL)
-\item 
+\hyperlink{class_action___plane___explode_aa7aeb998cd636ad6d0b42d9e23a43b57}{Action\+\_\+\+Plane\+\_\+\+Explode} (\hyperlink{class_plane}{Plane} $\ast$src, bool do\+Destroy=true, int boom\+Speed=5, void($\ast$end\+Callback\+Func)()=N\+U\+LL)
+\begin{DoxyCompactList}\small\item\em 构造函数。 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_action___plane___explode_a1cfe86e64ece12731955275b8d6b9a41}\label{class_action___plane___explode_a1cfe86e64ece12731955275b8d6b9a41}} 
+virtual \hyperlink{class_action___plane___explode_a1cfe86e64ece12731955275b8d6b9a41}{$\sim$\+Action\+\_\+\+Plane\+\_\+\+Explode} ()
+\begin{DoxyCompactList}\small\item\em 析构函数。若\hyperlink{class_action___plane___explode_a655f5cf52656c4ce16040d2310494029}{to\+Destroy}为true，会销毁源飞机。 \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_action___plane___explode_a1786450893420df4539056e93dcdc3b6}\label{class_action___plane___explode_a1786450893420df4539056e93dcdc3b6}} 
-virtual int {\bfseries on\+Update} ()
-\item 
+virtual int \hyperlink{class_action___plane___explode_a1786450893420df4539056e93dcdc3b6}{on\+Update} ()
+\begin{DoxyCompactList}\small\item\em 更新爆炸状态。主要是更新爆炸帧，以及确定动作是否已结束。 \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_action___plane___explode_a8436b3848df9d2f27434d5b7bebea525}\label{class_action___plane___explode_a8436b3848df9d2f27434d5b7bebea525}} 
-virtual void {\bfseries on\+Draw} (P\+I\+M\+A\+GE pimg) const
-\end{DoxyCompactItemize}
+virtual void \hyperlink{class_action___plane___explode_a8436b3848df9d2f27434d5b7bebea525}{on\+Draw} (P\+I\+M\+A\+GE pimg) const
+\begin{DoxyCompactList}\small\item\em 绘制爆炸帧。会设置爆炸贴图的中心与飞机贴图的重心重合。 \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{静态 Public 成员函数}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_action___plane___explode_a797e8de15934ea7370086bde4cc45015}\label{class_action___plane___explode_a797e8de15934ea7370086bde4cc45015}} 
-static void {\bfseries initialize\+Models} ()
-\end{DoxyCompactItemize}
+static void \hyperlink{class_action___plane___explode_a797e8de15934ea7370086bde4cc45015}{initialize\+Models} ()
+\begin{DoxyCompactList}\small\item\em 初始化表现爆炸动画的材质组。采取\+Lazy Load机制。 \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Public 属性}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{class_action___plane___explode_a3425e9988fc97a794c01b3288df4afe6}\label{class_action___plane___explode_a3425e9988fc97a794c01b3288df4afe6}} 
-int {\bfseries boom\+Time}
-\item 
+int \hyperlink{class_action___plane___explode_a3425e9988fc97a794c01b3288df4afe6}{boom\+Time}
+\begin{DoxyCompactList}\small\item\em 爆炸动画每一帧展现时间。 \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_action___plane___explode_a5da7d39e28db0b1a852ae81cc6e96ba5}\label{class_action___plane___explode_a5da7d39e28db0b1a852ae81cc6e96ba5}} 
-int {\bfseries cur\+Index}
-\item 
+int \hyperlink{class_action___plane___explode_a5da7d39e28db0b1a852ae81cc6e96ba5}{cur\+Index}
+\begin{DoxyCompactList}\small\item\em 目前所处的爆炸动画材质数组索引。 \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_action___plane___explode_a98d4991b3266a6c7fc5ebbad4d41f136}\label{class_action___plane___explode_a98d4991b3266a6c7fc5ebbad4d41f136}} 
-\hyperlink{class_plane}{Plane} $\ast$ {\bfseries src\+Plane}
-\item 
+\hyperlink{class_plane}{Plane} $\ast$ \hyperlink{class_action___plane___explode_a98d4991b3266a6c7fc5ebbad4d41f136}{src\+Plane}
+\begin{DoxyCompactList}\small\item\em 爆炸源飞机。 \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_action___plane___explode_a655f5cf52656c4ce16040d2310494029}\label{class_action___plane___explode_a655f5cf52656c4ce16040d2310494029}} 
-bool {\bfseries to\+Destroy}
-\end{DoxyCompactItemize}
+bool \hyperlink{class_action___plane___explode_a655f5cf52656c4ce16040d2310494029}{to\+Destroy}
+\begin{DoxyCompactList}\small\item\em 表示是否要销毁爆炸源飞机。 \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{静态 Public 属性}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{class_action___plane___explode_ab37c2419e1e16a739b856de09df79909}\label{class_action___plane___explode_ab37c2419e1e16a739b856de09df79909}} 
-static \hyperlink{struct_texture}{Texture} {\bfseries models} \mbox{[}4\mbox{]} = \{ \}
-\end{DoxyCompactItemize}
+static \hyperlink{struct_texture}{Texture} \hyperlink{class_action___plane___explode_ab37c2419e1e16a739b856de09df79909}{models} \mbox{[}4\mbox{]} = \{ \}
+\begin{DoxyCompactList}\small\item\em 用于表现爆炸动画的材质组。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+Action之飞机爆炸。对于敌机，会在坠毁时出现；对于自机，会在受到伤害会坠毁时出现。 
+
+\begin{DoxySeeAlso}{参见}
+T\+:\+Action
+
+
+\end{DoxySeeAlso}
+
+
+\subsection{构造及析构函数说明}
+\mbox{\Hypertarget{class_action___plane___explode_aa7aeb998cd636ad6d0b42d9e23a43b57}\label{class_action___plane___explode_aa7aeb998cd636ad6d0b42d9e23a43b57}} 
+\index{Action\+\_\+\+Plane\+\_\+\+Explode@{Action\+\_\+\+Plane\+\_\+\+Explode}!Action\+\_\+\+Plane\+\_\+\+Explode@{Action\+\_\+\+Plane\+\_\+\+Explode}}
+\index{Action\+\_\+\+Plane\+\_\+\+Explode@{Action\+\_\+\+Plane\+\_\+\+Explode}!Action\+\_\+\+Plane\+\_\+\+Explode@{Action\+\_\+\+Plane\+\_\+\+Explode}}
+\subsubsection{\texorpdfstring{Action\+\_\+\+Plane\+\_\+\+Explode()}{Action\_Plane\_Explode()}}
+{\footnotesize\ttfamily Action\+\_\+\+Plane\+\_\+\+Explode\+::\+Action\+\_\+\+Plane\+\_\+\+Explode (\begin{DoxyParamCaption}\item[{\hyperlink{class_plane}{Plane} $\ast$}]{src,  }\item[{bool}]{do\+Destroy = {\ttfamily true},  }\item[{int}]{boom\+Speed = {\ttfamily 5},  }\item[{void($\ast$)()}]{end\+Callback\+Func = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+
+
+构造函数。 
+
+
+\begin{DoxyParams}{参数}
+{\em src} & 爆炸源飞机。 \\
+\hline
+{\em do\+Destroy} & (可选) 是否销毁源飞机。默认为true。 \\
+\hline
+{\em boom\+Speed} & 爆炸动画每一帧展现时间。 \\
+\hline
+{\em end\+Callback\+Func} & 回调函数指针。 \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{成员函数说明}
+\mbox{\Hypertarget{class_action___plane___explode_a797e8de15934ea7370086bde4cc45015}\label{class_action___plane___explode_a797e8de15934ea7370086bde4cc45015}} 
+\index{Action\+\_\+\+Plane\+\_\+\+Explode@{Action\+\_\+\+Plane\+\_\+\+Explode}!initialize\+Models@{initialize\+Models}}
+\index{initialize\+Models@{initialize\+Models}!Action\+\_\+\+Plane\+\_\+\+Explode@{Action\+\_\+\+Plane\+\_\+\+Explode}}
+\subsubsection{\texorpdfstring{initialize\+Models()}{initializeModels()}}
+{\footnotesize\ttfamily void Action\+\_\+\+Plane\+\_\+\+Explode\+::initialize\+Models (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+初始化表现爆炸动画的材质组。采取\+Lazy Load机制。 
+
 
 
 该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}

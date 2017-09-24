@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['end',['end',['../class_bullet.html#aff37198e603e1a2b8ff28e0df6e156a4',1,'Bullet']]],
+  ['end',['end',['../class_action.html#a28332e6535d45661d768bb1b321f4715',1,'Action::end()'],['../class_bullet.html#aff37198e603e1a2b8ff28e0df6e156a4',1,'Bullet::end()']]],
   ['enemy_5fautotarget',['enemy_autoTarget',['../namespace_settings.html#a77e282eadc82f97cb15c2c3eef3c535b',1,'Settings']]],
   ['enemy_5fjunior',['enemy_junior',['../namespace_settings.html#a5d571065d327daba740814f8e90261f5',1,'Settings']]],
   ['enemy_5fplanes',['enemy_planes',['../class_world.html#a9692ac6798300e7fde98eb3ef1bb7c79',1,'World']]],

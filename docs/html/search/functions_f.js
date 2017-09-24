@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['takedamage',['takeDamage',['../class_plane___enemy___auto_target.html#a1f9400c23995c6ac67fe04309f98cf29',1,'Plane_Enemy_AutoTarget::takeDamage()'],['../class_plane___player.html#a40e7f20858e2738e5a72b15eb1c28421',1,'Plane_Player::takeDamage()']]],
-  ['texture',['Texture',['../struct_texture.html#a66179be276016021e80b1c67c047d4ad',1,'Texture::Texture()=default'],['../struct_texture.html#af59bcad788f8cdb48b1690e0ab31e095',1,'Texture::Texture(ege::PIMAGE image, Vector2D hitBox)'],['../struct_texture.html#a654c58271c71ff72ea2a417ea33e65d2',1,'Texture::Texture(int id)']]]
+  ['shoot',['shoot',['../class_plane___enemy___auto_target.html#a18e2115af4e2ebb50c920ee9ab2e42ad',1,'Plane_Enemy_AutoTarget::shoot()'],['../class_plane___enemy___junior.html#a5ffc4150cdf4c6e81480a2977d4bfafe',1,'Plane_Enemy_Junior::shoot()'],['../class_plane___player.html#a3ffa86506370f74ec859e74d42c568c2',1,'Plane_Player::shoot()']]]
 ];

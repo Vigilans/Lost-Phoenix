@@ -92,72 +92,176 @@ $(document).ready(function(){initNavTree('class_action___plane___explode.html','
 <div class="title">Action_Plane_Explode类 参考</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Action之飞机爆炸。对于敌机，会在坠毁时出现；对于自机，会在受到伤害会坠毁时出现。  
+ <a href="class_action___plane___explode.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_actions_8h_source.html">Actions.h</a>&gt;</code></p>
 <div class="dynheader">
 类 Action_Plane_Explode 继承关系图:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="class_action___plane___explode.png" usemap="#Action_5FPlane_5FExplode_map" alt=""/>
   <map id="Action_5FPlane_5FExplode_map" name="Action_5FPlane_5FExplode_map">
-<area href="class_action.html" alt="Action" shape="rect" coords="0,56,139,80"/>
+<area href="class_action.html" title="由ege控制类继承来的Action基类，仿自ege自带的fps类写成。用于表现一些动画的动作，同时通过析构 + 回调函�..." alt="Action" shape="rect" coords="0,56,139,80"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
-<tr class="memitem:aa7aeb998cd636ad6d0b42d9e23a43b57"><td class="memItemLeft" align="right" valign="top"><a id="aa7aeb998cd636ad6d0b42d9e23a43b57"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Action_Plane_Explode</b> (<a class="el" href="class_plane.html">Plane</a> *src, bool doDestroy=true, int boomSpeed=5, void(*endCallbackFunc)()=NULL)</td></tr>
+<tr class="memitem:aa7aeb998cd636ad6d0b42d9e23a43b57"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_action___plane___explode.html#aa7aeb998cd636ad6d0b42d9e23a43b57">Action_Plane_Explode</a> (<a class="el" href="class_plane.html">Plane</a> *src, bool doDestroy=true, int boomSpeed=5, void(*endCallbackFunc)()=NULL)</td></tr>
+<tr class="memdesc:aa7aeb998cd636ad6d0b42d9e23a43b57"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数。  <a href="#aa7aeb998cd636ad6d0b42d9e23a43b57">更多...</a><br /></td></tr>
 <tr class="separator:aa7aeb998cd636ad6d0b42d9e23a43b57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cfe86e64ece12731955275b8d6b9a41"><td class="memItemLeft" align="right" valign="top"><a id="a1cfe86e64ece12731955275b8d6b9a41"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_action___plane___explode.html#a1cfe86e64ece12731955275b8d6b9a41">~Action_Plane_Explode</a> ()</td></tr>
+<tr class="memdesc:a1cfe86e64ece12731955275b8d6b9a41"><td class="mdescLeft">&#160;</td><td class="mdescRight">析构函数。若<a class="el" href="class_action___plane___explode.html#a655f5cf52656c4ce16040d2310494029" title="表示是否要销毁爆炸源飞机。 ">toDestroy</a>为true，会销毁源飞机。 <br /></td></tr>
+<tr class="separator:a1cfe86e64ece12731955275b8d6b9a41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1786450893420df4539056e93dcdc3b6"><td class="memItemLeft" align="right" valign="top"><a id="a1786450893420df4539056e93dcdc3b6"></a>
-virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>onUpdate</b> ()</td></tr>
+virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_action___plane___explode.html#a1786450893420df4539056e93dcdc3b6">onUpdate</a> ()</td></tr>
+<tr class="memdesc:a1786450893420df4539056e93dcdc3b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">更新爆炸状态。主要是更新爆炸帧，以及确定动作是否已结束。 <br /></td></tr>
 <tr class="separator:a1786450893420df4539056e93dcdc3b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8436b3848df9d2f27434d5b7bebea525"><td class="memItemLeft" align="right" valign="top"><a id="a8436b3848df9d2f27434d5b7bebea525"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>onDraw</b> (PIMAGE pimg) const</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_action___plane___explode.html#a8436b3848df9d2f27434d5b7bebea525">onDraw</a> (PIMAGE pimg) const</td></tr>
+<tr class="memdesc:a8436b3848df9d2f27434d5b7bebea525"><td class="mdescLeft">&#160;</td><td class="mdescRight">绘制爆炸帧。会设置爆炸贴图的中心与飞机贴图的重心重合。 <br /></td></tr>
 <tr class="separator:a8436b3848df9d2f27434d5b7bebea525"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_action"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_action')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="class_action.html">Action</a></td></tr>
 <tr class="memitem:a4d1309da871dfc1da7b4bdc896e34c0e inherit pub_methods_class_action"><td class="memItemLeft" align="right" valign="top"><a id="a4d1309da871dfc1da7b4bdc896e34c0e"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>CTL_PREINIT</b> (<a class="el" href="class_action.html">Action</a>, egeControlBase)</td></tr>
 <tr class="separator:a4d1309da871dfc1da7b4bdc896e34c0e inherit pub_methods_class_action"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a656f4ac0205bbd055dd360248786475a inherit pub_methods_class_action"><td class="memItemLeft" align="right" valign="top"><a id="a656f4ac0205bbd055dd360248786475a"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Action</b> (void(*endCallbackFunc)()=NULL, CTL_DEFPARAM)</td></tr>
-<tr class="separator:a656f4ac0205bbd055dd360248786475a inherit pub_methods_class_action"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c92cef33ffb1fbf67d7d65e3f74a361 inherit pub_methods_class_action"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_action.html#a5c92cef33ffb1fbf67d7d65e3f74a361">Action</a> (void(*endCallbackFunc)()=nullptr, CTL_DEFPARAM)</td></tr>
+<tr class="memdesc:a5c92cef33ffb1fbf67d7d65e3f74a361 inherit pub_methods_class_action"><td class="mdescLeft">&#160;</td><td class="mdescRight">基类构造函数。  <a href="class_action.html#a5c92cef33ffb1fbf67d7d65e3f74a361">更多...</a><br /></td></tr>
+<tr class="separator:a5c92cef33ffb1fbf67d7d65e3f74a361 inherit pub_methods_class_action"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcf4c6358f53a666631ace11b325a7cd inherit pub_methods_class_action"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_action.html#abcf4c6358f53a666631ace11b325a7cd">~Action</a> ()</td></tr>
+<tr class="memdesc:abcf4c6358f53a666631ace11b325a7cd inherit pub_methods_class_action"><td class="mdescLeft">&#160;</td><td class="mdescRight">析构函数。在回调函数指针不为空时，调用回调函数。  <a href="class_action.html#abcf4c6358f53a666631ace11b325a7cd">更多...</a><br /></td></tr>
+<tr class="separator:abcf4c6358f53a666631ace11b325a7cd inherit pub_methods_class_action"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 静态 Public 成员函数</h2></td></tr>
-<tr class="memitem:a797e8de15934ea7370086bde4cc45015"><td class="memItemLeft" align="right" valign="top"><a id="a797e8de15934ea7370086bde4cc45015"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>initializeModels</b> ()</td></tr>
+<tr class="memitem:a797e8de15934ea7370086bde4cc45015"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_action___plane___explode.html#a797e8de15934ea7370086bde4cc45015">initializeModels</a> ()</td></tr>
+<tr class="memdesc:a797e8de15934ea7370086bde4cc45015"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始化表现爆炸动画的材质组。采取Lazy Load机制。  <a href="#a797e8de15934ea7370086bde4cc45015">更多...</a><br /></td></tr>
 <tr class="separator:a797e8de15934ea7370086bde4cc45015"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public 属性</h2></td></tr>
 <tr class="memitem:a3425e9988fc97a794c01b3288df4afe6"><td class="memItemLeft" align="right" valign="top"><a id="a3425e9988fc97a794c01b3288df4afe6"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>boomTime</b></td></tr>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_action___plane___explode.html#a3425e9988fc97a794c01b3288df4afe6">boomTime</a></td></tr>
+<tr class="memdesc:a3425e9988fc97a794c01b3288df4afe6"><td class="mdescLeft">&#160;</td><td class="mdescRight">爆炸动画每一帧展现时间。 <br /></td></tr>
 <tr class="separator:a3425e9988fc97a794c01b3288df4afe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5da7d39e28db0b1a852ae81cc6e96ba5"><td class="memItemLeft" align="right" valign="top"><a id="a5da7d39e28db0b1a852ae81cc6e96ba5"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>curIndex</b></td></tr>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_action___plane___explode.html#a5da7d39e28db0b1a852ae81cc6e96ba5">curIndex</a></td></tr>
+<tr class="memdesc:a5da7d39e28db0b1a852ae81cc6e96ba5"><td class="mdescLeft">&#160;</td><td class="mdescRight">目前所处的爆炸动画材质数组索引。 <br /></td></tr>
 <tr class="separator:a5da7d39e28db0b1a852ae81cc6e96ba5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98d4991b3266a6c7fc5ebbad4d41f136"><td class="memItemLeft" align="right" valign="top"><a id="a98d4991b3266a6c7fc5ebbad4d41f136"></a>
-<a class="el" href="class_plane.html">Plane</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>srcPlane</b></td></tr>
+<a class="el" href="class_plane.html">Plane</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_action___plane___explode.html#a98d4991b3266a6c7fc5ebbad4d41f136">srcPlane</a></td></tr>
+<tr class="memdesc:a98d4991b3266a6c7fc5ebbad4d41f136"><td class="mdescLeft">&#160;</td><td class="mdescRight">爆炸源飞机。 <br /></td></tr>
 <tr class="separator:a98d4991b3266a6c7fc5ebbad4d41f136"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a655f5cf52656c4ce16040d2310494029"><td class="memItemLeft" align="right" valign="top"><a id="a655f5cf52656c4ce16040d2310494029"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>toDestroy</b></td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_action___plane___explode.html#a655f5cf52656c4ce16040d2310494029">toDestroy</a></td></tr>
+<tr class="memdesc:a655f5cf52656c4ce16040d2310494029"><td class="mdescLeft">&#160;</td><td class="mdescRight">表示是否要销毁爆炸源飞机。 <br /></td></tr>
 <tr class="separator:a655f5cf52656c4ce16040d2310494029"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_class_action"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_action')"><img src="closed.png" alt="-"/>&#160;Public 属性 继承自 <a class="el" href="class_action.html">Action</a></td></tr>
 <tr class="memitem:a682e7ba0a9ef3f891382df776c1ce883 inherit pub_attribs_class_action"><td class="memItemLeft" align="right" valign="top"><a id="a682e7ba0a9ef3f891382df776c1ce883"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>CTL_PREINITEND</b></td></tr>
 <tr class="separator:a682e7ba0a9ef3f891382df776c1ce883 inherit pub_attribs_class_action"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28332e6535d45661d768bb1b321f4715 inherit pub_attribs_class_action"><td class="memItemLeft" align="right" valign="top"><a id="a28332e6535d45661d768bb1b321f4715"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>end</b></td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_action.html#a28332e6535d45661d768bb1b321f4715">end</a></td></tr>
+<tr class="memdesc:a28332e6535d45661d768bb1b321f4715 inherit pub_attribs_class_action"><td class="mdescLeft">&#160;</td><td class="mdescRight">表征动作是否已到达结束状态。会在<a class="el" href="class_world.html#aefe8e0e9e418bbf81671314bf8d019f2" title="存储所有Action基类指针的链表。 ">World::actions</a>中被检测并处理。 <br /></td></tr>
 <tr class="separator:a28332e6535d45661d768bb1b321f4715 inherit pub_attribs_class_action"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef6c7c00b09ea1b0ddd7a26926309717 inherit pub_attribs_class_action"><td class="memItemLeft" align="right" valign="top"><a id="aef6c7c00b09ea1b0ddd7a26926309717"></a>
-void(*&#160;</td><td class="memItemRight" valign="bottom"><b>callback</b> )()</td></tr>
+void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_action.html#aef6c7c00b09ea1b0ddd7a26926309717">callback</a> )()</td></tr>
+<tr class="memdesc:aef6c7c00b09ea1b0ddd7a26926309717 inherit pub_attribs_class_action"><td class="mdescLeft">&#160;</td><td class="mdescRight">回调函数指针。 <br /></td></tr>
 <tr class="separator:aef6c7c00b09ea1b0ddd7a26926309717 inherit pub_attribs_class_action"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 静态 Public 属性</h2></td></tr>
 <tr class="memitem:ab37c2419e1e16a739b856de09df79909"><td class="memItemLeft" align="right" valign="top"><a id="ab37c2419e1e16a739b856de09df79909"></a>
-static <a class="el" href="struct_texture.html">Texture</a>&#160;</td><td class="memItemRight" valign="bottom"><b>models</b> [4] = { }</td></tr>
+static <a class="el" href="struct_texture.html">Texture</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_action___plane___explode.html#ab37c2419e1e16a739b856de09df79909">models</a> [4] = { }</td></tr>
+<tr class="memdesc:ab37c2419e1e16a739b856de09df79909"><td class="mdescLeft">&#160;</td><td class="mdescRight">用于表现爆炸动画的材质组。 <br /></td></tr>
 <tr class="separator:ab37c2419e1e16a739b856de09df79909"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>Action之飞机爆炸。对于敌机，会在坠毁时出现；对于自机，会在受到伤害会坠毁时出现。 </p>
+<dl class="section see"><dt>参见</dt><dd>T:Action</dd></dl>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="aa7aeb998cd636ad6d0b42d9e23a43b57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7aeb998cd636ad6d0b42d9e23a43b57">&#9670;&nbsp;</a></span>Action_Plane_Explode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Action_Plane_Explode::Action_Plane_Explode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_plane.html">Plane</a> *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>doDestroy</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>boomSpeed</em> = <code>5</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(*)()&#160;</td>
+          <td class="paramname"><em>endCallbackFunc</em> = <code>NULL</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>构造函数。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>爆炸源飞机。 </td></tr>
+    <tr><td class="paramname">doDestroy</td><td>(可选) 是否销毁源飞机。默认为true。 </td></tr>
+    <tr><td class="paramname">boomSpeed</td><td>爆炸动画每一帧展现时间。 </td></tr>
+    <tr><td class="paramname">endCallbackFunc</td><td>回调函数指针。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a797e8de15934ea7370086bde4cc45015"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a797e8de15934ea7370086bde4cc45015">&#9670;&nbsp;</a></span>initializeModels()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Action_Plane_Explode::initializeModels </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>初始化表现爆炸动画的材质组。采取Lazy Load机制。 </p>
+
+</div>
+</div>
 <hr/>该类的文档由以下文件生成:<ul>
 <li>D:/叶志浩文件夹/Vigilans的文档/Programming/Visual Studio/Projects/Grade 1 Summer Vacation/Lost Phoenix/Lost Phoenix/include/<a class="el" href="_actions_8h_source.html">Actions.h</a></li>
 <li>D:/叶志浩文件夹/Vigilans的文档/Programming/Visual Studio/Projects/Grade 1 Summer Vacation/Lost Phoenix/Lost Phoenix/src/Actions.cpp</li>

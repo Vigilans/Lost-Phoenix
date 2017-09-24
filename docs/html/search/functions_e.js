@@ -1,4 +1,9 @@
 var searchData=
 [
-  ['shoot',['shoot',['../class_plane___enemy___auto_target.html#a18e2115af4e2ebb50c920ee9ab2e42ad',1,'Plane_Enemy_AutoTarget::shoot()'],['../class_plane___enemy___junior.html#a5ffc4150cdf4c6e81480a2977d4bfafe',1,'Plane_Enemy_Junior::shoot()'],['../class_plane___player.html#a3ffa86506370f74ec859e74d42c568c2',1,'Plane_Player::shoot()']]]
+  ['render',['render',['../class_world.html#a150eab10c21532162bb698d72aecec16',1,'World']]],
+  ['renderbackground',['renderBackground',['../class_world.html#adb9973193b6f45377a3911ed023a9f73',1,'World']]],
+  ['rendermenu',['renderMenu',['../class_world.html#af956580b52927299a0bf200740f8ea0d',1,'World']]],
+  ['renderoverinterface',['renderOverInterface',['../class_world.html#ae265f543993824e9cca76eef29e375cb',1,'World']]],
+  ['renderui',['renderUI',['../class_world.html#a96d63470a94d9ab0426db992981b5ce5',1,'World']]],
+  ['resourcesloader',['ResourcesLoader',['../class_resources_loader.html#a571b6232d8f1dc1cf94ec752c984a834',1,'ResourcesLoader']]]
 ];

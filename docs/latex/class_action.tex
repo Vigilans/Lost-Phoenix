@@ -1,5 +1,14 @@
 \hypertarget{class_action}{}\section{Action类 参考}
 \label{class_action}\index{Action@{Action}}
+
+
+由ege控制类继承来的\+Action基类，仿自ege自带的fps类写成。用于表现一些动画的动作，同时通过析构 + 回调函数实现事件的连锁。  
+
+
+
+
+{\ttfamily \#include $<$Actions.\+h$>$}
+
 类 Action 继承关系图\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -12,9 +21,10 @@
 \mbox{\Hypertarget{class_action_a4d1309da871dfc1da7b4bdc896e34c0e}\label{class_action_a4d1309da871dfc1da7b4bdc896e34c0e}} 
 {\bfseries C\+T\+L\+\_\+\+P\+R\+E\+I\+N\+IT} (\hyperlink{class_action}{Action}, ege\+Control\+Base)
 \item 
-\mbox{\Hypertarget{class_action_a656f4ac0205bbd055dd360248786475a}\label{class_action_a656f4ac0205bbd055dd360248786475a}} 
-{\bfseries Action} (void($\ast$end\+Callback\+Func)()=N\+U\+LL, C\+T\+L\+\_\+\+D\+E\+F\+P\+A\+R\+AM)
-\end{DoxyCompactItemize}
+\hyperlink{class_action_a5c92cef33ffb1fbf67d7d65e3f74a361}{Action} (void($\ast$end\+Callback\+Func)()=nullptr, C\+T\+L\+\_\+\+D\+E\+F\+P\+A\+R\+AM)
+\begin{DoxyCompactList}\small\item\em 基类构造函数。 \end{DoxyCompactList}\item 
+virtual \hyperlink{class_action_abcf4c6358f53a666631ace11b325a7cd}{$\sim$\+Action} ()
+\begin{DoxyCompactList}\small\item\em 析构函数。在回调函数指针不为空时，调用回调函数。 \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Public 属性}
 \begin{DoxyCompactItemize}
 \item 
@@ -22,11 +32,51 @@
 {\bfseries C\+T\+L\+\_\+\+P\+R\+E\+I\+N\+I\+T\+E\+ND}
 \item 
 \mbox{\Hypertarget{class_action_a28332e6535d45661d768bb1b321f4715}\label{class_action_a28332e6535d45661d768bb1b321f4715}} 
-bool {\bfseries end}
-\item 
+bool \hyperlink{class_action_a28332e6535d45661d768bb1b321f4715}{end}
+\begin{DoxyCompactList}\small\item\em 表征动作是否已到达结束状态。会在\hyperlink{class_world_aefe8e0e9e418bbf81671314bf8d019f2}{World\+::actions}中被检测并处理。 \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_action_aef6c7c00b09ea1b0ddd7a26926309717}\label{class_action_aef6c7c00b09ea1b0ddd7a26926309717}} 
-void($\ast$ {\bfseries callback} )()
-\end{DoxyCompactItemize}
+void($\ast$ \hyperlink{class_action_aef6c7c00b09ea1b0ddd7a26926309717}{callback} )()
+\begin{DoxyCompactList}\small\item\em 回调函数指针。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+由ege控制类继承来的\+Action基类，仿自ege自带的fps类写成。用于表现一些动画的动作，同时通过析构 + 回调函数实现事件的连锁。 
+
+\begin{DoxySeeAlso}{参见}
+T\+:ege\+Control\+Base
+
+
+\end{DoxySeeAlso}
+
+
+\subsection{构造及析构函数说明}
+\mbox{\Hypertarget{class_action_a5c92cef33ffb1fbf67d7d65e3f74a361}\label{class_action_a5c92cef33ffb1fbf67d7d65e3f74a361}} 
+\index{Action@{Action}!Action@{Action}}
+\index{Action@{Action}!Action@{Action}}
+\subsubsection{\texorpdfstring{Action()}{Action()}}
+{\footnotesize\ttfamily Action\+::\+Action (\begin{DoxyParamCaption}\item[{void($\ast$)()}]{end\+Callback\+Func = {\ttfamily nullptr},  }\item[{C\+T\+L\+\_\+\+D\+E\+F\+P\+A\+R\+AM}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+基类构造函数。 
+
+
+\begin{DoxyParams}{参数}
+{\em end\+Callback\+Func} & （可选）在一个动作结束后，析构时调用的回调函数指针。若传空指针则不调用。\\
+\hline
+{\em parameter2} & ege用于自身进行处理的参数，可置空，不影响使用。 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_action_abcf4c6358f53a666631ace11b325a7cd}\label{class_action_abcf4c6358f53a666631ace11b325a7cd}} 
+\index{Action@{Action}!````~Action@{$\sim$\+Action}}
+\index{````~Action@{$\sim$\+Action}!Action@{Action}}
+\subsubsection{\texorpdfstring{$\sim$\+Action()}{~Action()}}
+{\footnotesize\ttfamily virtual Action\+::$\sim$\+Action (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+析构函数。在回调函数指针不为空时，调用回调函数。 
+
 
 
 该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}

@@ -666,11 +666,11 @@ Private 属性</h2></td></tr>
 </li>
 <li>处理子弹状态：<ul>
 <li>判断子弹是否为"End"状态并决定是否销毁。</li>
-<li>子弹在被销毁时，可能会通过析构函数调用<a class="el" href="class_action.html">Action</a>。</li>
+<li>子弹在被销毁时，可能会通过析构函数调用<a class="el" href="class_action.html" title="由ege控制类继承来的Action基类，仿自ege自带的fps类写成。用于表现一些动画的动作，同时通过析构 + 回调函�...">Action</a>。</li>
 </ul>
 </li>
 <li>判断自机是否坠毁：<ul>
-<li>坠毁后，调用<a class="el" href="class_action___plane___explode.html">Action_Plane_Explode</a>动画，传入gameover函数作为回调函数；</li>
+<li>坠毁后，调用<a class="el" href="class_action___plane___explode.html" title="Action之飞机爆炸。对于敌机，会在坠毁时出现；对于自机，会在受到伤害会坠毁时出现。 ">Action_Plane_Explode</a>动画，传入gameover函数作为回调函数；</li>
 </ul>
 </li>
 <li>处理所有<a class="el" href="class_world.html#aefe8e0e9e418bbf81671314bf8d019f2" title="存储所有Action基类指针的链表。 ">actions</a>：<ul>

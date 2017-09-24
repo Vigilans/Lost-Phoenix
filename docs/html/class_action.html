@@ -90,13 +90,18 @@ $(document).ready(function(){initNavTree('class_action.html','');});
 <div class="title">Action类 参考</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>由ege控制类继承来的Action基类，仿自ege自带的fps类写成。用于表现一些动画的动作，同时通过析构 + 回调函数实现事件的连锁。  
+ <a href="class_action.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_actions_8h_source.html">Actions.h</a>&gt;</code></p>
 <div class="dynheader">
 类 Action 继承关系图:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="class_action.png" usemap="#Action_map" alt=""/>
   <map id="Action_map" name="Action_map">
-<area href="class_action___plane___explode.html" alt="Action_Plane_Explode" shape="rect" coords="0,112,139,136"/>
+<area href="class_action___plane___explode.html" title="Action之飞机爆炸。对于敌机，会在坠毁时出现；对于自机，会在受到伤害会坠毁时出现。 " alt="Action_Plane_Explode" shape="rect" coords="0,112,139,136"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -105,9 +110,12 @@ Public 成员函数</h2></td></tr>
 <tr class="memitem:a4d1309da871dfc1da7b4bdc896e34c0e"><td class="memItemLeft" align="right" valign="top"><a id="a4d1309da871dfc1da7b4bdc896e34c0e"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>CTL_PREINIT</b> (<a class="el" href="class_action.html">Action</a>, egeControlBase)</td></tr>
 <tr class="separator:a4d1309da871dfc1da7b4bdc896e34c0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a656f4ac0205bbd055dd360248786475a"><td class="memItemLeft" align="right" valign="top"><a id="a656f4ac0205bbd055dd360248786475a"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Action</b> (void(*endCallbackFunc)()=NULL, CTL_DEFPARAM)</td></tr>
-<tr class="separator:a656f4ac0205bbd055dd360248786475a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c92cef33ffb1fbf67d7d65e3f74a361"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_action.html#a5c92cef33ffb1fbf67d7d65e3f74a361">Action</a> (void(*endCallbackFunc)()=nullptr, CTL_DEFPARAM)</td></tr>
+<tr class="memdesc:a5c92cef33ffb1fbf67d7d65e3f74a361"><td class="mdescLeft">&#160;</td><td class="mdescRight">基类构造函数。  <a href="#a5c92cef33ffb1fbf67d7d65e3f74a361">更多...</a><br /></td></tr>
+<tr class="separator:a5c92cef33ffb1fbf67d7d65e3f74a361"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcf4c6358f53a666631ace11b325a7cd"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_action.html#abcf4c6358f53a666631ace11b325a7cd">~Action</a> ()</td></tr>
+<tr class="memdesc:abcf4c6358f53a666631ace11b325a7cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">析构函数。在回调函数指针不为空时，调用回调函数。  <a href="#abcf4c6358f53a666631ace11b325a7cd">更多...</a><br /></td></tr>
+<tr class="separator:abcf4c6358f53a666631ace11b325a7cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public 属性</h2></td></tr>
@@ -115,12 +123,90 @@ Public 属性</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>CTL_PREINITEND</b></td></tr>
 <tr class="separator:a682e7ba0a9ef3f891382df776c1ce883"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28332e6535d45661d768bb1b321f4715"><td class="memItemLeft" align="right" valign="top"><a id="a28332e6535d45661d768bb1b321f4715"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>end</b></td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_action.html#a28332e6535d45661d768bb1b321f4715">end</a></td></tr>
+<tr class="memdesc:a28332e6535d45661d768bb1b321f4715"><td class="mdescLeft">&#160;</td><td class="mdescRight">表征动作是否已到达结束状态。会在<a class="el" href="class_world.html#aefe8e0e9e418bbf81671314bf8d019f2" title="存储所有Action基类指针的链表。 ">World::actions</a>中被检测并处理。 <br /></td></tr>
 <tr class="separator:a28332e6535d45661d768bb1b321f4715"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef6c7c00b09ea1b0ddd7a26926309717"><td class="memItemLeft" align="right" valign="top"><a id="aef6c7c00b09ea1b0ddd7a26926309717"></a>
-void(*&#160;</td><td class="memItemRight" valign="bottom"><b>callback</b> )()</td></tr>
+void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_action.html#aef6c7c00b09ea1b0ddd7a26926309717">callback</a> )()</td></tr>
+<tr class="memdesc:aef6c7c00b09ea1b0ddd7a26926309717"><td class="mdescLeft">&#160;</td><td class="mdescRight">回调函数指针。 <br /></td></tr>
 <tr class="separator:aef6c7c00b09ea1b0ddd7a26926309717"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>由ege控制类继承来的Action基类，仿自ege自带的fps类写成。用于表现一些动画的动作，同时通过析构 + 回调函数实现事件的连锁。 </p>
+<dl class="section see"><dt>参见</dt><dd>T:egeControlBase</dd></dl>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a5c92cef33ffb1fbf67d7d65e3f74a361"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c92cef33ffb1fbf67d7d65e3f74a361">&#9670;&nbsp;</a></span>Action()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Action::Action </td>
+          <td>(</td>
+          <td class="paramtype">void(*)()&#160;</td>
+          <td class="paramname"><em>endCallbackFunc</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CTL_DEFPARAM&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>基类构造函数。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">endCallbackFunc</td><td>（可选）在一个动作结束后，析构时调用的回调函数指针。若传空指针则不调用。</td></tr>
+    <tr><td class="paramname">parameter2</td><td>ege用于自身进行处理的参数，可置空，不影响使用。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abcf4c6358f53a666631ace11b325a7cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcf4c6358f53a666631ace11b325a7cd">&#9670;&nbsp;</a></span>~Action()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual Action::~Action </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>析构函数。在回调函数指针不为空时，调用回调函数。 </p>
+
+</div>
+</div>
 <hr/>该类的文档由以下文件生成:<ul>
 <li>D:/叶志浩文件夹/Vigilans的文档/Programming/Visual Studio/Projects/Grade 1 Summer Vacation/Lost Phoenix/Lost Phoenix/include/<a class="el" href="_actions_8h_source.html">Actions.h</a></li>
 </ul>

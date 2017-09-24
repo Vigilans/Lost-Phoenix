@@ -1,9 +1,7 @@
 var searchData=
 [
-  ['render',['render',['../class_world.html#a150eab10c21532162bb698d72aecec16',1,'World']]],
-  ['renderbackground',['renderBackground',['../class_world.html#adb9973193b6f45377a3911ed023a9f73',1,'World']]],
-  ['rendermenu',['renderMenu',['../class_world.html#af956580b52927299a0bf200740f8ea0d',1,'World']]],
-  ['renderoverinterface',['renderOverInterface',['../class_world.html#ae265f543993824e9cca76eef29e375cb',1,'World']]],
-  ['renderui',['renderUI',['../class_world.html#a96d63470a94d9ab0426db992981b5ce5',1,'World']]],
-  ['resourcesloader',['ResourcesLoader',['../class_resources_loader.html#a571b6232d8f1dc1cf94ec752c984a834',1,'ResourcesLoader']]]
+  ['plane_5fenemy_5fautotarget',['Plane_Enemy_AutoTarget',['../class_plane___enemy___auto_target.html#abf4224e6d4c79583016c98dc8747f3ad',1,'Plane_Enemy_AutoTarget']]],
+  ['plane_5fenemy_5fjunior',['Plane_Enemy_Junior',['../class_plane___enemy___junior.html#a2a6b4a6903c05789e8be98d2d11a927d',1,'Plane_Enemy_Junior']]],
+  ['plane_5fplayer',['Plane_Player',['../class_plane___player.html#ae07c92eb62cd45f7fd5d12fb570934e2',1,'Plane_Player']]],
+  ['player',['player',['../namespace_settings.html#ab78c6dca0d1b2fc76eae348e81a3eed7',1,'Settings']]]
 ];
