@@ -1,3 +1,7 @@
+/*! \file Entity.h
+	\brief 定义所有实体的基类，以及一个阵营的枚举。
+*/
+
 #pragma once
 #include "Resources.h"
 

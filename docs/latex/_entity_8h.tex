@@ -1,5 +1,10 @@
 \hypertarget{_entity_8h}{}\section{D\+:/叶志浩文件夹/\+Vigilans的文档/\+Programming/\+Visual Studio/\+Projects/\+Grade 1 Summer Vacation/\+Lost Phoenix/\+Lost Phoenix/include/\+Entity.h 文件参考}
 \label{_entity_8h}\index{D\+:/叶志浩文件夹/\+Vigilans的文档/\+Programming/\+Visual Studio/\+Projects/\+Grade 1 Summer Vacation/\+Lost Phoenix/\+Lost Phoenix/include/\+Entity.\+h@{D\+:/叶志浩文件夹/\+Vigilans的文档/\+Programming/\+Visual Studio/\+Projects/\+Grade 1 Summer Vacation/\+Lost Phoenix/\+Lost Phoenix/include/\+Entity.\+h}}
+
+
+定义所有实体的基类，以及一个阵营的枚举。  
+
+
 {\ttfamily \#include \char`\"{}Resources.\+h\char`\"{}}\newline
 \subsection*{类}
 \begin{DoxyCompactItemize}
@@ -9,10 +14,15 @@ class \hyperlink{class_entity}{Entity}
 \subsection*{枚举}
 \begin{DoxyCompactItemize}
 \item 
-enum \hyperlink{_entity_8h_ad54c4fe39f1c51b786c24ae0b7763b44}{Camp} \{ \hyperlink{_entity_8h_ad54c4fe39f1c51b786c24ae0b7763b44a930a91848917f92cf7e2f8d744fa4177}{Camp\+::\+Friend}, 
+enum \hyperlink{_entity_8h_ad54c4fe39f1c51b786c24ae0b7763b44}{Camp} \{ {\bfseries Friend}, 
 \hyperlink{_entity_8h_ad54c4fe39f1c51b786c24ae0b7763b44a8c6d21187fb58b7a079d70030686b33e}{Camp\+::\+Enemy}
  \}\begin{DoxyCompactList}\small\item\em 实体的阵营枚举。用来表征飞机与子弹的敌友关系。 \end{DoxyCompactList}
 \end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+定义所有实体的基类，以及一个阵营的枚举。 
+
 
 
 \subsection{枚举类型说明}
@@ -27,10 +37,6 @@ enum \hyperlink{_entity_8h_ad54c4fe39f1c51b786c24ae0b7763b44}{Camp} \{ \hyperlin
 实体的阵营枚举。用来表征飞机与子弹的敌友关系。 
 
 \begin{DoxyEnumFields}{枚举值}
-\raisebox{\heightof{T}}[0pt][0pt]{\index{Friend@{Friend}!Entity.\+h@{Entity.\+h}}\index{Entity.\+h@{Entity.\+h}!Friend@{Friend}}}\mbox{\Hypertarget{_entity_8h_ad54c4fe39f1c51b786c24ae0b7763b44a930a91848917f92cf7e2f8d744fa4177}\label{_entity_8h_ad54c4fe39f1c51b786c24ae0b7763b44a930a91848917f92cf7e2f8d744fa4177}} 
-Friend&\\
-\hline
-
 \raisebox{\heightof{T}}[0pt][0pt]{\index{Enemy@{Enemy}!Entity.\+h@{Entity.\+h}}\index{Entity.\+h@{Entity.\+h}!Enemy@{Enemy}}}\mbox{\Hypertarget{_entity_8h_ad54c4fe39f1c51b786c24ae0b7763b44a8c6d21187fb58b7a079d70030686b33e}\label{_entity_8h_ad54c4fe39f1c51b786c24ae0b7763b44a8c6d21187fb58b7a079d70030686b33e}} 
 Enemy&友军（只有自机及射出的子弹） 敌军 \\
 \hline

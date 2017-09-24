@@ -1,3 +1,7 @@
+/*! \file Resources.h
+	\brief 资源类，几乎会被所有头文件包含。定义了材质类及设置名空间，及若干重要全局函数。
+*/
+
 #pragma once
 #pragma warning(disable:4244) // disable double->int conversion warning
 #include "Vector2D.hpp"

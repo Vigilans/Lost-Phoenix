@@ -1,5 +1,10 @@
 \hypertarget{_resources_8h}{}\section{D\+:/叶志浩文件夹/\+Vigilans的文档/\+Programming/\+Visual Studio/\+Projects/\+Grade 1 Summer Vacation/\+Lost Phoenix/\+Lost Phoenix/include/\+Resources.h 文件参考}
 \label{_resources_8h}\index{D\+:/叶志浩文件夹/\+Vigilans的文档/\+Programming/\+Visual Studio/\+Projects/\+Grade 1 Summer Vacation/\+Lost Phoenix/\+Lost Phoenix/include/\+Resources.\+h@{D\+:/叶志浩文件夹/\+Vigilans的文档/\+Programming/\+Visual Studio/\+Projects/\+Grade 1 Summer Vacation/\+Lost Phoenix/\+Lost Phoenix/include/\+Resources.\+h}}
+
+
+资源类，几乎会被所有头文件包含。定义了材质类及设置名空间，及若干重要全局函数。  
+
+
 {\ttfamily \#include \char`\"{}Vector2\+D.\+hpp\char`\"{}}\newline
 \subsection*{类}
 \begin{DoxyCompactItemize}
@@ -9,85 +14,56 @@ struct \hyperlink{struct_texture}{Texture}
 struct \hyperlink{struct_settings_1_1_general}{Settings\+::\+General}
 \begin{DoxyCompactList}\small\item\em 游戏全局设置，主要包含\+U\+I与相关时间设置。 \end{DoxyCompactList}\item 
 struct \hyperlink{struct_settings_1_1_bg_textures}{Settings\+::\+Bg\+Textures}
-\item 
+\begin{DoxyCompactList}\small\item\em 所有游戏背景材质设置。 \end{DoxyCompactList}\item 
 struct \hyperlink{struct_settings_1_1_anime_textures}{Settings\+::\+Anime\+Textures}
-\item 
+\begin{DoxyCompactList}\small\item\em 所有动画、\hyperlink{class_action}{Action}相关材质设置。 \end{DoxyCompactList}\item 
 struct \hyperlink{struct_settings_1_1_bullet}{Settings\+::\+Bullet}
-\item 
+\begin{DoxyCompactList}\small\item\em 子弹的设置基类。 \end{DoxyCompactList}\item 
 struct \hyperlink{struct_settings_1_1_plane}{Settings\+::\+Plane}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em 飞机的设置基类。 \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{命名空间}
 \begin{DoxyCompactItemize}
 \item 
- \hyperlink{namespaceege}{ege}
-\item 
  \hyperlink{namespace_settings}{Settings}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em 封装了游戏全局与所有实体设置的名空间。 所有获取默认设置的方法采用 {\itshape Lazy Load（延时加载）} 机制。 {\bfseries 推荐参考详细描述来获取完整信息} 。 \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{类型定义}
 \begin{DoxyCompactItemize}
 \item 
-typedef I\+M\+A\+GE $\ast$ \hyperlink{namespaceege_a72e07306fee47bc08f1baf842cb681fb}{ege\+::\+P\+I\+M\+A\+GE}
+\mbox{\Hypertarget{_resources_8h_a72e07306fee47bc08f1baf842cb681fb}\label{_resources_8h_a72e07306fee47bc08f1baf842cb681fb}} 
+typedef I\+M\+A\+GE $\ast$ {\bfseries ege\+::\+P\+I\+M\+A\+GE}
 \end{DoxyCompactItemize}
 \subsection*{函数}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{struct_texture}{Texture} \hyperlink{_resources_8h_a99c3d431629a8754bd6adc9f7c00f462}{get\+Texture} (int id)
-\begin{DoxyCompactList}\small\item\em 根据\+I\+D获取材质。 \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em 根据\+I\+D获取材质。采用\+Lazy Load机制。 \end{DoxyCompactList}\item 
 \hyperlink{struct_texture}{Texture} \hyperlink{_resources_8h_aaf30880e372321fddf5effb966b76956}{split\+Texture} (\hyperlink{struct_texture}{Texture} texture, int x, int y, int w, int h)
 \begin{DoxyCompactList}\small\item\em 切割材质。 \end{DoxyCompactList}\item 
-\hyperlink{struct_texture}{Texture} \hyperlink{_resources_8h_a02c2fe822e975db1ac21baa838305c3d}{split\+Texture} (\hyperlink{struct_texture}{Texture} texture, \hyperlink{_vector2_d_8hpp_aa1f1145650f1dd9bddf7335ec6434d7c}{Vector2D} ref\+Pos, \hyperlink{_vector2_d_8hpp_aa1f1145650f1dd9bddf7335ec6434d7c}{Vector2D} hit\+Box)
+\hyperlink{struct_texture}{Texture} \hyperlink{_resources_8h_a02c2fe822e975db1ac21baa838305c3d}{split\+Texture} (\hyperlink{struct_texture}{Texture} texture, \hyperlink{structbasic__vector2_d}{Vector2D} ref\+Pos, \hyperlink{structbasic__vector2_d}{Vector2D} hit\+Box)
 \begin{DoxyCompactList}\small\item\em 切割材质。封装了一个接收两个\+Vector2\+D参数的更良好的接口。 \end{DoxyCompactList}\item 
-const struct \hyperlink{struct_settings_1_1_general}{Settings\+::\+General} \hyperlink{namespace_settings_a8d5eb32bea233e3b9ae9ce6e29b8d8bb}{Settings\+::general} ()
-\item 
-const struct \hyperlink{struct_settings_1_1_bg_textures}{Settings\+::\+Bg\+Textures} \hyperlink{namespace_settings_a8bae923ac0d881b72bbec4f50730ec72}{Settings\+::bg\+Textures} ()
-\begin{DoxyCompactList}\small\item\em 从设置数据保存区中读取背景材质。 \end{DoxyCompactList}\item 
-const struct \hyperlink{struct_settings_1_1_anime_textures}{Settings\+::\+Anime\+Textures} \hyperlink{namespace_settings_a106c90d315148ccd78a2d961dae148a8}{Settings\+::anime\+Textures} ()
-\item 
+\mbox{\Hypertarget{namespace_settings_a8d5eb32bea233e3b9ae9ce6e29b8d8bb}\label{namespace_settings_a8d5eb32bea233e3b9ae9ce6e29b8d8bb}} 
+const \hyperlink{struct_settings_1_1_general}{Settings\+::\+General} \& \hyperlink{namespace_settings_a8d5eb32bea233e3b9ae9ce6e29b8d8bb}{Settings\+::general} ()
+\begin{DoxyCompactList}\small\item\em 获取默认的全局游戏设置。采取\+Lazy Load机制。 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_settings_a8bae923ac0d881b72bbec4f50730ec72}\label{namespace_settings_a8bae923ac0d881b72bbec4f50730ec72}} 
+const \hyperlink{struct_settings_1_1_bg_textures}{Settings\+::\+Bg\+Textures} \& \hyperlink{namespace_settings_a8bae923ac0d881b72bbec4f50730ec72}{Settings\+::bg\+Textures} ()
+\begin{DoxyCompactList}\small\item\em 获取默认的背景材质设置。采取\+Lazy Load机制。 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_settings_ae61a4eddbf5405fae02d781d7e698413}\label{namespace_settings_ae61a4eddbf5405fae02d781d7e698413}} 
+const \hyperlink{struct_settings_1_1_anime_textures}{Settings\+::\+Anime\+Textures} \& \hyperlink{namespace_settings_ae61a4eddbf5405fae02d781d7e698413}{Settings\+::anime\+Textures} ()
+\begin{DoxyCompactList}\small\item\em 获取默认的动画材质设置。采取\+Lazy Load机制。 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_settings_ab78c6dca0d1b2fc76eae348e81a3eed7}\label{namespace_settings_ab78c6dca0d1b2fc76eae348e81a3eed7}} 
 const \hyperlink{struct_settings_1_1_plane}{Settings\+::\+Plane} \& \hyperlink{namespace_settings_ab78c6dca0d1b2fc76eae348e81a3eed7}{Settings\+::player} ()
-\item 
+\begin{DoxyCompactList}\small\item\em 获取默认的玩家飞机设置。采取\+Lazy Load机制。 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_settings_a5d571065d327daba740814f8e90261f5}\label{namespace_settings_a5d571065d327daba740814f8e90261f5}} 
 const \hyperlink{struct_settings_1_1_plane}{Settings\+::\+Plane} \& \hyperlink{namespace_settings_a5d571065d327daba740814f8e90261f5}{Settings\+::enemy\+\_\+junior} ()
-\item 
+\begin{DoxyCompactList}\small\item\em 获取默认的新兵敌机设置。采取\+Lazy Load机制。 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_settings_a77e282eadc82f97cb15c2c3eef3c535b}\label{namespace_settings_a77e282eadc82f97cb15c2c3eef3c535b}} 
 const \hyperlink{struct_settings_1_1_plane}{Settings\+::\+Plane} \& \hyperlink{namespace_settings_a77e282eadc82f97cb15c2c3eef3c535b}{Settings\+::enemy\+\_\+auto\+Target} ()
-\end{DoxyCompactItemize}
-\subsection*{变量}
-\begin{DoxyCompactItemize}
-\item 
-\begin{tabbing}
-xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
-struct \{\\
-\>char $\ast$ \hyperlink{_resources_8h_af06d911bb9e05f491ef3da520d03796c}{title}\\
-\>\>{\em 游戏标题 }\\
-\>int \hyperlink{_resources_8h_a45b67662d620a977a2cfe519f7ab6273}{fps}\\
-\>\>{\em 游戏的FPS }\\
-\>\hyperlink{_vector2_d_8hpp_aa1f1145650f1dd9bddf7335ec6434d7c}{Vector2D} \hyperlink{_resources_8h_a7da3248055a0406f64d1afd658691706}{resolution}\\
-\>\>{\em 游戏窗口的分辨率 }\\
-\>int \hyperlink{_resources_8h_a138aa411131d5957c32a183d2789457e}{fontHeight}\\
-\>\>{\em UI的字体高度 }\\
-\} \hyperlink{_resources_8h_a26f54923c5fa99ea71855d8e59aac786}{UI}\\
+\begin{DoxyCompactList}\small\item\em 获取默认的自机狙敌机设置。采取\+Lazy Load机制。 \end{DoxyCompactList}\end{DoxyCompactItemize}
 
-\end{tabbing}\begin{DoxyCompactList}\small\item\em U\+I相关设置 \end{DoxyCompactList}\item 
-\begin{tabbing}
-xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
-struct \{\\
-\>int \hyperlink{_resources_8h_a3577a22974e2bd8b9b784e82d2d7f525}{enemyInfoDuration}\\
-\>\>{\em 被追踪敌机的追踪状态保留时间 }\\
-\>int \hyperlink{_resources_8h_a21c9402dbb72408a1ec00368f4b8f1ea}{enemyWaveCoolDown}\\
-\>\>{\em 敌机每一波刷新的基础冷却时间 }\\
-\>int \hyperlink{_resources_8h_a14204b2c9dee15208f0978510cb60778}{bgShiftSpeed}\\
-\>\>{\em 背景的移动速度 }\\
-\} \hyperlink{_resources_8h_a470d2461f9671e448ac6a770f7d8dcc3}{times}\\
 
-\end{tabbing}\begin{DoxyCompactList}\small\item\em 时间相关设置 \end{DoxyCompactList}\item 
-\hyperlink{struct_texture}{Texture} \hyperlink{_resources_8h_a3fae3220a2fcc103896c2e51427a17f4}{menu}
-\begin{DoxyCompactList}\small\item\em 主菜单背景材质 \end{DoxyCompactList}\item 
-\hyperlink{struct_texture}{Texture} \hyperlink{_resources_8h_afb59534669da71dd65aecf139d9844d1}{gaming}
-\begin{DoxyCompactList}\small\item\em 正式游戏期间背景材质 \end{DoxyCompactList}\item 
-\hyperlink{struct_texture}{Texture} \hyperlink{_resources_8h_a6a6efb427d38aa304129f70da0b519f5}{game\+Over}
-\begin{DoxyCompactList}\small\item\em 游戏结束背景材质 \end{DoxyCompactList}\item 
-\hyperlink{struct_texture}{Texture} \hyperlink{_resources_8h_ae154bc28b3f12862ba8162935259da9b}{explosion}
-\begin{DoxyCompactList}\small\item\em 爆炸贴图材质 \end{DoxyCompactList}\item 
-struct \hyperlink{struct_settings_1_1_bullet}{Settings\+::\+Bullet} \& \hyperlink{namespace_settings_a60c5dfdfb55f1abb671e786f06fc24dd}{Settings\+::anime\+Textures}
-\end{DoxyCompactItemize}
+\subsection{详细描述}
+资源类，几乎会被所有头文件包含。定义了材质类及设置名空间，及若干重要全局函数。 
+
 
 
 \subsection{函数说明}
@@ -99,7 +75,7 @@ struct \hyperlink{struct_settings_1_1_bullet}{Settings\+::\+Bullet} \& \hyperlin
 
 
 
-根据\+I\+D获取材质。 
+根据\+I\+D获取材质。采用\+Lazy Load机制。 
 
 
 \begin{DoxyParams}{参数}
@@ -143,7 +119,7 @@ struct \hyperlink{struct_settings_1_1_bullet}{Settings\+::\+Bullet} \& \hyperlin
 \index{Resources.\+h@{Resources.\+h}!split\+Texture@{split\+Texture}}
 \index{split\+Texture@{split\+Texture}!Resources.\+h@{Resources.\+h}}
 \subsubsection{\texorpdfstring{split\+Texture()}{splitTexture()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily \hyperlink{struct_texture}{Texture} split\+Texture (\begin{DoxyParamCaption}\item[{\hyperlink{struct_texture}{Texture}}]{texture,  }\item[{\hyperlink{_vector2_d_8hpp_aa1f1145650f1dd9bddf7335ec6434d7c}{Vector2D}}]{ref\+Pos,  }\item[{\hyperlink{_vector2_d_8hpp_aa1f1145650f1dd9bddf7335ec6434d7c}{Vector2D}}]{hit\+Box }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily \hyperlink{struct_texture}{Texture} split\+Texture (\begin{DoxyParamCaption}\item[{\hyperlink{struct_texture}{Texture}}]{texture,  }\item[{\hyperlink{structbasic__vector2_d}{Vector2D}}]{ref\+Pos,  }\item[{\hyperlink{structbasic__vector2_d}{Vector2D}}]{hit\+Box }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -161,136 +137,3 @@ struct \hyperlink{struct_settings_1_1_bullet}{Settings\+::\+Bullet} \& \hyperlin
 \begin{DoxyReturn}{返回}
 切割后的材质。 
 \end{DoxyReturn}
-
-
-\subsection{变量说明}
-\mbox{\Hypertarget{_resources_8h_a14204b2c9dee15208f0978510cb60778}\label{_resources_8h_a14204b2c9dee15208f0978510cb60778}} 
-\index{Resources.\+h@{Resources.\+h}!bg\+Shift\+Speed@{bg\+Shift\+Speed}}
-\index{bg\+Shift\+Speed@{bg\+Shift\+Speed}!Resources.\+h@{Resources.\+h}}
-\subsubsection{\texorpdfstring{bg\+Shift\+Speed}{bgShiftSpeed}}
-{\footnotesize\ttfamily int bg\+Shift\+Speed}
-
-
-
-背景的移动速度 
-
-\mbox{\Hypertarget{_resources_8h_a3577a22974e2bd8b9b784e82d2d7f525}\label{_resources_8h_a3577a22974e2bd8b9b784e82d2d7f525}} 
-\index{Resources.\+h@{Resources.\+h}!enemy\+Info\+Duration@{enemy\+Info\+Duration}}
-\index{enemy\+Info\+Duration@{enemy\+Info\+Duration}!Resources.\+h@{Resources.\+h}}
-\subsubsection{\texorpdfstring{enemy\+Info\+Duration}{enemyInfoDuration}}
-{\footnotesize\ttfamily int enemy\+Info\+Duration}
-
-
-
-被追踪敌机的追踪状态保留时间 
-
-\mbox{\Hypertarget{_resources_8h_a21c9402dbb72408a1ec00368f4b8f1ea}\label{_resources_8h_a21c9402dbb72408a1ec00368f4b8f1ea}} 
-\index{Resources.\+h@{Resources.\+h}!enemy\+Wave\+Cool\+Down@{enemy\+Wave\+Cool\+Down}}
-\index{enemy\+Wave\+Cool\+Down@{enemy\+Wave\+Cool\+Down}!Resources.\+h@{Resources.\+h}}
-\subsubsection{\texorpdfstring{enemy\+Wave\+Cool\+Down}{enemyWaveCoolDown}}
-{\footnotesize\ttfamily int enemy\+Wave\+Cool\+Down}
-
-
-
-敌机每一波刷新的基础冷却时间 
-
-\mbox{\Hypertarget{_resources_8h_ae154bc28b3f12862ba8162935259da9b}\label{_resources_8h_ae154bc28b3f12862ba8162935259da9b}} 
-\index{Resources.\+h@{Resources.\+h}!explosion@{explosion}}
-\index{explosion@{explosion}!Resources.\+h@{Resources.\+h}}
-\subsubsection{\texorpdfstring{explosion}{explosion}}
-{\footnotesize\ttfamily \hyperlink{struct_texture}{Texture} explosion}
-
-
-
-爆炸贴图材质 
-
-\mbox{\Hypertarget{_resources_8h_a138aa411131d5957c32a183d2789457e}\label{_resources_8h_a138aa411131d5957c32a183d2789457e}} 
-\index{Resources.\+h@{Resources.\+h}!font\+Height@{font\+Height}}
-\index{font\+Height@{font\+Height}!Resources.\+h@{Resources.\+h}}
-\subsubsection{\texorpdfstring{font\+Height}{fontHeight}}
-{\footnotesize\ttfamily int font\+Height}
-
-
-
-U\+I的字体高度 
-
-\mbox{\Hypertarget{_resources_8h_a45b67662d620a977a2cfe519f7ab6273}\label{_resources_8h_a45b67662d620a977a2cfe519f7ab6273}} 
-\index{Resources.\+h@{Resources.\+h}!fps@{fps}}
-\index{fps@{fps}!Resources.\+h@{Resources.\+h}}
-\subsubsection{\texorpdfstring{fps}{fps}}
-{\footnotesize\ttfamily int fps}
-
-
-
-游戏的\+F\+PS 
-
-\mbox{\Hypertarget{_resources_8h_a6a6efb427d38aa304129f70da0b519f5}\label{_resources_8h_a6a6efb427d38aa304129f70da0b519f5}} 
-\index{Resources.\+h@{Resources.\+h}!game\+Over@{game\+Over}}
-\index{game\+Over@{game\+Over}!Resources.\+h@{Resources.\+h}}
-\subsubsection{\texorpdfstring{game\+Over}{gameOver}}
-{\footnotesize\ttfamily \hyperlink{struct_texture}{Texture} game\+Over}
-
-
-
-游戏结束背景材质 
-
-\mbox{\Hypertarget{_resources_8h_afb59534669da71dd65aecf139d9844d1}\label{_resources_8h_afb59534669da71dd65aecf139d9844d1}} 
-\index{Resources.\+h@{Resources.\+h}!gaming@{gaming}}
-\index{gaming@{gaming}!Resources.\+h@{Resources.\+h}}
-\subsubsection{\texorpdfstring{gaming}{gaming}}
-{\footnotesize\ttfamily \hyperlink{struct_texture}{Texture} gaming}
-
-
-
-正式游戏期间背景材质 
-
-\mbox{\Hypertarget{_resources_8h_a3fae3220a2fcc103896c2e51427a17f4}\label{_resources_8h_a3fae3220a2fcc103896c2e51427a17f4}} 
-\index{Resources.\+h@{Resources.\+h}!menu@{menu}}
-\index{menu@{menu}!Resources.\+h@{Resources.\+h}}
-\subsubsection{\texorpdfstring{menu}{menu}}
-{\footnotesize\ttfamily \hyperlink{struct_texture}{Texture} menu}
-
-
-
-主菜单背景材质 
-
-\mbox{\Hypertarget{_resources_8h_a7da3248055a0406f64d1afd658691706}\label{_resources_8h_a7da3248055a0406f64d1afd658691706}} 
-\index{Resources.\+h@{Resources.\+h}!resolution@{resolution}}
-\index{resolution@{resolution}!Resources.\+h@{Resources.\+h}}
-\subsubsection{\texorpdfstring{resolution}{resolution}}
-{\footnotesize\ttfamily \hyperlink{_vector2_d_8hpp_aa1f1145650f1dd9bddf7335ec6434d7c}{Vector2D} resolution}
-
-
-
-游戏窗口的分辨率 
-
-\mbox{\Hypertarget{_resources_8h_a470d2461f9671e448ac6a770f7d8dcc3}\label{_resources_8h_a470d2461f9671e448ac6a770f7d8dcc3}} 
-\index{Resources.\+h@{Resources.\+h}!times@{times}}
-\index{times@{times}!Resources.\+h@{Resources.\+h}}
-\subsubsection{\texorpdfstring{times}{times}}
-{\footnotesize\ttfamily struct \{ ... \}   times}
-
-
-
-时间相关设置 
-
-\mbox{\Hypertarget{_resources_8h_af06d911bb9e05f491ef3da520d03796c}\label{_resources_8h_af06d911bb9e05f491ef3da520d03796c}} 
-\index{Resources.\+h@{Resources.\+h}!title@{title}}
-\index{title@{title}!Resources.\+h@{Resources.\+h}}
-\subsubsection{\texorpdfstring{title}{title}}
-{\footnotesize\ttfamily char$\ast$ title}
-
-
-
-游戏标题 
-
-\mbox{\Hypertarget{_resources_8h_a26f54923c5fa99ea71855d8e59aac786}\label{_resources_8h_a26f54923c5fa99ea71855d8e59aac786}} 
-\index{Resources.\+h@{Resources.\+h}!UI@{UI}}
-\index{UI@{UI}!Resources.\+h@{Resources.\+h}}
-\subsubsection{\texorpdfstring{UI}{UI}}
-{\footnotesize\ttfamily struct \{ ... \}   UI}
-
-
-
-U\+I相关设置 
-

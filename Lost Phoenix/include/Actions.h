@@ -1,3 +1,7 @@
+/*! \file Actions.h
+	\brief 定义Action基类以及其所有派生类。
+*/
+
 #pragma once
 #include <graphics.h>
 #include "Resources.h"

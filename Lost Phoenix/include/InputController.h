@@ -1,3 +1,7 @@
+/*! \file InputController.h
+	\brief 定义输入控制器类。
+*/
+
 #pragma once
 
 /// <summary>

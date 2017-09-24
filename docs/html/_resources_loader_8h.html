@@ -27,7 +27,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="icon.ico"/></td>
+  <td id="projectlogo"><img alt="Logo" src="icon64.ico"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Lost Phoenix
    &#160;<span id="projectnumber">1.1</span>
@@ -89,6 +89,9 @@ $(document).ready(function(){initNavTree('_resources_loader_8h.html','');});
 <div class="title">ResourcesLoader.h 文件参考</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>定义材质加载类。非公共类，仅会被Resources.cpp包含，隐藏于实现中。  
+<a href="#details">更多...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="_resources_8h_source.html">Resources.h</a>&quot;</code><br />
 <code>#include &lt;map&gt;</code><br />
 <code>#include &lt;memory&gt;</code><br />
@@ -98,16 +101,21 @@ $(document).ready(function(){initNavTree('_resources_loader_8h.html','');});
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 类</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_settings_1_1_texture_info.html">Settings::TextureInfo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">材质的设置源，可以用来构造一个完整的材质。  <a href="struct_settings_1_1_texture_info.html#details">更多...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_resources_loader.html">ResourcesLoader</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">资源加载器。仅在Resources.cpp中使用。在堆上一块稳定内存托管所有材质及设置资源。  <a href="class_resources_loader.html#details">更多...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 命名空间</h2></td></tr>
 <tr class="memitem:namespace_settings"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_settings.html">Settings</a></td></tr>
+<tr class="memdesc:namespace_settings"><td class="mdescLeft">&#160;</td><td class="mdescRight">封装了游戏全局与所有实体设置的名空间。 所有获取默认设置的方法采用 <em>Lazy Load（延时加载）</em> 机制。 <b>推荐参考详细描述来获取完整信息</b> 。 <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>定义材质加载类。非公共类，仅会被Resources.cpp包含，隐藏于实现中。 </p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

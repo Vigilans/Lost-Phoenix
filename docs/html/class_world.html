@@ -145,19 +145,19 @@ Public 成员函数</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public 属性</h2></td></tr>
-<tr class="memitem:ae70b4ef5dd9cb9e7336169a25aaee39c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#ae70b4ef5dd9cb9e7336169a25aaee39c">score</a></td></tr>
+<tr class="memitem:ae70b4ef5dd9cb9e7336169a25aaee39c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#ae70b4ef5dd9cb9e7336169a25aaee39c">score</a> = 0</td></tr>
 <tr class="memdesc:ae70b4ef5dd9cb9e7336169a25aaee39c"><td class="mdescLeft">&#160;</td><td class="mdescRight">当前游戏分数。  <a href="#ae70b4ef5dd9cb9e7336169a25aaee39c">更多...</a><br /></td></tr>
 <tr class="separator:ae70b4ef5dd9cb9e7336169a25aaee39c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a594e81a86f319eea4e8e5a2029cdaa90"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#a594e81a86f319eea4e8e5a2029cdaa90">difficultyLevel</a></td></tr>
+<tr class="memitem:a594e81a86f319eea4e8e5a2029cdaa90"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#a594e81a86f319eea4e8e5a2029cdaa90">difficultyLevel</a> = 1</td></tr>
 <tr class="memdesc:a594e81a86f319eea4e8e5a2029cdaa90"><td class="mdescLeft">&#160;</td><td class="mdescRight">当前的难度等级。  <a href="#a594e81a86f319eea4e8e5a2029cdaa90">更多...</a><br /></td></tr>
 <tr class="separator:a594e81a86f319eea4e8e5a2029cdaa90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4cc86850d7092edbb7648d4cbd093aa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_input_controller.html">InputController</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#ae4cc86850d7092edbb7648d4cbd093aa">inputCtrl</a></td></tr>
 <tr class="memdesc:ae4cc86850d7092edbb7648d4cbd093aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">键盘输入控制器。  <a href="#ae4cc86850d7092edbb7648d4cbd093aa">更多...</a><br /></td></tr>
 <tr class="separator:ae4cc86850d7092edbb7648d4cbd093aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada7a87d1778bfc543635656ea8f12d3f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_plane___player.html">Plane_Player</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#ada7a87d1778bfc543635656ea8f12d3f">player_plane</a></td></tr>
+<tr class="memitem:ada7a87d1778bfc543635656ea8f12d3f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_plane___player.html">Plane_Player</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#ada7a87d1778bfc543635656ea8f12d3f">player_plane</a> = nullptr</td></tr>
 <tr class="memdesc:ada7a87d1778bfc543635656ea8f12d3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">玩家飞机实例的托管指针。  <a href="#ada7a87d1778bfc543635656ea8f12d3f">更多...</a><br /></td></tr>
 <tr class="separator:ada7a87d1778bfc543635656ea8f12d3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8553c1be4fb1e79e94bf9f63f834963"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_plane.html">Plane</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#ac8553c1be4fb1e79e94bf9f63f834963">focused_enemy</a></td></tr>
+<tr class="memitem:ac8553c1be4fb1e79e94bf9f63f834963"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_plane.html">Plane</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#ac8553c1be4fb1e79e94bf9f63f834963">focused_enemy</a> = nullptr</td></tr>
 <tr class="memdesc:ac8553c1be4fb1e79e94bf9f63f834963"><td class="mdescLeft">&#160;</td><td class="mdescRight">指向当前被追踪的敌机的指针。  <a href="#ac8553c1be4fb1e79e94bf9f63f834963">更多...</a><br /></td></tr>
 <tr class="separator:ac8553c1be4fb1e79e94bf9f63f834963"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9692ac6798300e7fde98eb3ef1bb7c79"><td class="memItemLeft" align="right" valign="top">std::list&lt; <a class="el" href="class_plane.html">Plane</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#a9692ac6798300e7fde98eb3ef1bb7c79">enemy_planes</a></td></tr>
@@ -782,7 +782,7 @@ Private 属性</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">size_t World::difficultyLevel</td>
+          <td class="memname">size_t World::difficultyLevel = 1</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -825,7 +825,7 @@ Private 属性</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_plane.html">Plane</a>* World::focused_enemy</td>
+          <td class="memname"><a class="el" href="class_plane.html">Plane</a>* World::focused_enemy = nullptr</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -860,7 +860,7 @@ Private 属性</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_plane___player.html">Plane_Player</a>* World::player_plane</td>
+          <td class="memname"><a class="el" href="class_plane___player.html">Plane_Player</a>* World::player_plane = nullptr</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -900,7 +900,7 @@ Private 属性</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int World::score</td>
+          <td class="memname">int World::score = 0</td>
         </tr>
       </table>
 </div><div class="memdoc">

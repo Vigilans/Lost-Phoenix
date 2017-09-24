@@ -27,7 +27,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="icon.ico"/></td>
+  <td id="projectlogo"><img alt="Logo" src="icon64.ico"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Lost Phoenix
    &#160;<span id="projectnumber">1.1</span>
@@ -89,6 +89,9 @@ $(document).ready(function(){initNavTree('_entity_8h.html','');});
 <div class="title">Entity.h 文件参考</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>定义所有实体的基类，以及一个阵营的枚举。  
+<a href="#details">更多...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="_resources_8h_source.html">Resources.h</a>&quot;</code><br />
 </div>
 <p><a href="_entity_8h_source.html">浏览源代码.</a></p>
@@ -101,13 +104,15 @@ $(document).ready(function(){initNavTree('_entity_8h.html','');});
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 枚举</h2></td></tr>
-<tr class="memitem:ad54c4fe39f1c51b786c24ae0b7763b44"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_entity_8h.html#ad54c4fe39f1c51b786c24ae0b7763b44">Camp</a> { <a class="el" href="_entity_8h.html#ad54c4fe39f1c51b786c24ae0b7763b44a930a91848917f92cf7e2f8d744fa4177">Camp::Friend</a>, 
+<tr class="memitem:ad54c4fe39f1c51b786c24ae0b7763b44"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_entity_8h.html#ad54c4fe39f1c51b786c24ae0b7763b44">Camp</a> { <b>Friend</b>, 
 <a class="el" href="_entity_8h.html#ad54c4fe39f1c51b786c24ae0b7763b44a8c6d21187fb58b7a079d70030686b33e">Camp::Enemy</a>
  }<tr class="memdesc:ad54c4fe39f1c51b786c24ae0b7763b44"><td class="mdescLeft">&#160;</td><td class="mdescRight">实体的阵营枚举。用来表征飞机与子弹的敌友关系。  <a href="_entity_8h.html#ad54c4fe39f1c51b786c24ae0b7763b44">更多...</a><br /></td></tr>
 </td></tr>
 <tr class="separator:ad54c4fe39f1c51b786c24ae0b7763b44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">枚举类型说明</h2>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>定义所有实体的基类，以及一个阵营的枚举。 </p>
+</div><h2 class="groupheader">枚举类型说明</h2>
 <a id="ad54c4fe39f1c51b786c24ae0b7763b44"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad54c4fe39f1c51b786c24ae0b7763b44">&#9670;&nbsp;</a></span>Camp</h2>
 
@@ -130,8 +135,7 @@ $(document).ready(function(){initNavTree('_entity_8h.html','');});
 
 <p>实体的阵营枚举。用来表征飞机与子弹的敌友关系。 </p>
 <table class="fieldtable">
-<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="ad54c4fe39f1c51b786c24ae0b7763b44a930a91848917f92cf7e2f8d744fa4177"></a>Friend&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ad54c4fe39f1c51b786c24ae0b7763b44a8c6d21187fb58b7a079d70030686b33e"></a>Enemy&#160;</td><td class="fielddoc"><p>友军（只有自机及射出的子弹） </p>
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="ad54c4fe39f1c51b786c24ae0b7763b44a8c6d21187fb58b7a079d70030686b33e"></a>Enemy&#160;</td><td class="fielddoc"><p>友军（只有自机及射出的子弹） </p>
 <p>敌军 </p>
 </td></tr>
 </table>

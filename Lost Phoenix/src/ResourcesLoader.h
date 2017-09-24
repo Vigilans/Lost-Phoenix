@@ -1,3 +1,7 @@
+/*! \file ResourcesLoader.h
+	\brief 定义材质加载类。非公共类，仅会被Resources.cpp包含，隐藏于实现中。
+*/
+
 #pragma once
 #include "Resources.h"
 #include <map>

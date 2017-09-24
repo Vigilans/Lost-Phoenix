@@ -1,6 +1,6 @@
-// file:	include\Enemy_Cruiser.h
-//
-// summary:	BOSS, 暂时未实现.
+/*! \file Enemy_Cruiser.h
+	\brief BOSS类，暂时未实现。
+*/
 /*
 #pragma once
 #include "Plane - Bullet.h"

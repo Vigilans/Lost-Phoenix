@@ -43,15 +43,15 @@ bool \hyperlink{class_world_a485fb0b11ed568979df0b6f782aa3ac8}{get\+\_\+running}
 \subsection*{Public 属性}
 \begin{DoxyCompactItemize}
 \item 
-int \hyperlink{class_world_ae70b4ef5dd9cb9e7336169a25aaee39c}{score}
+int \hyperlink{class_world_ae70b4ef5dd9cb9e7336169a25aaee39c}{score} = 0
 \begin{DoxyCompactList}\small\item\em 当前游戏分数。 \end{DoxyCompactList}\item 
-size\+\_\+t \hyperlink{class_world_a594e81a86f319eea4e8e5a2029cdaa90}{difficulty\+Level}
+size\+\_\+t \hyperlink{class_world_a594e81a86f319eea4e8e5a2029cdaa90}{difficulty\+Level} = 1
 \begin{DoxyCompactList}\small\item\em 当前的难度等级。 \end{DoxyCompactList}\item 
 \hyperlink{class_input_controller}{Input\+Controller} \hyperlink{class_world_ae4cc86850d7092edbb7648d4cbd093aa}{input\+Ctrl}
 \begin{DoxyCompactList}\small\item\em 键盘输入控制器。 \end{DoxyCompactList}\item 
-\hyperlink{class_plane___player}{Plane\+\_\+\+Player} $\ast$ \hyperlink{class_world_ada7a87d1778bfc543635656ea8f12d3f}{player\+\_\+plane}
+\hyperlink{class_plane___player}{Plane\+\_\+\+Player} $\ast$ \hyperlink{class_world_ada7a87d1778bfc543635656ea8f12d3f}{player\+\_\+plane} = nullptr
 \begin{DoxyCompactList}\small\item\em 玩家飞机实例的托管指针。 \end{DoxyCompactList}\item 
-\hyperlink{class_plane}{Plane} $\ast$ \hyperlink{class_world_ac8553c1be4fb1e79e94bf9f63f834963}{focused\+\_\+enemy}
+\hyperlink{class_plane}{Plane} $\ast$ \hyperlink{class_world_ac8553c1be4fb1e79e94bf9f63f834963}{focused\+\_\+enemy} = nullptr
 \begin{DoxyCompactList}\small\item\em 指向当前被追踪的敌机的指针。 \end{DoxyCompactList}\item 
 std\+::list$<$ \hyperlink{class_plane}{Plane} $\ast$ $>$ \hyperlink{class_world_a9692ac6798300e7fde98eb3ef1bb7c79}{enemy\+\_\+planes}
 \begin{DoxyCompactList}\small\item\em 存储所有敌机基类指针的链表。 \end{DoxyCompactList}\item 
@@ -433,7 +433,7 @@ U\+I的渲染由以下几部分组成：
 \index{World@{World}!difficulty\+Level@{difficulty\+Level}}
 \index{difficulty\+Level@{difficulty\+Level}!World@{World}}
 \subsubsection{\texorpdfstring{difficulty\+Level}{difficultyLevel}}
-{\footnotesize\ttfamily size\+\_\+t World\+::difficulty\+Level}
+{\footnotesize\ttfamily size\+\_\+t World\+::difficulty\+Level = 1}
 
 
 
@@ -466,7 +466,7 @@ U\+I的渲染由以下几部分组成：
 \index{World@{World}!focused\+\_\+enemy@{focused\+\_\+enemy}}
 \index{focused\+\_\+enemy@{focused\+\_\+enemy}!World@{World}}
 \subsubsection{\texorpdfstring{focused\+\_\+enemy}{focused\_enemy}}
-{\footnotesize\ttfamily \hyperlink{class_plane}{Plane}$\ast$ World\+::focused\+\_\+enemy}
+{\footnotesize\ttfamily \hyperlink{class_plane}{Plane}$\ast$ World\+::focused\+\_\+enemy = nullptr}
 
 
 
@@ -490,7 +490,7 @@ U\+I的渲染由以下几部分组成：
 \index{World@{World}!player\+\_\+plane@{player\+\_\+plane}}
 \index{player\+\_\+plane@{player\+\_\+plane}!World@{World}}
 \subsubsection{\texorpdfstring{player\+\_\+plane}{player\_plane}}
-{\footnotesize\ttfamily \hyperlink{class_plane___player}{Plane\+\_\+\+Player}$\ast$ World\+::player\+\_\+plane}
+{\footnotesize\ttfamily \hyperlink{class_plane___player}{Plane\+\_\+\+Player}$\ast$ World\+::player\+\_\+plane = nullptr}
 
 
 
@@ -510,7 +510,7 @@ U\+I的渲染由以下几部分组成：
 \index{World@{World}!score@{score}}
 \index{score@{score}!World@{World}}
 \subsubsection{\texorpdfstring{score}{score}}
-{\footnotesize\ttfamily int World\+::score}
+{\footnotesize\ttfamily int World\+::score = 0}
 
 
 
@@ -526,5 +526,5 @@ U\+I的渲染由以下几部分组成：
 
 该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
 \item 
-D\+:/叶志浩文件夹/\+Vigilans的文档/\+Programming/\+Visual Studio/\+Projects/\+Grade 1 Summer Vacation/\+Lost Phoenix/\+Lost Phoenix/include/World.\+h\item 
+D\+:/叶志浩文件夹/\+Vigilans的文档/\+Programming/\+Visual Studio/\+Projects/\+Grade 1 Summer Vacation/\+Lost Phoenix/\+Lost Phoenix/include/\hyperlink{_world_8h}{World.\+h}\item 
 D\+:/叶志浩文件夹/\+Vigilans的文档/\+Programming/\+Visual Studio/\+Projects/\+Grade 1 Summer Vacation/\+Lost Phoenix/\+Lost Phoenix/src/World.\+cpp\end{DoxyCompactItemize}

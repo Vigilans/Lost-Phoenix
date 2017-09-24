@@ -1,3 +1,7 @@
+/*! \file "Plane - Bullet.h"
+	\brief 定义飞机及子弹的基类，以及两个"dealDamage"（子弹->飞机，自机->敌机）全局函数。
+*/
+
 #pragma once
 #include "Entity.h"
 

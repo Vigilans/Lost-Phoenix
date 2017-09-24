@@ -1,7 +1,7 @@
 var searchData=
 [
   ['callback',['callback',['../class_action.html#aef6c7c00b09ea1b0ddd7a26926309717',1,'Action']]],
-  ['camp',['camp',['../class_entity.html#a5326accd49d3817310ec90692b9da3df',1,'Entity::camp()'],['../struct_settings_1_1_plane.html#a62d563a2ebc841e01bfe4737bf1fe0ab',1,'Settings::Plane::camp()']]],
+  ['camp',['camp',['../class_entity.html#a5326accd49d3817310ec90692b9da3df',1,'Entity::camp()'],['../struct_settings_1_1_plane.html#a62d563a2ebc841e01bfe4737bf1fe0ab',1,'Settings::Plane::camp()'],['../_entity_8h.html#ad54c4fe39f1c51b786c24ae0b7763b44',1,'Camp():&#160;Entity.h']]],
   ['checkbackgroundcollision',['checkBackgroundCollision',['../class_world.html#a3b447a1788dc0d2e507dce41486ad1b4',1,'World']]],
   ['clearworld',['clearWorld',['../class_world.html#aa6e788d15f389d634ccd1148f47cfb96',1,'World']]],
   ['cooldown',['coolDown',['../struct_settings_1_1_bullet.html#aea74b608868e75f9bcf93100a38f0090',1,'Settings::Bullet']]],

@@ -1,5 +1,10 @@
 \hypertarget{_resources_loader_8h}{}\section{D\+:/叶志浩文件夹/\+Vigilans的文档/\+Programming/\+Visual Studio/\+Projects/\+Grade 1 Summer Vacation/\+Lost Phoenix/\+Lost Phoenix/src/\+Resources\+Loader.h 文件参考}
 \label{_resources_loader_8h}\index{D\+:/叶志浩文件夹/\+Vigilans的文档/\+Programming/\+Visual Studio/\+Projects/\+Grade 1 Summer Vacation/\+Lost Phoenix/\+Lost Phoenix/src/\+Resources\+Loader.\+h@{D\+:/叶志浩文件夹/\+Vigilans的文档/\+Programming/\+Visual Studio/\+Projects/\+Grade 1 Summer Vacation/\+Lost Phoenix/\+Lost Phoenix/src/\+Resources\+Loader.\+h}}
+
+
+定义材质加载类。非公共类，仅会被\+Resources.\+cpp包含，隐藏于实现中。  
+
+
 {\ttfamily \#include \char`\"{}Resources.\+h\char`\"{}}\newline
 {\ttfamily \#include $<$map$>$}\newline
 {\ttfamily \#include $<$memory$>$}\newline
@@ -7,11 +12,16 @@
 \begin{DoxyCompactItemize}
 \item 
 struct \hyperlink{struct_settings_1_1_texture_info}{Settings\+::\+Texture\+Info}
-\item 
+\begin{DoxyCompactList}\small\item\em 材质的设置源，可以用来构造一个完整的材质。 \end{DoxyCompactList}\item 
 class \hyperlink{class_resources_loader}{Resources\+Loader}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em 资源加载器。仅在Resources.\+cpp中使用。在堆上一块稳定内存托管所有材质及设置资源。 \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{命名空间}
 \begin{DoxyCompactItemize}
 \item 
  \hyperlink{namespace_settings}{Settings}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em 封装了游戏全局与所有实体设置的名空间。 所有获取默认设置的方法采用 {\itshape Lazy Load（延时加载）} 机制。 {\bfseries 推荐参考详细描述来获取完整信息} 。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+定义材质加载类。非公共类，仅会被\+Resources.\+cpp包含，隐藏于实现中。 
+

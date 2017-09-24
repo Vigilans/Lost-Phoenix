@@ -1,3 +1,7 @@
+/*! \file Player.h
+	\brief 定义玩家的飞机及子弹类。
+*/
+
 #pragma once
 #include "Plane - Bullet.h"
 

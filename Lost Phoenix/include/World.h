@@ -1,3 +1,7 @@
+/*! \file World.h
+	\brief 定义程序的核心类World类，以及有一个world实例的extern声明。
+*/
+
 #pragma once
 #include <list>
 #include "InputController.h"
@@ -189,7 +193,7 @@ public:
 	/// 
 	/// 但与此同时，自己飞机受到伤害时，也会根据伤害扣除相应的分数。
 	/// </remarks>
-	int score;
+	int score = 0;
 
 	/// <summary>
 	/// 当前的难度等级。
@@ -206,7 +210,7 @@ public:
 	/// 
 	/// > 未来，可以在达到一定难度等级后，刷出BOSS。
 	/// </remarks>
-	size_t difficultyLevel;
+	size_t difficultyLevel = 1;
 
 	/// <summary>
 	/// 键盘输入控制器。
@@ -216,7 +220,7 @@ public:
 	/// <summary>
 	/// 玩家飞机实例的托管指针。
 	/// </summary>
-	Plane_Player* player_plane;
+	Plane_Player* player_plane = nullptr;
 
 	/// <summary>
 	/// 指向当前被追踪的敌机的指针。
@@ -228,7 +232,7 @@ public:
 	/// 
 	/// 若为nullptr，表示当前未追踪任何敌机。
 	/// </remarks>
-	Plane* focused_enemy;
+	Plane* focused_enemy = nullptr;
 	
 	/// <summary>
 	/// 存储所有敌机基类指针的链表。
@@ -327,4 +331,4 @@ private:
 	bool running;
 };
 
-extern World world;
+extern World& world;

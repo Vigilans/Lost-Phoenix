@@ -1,25 +1,27 @@
 \hypertarget{_actions_8h}{}\section{D\+:/叶志浩文件夹/\+Vigilans的文档/\+Programming/\+Visual Studio/\+Projects/\+Grade 1 Summer Vacation/\+Lost Phoenix/\+Lost Phoenix/include/\+Actions.h 文件参考}
 \label{_actions_8h}\index{D\+:/叶志浩文件夹/\+Vigilans的文档/\+Programming/\+Visual Studio/\+Projects/\+Grade 1 Summer Vacation/\+Lost Phoenix/\+Lost Phoenix/include/\+Actions.\+h@{D\+:/叶志浩文件夹/\+Vigilans的文档/\+Programming/\+Visual Studio/\+Projects/\+Grade 1 Summer Vacation/\+Lost Phoenix/\+Lost Phoenix/include/\+Actions.\+h}}
+
+
+定义\+Action基类以及其所有派生类。  
+
+
 {\ttfamily \#include $<$graphics.\+h$>$}\newline
 {\ttfamily \#include \char`\"{}Resources.\+h\char`\"{}}\newline
 \subsection*{类}
 \begin{DoxyCompactItemize}
 \item 
 class \hyperlink{class_action}{Action}
-\item 
+\begin{DoxyCompactList}\small\item\em 由ege控制类继承来的\+Action基类，仿自ege自带的fps类写成。用于表现一些动画的动作，同时通过析构 + 回调函数实现事件的连锁。 \end{DoxyCompactList}\item 
 class \hyperlink{class_action___plane___explode}{Action\+\_\+\+Plane\+\_\+\+Explode}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Action之飞机爆炸。对于敌机，会在坠毁时出现；对于自机，会在受到伤害会坠毁时出现。 \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{函数}
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{_actions_8h_a392ee236d1e31e5e918a23d873f7a7d4}{update\+New\+Action} (\hyperlink{class_action}{Action} $\ast$new\+Action)
+\mbox{\Hypertarget{_actions_8h_a392ee236d1e31e5e918a23d873f7a7d4}\label{_actions_8h_a392ee236d1e31e5e918a23d873f7a7d4}} 
+void {\bfseries update\+New\+Action} (\hyperlink{class_action}{Action} $\ast$new\+Action)
 \end{DoxyCompactItemize}
 
 
-\subsection{函数说明}
-\mbox{\Hypertarget{_actions_8h_a392ee236d1e31e5e918a23d873f7a7d4}\label{_actions_8h_a392ee236d1e31e5e918a23d873f7a7d4}} 
-\index{Actions.\+h@{Actions.\+h}!update\+New\+Action@{update\+New\+Action}}
-\index{update\+New\+Action@{update\+New\+Action}!Actions.\+h@{Actions.\+h}}
-\subsubsection{\texorpdfstring{update\+New\+Action()}{updateNewAction()}}
-{\footnotesize\ttfamily void update\+New\+Action (\begin{DoxyParamCaption}\item[{\hyperlink{class_action}{Action} $\ast$}]{new\+Action }\end{DoxyParamCaption})}
+\subsection{详细描述}
+定义\+Action基类以及其所有派生类。 
 

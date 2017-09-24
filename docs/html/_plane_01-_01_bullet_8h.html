@@ -27,7 +27,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="icon.ico"/></td>
+  <td id="projectlogo"><img alt="Logo" src="icon64.ico"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Lost Phoenix
    &#160;<span id="projectnumber">1.1</span>
@@ -84,12 +84,14 @@ $(document).ready(function(){initNavTree('_plane_01-_01_bullet_8h.html','');});
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">类</a> &#124;
-<a href="#enum-members">枚举</a> &#124;
 <a href="#func-members">函数</a>  </div>
   <div class="headertitle">
 <div class="title">Plane - Bullet.h 文件参考</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>定义飞机及子弹的基类，以及两个"dealDamage"（子弹-&gt;飞机，自机-&gt;敌机）全局函数。  
+<a href="#details">更多...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="_entity_8h_source.html">Entity.h</a>&quot;</code><br />
 </div>
 <p><a href="_plane_01-_01_bullet_8h_source.html">浏览源代码.</a></p>
@@ -97,111 +99,26 @@ $(document).ready(function(){initNavTree('_plane_01-_01_bullet_8h.html','');});
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 类</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plane.html">Plane</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">飞机的基类。  <a href="class_plane.html#details">更多...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bullet.html">Bullet</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">子弹的基类。  <a href="class_bullet.html#details">更多...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
-枚举</h2></td></tr>
-<tr class="memitem:a9f852e2715e13ec145d551659d2813bc"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_plane_01-_01_bullet_8h.html#a9f852e2715e13ec145d551659d2813bc">PlaneState</a> { <a class="el" href="_plane_01-_01_bullet_8h.html#a9f852e2715e13ec145d551659d2813bcabd9f7c5d6ab4201b138a3e51dab7056f">PlaneState::Alive</a>, 
-<a class="el" href="_plane_01-_01_bullet_8h.html#a9f852e2715e13ec145d551659d2813bca183b62c7f067711f9c5a54913c054617">PlaneState::Dead</a>, 
-<a class="el" href="_plane_01-_01_bullet_8h.html#a9f852e2715e13ec145d551659d2813bcaece4f1ae7ea969a1a47e63cb8ac086ae">PlaneState::Vanished</a>
- }</td></tr>
-<tr class="separator:a9f852e2715e13ec145d551659d2813bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 函数</h2></td></tr>
-<tr class="memitem:a62df33be634d89b2428bc84d98761bb7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_plane_01-_01_bullet_8h.html#a62df33be634d89b2428bc84d98761bb7">dealDamage</a> (<a class="el" href="class_plane.html">Plane</a> *plane, <a class="el" href="class_bullet.html">Bullet</a> *bullet)</td></tr>
+<tr class="memitem:a62df33be634d89b2428bc84d98761bb7"><td class="memItemLeft" align="right" valign="top"><a id="a62df33be634d89b2428bc84d98761bb7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_plane_01-_01_bullet_8h.html#a62df33be634d89b2428bc84d98761bb7">dealDamage</a> (<a class="el" href="class_plane.html">Plane</a> *plane, <a class="el" href="class_bullet.html">Bullet</a> *bullet)</td></tr>
+<tr class="memdesc:a62df33be634d89b2428bc84d98761bb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">子弹与飞机相碰时的伤害处理。 <br /></td></tr>
 <tr class="separator:a62df33be634d89b2428bc84d98761bb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0e76936bbaa057d4f15ddf206b75b91"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_plane_01-_01_bullet_8h.html#ab0e76936bbaa057d4f15ddf206b75b91">dealDamage</a> (<a class="el" href="class_plane___player.html">Plane_Player</a> *player, <a class="el" href="class_plane.html">Plane</a> *enemy)</td></tr>
+<tr class="memitem:ab0e76936bbaa057d4f15ddf206b75b91"><td class="memItemLeft" align="right" valign="top"><a id="ab0e76936bbaa057d4f15ddf206b75b91"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_plane_01-_01_bullet_8h.html#ab0e76936bbaa057d4f15ddf206b75b91">dealDamage</a> (<a class="el" href="class_plane___player.html">Plane_Player</a> *player, <a class="el" href="class_plane.html">Plane</a> *enemy)</td></tr>
+<tr class="memdesc:ab0e76936bbaa057d4f15ddf206b75b91"><td class="mdescLeft">&#160;</td><td class="mdescRight">自机与敌机相碰时的伤害处理。 <br /></td></tr>
 <tr class="separator:ab0e76936bbaa057d4f15ddf206b75b91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">枚举类型说明</h2>
-<a id="a9f852e2715e13ec145d551659d2813bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9f852e2715e13ec145d551659d2813bc">&#9670;&nbsp;</a></span>PlaneState</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="_plane_01-_01_bullet_8h.html#a9f852e2715e13ec145d551659d2813bc">PlaneState</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a9f852e2715e13ec145d551659d2813bcabd9f7c5d6ab4201b138a3e51dab7056f"></a>Alive&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a9f852e2715e13ec145d551659d2813bca183b62c7f067711f9c5a54913c054617"></a>Dead&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a9f852e2715e13ec145d551659d2813bcaece4f1ae7ea969a1a47e63cb8ac086ae"></a>Vanished&#160;</td><td class="fielddoc"></td></tr>
-</table>
-
-</div>
-</div>
-<h2 class="groupheader">函数说明</h2>
-<a id="a62df33be634d89b2428bc84d98761bb7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a62df33be634d89b2428bc84d98761bb7">&#9670;&nbsp;</a></span>dealDamage() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void dealDamage </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_plane.html">Plane</a> *&#160;</td>
-          <td class="paramname"><em>plane</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="class_bullet.html">Bullet</a> *&#160;</td>
-          <td class="paramname"><em>bullet</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab0e76936bbaa057d4f15ddf206b75b91"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab0e76936bbaa057d4f15ddf206b75b91">&#9670;&nbsp;</a></span>dealDamage() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void dealDamage </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_plane___player.html">Plane_Player</a> *&#160;</td>
-          <td class="paramname"><em>player</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="class_plane.html">Plane</a> *&#160;</td>
-          <td class="paramname"><em>enemy</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>定义飞机及子弹的基类，以及两个"dealDamage"（子弹-&gt;飞机，自机-&gt;敌机）全局函数。 </p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

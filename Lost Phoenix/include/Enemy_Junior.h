@@ -1,3 +1,7 @@
+/*! \file Enemy_Junior.h	
+	\brief 定义新兵敌机的飞机类及子弹类。
+*/
+
 #pragma once
 #include "Plane - Bullet.h"
 

@@ -1,3 +1,7 @@
+/*! \file Vector2D.hpp
+	\brief 定义数学二维向量模板类，方便数据的组织及计算，提高可读性，以及提供极强的扩展性。
+*/
+
 #pragma once
 #include <math.h>
 

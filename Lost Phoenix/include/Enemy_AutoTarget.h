@@ -1,3 +1,7 @@
+/*! \file Enemy_AutoTarget.h
+	\brief 定义自机狙敌机的飞机类及子弹类。
+*/
+
 #pragma once
 #include "Plane - Bullet.h"
 

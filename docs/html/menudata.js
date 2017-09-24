@@ -74,4 +74,8 @@ var menudata={children:[
 {text:"v",url:"functions_vars.html#index_v"}]},
 {text:"枚举",url:"functions_enum.html"}]}]},
 {text:"文件",url:"files.html",children:[
-{text:"文件列表",url:"files.html"}]}]}
+{text:"文件列表",url:"files.html"},
+{text:"文件成员",url:"globals.html",children:[
+{text:"全部",url:"globals.html"},
+{text:"函数",url:"globals_func.html"},
+{text:"枚举",url:"globals_enum.html"}]}]}]}

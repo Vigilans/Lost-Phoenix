@@ -1,50 +1,40 @@
-#include <ctime>
-#include <fstream>
+/*! \mainpage Lost Phoenix Main Page
+*
+* \section intro_sec Introduction
+*
+* This is the introduction.
+*
+* \section install_sec Installation
+*
+* \subsection step1 Step 1: Opening the box
+*
+* etc...
+*/
+
 #include <graphics.h>
 #include <ege/fps.h>
 #include "World.h"
 
-using namespace std;
-
-World world;
-ostream& getCurrentTime(ostream&);
+World& world = *new World;
 
 int main(int argc, const char* argv[ ])
 {
-	//try
-	//{
-		mainProcess:
-		if (world.initialize())
+	mainProcess:
+	if (world.initialize())
+	{
+		world.renderMenu( );
+		for (fps ui_fps; world.is_running( ); delay_fps(world.fps( )))
 		{
-			world.renderMenu( );
-			for (fps ui_fps; world.is_running( ); delay_fps(world.fps( )))
-			{
-				world.update( );
-				world.updateCollision( );
-				world.updateState( );
-				world.render( );
-			}
-			world.clearWorld( );
-			world.renderOverInterface( );
+			world.update( );
+			world.updateCollision( );
+			world.updateState( );
+			world.render( );
 		}
-		if(world.get_running( ))
-			goto mainProcess;
-	//}
-	//catch (exception& e)
-	//{
-	//	ofstream ferr("error log.txt");
-	//	ferr << "Exception occured: " << e.what( ) << '\t' << getCurrentTime << '\n';
-	//	ferr.close( );
-	//	return 1;
-	//}
+		world.clearWorld( );
+		world.renderOverInterface( );
+	}
+	if(world.get_running( ))
+		goto mainProcess;
 
 	return 0;
-}
-
-ostream& getCurrentTime(ostream& os)
-{
-	const time_t timeSec = time(NULL);
-	tm time;
-	localtime_s(&time, &timeSec);
-	return os << time.tm_year + 1900 << "-" << time.tm_mon + 1 << "-" << time.tm_mday << " " << time.tm_hour << ":" << time.tm_min << ":" << time.tm_sec;
 }
