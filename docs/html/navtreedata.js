@@ -1,11 +1,9 @@
 var NAVTREE =
 [
   [ "Lost Phoenix", "index.html", [
-    [ "Lost Phoenix Main Page", "index.html", [
-      [ "Introduction", "index.html#intro_sec", null ],
-      [ "Installation", "index.html#install_sec", [
-        [ "Step 1: Opening the box", "index.html#step1", null ]
-      ] ]
+    [ "Main Page", "index.html", [
+      [ "简介", "index.html#intro_sec", null ],
+      [ "构建", "index.html#build_sec", null ]
     ] ],
     [ "命名空间", null, [
       [ "命名空间列表", "namespaces.html", "namespaces" ],
@@ -39,7 +37,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_actions_8h.html",
-"struct_settings_1_1_plane.html#a814ee5fe2c6b873ff4f0e0208f2c240a"
+"struct_settings_1_1_plane.html#a8416c74c0910b4c7a9da8d633e0c346a"
 ];
 
 var SYNCONMSG = '点击 关闭 面板同步';

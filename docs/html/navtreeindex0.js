@@ -213,11 +213,10 @@ var NAVTREEINDEX0 =
 "globals_enum.html":[3,1,2],
 "globals_func.html":[3,1,1],
 "hierarchy.html":[2,2],
-"index.html":[],
 "index.html":[0],
-"index.html#install_sec":[0,1],
+"index.html":[],
+"index.html#build_sec":[0,1],
 "index.html#intro_sec":[0,0],
-"index.html#step1":[0,1,0],
 "namespace_settings.html":[1,0,0],
 "namespace_settings.html":[2,0,0],
 "namespacemembers.html":[1,1,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX0 =
 "struct_settings_1_1_plane.html#a20a8861d723406f4d49610804226dd82":[2,0,0,4,3],
 "struct_settings_1_1_plane.html#a62d563a2ebc841e01bfe4737bf1fe0ab":[2,0,0,4,1],
 "struct_settings_1_1_plane.html#a6a000124604eb5435f4d77bbec170a4f":[2,0,0,4,5],
-"struct_settings_1_1_plane.html#a71ffa9166855277d353d0fb6ac8f58f6":[2,0,0,4,2]
+"struct_settings_1_1_plane.html#a71ffa9166855277d353d0fb6ac8f58f6":[2,0,0,4,2],
+"struct_settings_1_1_plane.html#a814ee5fe2c6b873ff4f0e0208f2c240a":[2,0,0,4,4]
 };

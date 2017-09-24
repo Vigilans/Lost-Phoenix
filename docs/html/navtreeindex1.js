@@ -1,6 +1,5 @@
 var NAVTREEINDEX1 =
 {
-"struct_settings_1_1_plane.html#a814ee5fe2c6b873ff4f0e0208f2c240a":[2,0,0,4,4],
 "struct_settings_1_1_plane.html#a8416c74c0910b4c7a9da8d633e0c346a":[2,0,0,4,0],
 "struct_settings_1_1_texture_info.html":[2,0,0,5],
 "struct_settings_1_1_texture_info.html#a4bec21902818b3afb2993e5d67a62dfe":[2,0,0,5,0],

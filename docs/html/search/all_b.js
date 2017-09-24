@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['lost_20phoenix_20main_20page',['Lost Phoenix Main Page',['../index.html',1,'']]],
   ['loadalltextures',['loadAllTextures',['../class_resources_loader.html#afe684ff2f1419210e4bbd608c67ffeb3',1,'ResourcesLoader']]],
   ['loadanimetextures',['loadAnimeTextures',['../class_resources_loader.html#afd356d180bfc92e6135996b3d290d3ae',1,'ResourcesLoader']]],
   ['loadbgtextures',['loadBgTextures',['../class_resources_loader.html#a5099528fcfd109b389965e5ebfbdb661',1,'ResourcesLoader']]],

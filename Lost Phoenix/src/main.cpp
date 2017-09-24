@@ -1,14 +1,17 @@
-/*! \mainpage Lost Phoenix Main Page
+/*! \mainpage Main Page
 *
-* \section intro_sec Introduction
+* \section intro_sec 简介
 *
-* This is the introduction.
+* 这是一个由EGE图形库编写的简易飞机对战游戏。
 *
-* \section install_sec Installation
+* \section build_sec 构建
 *
-* \subsection step1 Step 1: Opening the box
+* 将项目Clone/Download到本地后，请先运行restore_dependencies.ps1，获取EGE图形库与json库到本地项目中。
+* * EGE图形库外链来自http://pan.seu.edu.cn，为VS2017版，因此最好使用Visual Studio 2017进行生成。
 *
-* etc...
+* 
+* --------
+* 关于项目的更多细节与结构介绍，请参见实践报告。
 */
 
 #include <graphics.h>
