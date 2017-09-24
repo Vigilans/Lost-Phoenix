@@ -13,7 +13,7 @@ Plane_Player::Plane_Player(Settings::Plane setting)
 
 void Plane_Player::update( )
 {
-	if (getState( ) != PlaneState::Alive)
+	if (getState( ) != Plane::State::Alive)
 		return;
 	handleInput( );
 	Plane::update( );
@@ -28,7 +28,7 @@ void Plane_Player::shoot( )
 void Plane_Player::takeDamage(int damage)
 {
 	Plane::takeDamage(damage);
-	if (getState( ) != PlaneState::Dead)
+	if (getState( ) != Plane::State::Dead)
 		new Action_Plane_Explode(this, false);
 }
 

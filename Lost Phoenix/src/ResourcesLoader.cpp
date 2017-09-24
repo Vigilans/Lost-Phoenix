@@ -171,5 +171,7 @@ void ResourcesLoader::loadPlaneSettings()
 	settings.pEnemyJunior = make_unique<Settings::Plane>(raw["Enemy_Junior"]);
 	settings.pEnemyAutoTarget = make_unique<Settings::Plane>(raw["Enemy_AutoTarget"]);
 
+	
+
 	ifs.close();
 }

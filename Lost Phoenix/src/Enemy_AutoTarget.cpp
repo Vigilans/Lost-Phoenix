@@ -1,6 +1,7 @@
 #include "Enemy_AutoTarget.h"
-#include "World.h" 
+#include "World.h"
 #include <cmath>
+#include <ctime>
 
 Plane_Enemy_AutoTarget::Plane_Enemy_AutoTarget(Settings::Plane setting, Vector2D position, Vector2D velocity)
 	: Plane(setting, position, velocity)
@@ -30,6 +31,19 @@ void Plane_Enemy_AutoTarget::shoot()
 			velocity.x *= -1;
 		new Bullet_Enemy_AutoTarget(this, world.player_plane, Settings::enemy_autoTarget().bulletSetting);
 	}
+}
+
+void Plane_Enemy_AutoTarget::takeDamage(int damage)
+{
+	Plane::takeDamage(damage);
+	if (world.difficultyLevel >= 5 && getState() == State::Alive)
+	{ // revenge
+		auto tmp = shootCheckPoint;
+		shootCheckPoint = 0;
+		shoot();
+		shootCheckPoint = tmp;
+	}
+		
 }
 
 Bullet_Enemy_AutoTarget::Bullet_Enemy_AutoTarget(Entity * src, Plane * des, Settings::Bullet setting)

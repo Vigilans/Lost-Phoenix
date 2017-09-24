@@ -91,7 +91,7 @@ void World::updateCollision()
 		{
 			if (checkBackgroundCollision(plane, true, true, true))
 			{
-				plane->setState(PlaneState::Vanished);
+				plane->setState(Plane::State::Vanished);
 			}
 			continue;
 		}
@@ -126,7 +126,7 @@ void World::updateCollision()
 	{
 		for (auto bullet : bullets)
 		{
-			if (plane->getCamp() != bullet->getCamp() && plane->getState() == PlaneState::Alive && Entity::judgeCollision(plane, bullet))
+			if (plane->getCamp() != bullet->getCamp() && plane->getState() == Plane::State::Alive && Entity::judgeCollision(plane, bullet))
 			{
 				focused_enemy = plane;
 				dealDamage(plane, bullet);
@@ -137,7 +137,7 @@ void World::updateCollision()
 	// ----- PLAYER COLLISION WITH BULLET
 	for (auto bullet : bullets)
 	{
-		if (Entity::judgeCollision(player_plane, bullet) && player_plane->getState() == PlaneState::Alive && bullet->getCamp() == Camp::Enemy)
+		if (Entity::judgeCollision(player_plane, bullet) && player_plane->getState() == Plane::State::Alive && bullet->getCamp() == Camp::Enemy)
 		{
 			dealDamage(player_plane, bullet);
 			new Action_Plane_Explode(player_plane, false);
@@ -147,7 +147,7 @@ void World::updateCollision()
 	// ----- PLAYER COLLISION WITH ENMEY
 	for (auto enemy : enemy_planes)
 	{
-		if (Entity::judgeCollision(player_plane, enemy) && player_plane->getState() == PlaneState::Alive)
+		if (Entity::judgeCollision(player_plane, enemy) && player_plane->getState() == Plane::State::Alive)
 		{
 			dealDamage(player_plane, enemy);
 		}
@@ -165,7 +165,7 @@ void World::updateState()
 		auto plane = *iter;
 		switch (plane->getState())
 		{
-		case PlaneState::Dead:
+		case Plane::State::Dead:
 			if (typeid(*plane) == typeid(Plane_Enemy_Junior))
 				score += Settings::enemy_junior().score;
 			else if (typeid(*plane) == typeid(Plane_Enemy_AutoTarget))
@@ -173,7 +173,7 @@ void World::updateState()
 			new Action_Plane_Explode(plane);  // explode结束后自动delete plane 
 			iter = enemy_planes.erase(iter);
 			break;
-		case PlaneState::Vanished:
+		case Plane::State::Vanished:
 			delete plane;
 			iter = enemy_planes.erase(iter);
 			break;
@@ -194,10 +194,10 @@ void World::updateState()
 	/*------------HANDLE BULLETS------------*/
 
 	/*------------HANDLE PLAYER------------*/
-	if (player_plane->getState() == PlaneState::Dead)
+	if (player_plane->getState() == Plane::State::Dead)
 	{
 		new Action_Plane_Explode(player_plane, false, 15, []() { world.gameOver(); });
-		player_plane->setState(PlaneState::Vanished); // 防止重复进入这个条件
+		player_plane->setState(Plane::State::Vanished); // 防止重复进入这个条件
 	}
 	/*------------HANDLE PLAYER------------*/
 

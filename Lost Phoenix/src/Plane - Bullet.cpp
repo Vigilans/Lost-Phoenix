@@ -8,7 +8,7 @@ Plane::Plane(Settings::Plane setting, Vector2D position, Vector2D velocity) :
 	speed(setting.speed),
 	maxHealth(setting.health), curHealth(setting.health), 
 	shootCoolDown(setting.bulletSetting.coolDown), shootCheckPoint(clock()), 
-	state(PlaneState::Alive)
+	state(Plane::State::Alive)
 {
 	if (this->getCamp() == Camp::Enemy)
 		world.enemy_planes.push_back(this);
@@ -26,7 +26,7 @@ void Plane::update( )
 
 void Plane::draw( )
 {
-	if (getState( ) == PlaneState::Alive)
+	if (getState( ) == Plane::State::Alive)
 		Entity::draw( );
 }
 
@@ -35,7 +35,7 @@ void Plane::takeDamage(int damage)
 	if (damage >= curHealth)
 	{
 		damage = curHealth;
-		setState(PlaneState::Dead);
+		setState(Plane::State::Dead);
 	}
 	curHealth -= damage;
 	if (getCamp( ) == Camp::Enemy)

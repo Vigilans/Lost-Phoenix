@@ -113,8 +113,8 @@ namespace Settings
 
 		struct
 		{
-			int enemyInfoDuration; ///< 被追踪敌机的追踪状态保留时间。
-			int enemyWaveCoolDown; ///< 敌机每一波刷新的基础冷却时间。
+			time_t enemyInfoDuration; ///< 被追踪敌机的追踪状态保留时间。
+			time_t enemyWaveCoolDown; ///< 敌机每一波刷新的基础冷却时间。
 			int bgShiftSpeed; ///< 背景的移动速度。
 		} times;
 	};
@@ -144,7 +144,7 @@ namespace Settings
 		Texture texture; ///< 子弹材质。
 		int attack; ///< 子弹攻击力。
 		int speed; ///< 子弹移动速率（速度的模）。
-		int coolDown; ///< 飞机射击冷却。
+		time_t coolDown; ///< 飞机射击冷却。
 	};
 	
 	/// <summary>
