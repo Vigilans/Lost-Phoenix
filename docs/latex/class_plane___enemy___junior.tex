@@ -1,5 +1,14 @@
 \hypertarget{class_plane___enemy___junior}{}\section{Plane\+\_\+\+Enemy\+\_\+\+Junior类 参考}
 \label{class_plane___enemy___junior}\index{Plane\+\_\+\+Enemy\+\_\+\+Junior@{Plane\+\_\+\+Enemy\+\_\+\+Junior}}
+
+
+新兵敌机。特点为血少，子弹伤害低，路径单一，会飞离屏幕；但子弹速度快，射击间隔短。  
+
+
+
+
+{\ttfamily \#include $<$Enemy\+\_\+\+Junior.\+h$>$}
+
 类 Plane\+\_\+\+Enemy\+\_\+\+Junior 继承关系图\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -10,30 +19,44 @@
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{class_plane___enemy___junior_a2a6b4a6903c05789e8be98d2d11a927d}\label{class_plane___enemy___junior_a2a6b4a6903c05789e8be98d2d11a927d}} 
-{\bfseries Plane\+\_\+\+Enemy\+\_\+\+Junior} (\hyperlink{struct_settings_1_1_plane}{Settings\+::\+Plane} setting, \hyperlink{structbasic__vector2_d}{Vector2D} position, \hyperlink{structbasic__vector2_d}{Vector2D} \hyperlink{class_entity_a386d25b56772b8913eb3e5adc636f6e0}{velocity}=\hyperlink{structbasic__vector2_d}{Vector2D}())
-\item 
-virtual void \hyperlink{class_plane___enemy___junior_a686e46c9927793dd07235cac72d52405}{update} ()
-\begin{DoxyCompactList}\small\item\em 更新实体状态。作为基类虚函数，此方法只通过速度更新当前位置。 \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{class_plane___enemy___junior_ac9c3559aa4616f1b1efbe4a055fca0ac}\label{class_plane___enemy___junior_ac9c3559aa4616f1b1efbe4a055fca0ac}} 
-virtual void {\bfseries shoot} ()
-\end{DoxyCompactItemize}
+\hyperlink{class_plane___enemy___junior_a2a6b4a6903c05789e8be98d2d11a927d}{Plane\+\_\+\+Enemy\+\_\+\+Junior} (\hyperlink{struct_settings_1_1_plane}{Settings\+::\+Plane} setting, \hyperlink{structbasic__vector2_d}{Vector2D} position, \hyperlink{structbasic__vector2_d}{Vector2D} \hyperlink{class_entity_a386d25b56772b8913eb3e5adc636f6e0}{velocity}=\hyperlink{structbasic__vector2_d}{Vector2D}())
+\begin{DoxyCompactList}\small\item\em 基础构造函数。 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_plane___enemy___junior_a262143737ed740f65063dbcbc5970f55}\label{class_plane___enemy___junior_a262143737ed740f65063dbcbc5970f55}} 
+virtual void \hyperlink{class_plane___enemy___junior_a262143737ed740f65063dbcbc5970f55}{update} () override
+\begin{DoxyCompactList}\small\item\em 更新状态，主要为调用射击函数。 \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_plane___enemy___junior_a5ffc4150cdf4c6e81480a2977d4bfafe}{shoot} () override
+\begin{DoxyCompactList}\small\item\em 进行一次射击。高等级时子弹移动速度出现变化。 \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{额外继承的成员函数}
 
 
+\subsection{详细描述}
+新兵敌机。特点为血少，子弹伤害低，路径单一，会飞离屏幕；但子弹速度快，射击间隔短。 
+
+\begin{DoxySeeAlso}{参见}
+T\+:\+Plane
+
+
+\end{DoxySeeAlso}
+
+
 \subsection{成员函数说明}
-\mbox{\Hypertarget{class_plane___enemy___junior_a686e46c9927793dd07235cac72d52405}\label{class_plane___enemy___junior_a686e46c9927793dd07235cac72d52405}} 
-\index{Plane\+\_\+\+Enemy\+\_\+\+Junior@{Plane\+\_\+\+Enemy\+\_\+\+Junior}!update@{update}}
-\index{update@{update}!Plane\+\_\+\+Enemy\+\_\+\+Junior@{Plane\+\_\+\+Enemy\+\_\+\+Junior}}
-\subsubsection{\texorpdfstring{update()}{update()}}
-{\footnotesize\ttfamily void Plane\+\_\+\+Enemy\+\_\+\+Junior\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+\mbox{\Hypertarget{class_plane___enemy___junior_a5ffc4150cdf4c6e81480a2977d4bfafe}\label{class_plane___enemy___junior_a5ffc4150cdf4c6e81480a2977d4bfafe}} 
+\index{Plane\+\_\+\+Enemy\+\_\+\+Junior@{Plane\+\_\+\+Enemy\+\_\+\+Junior}!shoot@{shoot}}
+\index{shoot@{shoot}!Plane\+\_\+\+Enemy\+\_\+\+Junior@{Plane\+\_\+\+Enemy\+\_\+\+Junior}}
+\subsubsection{\texorpdfstring{shoot()}{shoot()}}
+{\footnotesize\ttfamily void Plane\+\_\+\+Enemy\+\_\+\+Junior\+::shoot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
-更新实体状态。作为基类虚函数，此方法只通过速度更新当前位置。 
+进行一次射击。高等级时子弹移动速度出现变化。 
 
+随着difficulty\+Level升高，开始表现出不同的特性：
+\begin{DoxyItemize}
+\item 难度等级到2以上后，子弹的速度将在一个区间变动，初始为0.8$\sim$1.2倍原速度。随着难度越来越高，区间将变得越来越宽。
+\item 这样做会使得小飞机构造出一个子弹网，使得玩家飞机难以通行。 
+\end{DoxyItemize}
 
-
-重载 \hyperlink{class_plane_a7fbb07f76503fe057772e01f542afc32}{Plane} .
+实现了 \hyperlink{class_plane}{Plane}.
 
 
 

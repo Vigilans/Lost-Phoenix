@@ -26,7 +26,7 @@ void Plane_Enemy_AutoTarget::shoot()
 		int xVelFactor = world.difficultyLevel > 2 ? rand() % (world.difficultyLevel - 1) : 0;
 		double newXVel = xVelFactor + Settings::enemy_autoTarget().speed;
 		
-		velocity.set(newXVel, newYVel);
+		velocity.set(newXVel, (int)newYVel);
 		if (abs(newYVel) > 2.0)
 			velocity.x *= -1;
 		new Bullet_Enemy_AutoTarget(this, world.player_plane, Settings::enemy_autoTarget().bulletSetting);

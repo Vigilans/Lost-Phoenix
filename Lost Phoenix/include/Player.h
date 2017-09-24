@@ -2,7 +2,7 @@
 #include "Plane - Bullet.h"
 
 /// <summary>
-/// 玩家飞机类。
+/// 玩家飞机。
 /// </summary>
 /// <seealso cref="T:Plane"/>
 class Plane_Player : public Plane
@@ -24,7 +24,7 @@ private:
 };
 
 /// <summary>
-/// 玩家飞机基础子弹类。
+/// 玩家飞机基础子弹。
 /// </summary>
 /// <seealso cref="T:Bullet"/>
 class Bullet_Player : public Bullet

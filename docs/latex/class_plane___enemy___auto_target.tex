@@ -1,5 +1,14 @@
 \hypertarget{class_plane___enemy___auto_target}{}\section{Plane\+\_\+\+Enemy\+\_\+\+Auto\+Target类 参考}
 \label{class_plane___enemy___auto_target}\index{Plane\+\_\+\+Enemy\+\_\+\+Auto\+Target@{Plane\+\_\+\+Enemy\+\_\+\+Auto\+Target}}
+
+
+自机狙敌机。特点是血厚，不会飞出屏幕，子弹追踪玩家飞机，伤害高；但子弹速度较慢，射击间隔长。  
+
+
+
+
+{\ttfamily \#include $<$Enemy\+\_\+\+Auto\+Target.\+h$>$}
+
 类 Plane\+\_\+\+Enemy\+\_\+\+Auto\+Target 继承关系图\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -10,33 +19,76 @@
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{class_plane___enemy___auto_target_abf4224e6d4c79583016c98dc8747f3ad}\label{class_plane___enemy___auto_target_abf4224e6d4c79583016c98dc8747f3ad}} 
-{\bfseries Plane\+\_\+\+Enemy\+\_\+\+Auto\+Target} (\hyperlink{struct_settings_1_1_plane}{Settings\+::\+Plane} setting, \hyperlink{structbasic__vector2_d}{Vector2D} position, \hyperlink{structbasic__vector2_d}{Vector2D} \hyperlink{class_entity_a386d25b56772b8913eb3e5adc636f6e0}{velocity}=\hyperlink{structbasic__vector2_d}{Vector2D}())
-\item 
+\hyperlink{class_plane___enemy___auto_target_abf4224e6d4c79583016c98dc8747f3ad}{Plane\+\_\+\+Enemy\+\_\+\+Auto\+Target} (\hyperlink{struct_settings_1_1_plane}{Settings\+::\+Plane} setting, \hyperlink{structbasic__vector2_d}{Vector2D} position, \hyperlink{structbasic__vector2_d}{Vector2D} \hyperlink{class_entity_a386d25b56772b8913eb3e5adc636f6e0}{velocity}=\hyperlink{structbasic__vector2_d}{Vector2D}())
+\begin{DoxyCompactList}\small\item\em 基础构造函数。 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_plane___enemy___auto_target_a79e6eda540d282205ce6151ae0b304ca}\label{class_plane___enemy___auto_target_a79e6eda540d282205ce6151ae0b304ca}} 
 virtual void \hyperlink{class_plane___enemy___auto_target_a79e6eda540d282205ce6151ae0b304ca}{update} () override
-\begin{DoxyCompactList}\small\item\em 更新实体状态。作为基类虚函数，此方法只通过速度更新当前位置。 \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{class_plane___enemy___auto_target_a18e2115af4e2ebb50c920ee9ab2e42ad}\label{class_plane___enemy___auto_target_a18e2115af4e2ebb50c920ee9ab2e42ad}} 
-virtual void {\bfseries shoot} () override
-\item 
-\mbox{\Hypertarget{class_plane___enemy___auto_target_a1f9400c23995c6ac67fe04309f98cf29}\label{class_plane___enemy___auto_target_a1f9400c23995c6ac67fe04309f98cf29}} 
-virtual void {\bfseries take\+Damage} (int damage) override
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em 更新状态，主要为调用射击函数。 \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_plane___enemy___auto_target_a18e2115af4e2ebb50c920ee9ab2e42ad}{shoot} () override
+\begin{DoxyCompactList}\small\item\em 进行一次射击，并改变自身速度。高等级时飞机移动速度出现变化。 \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_plane___enemy___auto_target_a1f9400c23995c6ac67fe04309f98cf29}{take\+Damage} (int damage) override
+\begin{DoxyCompactList}\small\item\em 承受伤害。高等级时出现复仇机制。 \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{额外继承的成员函数}
 
 
+\subsection{详细描述}
+自机狙敌机。特点是血厚，不会飞出屏幕，子弹追踪玩家飞机，伤害高；但子弹速度较慢，射击间隔长。 
+
+\begin{DoxySeeAlso}{参见}
+T\+:\+Plane
+
+
+\end{DoxySeeAlso}
+
+
 \subsection{成员函数说明}
-\mbox{\Hypertarget{class_plane___enemy___auto_target_a79e6eda540d282205ce6151ae0b304ca}\label{class_plane___enemy___auto_target_a79e6eda540d282205ce6151ae0b304ca}} 
-\index{Plane\+\_\+\+Enemy\+\_\+\+Auto\+Target@{Plane\+\_\+\+Enemy\+\_\+\+Auto\+Target}!update@{update}}
-\index{update@{update}!Plane\+\_\+\+Enemy\+\_\+\+Auto\+Target@{Plane\+\_\+\+Enemy\+\_\+\+Auto\+Target}}
-\subsubsection{\texorpdfstring{update()}{update()}}
-{\footnotesize\ttfamily void Plane\+\_\+\+Enemy\+\_\+\+Auto\+Target\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+\mbox{\Hypertarget{class_plane___enemy___auto_target_a18e2115af4e2ebb50c920ee9ab2e42ad}\label{class_plane___enemy___auto_target_a18e2115af4e2ebb50c920ee9ab2e42ad}} 
+\index{Plane\+\_\+\+Enemy\+\_\+\+Auto\+Target@{Plane\+\_\+\+Enemy\+\_\+\+Auto\+Target}!shoot@{shoot}}
+\index{shoot@{shoot}!Plane\+\_\+\+Enemy\+\_\+\+Auto\+Target@{Plane\+\_\+\+Enemy\+\_\+\+Auto\+Target}}
+\subsubsection{\texorpdfstring{shoot()}{shoot()}}
+{\footnotesize\ttfamily void Plane\+\_\+\+Enemy\+\_\+\+Auto\+Target\+::shoot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
-更新实体状态。作为基类虚函数，此方法只通过速度更新当前位置。 
+进行一次射击，并改变自身速度。高等级时飞机移动速度出现变化。 
+
+自机狙飞机在射击后，自身的速度会改变。具体机制为：
+\begin{DoxyItemize}
+\item y方向速度在-\/2.4 $\sim$ 2.\+4之间随机一个值, 取整数。
+\item 若y方向速度绝对值大于2，则飞机的x方向速度反向。
+\item 若飞机在屏幕下半区，则飞机更容易向后退。且可能具有非常大的后退速度。
+\end{DoxyItemize}
+
+随着difficulty\+Level升高，开始表现出不同的特性：
+\begin{DoxyItemize}
+\item 难度等级到3以上后，每次射击时，x轴方向速度都会相对于默认速度，按一定倍数变大。难度越高，倍数越大。 
+\end{DoxyItemize}
+
+实现了 \hyperlink{class_plane}{Plane}.
+
+\mbox{\Hypertarget{class_plane___enemy___auto_target_a1f9400c23995c6ac67fe04309f98cf29}\label{class_plane___enemy___auto_target_a1f9400c23995c6ac67fe04309f98cf29}} 
+\index{Plane\+\_\+\+Enemy\+\_\+\+Auto\+Target@{Plane\+\_\+\+Enemy\+\_\+\+Auto\+Target}!take\+Damage@{take\+Damage}}
+\index{take\+Damage@{take\+Damage}!Plane\+\_\+\+Enemy\+\_\+\+Auto\+Target@{Plane\+\_\+\+Enemy\+\_\+\+Auto\+Target}}
+\subsubsection{\texorpdfstring{take\+Damage()}{takeDamage()}}
+{\footnotesize\ttfamily void Plane\+\_\+\+Enemy\+\_\+\+Auto\+Target\+::take\+Damage (\begin{DoxyParamCaption}\item[{int}]{damage }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
-重载 \hyperlink{class_plane_a7fbb07f76503fe057772e01f542afc32}{Plane} .
+承受伤害。高等级时出现复仇机制。 
+
+
+\begin{DoxyParams}{参数}
+{\em damage} & 受到的伤害。 \\
+\hline
+\end{DoxyParams}
+
+
+随着difficulty\+Level升高，开始表现出不同的特性：
+\begin{DoxyItemize}
+\item 难度等级到5以上后，若受到伤害且未坠毁，则立即进行一次复仇射击。该次射击不影响之前的射击冷却。 
+\end{DoxyItemize}
+
+重载 \hyperlink{class_plane}{Plane} .
 
 
 

@@ -72,7 +72,6 @@ public:
 	void loadPlaneSettings(); ///< 加载所有飞机设置。通过Lazy Load机制延时调用。
 	const std::map<int, Texture>& loadAllTextures(); ///< 一次性加载所有材质。现为Depreciated。
 
-	// settings loaded
 	struct
 	{
 		std::unique_ptr<Settings::General> pGeneral; ///< 默认全局设置。

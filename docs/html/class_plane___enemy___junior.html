@@ -89,6 +89,11 @@ $(document).ready(function(){initNavTree('class_plane___enemy___junior.html','')
 <div class="title">Plane_Enemy_Junior类 参考</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>新兵敌机。特点为血少，子弹伤害低，路径单一，会飞离屏幕；但子弹速度快，射击间隔短。  
+ <a href="class_plane___enemy___junior.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_enemy___junior_8h_source.html">Enemy_Junior.h</a>&gt;</code></p>
 <div class="dynheader">
 类 Plane_Enemy_Junior 继承关系图:</div>
 <div class="dyncontent">
@@ -103,14 +108,16 @@ $(document).ready(function(){initNavTree('class_plane___enemy___junior.html','')
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
 <tr class="memitem:a2a6b4a6903c05789e8be98d2d11a927d"><td class="memItemLeft" align="right" valign="top"><a id="a2a6b4a6903c05789e8be98d2d11a927d"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Plane_Enemy_Junior</b> (<a class="el" href="struct_settings_1_1_plane.html">Settings::Plane</a> setting, <a class="el" href="structbasic__vector2_d.html">Vector2D</a> position, <a class="el" href="structbasic__vector2_d.html">Vector2D</a> <a class="el" href="class_entity.html#a386d25b56772b8913eb3e5adc636f6e0">velocity</a>=<a class="el" href="structbasic__vector2_d.html">Vector2D</a>())</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plane___enemy___junior.html#a2a6b4a6903c05789e8be98d2d11a927d">Plane_Enemy_Junior</a> (<a class="el" href="struct_settings_1_1_plane.html">Settings::Plane</a> setting, <a class="el" href="structbasic__vector2_d.html">Vector2D</a> position, <a class="el" href="structbasic__vector2_d.html">Vector2D</a> <a class="el" href="class_entity.html#a386d25b56772b8913eb3e5adc636f6e0">velocity</a>=<a class="el" href="structbasic__vector2_d.html">Vector2D</a>())</td></tr>
+<tr class="memdesc:a2a6b4a6903c05789e8be98d2d11a927d"><td class="mdescLeft">&#160;</td><td class="mdescRight">基础构造函数。 <br /></td></tr>
 <tr class="separator:a2a6b4a6903c05789e8be98d2d11a927d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a686e46c9927793dd07235cac72d52405"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plane___enemy___junior.html#a686e46c9927793dd07235cac72d52405">update</a> ()</td></tr>
-<tr class="memdesc:a686e46c9927793dd07235cac72d52405"><td class="mdescLeft">&#160;</td><td class="mdescRight">更新实体状态。作为基类虚函数，此方法只通过速度更新当前位置。  <a href="#a686e46c9927793dd07235cac72d52405">更多...</a><br /></td></tr>
-<tr class="separator:a686e46c9927793dd07235cac72d52405"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9c3559aa4616f1b1efbe4a055fca0ac"><td class="memItemLeft" align="right" valign="top"><a id="ac9c3559aa4616f1b1efbe4a055fca0ac"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>shoot</b> ()</td></tr>
-<tr class="separator:ac9c3559aa4616f1b1efbe4a055fca0ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a262143737ed740f65063dbcbc5970f55"><td class="memItemLeft" align="right" valign="top"><a id="a262143737ed740f65063dbcbc5970f55"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plane___enemy___junior.html#a262143737ed740f65063dbcbc5970f55">update</a> () override</td></tr>
+<tr class="memdesc:a262143737ed740f65063dbcbc5970f55"><td class="mdescLeft">&#160;</td><td class="mdescRight">更新状态，主要为调用射击函数。 <br /></td></tr>
+<tr class="separator:a262143737ed740f65063dbcbc5970f55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ffc4150cdf4c6e81480a2977d4bfafe"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plane___enemy___junior.html#a5ffc4150cdf4c6e81480a2977d4bfafe">shoot</a> () override</td></tr>
+<tr class="memdesc:a5ffc4150cdf4c6e81480a2977d4bfafe"><td class="mdescLeft">&#160;</td><td class="mdescRight">进行一次射击。高等级时子弹移动速度出现变化。  <a href="#a5ffc4150cdf4c6e81480a2977d4bfafe">更多...</a><br /></td></tr>
+<tr class="separator:a5ffc4150cdf4c6e81480a2977d4bfafe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_plane"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_plane')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="class_plane.html">Plane</a></td></tr>
 <tr class="memitem:ab0729538ddb380ca9a5b501f4cf72714 inherit pub_methods_class_plane"><td class="memItemLeft" align="right" valign="top"><a id="ab0729538ddb380ca9a5b501f4cf72714"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Plane</b> (<a class="el" href="struct_settings_1_1_plane.html">Settings::Plane</a> setting, <a class="el" href="structbasic__vector2_d.html">Vector2D</a> position, <a class="el" href="structbasic__vector2_d.html">Vector2D</a> <a class="el" href="class_entity.html#a386d25b56772b8913eb3e5adc636f6e0">velocity</a>)</td></tr>
@@ -241,9 +248,12 @@ Plane::State&#160;</td><td class="memItemRight" valign="bottom"><b>state</b></td
 <tr class="memdesc:a5326accd49d3817310ec90692b9da3df inherit pro_attribs_class_entity"><td class="mdescLeft">&#160;</td><td class="mdescRight">实体当前的Camp（阵营）。  <a href="class_entity.html#a5326accd49d3817310ec90692b9da3df">更多...</a><br /></td></tr>
 <tr class="separator:a5326accd49d3817310ec90692b9da3df inherit pro_attribs_class_entity"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">成员函数说明</h2>
-<a id="a686e46c9927793dd07235cac72d52405"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a686e46c9927793dd07235cac72d52405">&#9670;&nbsp;</a></span>update()</h2>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>新兵敌机。特点为血少，子弹伤害低，路径单一，会飞离屏幕；但子弹速度快，射击间隔短。 </p>
+<dl class="section see"><dt>参见</dt><dd>T:Plane</dd></dl>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a id="a5ffc4150cdf4c6e81480a2977d4bfafe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ffc4150cdf4c6e81480a2977d4bfafe">&#9670;&nbsp;</a></span>shoot()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -252,7 +262,7 @@ Plane::State&#160;</td><td class="memItemRight" valign="bottom"><b>state</b></td
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Plane_Enemy_Junior::update </td>
+          <td class="memname">void Plane_Enemy_Junior::shoot </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -260,14 +270,18 @@ Plane::State&#160;</td><td class="memItemRight" valign="bottom"><b>state</b></td
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>更新实体状态。作为基类虚函数，此方法只通过速度更新当前位置。 </p>
+<p>进行一次射击。高等级时子弹移动速度出现变化。 </p>
+<p>随着difficultyLevel升高，开始表现出不同的特性：</p><ul>
+<li>难度等级到2以上后，子弹的速度将在一个区间变动，初始为0.8~1.2倍原速度。随着难度越来越高，区间将变得越来越宽。</li>
+<li>这样做会使得小飞机构造出一个子弹网，使得玩家飞机难以通行。 </li>
+</ul>
 
-<p>重载 <a class="el" href="class_plane.html#a7fbb07f76503fe057772e01f542afc32">Plane</a> .</p>
+<p>实现了 <a class="el" href="class_plane.html">Plane</a>.</p>
 
 </div>
 </div>
