@@ -90,6 +90,11 @@ $(document).ready(function(){initNavTree('class_plane___player.html','');});
 <div class="title">Plane_Player类 参考</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>玩家飞机类。  
+ <a href="class_plane___player.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_player_8h_source.html">Player.h</a>&gt;</code></p>
 <div class="dynheader">
 类 Plane_Player 继承关系图:</div>
 <div class="dyncontent">
@@ -103,17 +108,20 @@ $(document).ready(function(){initNavTree('class_plane___player.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
-<tr class="memitem:ae07c92eb62cd45f7fd5d12fb570934e2"><td class="memItemLeft" align="right" valign="top"><a id="ae07c92eb62cd45f7fd5d12fb570934e2"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Plane_Player</b> (<a class="el" href="struct_settings_1_1_plane.html">Settings::Plane</a> setting)</td></tr>
+<tr class="memitem:ae07c92eb62cd45f7fd5d12fb570934e2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plane___player.html#ae07c92eb62cd45f7fd5d12fb570934e2">Plane_Player</a> (<a class="el" href="struct_settings_1_1_plane.html">Settings::Plane</a> setting)</td></tr>
+<tr class="memdesc:ae07c92eb62cd45f7fd5d12fb570934e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">唯一构造函数。  <a href="#ae07c92eb62cd45f7fd5d12fb570934e2">更多...</a><br /></td></tr>
 <tr class="separator:ae07c92eb62cd45f7fd5d12fb570934e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae68c08ce11fad9fd164c00eb4db6b348"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plane___player.html#ae68c08ce11fad9fd164c00eb4db6b348">update</a> ()</td></tr>
-<tr class="memdesc:ae68c08ce11fad9fd164c00eb4db6b348"><td class="mdescLeft">&#160;</td><td class="mdescRight">更新实体状态。作为基类虚函数，此方法只通过速度更新当前位置。  <a href="#ae68c08ce11fad9fd164c00eb4db6b348">更多...</a><br /></td></tr>
+<tr class="memitem:ae68c08ce11fad9fd164c00eb4db6b348"><td class="memItemLeft" align="right" valign="top"><a id="ae68c08ce11fad9fd164c00eb4db6b348"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plane___player.html#ae68c08ce11fad9fd164c00eb4db6b348">update</a> ()</td></tr>
+<tr class="memdesc:ae68c08ce11fad9fd164c00eb4db6b348"><td class="mdescLeft">&#160;</td><td class="mdescRight">更新状态，主要是更新键盘输入。若飞机已不属于存活状态，则无任何动作。 <br /></td></tr>
 <tr class="separator:ae68c08ce11fad9fd164c00eb4db6b348"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ffa86506370f74ec859e74d42c568c2"><td class="memItemLeft" align="right" valign="top"><a id="a3ffa86506370f74ec859e74d42c568c2"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>shoot</b> ()</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plane___player.html#a3ffa86506370f74ec859e74d42c568c2">shoot</a> ()</td></tr>
+<tr class="memdesc:a3ffa86506370f74ec859e74d42c568c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">射击，产生一个<a class="el" href="class_bullet___player.html" title="玩家飞机基础子弹类。 ">Bullet_Player</a>。 <br /></td></tr>
 <tr class="separator:a3ffa86506370f74ec859e74d42c568c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40e7f20858e2738e5a72b15eb1c28421"><td class="memItemLeft" align="right" valign="top"><a id="a40e7f20858e2738e5a72b15eb1c28421"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>takeDamage</b> (int damage)</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plane___player.html#a40e7f20858e2738e5a72b15eb1c28421">takeDamage</a> (int damage)</td></tr>
+<tr class="memdesc:a40e7f20858e2738e5a72b15eb1c28421"><td class="mdescLeft">&#160;</td><td class="mdescRight">承担伤害。若飞机仍存活，会产生一次<a class="el" href="class_action___plane___explode.html">Action_Plane_Explode</a>。 <br /></td></tr>
 <tr class="separator:a40e7f20858e2738e5a72b15eb1c28421"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_plane"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_plane')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="class_plane.html">Plane</a></td></tr>
 <tr class="memitem:ab0729538ddb380ca9a5b501f4cf72714 inherit pub_methods_class_plane"><td class="memItemLeft" align="right" valign="top"><a id="ab0729538ddb380ca9a5b501f4cf72714"></a>
@@ -193,7 +201,8 @@ Camp&#160;</td><td class="memItemRight" valign="bottom"><b>getCamp</b> () const<
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private 成员函数</h2></td></tr>
 <tr class="memitem:a7a356939196bfe1447fbd5fc03b8c380"><td class="memItemLeft" align="right" valign="top"><a id="a7a356939196bfe1447fbd5fc03b8c380"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>handleInput</b> ()</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plane___player.html#a7a356939196bfe1447fbd5fc03b8c380">handleInput</a> ()</td></tr>
+<tr class="memdesc:a7a356939196bfe1447fbd5fc03b8c380"><td class="mdescLeft">&#160;</td><td class="mdescRight">处理键盘输入，更新飞机状态。 <br /></td></tr>
 <tr class="separator:a7a356939196bfe1447fbd5fc03b8c380"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
@@ -248,33 +257,33 @@ Plane::State&#160;</td><td class="memItemRight" valign="bottom"><b>state</b></td
 <tr class="memdesc:a5326accd49d3817310ec90692b9da3df inherit pro_attribs_class_entity"><td class="mdescLeft">&#160;</td><td class="mdescRight">实体当前的Camp（阵营）。  <a href="class_entity.html#a5326accd49d3817310ec90692b9da3df">更多...</a><br /></td></tr>
 <tr class="separator:a5326accd49d3817310ec90692b9da3df inherit pro_attribs_class_entity"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">成员函数说明</h2>
-<a id="ae68c08ce11fad9fd164c00eb4db6b348"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae68c08ce11fad9fd164c00eb4db6b348">&#9670;&nbsp;</a></span>update()</h2>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>玩家飞机类。 </p>
+<dl class="section see"><dt>参见</dt><dd>T:Plane</dd></dl>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="ae07c92eb62cd45f7fd5d12fb570934e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae07c92eb62cd45f7fd5d12fb570934e2">&#9670;&nbsp;</a></span>Plane_Player()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Plane_Player::update </td>
+          <td class="memname">Plane_Player::Plane_Player </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="struct_settings_1_1_plane.html">Settings::Plane</a>&#160;</td>
+          <td class="paramname"><em>setting</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>更新实体状态。作为基类虚函数，此方法只通过速度更新当前位置。 </p>
-
-<p>重载 <a class="el" href="class_plane.html#a7fbb07f76503fe057772e01f542afc32">Plane</a> .</p>
+<p>唯一构造函数。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">setting</td><td>飞机的设置。以后可改成<code>Settings::Player</code>。 </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

@@ -1,5 +1,14 @@
 \hypertarget{class_plane___player}{}\section{Plane\+\_\+\+Player类 参考}
 \label{class_plane___player}\index{Plane\+\_\+\+Player@{Plane\+\_\+\+Player}}
+
+
+玩家飞机类。  
+
+
+
+
+{\ttfamily \#include $<$Player.\+h$>$}
+
 类 Plane\+\_\+\+Player 继承关系图\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,41 +18,52 @@
 \subsection*{Public 成员函数}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_plane___player_ae07c92eb62cd45f7fd5d12fb570934e2}\label{class_plane___player_ae07c92eb62cd45f7fd5d12fb570934e2}} 
-{\bfseries Plane\+\_\+\+Player} (\hyperlink{struct_settings_1_1_plane}{Settings\+::\+Plane} setting)
-\item 
+\hyperlink{class_plane___player_ae07c92eb62cd45f7fd5d12fb570934e2}{Plane\+\_\+\+Player} (\hyperlink{struct_settings_1_1_plane}{Settings\+::\+Plane} setting)
+\begin{DoxyCompactList}\small\item\em 唯一构造函数。 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_plane___player_ae68c08ce11fad9fd164c00eb4db6b348}\label{class_plane___player_ae68c08ce11fad9fd164c00eb4db6b348}} 
 virtual void \hyperlink{class_plane___player_ae68c08ce11fad9fd164c00eb4db6b348}{update} ()
-\begin{DoxyCompactList}\small\item\em 更新实体状态。作为基类虚函数，此方法只通过速度更新当前位置。 \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em 更新状态，主要是更新键盘输入。若飞机已不属于存活状态，则无任何动作。 \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_plane___player_a3ffa86506370f74ec859e74d42c568c2}\label{class_plane___player_a3ffa86506370f74ec859e74d42c568c2}} 
-virtual void {\bfseries shoot} ()
-\item 
+virtual void \hyperlink{class_plane___player_a3ffa86506370f74ec859e74d42c568c2}{shoot} ()
+\begin{DoxyCompactList}\small\item\em 射击，产生一个\hyperlink{class_bullet___player}{Bullet\+\_\+\+Player}。 \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_plane___player_a40e7f20858e2738e5a72b15eb1c28421}\label{class_plane___player_a40e7f20858e2738e5a72b15eb1c28421}} 
-virtual void {\bfseries take\+Damage} (int damage)
-\end{DoxyCompactItemize}
+virtual void \hyperlink{class_plane___player_a40e7f20858e2738e5a72b15eb1c28421}{take\+Damage} (int damage)
+\begin{DoxyCompactList}\small\item\em 承担伤害。若飞机仍存活，会产生一次\hyperlink{class_action___plane___explode}{Action\+\_\+\+Plane\+\_\+\+Explode}。 \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private 成员函数}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{class_plane___player_a7a356939196bfe1447fbd5fc03b8c380}\label{class_plane___player_a7a356939196bfe1447fbd5fc03b8c380}} 
-void {\bfseries handle\+Input} ()
-\end{DoxyCompactItemize}
+void \hyperlink{class_plane___player_a7a356939196bfe1447fbd5fc03b8c380}{handle\+Input} ()
+\begin{DoxyCompactList}\small\item\em 处理键盘输入，更新飞机状态。 \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{额外继承的成员函数}
 
 
-\subsection{成员函数说明}
-\mbox{\Hypertarget{class_plane___player_ae68c08ce11fad9fd164c00eb4db6b348}\label{class_plane___player_ae68c08ce11fad9fd164c00eb4db6b348}} 
-\index{Plane\+\_\+\+Player@{Plane\+\_\+\+Player}!update@{update}}
-\index{update@{update}!Plane\+\_\+\+Player@{Plane\+\_\+\+Player}}
-\subsubsection{\texorpdfstring{update()}{update()}}
-{\footnotesize\ttfamily void Plane\+\_\+\+Player\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+\subsection{详细描述}
+玩家飞机类。 
+
+\begin{DoxySeeAlso}{参见}
+T\+:\+Plane
+
+
+\end{DoxySeeAlso}
+
+
+\subsection{构造及析构函数说明}
+\mbox{\Hypertarget{class_plane___player_ae07c92eb62cd45f7fd5d12fb570934e2}\label{class_plane___player_ae07c92eb62cd45f7fd5d12fb570934e2}} 
+\index{Plane\+\_\+\+Player@{Plane\+\_\+\+Player}!Plane\+\_\+\+Player@{Plane\+\_\+\+Player}}
+\index{Plane\+\_\+\+Player@{Plane\+\_\+\+Player}!Plane\+\_\+\+Player@{Plane\+\_\+\+Player}}
+\subsubsection{\texorpdfstring{Plane\+\_\+\+Player()}{Plane\_Player()}}
+{\footnotesize\ttfamily Plane\+\_\+\+Player\+::\+Plane\+\_\+\+Player (\begin{DoxyParamCaption}\item[{\hyperlink{struct_settings_1_1_plane}{Settings\+::\+Plane}}]{setting }\end{DoxyParamCaption})}
 
 
 
-更新实体状态。作为基类虚函数，此方法只通过速度更新当前位置。 
+唯一构造函数。 
 
 
-
-重载 \hyperlink{class_plane_a7fbb07f76503fe057772e01f542afc32}{Plane} .
-
+\begin{DoxyParams}{参数}
+{\em setting} & 飞机的设置。以后可改成{\ttfamily Settings\+::\+Player}。 \\
+\hline
+\end{DoxyParams}
 
 
 该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['player',['player',['../namespace_settings.html#ab78c6dca0d1b2fc76eae348e81a3eed7',1,'Settings']]]
+  ['newenemywave',['newEnemyWave',['../class_world.html#a9957df94d0d75429c23c7d70c2db282e',1,'World']]]
 ];

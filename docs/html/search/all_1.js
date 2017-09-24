@@ -7,7 +7,7 @@ var searchData=
   ['bullet',['Bullet',['../struct_settings_1_1_bullet.html',1,'Settings::Bullet'],['../class_bullet.html',1,'Bullet'],['../class_bullet.html#ae9b56731be2ca3ff77f3a3ee4eb0bd25',1,'Bullet::Bullet()']]],
   ['bullet_5fenemy_5fautotarget',['Bullet_Enemy_AutoTarget',['../class_bullet___enemy___auto_target.html',1,'']]],
   ['bullet_5fenemy_5fjunior',['Bullet_Enemy_Junior',['../class_bullet___enemy___junior.html',1,'']]],
-  ['bullet_5fplayer',['Bullet_Player',['../class_bullet___player.html',1,'']]],
+  ['bullet_5fplayer',['Bullet_Player',['../class_bullet___player.html',1,'Bullet_Player'],['../class_bullet___player.html#abcb87ef10b028f5fd603c70b4cda20d3',1,'Bullet_Player::Bullet_Player()']]],
   ['bullets',['bullets',['../class_world.html#a932c82c701ec6d13e2857943562954f2',1,'World']]],
   ['bulletsetting',['bulletSetting',['../struct_settings_1_1_plane.html#a8416c74c0910b4c7a9da8d633e0c346a',1,'Settings::Plane']]]
 ];

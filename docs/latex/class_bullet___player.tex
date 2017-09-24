@@ -1,5 +1,14 @@
 \hypertarget{class_bullet___player}{}\section{Bullet\+\_\+\+Player类 参考}
 \label{class_bullet___player}\index{Bullet\+\_\+\+Player@{Bullet\+\_\+\+Player}}
+
+
+玩家飞机基础子弹类。  
+
+
+
+
+{\ttfamily \#include $<$Player.\+h$>$}
+
 类 Bullet\+\_\+\+Player 继承关系图\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,10 +18,41 @@
 \subsection*{Public 成员函数}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_bullet___player_abcb87ef10b028f5fd603c70b4cda20d3}\label{class_bullet___player_abcb87ef10b028f5fd603c70b4cda20d3}} 
-{\bfseries Bullet\+\_\+\+Player} (\hyperlink{class_entity}{Entity} $\ast$src, \hyperlink{struct_settings_1_1_bullet}{Settings\+::\+Bullet} setting, \hyperlink{structbasic__vector2_d}{Vector2D} \hyperlink{class_entity_a386d25b56772b8913eb3e5adc636f6e0}{velocity}=\hyperlink{structbasic__vector2_d}{Vector2D}())
-\end{DoxyCompactItemize}
+\hyperlink{class_bullet___player_abcb87ef10b028f5fd603c70b4cda20d3}{Bullet\+\_\+\+Player} (\hyperlink{class_entity}{Entity} $\ast$src, \hyperlink{struct_settings_1_1_bullet}{Settings\+::\+Bullet} setting, \hyperlink{structbasic__vector2_d}{Vector2D} \hyperlink{class_entity_a386d25b56772b8913eb3e5adc636f6e0}{velocity}=\hyperlink{structbasic__vector2_d}{Vector2D}())
+\begin{DoxyCompactList}\small\item\em 唯一构造函数。 \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+玩家飞机基础子弹类。 
+
+\begin{DoxySeeAlso}{参见}
+T\+:\+Bullet
+
+
+\end{DoxySeeAlso}
+
+
+\subsection{构造及析构函数说明}
+\mbox{\Hypertarget{class_bullet___player_abcb87ef10b028f5fd603c70b4cda20d3}\label{class_bullet___player_abcb87ef10b028f5fd603c70b4cda20d3}} 
+\index{Bullet\+\_\+\+Player@{Bullet\+\_\+\+Player}!Bullet\+\_\+\+Player@{Bullet\+\_\+\+Player}}
+\index{Bullet\+\_\+\+Player@{Bullet\+\_\+\+Player}!Bullet\+\_\+\+Player@{Bullet\+\_\+\+Player}}
+\subsubsection{\texorpdfstring{Bullet\+\_\+\+Player()}{Bullet\_Player()}}
+{\footnotesize\ttfamily Bullet\+\_\+\+Player\+::\+Bullet\+\_\+\+Player (\begin{DoxyParamCaption}\item[{\hyperlink{class_entity}{Entity} $\ast$}]{src,  }\item[{\hyperlink{struct_settings_1_1_bullet}{Settings\+::\+Bullet}}]{setting,  }\item[{\hyperlink{structbasic__vector2_d}{Vector2D}}]{velocity = {\ttfamily \hyperlink{structbasic__vector2_d}{Vector2D}()} }\end{DoxyParamCaption})}
+
+
+
+唯一构造函数。 
+
+
+\begin{DoxyParams}{参数}
+{\em src} & 射击源，一般为玩家飞机。 \\
+\hline
+{\em setting} & 子弹设置。 \\
+\hline
+{\em velocity} & 子弹速度。 \\
+\hline
+\end{DoxyParams}
 
 
 该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}

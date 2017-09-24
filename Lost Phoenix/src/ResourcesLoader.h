@@ -65,10 +65,7 @@ public:
 		return loadTexture(setting.path.c_str(), setting.hitbox.x, setting.hitbox.y, setting.expectHitBox.x, setting.expectHitBox.y);
 	}
 	
-	/// <summary>
-	/// 加载所有材质设置。在程序开始时通过<see cref="constructor"/>调用。
-	/// </summary>
-	void loadTextureSettings();
+	void loadTextureSettings(); ///< 加载所有材质设置。在程序开始时通过<see cref="constructor"/>调用。
 	void loadGeneralSettings(); ///< 加载全局设置。通过Lazy Load机制延时调用。
 	void loadBgTextures(); ///< 加载所有背景材质。通过Lazy Load机制延时调用。
 	void loadAnimeTextures(); ///< 加载所有动画材质。通过Lazy Load机制延时调用。
