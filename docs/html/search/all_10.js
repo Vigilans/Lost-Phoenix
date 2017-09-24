@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['texture',['Texture',['../struct_texture.html',1,'Texture'],['../struct_settings_1_1_bullet.html#a274a4b14c0bfaa540c5e60c273567bbd',1,'Settings::Bullet::texture()'],['../struct_settings_1_1_plane.html#a6a000124604eb5435f4d77bbec170a4f',1,'Settings::Plane::texture()'],['../struct_texture.html#a66179be276016021e80b1c67c047d4ad',1,'Texture::Texture()=default'],['../struct_texture.html#af59bcad788f8cdb48b1690e0ab31e095',1,'Texture::Texture(ege::PIMAGE image, Vector2D hitBox)'],['../struct_texture.html#a654c58271c71ff72ea2a417ea33e65d2',1,'Texture::Texture(int id)']]],
-  ['textureinfo',['TextureInfo',['../struct_settings_1_1_texture_info.html',1,'Settings']]],
-  ['title',['title',['../struct_settings_1_1_general.html#acb5598e7641429cde268ecd8f80c4da0',1,'Settings::General']]]
+  ['score',['score',['../struct_settings_1_1_plane.html#a20a8861d723406f4d49610804226dd82',1,'Settings::Plane::score()'],['../class_world.html#ae70b4ef5dd9cb9e7336169a25aaee39c',1,'World::score()']]],
+  ['settings',['Settings',['../namespace_settings.html',1,'Settings'],['../class_resources_loader.html#a355d825da8f96dc10cd17fc659e599ae',1,'ResourcesLoader::settings()']]],
+  ['size',['Size',['../class_input_controller.html#a840a7425e2220e1ef5659a7ea4ba122da6f6cb72d544962fa333e2e34ce64f719',1,'InputController']]],
+  ['speed',['speed',['../class_bullet.html#a110bd4348fc7547125b4ec4bbf94d5f5',1,'Bullet::speed()'],['../struct_settings_1_1_bullet.html#a8969e02d4dba2f87284855e0a141f6f3',1,'Settings::Bullet::speed()'],['../struct_settings_1_1_plane.html#a814ee5fe2c6b873ff4f0e0208f2c240a',1,'Settings::Plane::speed()']]]
 ];

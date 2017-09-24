@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['_7eentity',['~Entity',['../class_entity.html#a588098978eea6a3486b7361605ff3f0f',1,'Entity']]]
+  ['windowheight',['windowHeight',['../class_world.html#a1be83eac68417720386d6f04406675e2',1,'World']]],
+  ['windowwidth',['windowWidth',['../class_world.html#abaa042832b0d02dd6d9d01a1d03308ee',1,'World']]]
 ];

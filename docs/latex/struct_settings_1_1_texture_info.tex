@@ -1,17 +1,31 @@
 \hypertarget{struct_settings_1_1_texture_info}{}\section{Settings\+:\+:Texture\+Info结构体 参考}
 \label{struct_settings_1_1_texture_info}\index{Settings\+::\+Texture\+Info@{Settings\+::\+Texture\+Info}}
+
+
+材质的设置源，可以用来构造一个完整的材质。  
+
+
+
+
+{\ttfamily \#include $<$Resources\+Loader.\+h$>$}
+
 \subsection*{Public 属性}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{struct_settings_1_1_texture_info_ae8163d14505552c69b973a262fb896f6}\label{struct_settings_1_1_texture_info_ae8163d14505552c69b973a262fb896f6}} 
-std\+::wstring {\bfseries path}
-\item 
+std\+::wstring \hyperlink{struct_settings_1_1_texture_info_ae8163d14505552c69b973a262fb896f6}{path}
+\begin{DoxyCompactList}\small\item\em 材质的路径，采用\+Unicode字符，可为相对路径（相对的根路径根据\+F5与\+Ctrl+\+F5变化） \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{struct_settings_1_1_texture_info_a5b7e1f0b9d305faa03de6d0c31cc0859}\label{struct_settings_1_1_texture_info_a5b7e1f0b9d305faa03de6d0c31cc0859}} 
-\hyperlink{structbasic__vector2_d}{Vector2D} {\bfseries hitbox}
-\item 
+\hyperlink{structbasic__vector2_d}{Vector2D} \hyperlink{struct_settings_1_1_texture_info_a5b7e1f0b9d305faa03de6d0c31cc0859}{hitbox}
+\begin{DoxyCompactList}\small\item\em 材质的分辨率。 \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{struct_settings_1_1_texture_info_a4bec21902818b3afb2993e5d67a62dfe}\label{struct_settings_1_1_texture_info_a4bec21902818b3afb2993e5d67a62dfe}} 
-\hyperlink{structbasic__vector2_d}{Vector2D} {\bfseries expect\+Hit\+Box} = \hyperlink{structbasic__vector2_d}{Vector2D}()
-\end{DoxyCompactItemize}
+\hyperlink{structbasic__vector2_d}{Vector2D} \hyperlink{struct_settings_1_1_texture_info_a4bec21902818b3afb2993e5d67a62dfe}{expect\+Hit\+Box} = \hyperlink{structbasic__vector2_d}{Vector2D}()
+\begin{DoxyCompactList}\small\item\em 材质经缩放后要达到的分辨率。为零向量时表示不缩放。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+材质的设置源，可以用来构造一个完整的材质。 
+
 
 
 该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}

@@ -1,8 +1,8 @@
 var struct_settings_1_1_general =
 [
     [ "bgShiftSpeed", "struct_settings_1_1_general.html#ae17ce428cf02b7c52530c8752ebca9cd", null ],
-    [ "enemyInfoDuration", "struct_settings_1_1_general.html#a48c8c522f1359b0e60c08404ac84b481", null ],
-    [ "enemyWaveCoolDown", "struct_settings_1_1_general.html#a309cc676568d698298f225d2755141f9", null ],
+    [ "enemyInfoDuration", "struct_settings_1_1_general.html#a4665f9d9617ebd906abbf70828c4f4f5", null ],
+    [ "enemyWaveCoolDown", "struct_settings_1_1_general.html#a5888b0e6d233eb4388c70b7c223552e5", null ],
     [ "fontHeight", "struct_settings_1_1_general.html#ad459481ace3b01e1d80a7548325d28d2", null ],
     [ "fps", "struct_settings_1_1_general.html#a5ebbaffe3220c3daf7ef79c4cd7f1ad6", null ],
     [ "resolution", "struct_settings_1_1_general.html#a4cdcf50e69a10db0e410db97bd547d38", null ],

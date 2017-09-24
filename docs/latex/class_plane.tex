@@ -1,11 +1,30 @@
 \hypertarget{class_plane}{}\section{Plane类 参考}
 \label{class_plane}\index{Plane@{Plane}}
+
+
+飞机的基类。  
+
+
+
+
+{\ttfamily \#include $<$Plane -\/ Bullet.\+h$>$}
+
 类 Plane 继承关系图\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[height=3.000000cm]{class_plane}
 \end{center}
 \end{figure}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_plane_a18921e108c25d0606ab76d567fcbddf1}\label{class_plane_a18921e108c25d0606ab76d567fcbddf1}} 
+enum {\bfseries State} \{ {\bfseries Alive}, 
+{\bfseries Dead}, 
+{\bfseries Vanished}, 
+{\bfseries Invincible}
+ \}
+\end{DoxyCompactItemize}
 \subsection*{Public 成员函数}
 \begin{DoxyCompactItemize}
 \item 
@@ -22,11 +41,11 @@ virtual void {\bfseries shoot} ()=0
 \mbox{\Hypertarget{class_plane_a1a93dbb00292aaae274c152079f5f6f3}\label{class_plane_a1a93dbb00292aaae274c152079f5f6f3}} 
 virtual void {\bfseries take\+Damage} (int damage)
 \item 
-\mbox{\Hypertarget{class_plane_a4b45bbcd85eb0ad999ab256f44b93fcc}\label{class_plane_a4b45bbcd85eb0ad999ab256f44b93fcc}} 
-Plane\+State {\bfseries get\+State} ()
+\mbox{\Hypertarget{class_plane_a3cc5e05c7152c39449d36a1bf89f3e92}\label{class_plane_a3cc5e05c7152c39449d36a1bf89f3e92}} 
+Plane\+::\+State {\bfseries get\+State} ()
 \item 
-\mbox{\Hypertarget{class_plane_a40cb32f3c42f1fc772be20448724d277}\label{class_plane_a40cb32f3c42f1fc772be20448724d277}} 
-void {\bfseries set\+State} (Plane\+State new\+\_\+state)
+\mbox{\Hypertarget{class_plane_a71aa431d9b6b1ab4b187ab1a24f441ff}\label{class_plane_a71aa431d9b6b1ab4b187ab1a24f441ff}} 
+void {\bfseries set\+State} (Plane\+::\+State new\+\_\+state)
 \item 
 \mbox{\Hypertarget{class_plane_ad63d1e65ff9ca0d8b0ea1f6d37c55388}\label{class_plane_ad63d1e65ff9ca0d8b0ea1f6d37c55388}} 
 int {\bfseries get\+Health} ()
@@ -46,8 +65,8 @@ int {\bfseries max\+Health}
 \mbox{\Hypertarget{class_plane_a0434f35fe3f56acb865e51c042e43df8}\label{class_plane_a0434f35fe3f56acb865e51c042e43df8}} 
 int {\bfseries cur\+Health}
 \item 
-\mbox{\Hypertarget{class_plane_ae9f4ab92b0aa75cff1f14df37980eabd}\label{class_plane_ae9f4ab92b0aa75cff1f14df37980eabd}} 
-int {\bfseries shoot\+Cool\+Down}
+\mbox{\Hypertarget{class_plane_aee6743aa4af2550eb0581d52d0e0cafb}\label{class_plane_aee6743aa4af2550eb0581d52d0e0cafb}} 
+time\+\_\+t {\bfseries shoot\+Cool\+Down}
 \end{DoxyCompactItemize}
 \subsection*{Protected 成员函数}
 \begin{DoxyCompactItemize}
@@ -58,13 +77,23 @@ bool {\bfseries check\+Shoot\+Cool\+Down} ()
 \subsection*{Protected 属性}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_plane_a36cb09c56fbf7b8c28506d8dd70f07cb}\label{class_plane_a36cb09c56fbf7b8c28506d8dd70f07cb}} 
-int {\bfseries shoot\+Check\+Point}
+\mbox{\Hypertarget{class_plane_a04cbdef01529e67a2460f7aa4e8e6826}\label{class_plane_a04cbdef01529e67a2460f7aa4e8e6826}} 
+time\+\_\+t {\bfseries shoot\+Check\+Point}
 \item 
-\mbox{\Hypertarget{class_plane_a30babe177abbe22e61d2cc274945f3fc}\label{class_plane_a30babe177abbe22e61d2cc274945f3fc}} 
-Plane\+State {\bfseries state}
+\mbox{\Hypertarget{class_plane_a15487608040be61f78e1364261f23605}\label{class_plane_a15487608040be61f78e1364261f23605}} 
+Plane\+::\+State {\bfseries state}
 \end{DoxyCompactItemize}
 \subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+飞机的基类。 
+
+\begin{DoxySeeAlso}{参见}
+T\+:\+Entity
+
+
+\end{DoxySeeAlso}
 
 
 \subsection{成员函数说明}
@@ -98,7 +127,7 @@ Plane\+State {\bfseries state}
 
 
 
-被 \hyperlink{class_plane___enemy___auto_target_acae2a6f38bdc71d17188e2b7711f4d5b}{Plane\+\_\+\+Enemy\+\_\+\+Auto\+Target}, \hyperlink{class_plane___enemy___junior_a686e46c9927793dd07235cac72d52405}{Plane\+\_\+\+Enemy\+\_\+\+Junior} , 以及 \hyperlink{class_plane___player_ae68c08ce11fad9fd164c00eb4db6b348}{Plane\+\_\+\+Player} 重载.
+被 \hyperlink{class_plane___enemy___auto_target_a79e6eda540d282205ce6151ae0b304ca}{Plane\+\_\+\+Enemy\+\_\+\+Auto\+Target}, \hyperlink{class_plane___enemy___junior_a686e46c9927793dd07235cac72d52405}{Plane\+\_\+\+Enemy\+\_\+\+Junior} , 以及 \hyperlink{class_plane___player_ae68c08ce11fad9fd164c00eb4db6b348}{Plane\+\_\+\+Player} 重载.
 
 
 

@@ -16,5 +16,4 @@ class Bullet_Enemy_AutoTarget : public Bullet
 {
 public:
 	Bullet_Enemy_AutoTarget(Entity* src, Plane* des, Settings::Bullet setting);
-
 };

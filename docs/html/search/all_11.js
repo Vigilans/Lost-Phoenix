@@ -1,9 +1,7 @@
 var searchData=
 [
-  ['unit',['unit',['../structbasic__vector2_d.html#aa4b24c577ef24c814370beebc22f3bb8',1,'basic_vector2D']]],
-  ['unitbydegree',['unitByDegree',['../structbasic__vector2_d.html#aa31b5b9b9261d28ecd2626ba38b61278',1,'basic_vector2D']]],
-  ['update',['update',['../class_plane___enemy___auto_target.html#acae2a6f38bdc71d17188e2b7711f4d5b',1,'Plane_Enemy_AutoTarget::update()'],['../class_plane___enemy___junior.html#a686e46c9927793dd07235cac72d52405',1,'Plane_Enemy_Junior::update()'],['../class_entity.html#a00b6eeaf99b35c8f8b10b5fbfc1baf4f',1,'Entity::update()'],['../class_plane.html#a7fbb07f76503fe057772e01f542afc32',1,'Plane::update()'],['../class_bullet.html#a32f4a0611fe2dd245fee955d14ca1f68',1,'Bullet::update()'],['../class_plane___player.html#ae68c08ce11fad9fd164c00eb4db6b348',1,'Plane_Player::update()'],['../class_world.html#aac8c1fde63c06577ffc648aaefdb37f0',1,'World::update()']]],
-  ['updatecollision',['updateCollision',['../class_world.html#ab86ffcea335fe909467eb754edc5f1a5',1,'World']]],
-  ['updateinput',['updateInput',['../class_input_controller.html#a2a88542ae1370cf3f5ace3c4bb8813d9',1,'InputController']]],
-  ['updatestate',['updateState',['../class_world.html#a6a1abe665fc8056caf3dd84663bccfb8',1,'World']]]
+  ['texture',['Texture',['../struct_texture.html',1,'Texture'],['../struct_settings_1_1_bullet.html#a274a4b14c0bfaa540c5e60c273567bbd',1,'Settings::Bullet::texture()'],['../struct_settings_1_1_plane.html#a6a000124604eb5435f4d77bbec170a4f',1,'Settings::Plane::texture()'],['../struct_texture.html#a66179be276016021e80b1c67c047d4ad',1,'Texture::Texture()=default'],['../struct_texture.html#af59bcad788f8cdb48b1690e0ab31e095',1,'Texture::Texture(ege::PIMAGE image, Vector2D hitBox)'],['../struct_texture.html#a654c58271c71ff72ea2a417ea33e65d2',1,'Texture::Texture(int id)']]],
+  ['textureinfo',['TextureInfo',['../struct_settings_1_1_texture_info.html',1,'Settings']]],
+  ['textures',['textures',['../class_resources_loader.html#a5b18435b040ae9562a84570712be922c',1,'ResourcesLoader']]],
+  ['title',['title',['../struct_settings_1_1_general.html#acb5598e7641429cde268ecd8f80c4da0',1,'Settings::General']]]
 ];

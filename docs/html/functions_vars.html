@@ -89,7 +89,8 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 : <a class="el" href="class_world.html#aefe8e0e9e418bbf81671314bf8d019f2">World</a>
 </li>
 <li>attack
-: <a class="el" href="struct_settings_1_1_bullet.html#a21e484cc6e290496e36a68da5b1a7b76">Settings::Bullet</a>
+: <a class="el" href="class_bullet.html#ab9e1e40341cddf25f8acc4e378b26f4a">Bullet</a>
+, <a class="el" href="struct_settings_1_1_bullet.html#a21e484cc6e290496e36a68da5b1a7b76">Settings::Bullet</a>
 </li>
 </ul>
 
@@ -113,7 +114,7 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 , <a class="el" href="struct_settings_1_1_plane.html#a62d563a2ebc841e01bfe4737bf1fe0ab">Settings::Plane</a>
 </li>
 <li>coolDown
-: <a class="el" href="struct_settings_1_1_bullet.html#a00faad5dff02426e73ab0326057b66ed">Settings::Bullet</a>
+: <a class="el" href="struct_settings_1_1_bullet.html#aea74b608868e75f9bcf93100a38f0090">Settings::Bullet</a>
 </li>
 <li>curPos
 : <a class="el" href="class_entity.html#a5031aa6b058f2231daad16b35e3d536d">Entity</a>
@@ -129,14 +130,20 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 
 
 <h3><a id="index_e"></a>- e -</h3><ul>
+<li>end
+: <a class="el" href="class_bullet.html#aff37198e603e1a2b8ff28e0df6e156a4">Bullet</a>
+</li>
 <li>enemy_planes
 : <a class="el" href="class_world.html#a9692ac6798300e7fde98eb3ef1bb7c79">World</a>
 </li>
 <li>enemyInfoDuration
-: <a class="el" href="struct_settings_1_1_general.html#a48c8c522f1359b0e60c08404ac84b481">Settings::General</a>
+: <a class="el" href="struct_settings_1_1_general.html#a4665f9d9617ebd906abbf70828c4f4f5">Settings::General</a>
 </li>
 <li>enemyWaveCoolDown
-: <a class="el" href="struct_settings_1_1_general.html#a309cc676568d698298f225d2755141f9">Settings::General</a>
+: <a class="el" href="struct_settings_1_1_general.html#a5888b0e6d233eb4388c70b7c223552e5">Settings::General</a>
+</li>
+<li>expectHitBox
+: <a class="el" href="struct_settings_1_1_texture_info.html#a4bec21902818b3afb2993e5d67a62dfe">Settings::TextureInfo</a>
 </li>
 <li>explosion
 : <a class="el" href="struct_settings_1_1_anime_textures.html#ac7d7f8216a2c1f3f06dfcb59d6ed7a10">Settings::AnimeTextures</a>
@@ -171,6 +178,9 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 <li>health
 : <a class="el" href="struct_settings_1_1_plane.html#a71ffa9166855277d353d0fb6ac8f58f6">Settings::Plane</a>
 </li>
+<li>hitbox
+: <a class="el" href="struct_settings_1_1_texture_info.html#a5b7e1f0b9d305faa03de6d0c31cc0859">Settings::TextureInfo</a>
+</li>
 <li>hitBox
 : <a class="el" href="struct_texture.html#a1142de09bebe1683ee67c816953f9ad1">Texture</a>
 </li>
@@ -204,12 +214,36 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 <li>model
 : <a class="el" href="class_entity.html#a22ccba8fb86e5b4e10b2c33b6f56d238">Entity</a>
 </li>
+<li>mTextureInfos
+: <a class="el" href="class_resources_loader.html#ae364e855ac860a1404ddf324b0ef0300">ResourcesLoader</a>
+</li>
 </ul>
 
 
 <h3><a id="index_p"></a>- p -</h3><ul>
+<li>pAnimeTextures
+: <a class="el" href="class_resources_loader.html#a72df15c8b925035fda4edfeb52830d82">ResourcesLoader</a>
+</li>
+<li>path
+: <a class="el" href="struct_settings_1_1_texture_info.html#ae8163d14505552c69b973a262fb896f6">Settings::TextureInfo</a>
+</li>
+<li>pBgTextures
+: <a class="el" href="class_resources_loader.html#aada194614a803df2a3680e5c5992a18a">ResourcesLoader</a>
+</li>
+<li>pEnemyAutoTarget
+: <a class="el" href="class_resources_loader.html#a99ac5605a8b7fedb9c79b3f6b6d310cb">ResourcesLoader</a>
+</li>
+<li>pEnemyJunior
+: <a class="el" href="class_resources_loader.html#a150dacb6180f32ab8fafadcefdc65f96">ResourcesLoader</a>
+</li>
+<li>pGeneral
+: <a class="el" href="class_resources_loader.html#a65888b4ea57a744c09dc0c9e22f9f186">ResourcesLoader</a>
+</li>
 <li>player_plane
 : <a class="el" href="class_world.html#ada7a87d1778bfc543635656ea8f12d3f">World</a>
+</li>
+<li>pPlayer
+: <a class="el" href="class_resources_loader.html#ae874a55d363c3cb651f36e47570d30a9">ResourcesLoader</a>
 </li>
 </ul>
 
@@ -229,8 +263,12 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 : <a class="el" href="struct_settings_1_1_plane.html#a20a8861d723406f4d49610804226dd82">Settings::Plane</a>
 , <a class="el" href="class_world.html#ae70b4ef5dd9cb9e7336169a25aaee39c">World</a>
 </li>
+<li>settings
+: <a class="el" href="class_resources_loader.html#a355d825da8f96dc10cd17fc659e599ae">ResourcesLoader</a>
+</li>
 <li>speed
-: <a class="el" href="struct_settings_1_1_bullet.html#a8969e02d4dba2f87284855e0a141f6f3">Settings::Bullet</a>
+: <a class="el" href="class_bullet.html#a110bd4348fc7547125b4ec4bbf94d5f5">Bullet</a>
+, <a class="el" href="struct_settings_1_1_bullet.html#a8969e02d4dba2f87284855e0a141f6f3">Settings::Bullet</a>
 , <a class="el" href="struct_settings_1_1_plane.html#a814ee5fe2c6b873ff4f0e0208f2c240a">Settings::Plane</a>
 </li>
 </ul>
@@ -240,6 +278,9 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 <li>texture
 : <a class="el" href="struct_settings_1_1_bullet.html#a274a4b14c0bfaa540c5e60c273567bbd">Settings::Bullet</a>
 , <a class="el" href="struct_settings_1_1_plane.html#a6a000124604eb5435f4d77bbec170a4f">Settings::Plane</a>
+</li>
+<li>textures
+: <a class="el" href="class_resources_loader.html#a5b18435b040ae9562a84570712be922c">ResourcesLoader</a>
 </li>
 <li>title
 : <a class="el" href="struct_settings_1_1_general.html#acb5598e7641429cde268ecd8f80c4da0">Settings::General</a>

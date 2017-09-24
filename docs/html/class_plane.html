@@ -83,6 +83,7 @@ $(document).ready(function(){initNavTree('class_plane.html','');});
 
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
 <a href="#pub-methods">Public 成员函数</a> &#124;
 <a href="#pub-attribs">Public 属性</a> &#124;
 <a href="#pro-methods">Protected 成员函数</a> &#124;
@@ -92,6 +93,11 @@ $(document).ready(function(){initNavTree('class_plane.html','');});
 <div class="title">Plane类 参考<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>飞机的基类。  
+ <a href="class_plane.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_plane_01-_01_bullet_8h_source.html">Plane - Bullet.h</a>&gt;</code></p>
 <div class="dynheader">
 类 Plane 继承关系图:</div>
 <div class="dyncontent">
@@ -105,6 +111,15 @@ $(document).ready(function(){initNavTree('class_plane.html','');});
 </map>
  </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a18921e108c25d0606ab76d567fcbddf1"><td class="memItemLeft" align="right" valign="top"><a id="a18921e108c25d0606ab76d567fcbddf1"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>State</b> { <b>Alive</b>, 
+<b>Dead</b>, 
+<b>Vanished</b>, 
+<b>Invincible</b>
+ }</td></tr>
+<tr class="separator:a18921e108c25d0606ab76d567fcbddf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
 <tr class="memitem:ab0729538ddb380ca9a5b501f4cf72714"><td class="memItemLeft" align="right" valign="top"><a id="ab0729538ddb380ca9a5b501f4cf72714"></a>
@@ -122,12 +137,12 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>shoot</b> ()=
 <tr class="memitem:a1a93dbb00292aaae274c152079f5f6f3"><td class="memItemLeft" align="right" valign="top"><a id="a1a93dbb00292aaae274c152079f5f6f3"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>takeDamage</b> (int damage)</td></tr>
 <tr class="separator:a1a93dbb00292aaae274c152079f5f6f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b45bbcd85eb0ad999ab256f44b93fcc"><td class="memItemLeft" align="right" valign="top"><a id="a4b45bbcd85eb0ad999ab256f44b93fcc"></a>
-PlaneState&#160;</td><td class="memItemRight" valign="bottom"><b>getState</b> ()</td></tr>
-<tr class="separator:a4b45bbcd85eb0ad999ab256f44b93fcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40cb32f3c42f1fc772be20448724d277"><td class="memItemLeft" align="right" valign="top"><a id="a40cb32f3c42f1fc772be20448724d277"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setState</b> (PlaneState new_state)</td></tr>
-<tr class="separator:a40cb32f3c42f1fc772be20448724d277"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cc5e05c7152c39449d36a1bf89f3e92"><td class="memItemLeft" align="right" valign="top"><a id="a3cc5e05c7152c39449d36a1bf89f3e92"></a>
+Plane::State&#160;</td><td class="memItemRight" valign="bottom"><b>getState</b> ()</td></tr>
+<tr class="separator:a3cc5e05c7152c39449d36a1bf89f3e92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71aa431d9b6b1ab4b187ab1a24f441ff"><td class="memItemLeft" align="right" valign="top"><a id="a71aa431d9b6b1ab4b187ab1a24f441ff"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setState</b> (Plane::State new_state)</td></tr>
+<tr class="separator:a71aa431d9b6b1ab4b187ab1a24f441ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad63d1e65ff9ca0d8b0ea1f6d37c55388"><td class="memItemLeft" align="right" valign="top"><a id="ad63d1e65ff9ca0d8b0ea1f6d37c55388"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>getHealth</b> ()</td></tr>
 <tr class="separator:ad63d1e65ff9ca0d8b0ea1f6d37c55388"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -201,9 +216,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>maxHealth</b></td></tr
 <tr class="memitem:a0434f35fe3f56acb865e51c042e43df8"><td class="memItemLeft" align="right" valign="top"><a id="a0434f35fe3f56acb865e51c042e43df8"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>curHealth</b></td></tr>
 <tr class="separator:a0434f35fe3f56acb865e51c042e43df8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9f4ab92b0aa75cff1f14df37980eabd"><td class="memItemLeft" align="right" valign="top"><a id="ae9f4ab92b0aa75cff1f14df37980eabd"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>shootCoolDown</b></td></tr>
-<tr class="separator:ae9f4ab92b0aa75cff1f14df37980eabd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee6743aa4af2550eb0581d52d0e0cafb"><td class="memItemLeft" align="right" valign="top"><a id="aee6743aa4af2550eb0581d52d0e0cafb"></a>
+time_t&#160;</td><td class="memItemRight" valign="bottom"><b>shootCoolDown</b></td></tr>
+<tr class="separator:aee6743aa4af2550eb0581d52d0e0cafb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected 成员函数</h2></td></tr>
@@ -213,12 +228,12 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>checkShootCoolDown</b
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected 属性</h2></td></tr>
-<tr class="memitem:a36cb09c56fbf7b8c28506d8dd70f07cb"><td class="memItemLeft" align="right" valign="top"><a id="a36cb09c56fbf7b8c28506d8dd70f07cb"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>shootCheckPoint</b></td></tr>
-<tr class="separator:a36cb09c56fbf7b8c28506d8dd70f07cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a30babe177abbe22e61d2cc274945f3fc"><td class="memItemLeft" align="right" valign="top"><a id="a30babe177abbe22e61d2cc274945f3fc"></a>
-PlaneState&#160;</td><td class="memItemRight" valign="bottom"><b>state</b></td></tr>
-<tr class="separator:a30babe177abbe22e61d2cc274945f3fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04cbdef01529e67a2460f7aa4e8e6826"><td class="memItemLeft" align="right" valign="top"><a id="a04cbdef01529e67a2460f7aa4e8e6826"></a>
+time_t&#160;</td><td class="memItemRight" valign="bottom"><b>shootCheckPoint</b></td></tr>
+<tr class="separator:a04cbdef01529e67a2460f7aa4e8e6826"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15487608040be61f78e1364261f23605"><td class="memItemLeft" align="right" valign="top"><a id="a15487608040be61f78e1364261f23605"></a>
+Plane::State&#160;</td><td class="memItemRight" valign="bottom"><b>state</b></td></tr>
+<tr class="separator:a15487608040be61f78e1364261f23605"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_entity"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_entity')"><img src="closed.png" alt="-"/>&#160;Protected 属性 继承自 <a class="el" href="class_entity.html">Entity</a></td></tr>
 <tr class="memitem:a22ccba8fb86e5b4e10b2c33b6f56d238 inherit pro_attribs_class_entity"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_texture.html">Texture</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entity.html#a22ccba8fb86e5b4e10b2c33b6f56d238">model</a></td></tr>
 <tr class="memdesc:a22ccba8fb86e5b4e10b2c33b6f56d238 inherit pro_attribs_class_entity"><td class="mdescLeft">&#160;</td><td class="mdescRight">实体的材质模型。通过它获取实体的HitBox属性。</p><dl class="section see"><dt>参见</dt><dd><a class="el" href="struct_texture.html" title="表征图像材质的结构体。 ">Texture</a></dd></dl>
@@ -241,7 +256,10 @@ PlaneState&#160;</td><td class="memItemRight" valign="bottom"><b>state</b></td><
 <tr class="memdesc:afeab7f54f15446e13fbf218eccb8be53 inherit pub_static_methods_class_entity"><td class="mdescLeft">&#160;</td><td class="mdescRight">判断两个实体是否发生碰撞。  <a href="class_entity.html#afeab7f54f15446e13fbf218eccb8be53">更多...</a><br /></td></tr>
 <tr class="separator:afeab7f54f15446e13fbf218eccb8be53 inherit pub_static_methods_class_entity"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">成员函数说明</h2>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>飞机的基类。 </p>
+<dl class="section see"><dt>参见</dt><dd>T:Entity</dd></dl>
+</div><h2 class="groupheader">成员函数说明</h2>
 <a id="a8877358878e91929c4c01bad40cbdb78"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8877358878e91929c4c01bad40cbdb78">&#9670;&nbsp;</a></span>draw()</h2>
 
@@ -298,7 +316,7 @@ PlaneState&#160;</td><td class="memItemRight" valign="bottom"><b>state</b></td><
 
 <p>重载 <a class="el" href="class_entity.html#a00b6eeaf99b35c8f8b10b5fbfc1baf4f">Entity</a> .</p>
 
-<p>被 <a class="el" href="class_plane___enemy___auto_target.html#acae2a6f38bdc71d17188e2b7711f4d5b">Plane_Enemy_AutoTarget</a>, <a class="el" href="class_plane___enemy___junior.html#a686e46c9927793dd07235cac72d52405">Plane_Enemy_Junior</a> , 以及 <a class="el" href="class_plane___player.html#ae68c08ce11fad9fd164c00eb4db6b348">Plane_Player</a> 重载.</p>
+<p>被 <a class="el" href="class_plane___enemy___auto_target.html#a79e6eda540d282205ce6151ae0b304ca">Plane_Enemy_AutoTarget</a>, <a class="el" href="class_plane___enemy___junior.html#a686e46c9927793dd07235cac72d52405">Plane_Enemy_Junior</a> , 以及 <a class="el" href="class_plane___player.html#ae68c08ce11fad9fd164c00eb4db6b348">Plane_Player</a> 重载.</p>
 
 </div>
 </div>

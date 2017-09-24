@@ -90,32 +90,48 @@ $(document).ready(function(){initNavTree('class_resources_loader.html','');});
 <div class="title">ResourcesLoader类 参考</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>资源加载器。仅在Resources.cpp中使用。在堆上一块稳定内存托管所有材质及设置资源。  
+ <a href="class_resources_loader.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_resources_loader_8h_source.html">ResourcesLoader.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
-<tr class="memitem:a38cbe5a4029c4a6fe999a8405703fc30"><td class="memItemLeft" align="right" valign="top"><a id="a38cbe5a4029c4a6fe999a8405703fc30"></a>
-<a class="el" href="struct_texture.html">Texture</a>&#160;</td><td class="memItemRight" valign="bottom"><b>loadTexture</b> (const wchar_t *imagePath, int w_raw, int h_raw, int w_to=0, int h_to=0)</td></tr>
+<tr class="memitem:a571b6232d8f1dc1cf94ec752c984a834"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_resources_loader.html#a571b6232d8f1dc1cf94ec752c984a834">ResourcesLoader</a> ()</td></tr>
+<tr class="memdesc:a571b6232d8f1dc1cf94ec752c984a834"><td class="mdescLeft">&#160;</td><td class="mdescRight">默认构造函数，用来在程序开始时加载所有材质设置到TextureInfo。  <a href="#a571b6232d8f1dc1cf94ec752c984a834">更多...</a><br /></td></tr>
+<tr class="separator:a571b6232d8f1dc1cf94ec752c984a834"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4f7fa273471e91107896131bce915da"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_resources_loader.html#ab4f7fa273471e91107896131bce915da">~ResourcesLoader</a> ()</td></tr>
+<tr class="memdesc:ab4f7fa273471e91107896131bce915da"><td class="mdescLeft">&#160;</td><td class="mdescRight">析构函数，清除堆上所有材质及设置。  <a href="#ab4f7fa273471e91107896131bce915da">更多...</a><br /></td></tr>
+<tr class="separator:ab4f7fa273471e91107896131bce915da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38cbe5a4029c4a6fe999a8405703fc30"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_texture.html">Texture</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_resources_loader.html#a38cbe5a4029c4a6fe999a8405703fc30">loadTexture</a> (const wchar_t *imagePath, int w_raw, int h_raw, int w_to=0, int h_to=0)</td></tr>
+<tr class="memdesc:a38cbe5a4029c4a6fe999a8405703fc30"><td class="mdescLeft">&#160;</td><td class="mdescRight">通过元信息加载材质。  <a href="#a38cbe5a4029c4a6fe999a8405703fc30">更多...</a><br /></td></tr>
 <tr class="separator:a38cbe5a4029c4a6fe999a8405703fc30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29b4b9fedb76dc01abcfacc2b31cf25c"><td class="memItemLeft" align="right" valign="top"><a id="a29b4b9fedb76dc01abcfacc2b31cf25c"></a>
-<a class="el" href="struct_texture.html">Texture</a>&#160;</td><td class="memItemRight" valign="bottom"><b>loadTexture</b> (<a class="el" href="struct_settings_1_1_texture_info.html">Settings::TextureInfo</a> setting)</td></tr>
+<tr class="memitem:a29b4b9fedb76dc01abcfacc2b31cf25c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_texture.html">Texture</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_resources_loader.html#a29b4b9fedb76dc01abcfacc2b31cf25c">loadTexture</a> (<a class="el" href="struct_settings_1_1_texture_info.html">Settings::TextureInfo</a> setting)</td></tr>
+<tr class="memdesc:a29b4b9fedb76dc01abcfacc2b31cf25c"><td class="mdescLeft">&#160;</td><td class="mdescRight">通过TextureInfo加载材质。  <a href="#a29b4b9fedb76dc01abcfacc2b31cf25c">更多...</a><br /></td></tr>
 <tr class="separator:a29b4b9fedb76dc01abcfacc2b31cf25c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80e1d1bb8339e48b0becf401f205436e"><td class="memItemLeft" align="right" valign="top"><a id="a80e1d1bb8339e48b0becf401f205436e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>loadTextureSettings</b> ()</td></tr>
+<tr class="memitem:a80e1d1bb8339e48b0becf401f205436e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_resources_loader.html#a80e1d1bb8339e48b0becf401f205436e">loadTextureSettings</a> ()</td></tr>
+<tr class="memdesc:a80e1d1bb8339e48b0becf401f205436e"><td class="mdescLeft">&#160;</td><td class="mdescRight">加载所有材质设置。在程序开始时通过constructor调用。  <a href="#a80e1d1bb8339e48b0becf401f205436e">更多...</a><br /></td></tr>
 <tr class="separator:a80e1d1bb8339e48b0becf401f205436e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae8a0b49efa4191ba01cc832c32dbd95"><td class="memItemLeft" align="right" valign="top"><a id="aae8a0b49efa4191ba01cc832c32dbd95"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>loadGeneralSettings</b> ()</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_resources_loader.html#aae8a0b49efa4191ba01cc832c32dbd95">loadGeneralSettings</a> ()</td></tr>
+<tr class="memdesc:aae8a0b49efa4191ba01cc832c32dbd95"><td class="mdescLeft">&#160;</td><td class="mdescRight">加载全局设置。通过Lazy Load机制延时调用。 <br /></td></tr>
 <tr class="separator:aae8a0b49efa4191ba01cc832c32dbd95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5099528fcfd109b389965e5ebfbdb661"><td class="memItemLeft" align="right" valign="top"><a id="a5099528fcfd109b389965e5ebfbdb661"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>loadBgTextures</b> ()</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_resources_loader.html#a5099528fcfd109b389965e5ebfbdb661">loadBgTextures</a> ()</td></tr>
+<tr class="memdesc:a5099528fcfd109b389965e5ebfbdb661"><td class="mdescLeft">&#160;</td><td class="mdescRight">加载所有背景材质。通过Lazy Load机制延时调用。 <br /></td></tr>
 <tr class="separator:a5099528fcfd109b389965e5ebfbdb661"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd356d180bfc92e6135996b3d290d3ae"><td class="memItemLeft" align="right" valign="top"><a id="afd356d180bfc92e6135996b3d290d3ae"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>loadAnimeTextures</b> ()</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_resources_loader.html#afd356d180bfc92e6135996b3d290d3ae">loadAnimeTextures</a> ()</td></tr>
+<tr class="memdesc:afd356d180bfc92e6135996b3d290d3ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">加载所有动画材质。通过Lazy Load机制延时调用。 <br /></td></tr>
 <tr class="separator:afd356d180bfc92e6135996b3d290d3ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56b70b8ad03c9fde2736d425adfd97e7"><td class="memItemLeft" align="right" valign="top"><a id="a56b70b8ad03c9fde2736d425adfd97e7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>loadPlaneSettings</b> ()</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_resources_loader.html#a56b70b8ad03c9fde2736d425adfd97e7">loadPlaneSettings</a> ()</td></tr>
+<tr class="memdesc:a56b70b8ad03c9fde2736d425adfd97e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">加载所有飞机设置。通过Lazy Load机制延时调用。 <br /></td></tr>
 <tr class="separator:a56b70b8ad03c9fde2736d425adfd97e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe684ff2f1419210e4bbd608c67ffeb3"><td class="memItemLeft" align="right" valign="top"><a id="afe684ff2f1419210e4bbd608c67ffeb3"></a>
-const std::map&lt; int, <a class="el" href="struct_texture.html">Texture</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>loadAllTextures</b> ()</td></tr>
+const std::map&lt; int, <a class="el" href="struct_texture.html">Texture</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_resources_loader.html#afe684ff2f1419210e4bbd608c67ffeb3">loadAllTextures</a> ()</td></tr>
+<tr class="memdesc:afe684ff2f1419210e4bbd608c67ffeb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">一次性加载所有材质。现为Depreciated。 <br /></td></tr>
 <tr class="separator:afe684ff2f1419210e4bbd608c67ffeb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
@@ -123,32 +139,199 @@ Public 属性</h2></td></tr>
 <tr class="memitem:a355d825da8f96dc10cd17fc659e599ae"><td class="memItemLeft" ><a id="a355d825da8f96dc10cd17fc659e599ae"></a>
 struct {</td></tr>
 <tr class="memitem:a71374fac940b8f51c43019b2e9b5e07f"><td class="memItemLeft" >
-&#160;&#160;&#160;std::unique_ptr&lt; <a class="el" href="struct_settings_1_1_general.html">Settings::General</a> &gt;&#160;&#160;&#160;<b>pGeneral</b></td></tr>
+&#160;&#160;&#160;std::unique_ptr&lt; <a class="el" href="struct_settings_1_1_general.html">Settings::General</a> &gt;&#160;&#160;&#160;<a class="el" href="class_resources_loader.html#a65888b4ea57a744c09dc0c9e22f9f186">pGeneral</a></td></tr>
+<tr class="memdesc:a71374fac940b8f51c43019b2e9b5e07f"><td class="mdescLeft">&#160;</td><td class="mdescRight">默认全局设置。 <br /></td></tr>
 <tr class="separator:a71374fac940b8f51c43019b2e9b5e07f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ca66bf3efacf94f3887009a2615da4b"><td class="memItemLeft" >
-&#160;&#160;&#160;std::unique_ptr&lt; <a class="el" href="struct_settings_1_1_bg_textures.html">Settings::BgTextures</a> &gt;&#160;&#160;&#160;<b>pBgTextures</b></td></tr>
+&#160;&#160;&#160;std::unique_ptr&lt; <a class="el" href="struct_settings_1_1_bg_textures.html">Settings::BgTextures</a> &gt;&#160;&#160;&#160;<a class="el" href="class_resources_loader.html#aada194614a803df2a3680e5c5992a18a">pBgTextures</a></td></tr>
+<tr class="memdesc:a7ca66bf3efacf94f3887009a2615da4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">所有背景材质。 <br /></td></tr>
 <tr class="separator:a7ca66bf3efacf94f3887009a2615da4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc01531020b07626d1c7868a11a8e1f9"><td class="memItemLeft" >
-&#160;&#160;&#160;std::unique_ptr&lt; <a class="el" href="struct_settings_1_1_anime_textures.html">Settings::AnimeTextures</a> &gt;&#160;&#160;&#160;<b>pAnimeTextures</b></td></tr>
+&#160;&#160;&#160;std::unique_ptr&lt; <a class="el" href="struct_settings_1_1_anime_textures.html">Settings::AnimeTextures</a> &gt;&#160;&#160;&#160;<a class="el" href="class_resources_loader.html#a72df15c8b925035fda4edfeb52830d82">pAnimeTextures</a></td></tr>
+<tr class="memdesc:adc01531020b07626d1c7868a11a8e1f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">所有动画材质。 <br /></td></tr>
 <tr class="separator:adc01531020b07626d1c7868a11a8e1f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a834e4a34169b12be1a84eb6c040ccd"><td class="memItemLeft" >
-&#160;&#160;&#160;std::unique_ptr&lt; <a class="el" href="struct_settings_1_1_plane.html">Settings::Plane</a> &gt;&#160;&#160;&#160;<b>pPlayer</b></td></tr>
+&#160;&#160;&#160;std::unique_ptr&lt; <a class="el" href="struct_settings_1_1_plane.html">Settings::Plane</a> &gt;&#160;&#160;&#160;<a class="el" href="class_resources_loader.html#ae874a55d363c3cb651f36e47570d30a9">pPlayer</a></td></tr>
+<tr class="memdesc:a6a834e4a34169b12be1a84eb6c040ccd"><td class="mdescLeft">&#160;</td><td class="mdescRight">默认玩家飞机设置。 <br /></td></tr>
 <tr class="separator:a6a834e4a34169b12be1a84eb6c040ccd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a558b45297341760f7811e3a6083f6c40"><td class="memItemLeft" >
-&#160;&#160;&#160;std::unique_ptr&lt; <a class="el" href="struct_settings_1_1_plane.html">Settings::Plane</a> &gt;&#160;&#160;&#160;<b>pEnemyJunior</b></td></tr>
+&#160;&#160;&#160;std::unique_ptr&lt; <a class="el" href="struct_settings_1_1_plane.html">Settings::Plane</a> &gt;&#160;&#160;&#160;<a class="el" href="class_resources_loader.html#a150dacb6180f32ab8fafadcefdc65f96">pEnemyJunior</a></td></tr>
+<tr class="memdesc:a558b45297341760f7811e3a6083f6c40"><td class="mdescLeft">&#160;</td><td class="mdescRight">默认新兵敌机设置。 <br /></td></tr>
 <tr class="separator:a558b45297341760f7811e3a6083f6c40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc137821370aff3ad0ee15bcb9c2c0c0"><td class="memItemLeft" >
-&#160;&#160;&#160;std::unique_ptr&lt; <a class="el" href="struct_settings_1_1_plane.html">Settings::Plane</a> &gt;&#160;&#160;&#160;<b>pEnemyAutoTarget</b></td></tr>
+&#160;&#160;&#160;std::unique_ptr&lt; <a class="el" href="struct_settings_1_1_plane.html">Settings::Plane</a> &gt;&#160;&#160;&#160;<a class="el" href="class_resources_loader.html#a99ac5605a8b7fedb9c79b3f6b6d310cb">pEnemyAutoTarget</a></td></tr>
+<tr class="memdesc:abc137821370aff3ad0ee15bcb9c2c0c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">默认自机狙敌机设置。 <br /></td></tr>
 <tr class="separator:abc137821370aff3ad0ee15bcb9c2c0c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6d954265ed6f27db395d8e095f125e2"><td class="memItemLeft" >
-&#160;&#160;&#160;std::map&lt; int, <a class="el" href="struct_settings_1_1_texture_info.html">Settings::TextureInfo</a> &gt;&#160;&#160;&#160;<b>mTextureInfos</b></td></tr>
+&#160;&#160;&#160;std::map&lt; int, <a class="el" href="struct_settings_1_1_texture_info.html">Settings::TextureInfo</a> &gt;&#160;&#160;&#160;<a class="el" href="class_resources_loader.html#ae364e855ac860a1404ddf324b0ef0300">mTextureInfos</a></td></tr>
+<tr class="memdesc:ae6d954265ed6f27db395d8e095f125e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">保存所有材质索引设置。 <br /></td></tr>
 <tr class="separator:ae6d954265ed6f27db395d8e095f125e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a355d825da8f96dc10cd17fc659e599ae"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>settings</b></td></tr>
+<tr class="memitem:a355d825da8f96dc10cd17fc659e599ae"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_resources_loader.html#a355d825da8f96dc10cd17fc659e599ae">settings</a></td></tr>
+<tr class="memdesc:a355d825da8f96dc10cd17fc659e599ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">保存所有默认设置。所有外部类通过此处保存的设置的引用来获取默认设置。 <br /></td></tr>
 <tr class="separator:a355d825da8f96dc10cd17fc659e599ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b18435b040ae9562a84570712be922c"><td class="memItemLeft" align="right" valign="top"><a id="a5b18435b040ae9562a84570712be922c"></a>
-std::map&lt; int, <a class="el" href="struct_texture.html">Texture</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>textures</b></td></tr>
+std::map&lt; int, <a class="el" href="struct_texture.html">Texture</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_resources_loader.html#a5b18435b040ae9562a84570712be922c">textures</a></td></tr>
+<tr class="memdesc:a5b18435b040ae9562a84570712be922c"><td class="mdescLeft">&#160;</td><td class="mdescRight">保存所有已完整加载的材质。通过材质的ID进行检索。 <br /></td></tr>
 <tr class="separator:a5b18435b040ae9562a84570712be922c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>资源加载器。仅在Resources.cpp中使用。在堆上一块稳定内存托管所有材质及设置资源。 </p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a571b6232d8f1dc1cf94ec752c984a834"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a571b6232d8f1dc1cf94ec752c984a834">&#9670;&nbsp;</a></span>ResourcesLoader()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ResourcesLoader::ResourcesLoader </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>默认构造函数，用来在程序开始时加载所有材质设置到TextureInfo。 </p>
+
+</div>
+</div>
+<a id="ab4f7fa273471e91107896131bce915da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4f7fa273471e91107896131bce915da">&#9670;&nbsp;</a></span>~ResourcesLoader()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ResourcesLoader::~ResourcesLoader </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>析构函数，清除堆上所有材质及设置。 </p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a38cbe5a4029c4a6fe999a8405703fc30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38cbe5a4029c4a6fe999a8405703fc30">&#9670;&nbsp;</a></span>loadTexture() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_texture.html">Texture</a> ResourcesLoader::loadTexture </td>
+          <td>(</td>
+          <td class="paramtype">const wchar_t *&#160;</td>
+          <td class="paramname"><em>imagePath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>w_raw</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>h_raw</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>w_to</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>h_to</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>通过元信息加载材质。 </p>
+<p>当w_to或h_to中有任意一项为0时，表示不缩放。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">imagePath</td><td>材质的路径，采用Unicode。 </td></tr>
+    <tr><td class="paramname">w_raw</td><td>材质的原分辨率宽度。 </td></tr>
+    <tr><td class="paramname">h_raw</td><td>材质的原分辨率高度。 </td></tr>
+    <tr><td class="paramname">w_to</td><td>(可选) 期望缩放到的分辨率宽度。 </td></tr>
+    <tr><td class="paramname">h_to</td><td>(可选) 期望缩放到的分辨率高度。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>加载成功后，返回加载而得的材质。 </dd></dl>
+
+</div>
+</div>
+<a id="a29b4b9fedb76dc01abcfacc2b31cf25c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29b4b9fedb76dc01abcfacc2b31cf25c">&#9670;&nbsp;</a></span>loadTexture() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_texture.html">Texture</a> ResourcesLoader::loadTexture </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_settings_1_1_texture_info.html">Settings::TextureInfo</a>&#160;</td>
+          <td class="paramname"><em>setting</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>通过TextureInfo加载材质。 </p>
+<p>封装了一个接收材质设置的更良好的接口。在类体中定义是默认inline的。</p>
+<p>TODO: 用参数转发(forwarding)实现这个重载。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">setting</td><td>材质的设置源。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>加载成功后，返回加载而得的材质。 </dd></dl>
+
+</div>
+</div>
+<a id="a80e1d1bb8339e48b0becf401f205436e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80e1d1bb8339e48b0becf401f205436e">&#9670;&nbsp;</a></span>loadTextureSettings()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ResourcesLoader::loadTextureSettings </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>加载所有材质设置。在程序开始时通过constructor调用。 </p>
+
+</div>
+</div>
 <hr/>该类的文档由以下文件生成:<ul>
 <li>D:/叶志浩文件夹/Vigilans的文档/Programming/Visual Studio/Projects/Grade 1 Summer Vacation/Lost Phoenix/Lost Phoenix/src/<a class="el" href="_resources_loader_8h_source.html">ResourcesLoader.h</a></li>
 <li>D:/叶志浩文件夹/Vigilans的文档/Programming/Visual Studio/Projects/Grade 1 Summer Vacation/Lost Phoenix/Lost Phoenix/src/ResourcesLoader.cpp</li>

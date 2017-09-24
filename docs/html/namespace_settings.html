@@ -111,6 +111,7 @@ $(document).ready(function(){initNavTree('namespace_settings.html','');});
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">飞机的设置基类。  <a href="struct_settings_1_1_plane.html#details">更多...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_settings_1_1_texture_info.html">TextureInfo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">材质的设置源，可以用来构造一个完整的材质。  <a href="struct_settings_1_1_texture_info.html#details">更多...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -151,7 +152,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>from_json</b> (const 
 <p>这个名空间将游戏的所有设置用几个struct进行表示，以提高可读性与扩展性。</p>
 <p>所有默认设置保存在json文件中，放置于/settings文件夹下。 相比于用一个宏头文件保存设置，使用json的可读性与结构性更强，同时在修改相关设置数据时，也不需要 <b>全部重新编译一遍</b> 。</p>
 <p>运行游戏后，会陆续从json文件中读取相关设置，在堆上用一块专门的内存保存。具体机制为：</p><ul>
-<li>程序开始运行时，读取所有材质的索引信息到<a class="el" href="struct_settings_1_1_texture_info.html">TextureInfo</a>的std::map中，为此后设置的Lazy Load作准备。</li>
+<li>程序开始运行时，读取所有材质的索引信息到<a class="el" href="struct_settings_1_1_texture_info.html" title="材质的设置源，可以用来构造一个完整的材质。 ">TextureInfo</a>的std::map中，为此后设置的Lazy Load作准备。</li>
 <li>Setting名空间中提供几个获取**默认设置引用**的函数。此时尚未加载任何设置。</li>
 <li>当外部类调用任一Setting名空间的函数后，若未加载，则加载设置到堆上的一块稳定内存区域中，并返回引用。这有两个效果：<ul>
 <li>所有设置都采取了Lazy Load机制，这避免了在ege图形库未初始化窗口前读取材质而造成bug，同时节省内存。</li>
